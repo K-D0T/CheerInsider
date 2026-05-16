@@ -6,7 +6,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 // Replace ca-pub-XXXXXXXXXXXXXXXX with your actual AdSense publisher ID
-const ADSENSE_ID = 'ca-pub-XXXXXXXXXXXXXXXX';
+const ADSENSE_ID = 'ca-pub-2950751604262443';
 
 export const metadata: Metadata = {
   title: { default: 'CheerInsider', template: '%s | CheerInsider' },

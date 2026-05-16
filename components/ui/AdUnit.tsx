@@ -4,7 +4,7 @@ import { useEffect, CSSProperties } from 'react';
 type AdFormat = 'leaderboard' | 'rectangle' | 'sidebar' | 'inline';
 
 // Your AdSense publisher ID — replace ca-pub-XXXXXXXXXXXXXXXX with your actual ID
-const PUBLISHER_ID = 'ca-pub-XXXXXXXXXXXXXXXX';
+const PUBLISHER_ID = 'ca-pub-2950751604262443';
 
 // Ad slot IDs — create one slot per format in your AdSense dashboard, paste the IDs here
 const SLOTS: Record<AdFormat, string> = {
