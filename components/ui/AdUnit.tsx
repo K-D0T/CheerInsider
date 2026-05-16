@@ -9,7 +9,7 @@ const PUBLISHER_ID = 'ca-pub-2950751604262443';
 // Ad slot IDs — create one slot per format in your AdSense dashboard, paste the IDs here
 const SLOTS: Record<AdFormat, string> = {
   leaderboard: '1386763118',   // 728×90 — Horizontal / Leaderboard
-  rectangle:   'XXXXXXXXXX',   // 300×250 — Medium Rectangle
+  rectangle:   '9073681441',   // 300×250 — Medium Rectangle
   sidebar:     'XXXXXXXXXX',   // 300×600 — Half Page
   inline:      '4215877522',   // Responsive — In-article
 };
@@ -45,7 +45,9 @@ export function AdUnit({ format = 'rectangle', label = true, style }: {
       )}
       <ins
         className="adsbygoogle"
-        style={{ display:'block', textAlign: format === 'inline' ? 'center' : undefined }}
+        style={format === 'rectangle'
+          ? { display:'inline-block', width:300, height:250 }
+          : { display:'block', textAlign: format === 'inline' ? 'center' : undefined }}
         data-ad-client={PUBLISHER_ID}
         data-ad-slot={SLOTS[format]}
         data-ad-layout={format === 'inline' ? 'in-article' : undefined}
