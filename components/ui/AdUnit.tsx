@@ -11,7 +11,7 @@ const SLOTS: Record<AdFormat, string> = {
   leaderboard: '1386763118',   // 728×90 — Horizontal / Leaderboard
   rectangle:   'XXXXXXXXXX',   // 300×250 — Medium Rectangle
   sidebar:     'XXXXXXXXXX',   // 300×600 — Half Page
-  inline:      'XXXXXXXXXX',   // Responsive — In-article
+  inline:      '4215877522',   // Responsive — In-article
 };
 
 const ADSENSE_FORMATS: Record<AdFormat, string> = {
@@ -45,9 +45,10 @@ export function AdUnit({ format = 'rectangle', label = true, style }: {
       )}
       <ins
         className="adsbygoogle"
-        style={{ display:'block' }}
+        style={{ display:'block', textAlign: format === 'inline' ? 'center' : undefined }}
         data-ad-client={PUBLISHER_ID}
         data-ad-slot={SLOTS[format]}
+        data-ad-layout={format === 'inline' ? 'in-article' : undefined}
         data-ad-format={ADSENSE_FORMATS[format]}
         data-full-width-responsive="true"
       />
