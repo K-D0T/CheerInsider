@@ -16,7 +16,7 @@ export function Pillars() {
     <section style={{ padding:'96px 0' }}>
       <Container>
         <SectionHead eyebrow="THE FOUR PILLARS" title={<>Everything we cover, <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>in plain English</span>.</>}/>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:0, marginTop:32 }}>
+        <div className="ci-4col" style={{ gap:0, marginTop:32 }}>
           {PILLARS.map((p, i) => (
             <Link key={i} href={p.href} style={{ padding:'28px 24px 32px', borderRight: i<3 ? '1px solid var(--p-line)' : 'none', borderTop:'4px solid var(--p-ink)', cursor:'pointer' }}>
               <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:24 }}>

@@ -15,7 +15,7 @@ export function Testimonials() {
     <section style={{ padding:'96px 0', background:'var(--p-cream)' }}>
       <Container>
         <SectionHead eyebrow="WHAT CHEER MOMS ARE SAYING" right="Read all 1,402 reviews" rightHref="/about" title={<>Mom-tested. <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Coach</span>-approved.</>}/>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:24, marginTop:48 }}>
+        <div className="ci-3col" style={{ gap:24, marginTop:48 }}>
           {TESTS.map((t) => (
             <div key={t.name} style={{ background:'var(--p-paper)', border:'1px solid var(--p-line)', padding:28, display:'flex', flexDirection:'column', gap:18, position:'relative' }}>
               <span aria-hidden style={{ position:'absolute', top:-2, right:18, fontFamily:P.serif, fontStyle:'italic', fontSize:120, color:'var(--p-hot)', opacity:.18, lineHeight:1, pointerEvents:'none' }}>"</span>
@@ -35,7 +35,7 @@ export function Testimonials() {
             </div>
           ))}
         </div>
-        <div style={{ marginTop:48, padding:'24px 32px', background:'var(--p-ink)', color:'var(--p-cream)', display:'grid', gridTemplateColumns:'auto 1fr auto', gap:32, alignItems:'center' }}>
+        <div className="ci-rating-bar" style={{ marginTop:48, padding:'24px 32px', background:'var(--p-ink)', color:'var(--p-cream)', gap:32 }}>
           <div style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:64, color:'var(--p-hot)', lineHeight:1, letterSpacing:'-.04em' }}>4.9</div>
           <div>
             <div style={{ display:'inline-flex', gap:3, color:'var(--p-accent)', marginBottom:6 }}>{[1,2,3,4,5].map(s => <Icon.star key={s}/>)}</div>

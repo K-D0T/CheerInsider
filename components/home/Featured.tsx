@@ -17,7 +17,7 @@ export function Featured() {
     <section style={{ padding:'96px 0', background:'var(--p-paper)', borderTop:'1px solid var(--p-line)', borderBottom:'1px solid var(--p-line)' }}>
       <Container>
         <SectionHead eyebrow="THIS WEEK · MUST READ" right="View all articles" rightHref="/parents" title={<>The week in <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>cheer</span>.</>}/>
-        <div style={{ display:'grid', gridTemplateColumns:'1.45fr 1fr', gap:48, marginTop:48 }}>
+        <div className="ci-featured-grid" style={{ gap:48, marginTop:48 }}>
           <article style={{ display:'flex', flexDirection:'column', gap:24 }}>
             <Link href="/parents/the-24k-season" style={{ position:'relative', display:'block' }}>
               <Gradient variant="glow" ratio="16/11" caption="cover · receipts spread"/>

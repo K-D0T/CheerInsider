@@ -40,7 +40,7 @@ export default function ParentsPage() {
           <div style={{ display:'flex', alignItems:'center', gap:14, fontSize:13, color:'var(--p-muted)', marginBottom:24 }}>
             <Link href="/">Home</Link><span>›</span><span style={{ color:'var(--p-ink)' }}>Parent Resources</span>
           </div>
-          <div style={{ display:'grid', gridTemplateColumns:'1.5fr 1fr', gap:64, alignItems:'end' }}>
+          <div className="ci-2col" style={{ gap:64 }}>
             <div>
               <Pill style={{ marginBottom:24 }}>★ THE PARENT PILLAR · 38 GUIDES</Pill>
               <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(60px,7.6vw,124px)', margin:'0 0 24px', letterSpacing:'-.03em', lineHeight:.92 }}>
@@ -80,7 +80,7 @@ export default function ParentsPage() {
       <section style={{ padding:'56px 0 96px' }}>
         <Container>
           {/* Lead */}
-          <Link href={LEAD.href} style={{ display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:48, padding:'32px 0', borderBottom:'1px solid var(--p-line)', marginBottom:32, cursor:'pointer', alignItems:'center' }}>
+          <Link href={LEAD.href} className="ci-article-lead" style={{ gap:48, padding:'32px 0', borderBottom:'1px solid var(--p-line)', marginBottom:32, cursor:'pointer', alignItems:'center' }}>
             <Gradient variant={LEAD.g} ratio="16/10" caption="cover story"/>
             <div>
               <Pill style={{ marginBottom:14 }}>★ COVER · MOST READ THIS WEEK</Pill>
@@ -94,7 +94,7 @@ export default function ParentsPage() {
           {/* Leaderboard between lead story and article grid */}
           <AdUnit format="leaderboard" style={{ margin:'32px 0' }}/>
 
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'32px 24px' }}>
+          <div className="ci-3col" style={{ gap:'32px 24px' }}>
             {ITEMS.map((it, i) => (
               <Link key={i} href={it.href} style={{ display:'flex', flexDirection:'column', gap:14, cursor:'pointer' }}>
                 <Gradient variant={it.g} ratio="4/3"/>

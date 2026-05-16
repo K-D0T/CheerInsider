@@ -8,7 +8,8 @@ export function LeadMagnet() {
   return (
     <section style={{ background:'var(--p-ink)', color:'var(--p-cream)', padding:'96px 0', position:'relative', overflow:'hidden' }}>
       <div aria-hidden style={{ position:'absolute', left:-30, bottom:-100, fontFamily:P.display, fontSize:340, fontWeight:800, color:'rgba(255,45,126,.07)', lineHeight:.8, letterSpacing:'-.05em', pointerEvents:'none' }}>FREE</div>
-      <Container style={{ position:'relative', display:'grid', gridTemplateColumns:'1.1fr 1fr', gap:64, alignItems:'center' }}>
+      <Container style={{ position:'relative' }}>
+        <div className="ci-lead-grid" style={{ gap:64 }}>
         <div>
           <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:24 }}>★ Free download · Updated for the 2026 season</div>
           <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(44px, 5.6vw, 88px)', margin:'0 0 24px', lineHeight:.95, letterSpacing:'-.03em' }}>
@@ -18,7 +19,7 @@ export function LeadMagnet() {
           <p style={{ fontSize:19, lineHeight:1.5, color:'rgba(250,246,241,.78)', maxWidth:520, margin:'0 0 32px', textWrap:'pretty' as never }}>
             64 pages. Every checklist, packing template, fee tracker, and judge-side scoring note you need to survive — and actually enjoy — your first bid season. Free, no upsell.
           </p>
-          <ul style={{ listStyle:'none', padding:0, margin:'0 0 36px', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'10px 24px', maxWidth:560 }}>
+          <ul className="ci-checklist" style={{ margin:'0 0 36px', gap:'10px 24px', maxWidth:560 }}>
             {['Pre-comp packing list (mom-tested)','NCA / D2 / Worlds bid map','Hotel/flight booking timeline','What judges actually score','Hair & makeup cheat sheet','Real cost spreadsheet (XLSX)'].map((b) => (
               <li key={b} style={{ display:'flex', alignItems:'center', gap:10, fontSize:14, fontWeight:500 }}>
                 <span style={{ display:'inline-grid', placeItems:'center', width:18, height:18, background:'var(--p-hot)', color:'#fff', borderRadius:99 }}><Icon.check/></span>
@@ -53,6 +54,7 @@ export function LeadMagnet() {
             </div>
           </div>
         </div>
+      </div>
       </Container>
     </section>
   );

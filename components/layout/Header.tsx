@@ -21,7 +21,7 @@ export function Header() {
           Cheer<span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400, fontSize:32 }}>Insider</span>
         </Link>
 
-        <nav style={{ display:'flex', gap:26, fontSize:14, fontWeight:600 }}>
+        <nav className="ci-header-nav" style={{ display:'flex', gap:26, fontSize:14, fontWeight:600 }}>
           {NAV.map((n, i) => {
             const active = path.startsWith(n.href) || (n.href === '/' && path === '/');
             return (
@@ -39,7 +39,7 @@ export function Header() {
           <button aria-label="Search" style={{ background:'transparent', border:'1px solid var(--p-line)', width:38, height:38, borderRadius:99, color:'inherit', cursor:'pointer', display:'grid', placeItems:'center' }}>
             <Icon.search/>
           </button>
-          <Link href="/parents/the-24k-season" style={{ background:'var(--p-hot)', color:'#fff', border:'none', cursor:'pointer', padding:'10px 18px', borderRadius:99, fontWeight:700, fontSize:13, letterSpacing:'.01em', display:'inline-flex', alignItems:'center', gap:8, fontFamily:'inherit' }}>
+          <Link href="/parents/the-24k-season" className="ci-header-cta" style={{ background:'var(--p-hot)', color:'#fff', border:'none', cursor:'pointer', padding:'10px 18px', borderRadius:99, fontWeight:700, fontSize:13, letterSpacing:'.01em', display:'inline-flex', alignItems:'center', gap:8, fontFamily:'inherit' }}>
             Get the Survival Guide <Icon.arrowUp/>
           </Link>
         </div>

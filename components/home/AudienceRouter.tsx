@@ -13,7 +13,7 @@ export function AudienceRouter() {
   return (
     <section style={{ padding:'72px 0 96px', borderTop:'1px solid var(--p-line)' }}>
       <Container>
-        <div style={{ display:'flex', alignItems:'end', justifyContent:'space-between', marginBottom:36, gap:32 }}>
+        <div className="ci-head-flex" style={{ marginBottom:36 }}>
           <h2 style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:'clamp(36px, 4.4vw, 64px)', margin:0, maxWidth:760, lineHeight:.95, letterSpacing:'-.025em' }}>
             Start where you <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>actually</span> are.
           </h2>
@@ -21,7 +21,7 @@ export function AudienceRouter() {
             Three honest entry points. Pick the one that fits — no one's reading every article on this site, and that's fine.
           </p>
         </div>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:18 }}>
+        <div className="ci-3col" style={{ gap:18 }}>
           {TILES.map((t) => {
             const isHot = t.kind==='hot', isInk = t.kind==='ink', isCream = t.kind==='cream';
             const bg = isHot ? 'var(--p-hot)' : isInk ? 'var(--p-ink)' : 'var(--p-cream)';

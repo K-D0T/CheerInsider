@@ -367,6 +367,37 @@ Use this as a starting point for what to write each month:
 
 ---
 
+## 11. Industry monitoring — events, results, gear
+
+Before each monthly update, check these three sources for anything newsworthy enough to surface in the marquee ticker, featured articles, or gear picks.
+
+### Varsity Spirit / NCA / UCA
+- **Site:** varsity.com and nca.varsity.com
+- **What to check:** Competition results, new event announcements, level/scoring rule changes, camp schedule opens
+- **Look for:** Any NCA/UCA Nationals results, new bid events, rule changes from USASF (which Varsity often announces first)
+- **Gear:** Varsity Shop (shop.varsity.com) — check if any new Varsity-branded shoes or practice wear have launched
+
+### floCheer
+- **Site:** flo.com/cheer (or app)
+- **What to check:** Live stream event coverage, Worlds coverage, post-event analysis, athlete profiles
+- **Look for:** Any competition results that would be relevant for the marquee ("WORLDS 2026 RESULTS ARE IN"), athlete stories that support editorial angles
+- **Note:** floCheer often has earlier competition results than press releases — check here first after major events
+
+### USA Cheer / USASF
+- **Site:** usacheer.net and usasf.net
+- **What to check:** Official rule updates, safety certifications, level definitions, sanctioned event calendar
+- **Look for:** Any scoring or level changes that would affect the "Levels & scoring" content in /guides, new USASF-sanctioned events, safety memo changes that affect gym practices
+- **Timing:** USASF typically announces rule changes for the following season in May–June
+
+### Monthly monitoring workflow
+
+1. Check floCheer for any recent competition results → update marquee ticker if results are recent (< 3 weeks old)
+2. Check Varsity/NCA for upcoming events → update UtilityStrip ticker to the next big event
+3. Check USASF for rule changes → flag anything that affects /guides content or the levels explanation
+4. Check all three for new gear releases → consider adding to the gear rail or cheer-shoes-2026 roundup
+
+---
+
 ## Validation checklist before finishing
 
 1. Run `npm run build` from `/home/kdot/projects/cheerinsider/` — must complete with no errors

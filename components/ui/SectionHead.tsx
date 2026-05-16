@@ -6,7 +6,7 @@ export function SectionHead({ eyebrow, title, right, rightHref }: {
   eyebrow: string; title: ReactNode; right?: string; rightHref?: string;
 }) {
   return (
-    <div style={{ display:'flex', alignItems:'end', justifyContent:'space-between', gap:32, borderBottom:`1px solid ${P.ink}`, paddingBottom:16 }}>
+    <div className="ci-head-flex" style={{ borderBottom:`1px solid ${P.ink}`, paddingBottom:16 }}>
       <div>
         <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:14 }}>{eyebrow}</div>
         <h2 style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:'clamp(36px, 4.4vw, 64px)', margin:0, lineHeight:.95, letterSpacing:'-.025em' }}>{title}</h2>

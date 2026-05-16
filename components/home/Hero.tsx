@@ -29,7 +29,8 @@ export function Hero() {
     <section style={{ padding:'56px 0 24px', position:'relative', overflow:'hidden' }}>
       <div aria-hidden style={{ position:'absolute', right:-40, top:-20, fontFamily:P.serif, fontStyle:'italic', fontSize:380, color:'var(--p-hot)', opacity:.06, lineHeight:.8, pointerEvents:'none', userSelect:'none' }}>insider</div>
 
-      <Container style={{ display:'grid', gridTemplateColumns:'1.35fr 1fr', gap:48, alignItems:'end' }}>
+      <Container>
+      <div className="ci-hero-grid" style={{ gap:48 }}>
         <div>
           <div style={{ display:'inline-flex', alignItems:'center', gap:10, marginBottom:28 }}>
             <span style={{ display:'inline-block', width:36, height:1, background:'var(--p-ink)' }}/>
@@ -65,15 +66,17 @@ export function Hero() {
             </div>
           </div>
         </div>
-      </Container>
+      </div></Container>
 
-      <Container style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:0, marginTop:80, borderTop:'1px solid var(--p-ink)', borderBottom:'1px solid var(--p-ink)' }}>
+      <Container style={{ marginTop:80, borderTop:'1px solid var(--p-ink)', borderBottom:'1px solid var(--p-ink)' }}>
+        <div className="ci-stats">
         {[['131','guides published'],['18 yrs','on the mat'],['4.9 ★','reader rating'],['42K','on the email list']].map(([n,l], i) => (
           <div key={i} style={{ padding:'20px 24px', borderRight: i<3 ? '1px solid var(--p-line)' : 'none' }}>
             <div style={{ fontFamily:'var(--p-display)', fontSize:38, fontWeight:800, lineHeight:1, letterSpacing:'-.02em' }}>{n}</div>
             <div style={{ fontSize:12, letterSpacing:'.08em', textTransform:'uppercase', color:'var(--p-muted)', marginTop:8 }}>{l}</div>
           </div>
         ))}
+        </div>
       </Container>
     </section>
   );
