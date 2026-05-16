@@ -8,7 +8,7 @@ const PUBLISHER_ID = 'ca-pub-2950751604262443';
 
 // Ad slot IDs — create one slot per format in your AdSense dashboard, paste the IDs here
 const SLOTS: Record<AdFormat, string> = {
-  leaderboard: 'XXXXXXXXXX',   // 728×90 — Horizontal / Leaderboard
+  leaderboard: '1386763118',   // 728×90 — Horizontal / Leaderboard
   rectangle:   'XXXXXXXXXX',   // 300×250 — Medium Rectangle
   sidebar:     'XXXXXXXXXX',   // 300×600 — Half Page
   inline:      'XXXXXXXXXX',   // Responsive — In-article
