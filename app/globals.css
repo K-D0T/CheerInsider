@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --p-hot:     #FF1F7A;
+  --p-hotDeep: #C7155F;
+  --p-accent:  #FF6A1A;
+  --p-ink:     #0F0E13;
+  --p-inkSoft: #2A2730;
+  --p-cream:   #FAF6F1;
+  --p-paper:   #FFFFFF;
+  --p-chip:    #FFE9F1;
+  --p-muted:   rgba(15,14,19,.6);
+  --p-line:    rgba(15,14,19,.12);
+  --p-radius:  2px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: 'Manrope', 'Helvetica Neue', sans-serif;
+  background: var(--p-cream);
+  color: var(--p-ink);
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--p-hot); color: #fff; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); }
+}
+@keyframes spin-badge {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
