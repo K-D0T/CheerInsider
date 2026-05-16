@@ -10,7 +10,7 @@ const PUBLISHER_ID = 'ca-pub-2950751604262443';
 const SLOTS: Record<AdFormat, string> = {
   leaderboard: '1386763118',   // 728×90 — Horizontal / Leaderboard
   rectangle:   '9073681441',   // 300×250 — Medium Rectangle
-  sidebar:     'XXXXXXXXXX',   // 300×600 — Half Page
+  sidebar:     '7526997189',   // 300×600 — Half Page
   inline:      '4215877522',   // Responsive — In-article
 };
 
@@ -47,6 +47,8 @@ export function AdUnit({ format = 'rectangle', label = true, style }: {
         className="adsbygoogle"
         style={format === 'rectangle'
           ? { display:'inline-block', width:300, height:250 }
+          : format === 'sidebar'
+          ? { display:'inline-block', width:300, height:600 }
           : { display:'block', textAlign: format === 'inline' ? 'center' : undefined }}
         data-ad-client={PUBLISHER_ID}
         data-ad-slot={SLOTS[format]}
