@@ -1,12 +1,8 @@
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import './globals.css';
 import { UtilityStrip } from '@/components/layout/UtilityStrip';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-
-// Replace ca-pub-XXXXXXXXXXXXXXXX with your actual AdSense publisher ID
-const ADSENSE_ID = 'ca-pub-2950751604262443';
 
 export const metadata: Metadata = {
   title: { default: 'CheerInsider', template: '%s | CheerInsider' },
@@ -17,11 +13,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <Script
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script
           async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950751604262443"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body>
