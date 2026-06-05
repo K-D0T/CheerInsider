@@ -5,7 +5,22 @@ import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
 import { P, tx } from '@/lib/palette';
 
-export const metadata = { title: 'Gear Roundups — Tested on the Mat' };
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Gear Roundups — Tested on the Mat',
+  description: 'Cheer shoes, bags, practice wear, and bows — tested on the mat by athletes and coaches. No sponsored money. Honest verdicts. Some links earn a small commission.',
+  openGraph: {
+    title: 'Gear Roundups: Tested on the Mat | CheerInsider',
+    description: 'Every product we recommend was tested by athletes and coaches at Levels 2–5. No brand deals, no sponsored money — just honest gear reviews.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gear Roundups | CheerInsider',
+    description: 'Cheer shoes, bags, and practice wear tested on the mat. Honest rankings, no sponsored money.',
+  },
+};
 
 const ROUNDUPS = [
   {

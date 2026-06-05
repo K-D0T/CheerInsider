@@ -7,7 +7,25 @@ import { Icon } from '@/components/ui/Icon';
 import { AdUnit } from '@/components/ui/AdUnit';
 import { P, tx } from '@/lib/palette';
 
-export const metadata = { title: 'The Only Cheer Shoes Worth Your Money in 2026' };
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'The Only Cheer Shoes Worth Your Money in 2026',
+  description: '14 pairs tested across Level 2, 4, and 5 athletes over 6 months. Four picks worth buying, two to avoid entirely — with full scored reviews and a comparison table.',
+  openGraph: {
+    title: 'Best Cheer Shoes 2026: 14 Pairs Tested | CheerInsider',
+    description: 'Six months of testing across Level 2–5 athletes. The Nfinity Vengeance is still the best overall at $110. Here\'s the full ranked list with scores.',
+    type: 'article',
+    publishedTime: '2026-05-01T00:00:00Z',
+    authors: ['Lauren K.'],
+    tags: ['cheer shoes', 'all-star cheerleading', 'cheer gear', 'Nfinity', 'cheer equipment', 'gear review'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Best Cheer Shoes 2026 | CheerInsider',
+    description: '14 pairs. 6 months. Four picks, two to avoid. Scored reviews with a full comparison table.',
+  },
+};
 
 type GV = 'halo' | 'stripes' | 'field' | 'glow' | 'pulse' | 'block';
 

@@ -5,7 +5,22 @@ import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
 import { P, tx } from '@/lib/palette';
 
-export const metadata = { title: 'Educational Guides' };
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Educational Guides — All-Star Cheer Explained Honestly',
+  description: 'All-star cheer levels, scoring, skill progressions, and terminology explained without federation jargon. 42 guides for parents, athletes, and coaches.',
+  openGraph: {
+    title: 'Educational Guides | CheerInsider',
+    description: 'Levels 1–7, scoring panels, legal skills by level, competition types, and a full cheer glossary — everything the federations assume you already know.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Educational Guides | CheerInsider',
+    description: '42 guides on cheer levels, scoring, skills, and terminology. Zero jargon. All honest.',
+  },
+};
 
 const GUIDES = [
   { eyebrow:'LEVELS EXPLAINED',  title:'The all-star level system, explained from scratch (Level 1–7)', meta:'11 min', g:'flash' as const },

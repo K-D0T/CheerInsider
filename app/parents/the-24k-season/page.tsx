@@ -1,12 +1,31 @@
-'use client';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
-import { Icon } from '@/components/ui/Icon';
 import { AdUnit } from '@/components/ui/AdUnit';
+import { EmailForm } from '@/components/ui/EmailForm';
 import { P, tx } from '@/lib/palette';
+
+export const metadata: Metadata = {
+  title: 'The $24,000 Cheer Season: Every Dollar, Tracked',
+  description: 'We followed one Level 4 family for a full season and recorded every invoice. Tuition was a third of what they actually paid. Here\'s the full ledger.',
+  openGraph: {
+    title: 'The $24,000 Cheer Season: Every Dollar, Tracked',
+    description: 'One Level 4 family. One full season. $24,180 in receipts — and a breakdown of where every dollar went.',
+    type: 'article',
+    publishedTime: '2026-04-12T00:00:00Z',
+    modifiedTime: '2026-05-08T00:00:00Z',
+    authors: ['Lauren K.'],
+    tags: ['cheer costs', 'all-star cheerleading', 'cheer budget', 'Level 4 cheer'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The $24,000 Cheer Season: Every Dollar, Tracked',
+    description: 'One Level 4 family. One full season. $24,180 in receipts.',
+  },
+};
 
 const TOC = ['The $24K headline number','Tuition (the obvious one)','Choreography fees','Travel & hotels','Hair, bows, makeup','Hidden "team mom" line items','How to bring it down 30%','The 2026 budget plan'];
 
@@ -175,11 +194,7 @@ export default function ArticlePage() {
               Three articles, one spreadsheet, one negotiation script. Delivered to your inbox over the next week. Free, no upsell.
             </p>
           </div>
-          <form onSubmit={(e) => e.preventDefault()} style={{ display:'flex', maxWidth:520, alignItems:'stretch', background:'rgba(0,0,0,.18)', borderRadius:99, padding:6, border:'1px solid rgba(255,255,255,.2)' }}>
-            <span style={{ display:'grid', placeItems:'center', padding:'0 14px', color:'rgba(255,255,255,.65)' }}><Icon.mail/></span>
-            <input type="email" placeholder="your@email.com" style={{ flex:1, background:'transparent', border:'none', outline:'none', color:'#fff', fontSize:15, fontFamily:'inherit', fontWeight:500 }}/>
-            <button style={{ background:'var(--p-ink)', color:'var(--p-cream)', border:'none', padding:'14px 22px', borderRadius:99, fontWeight:700, fontSize:14, cursor:'pointer', fontFamily:'inherit', display:'inline-flex', alignItems:'center', gap:8 }}>Send the series <Icon.arrow/></button>
-          </form>
+          <EmailForm label="Email address for the cost series" />
         </Container>
       </section>
 
