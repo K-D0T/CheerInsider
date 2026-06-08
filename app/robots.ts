@@ -25,6 +25,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/',
       },
     ],
-    sitemap: 'https://www.cheerinsider.com/sitemap.xml',
+    sitemap: 'https://cheer-insider.com/sitemap.xml',
   };
 }
