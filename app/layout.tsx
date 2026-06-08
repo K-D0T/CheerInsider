@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     site: '@CheerInsider',
     creator: '@CheerInsider',
   },
+  other: {
+    'google-adsense-account': 'ca-pub-2950751604262443',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
