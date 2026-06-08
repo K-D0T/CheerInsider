@@ -23,7 +23,7 @@ export function Footer() {
             </p>
             <div style={{ marginTop:24, display:'flex', flexDirection:'column', gap:10, fontSize:12.5, color:'rgba(250,246,241,.5)' }}>
               <span>📍 Based in Tampa, FL</span>
-              <span>✉ lauren@cheerinsider.com</span>
+              <span>✉ lauren@cheer-insider.com</span>
             </div>
           </div>
           {COLS.map((c) => (

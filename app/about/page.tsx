@@ -145,7 +145,7 @@ export default function AboutPage() {
             that other moms should hear about, email me. I never share names without permission.
           </p>
           <div style={{ display:'flex', justifyContent:'center', gap:14, flexWrap:'wrap' }}>
-            <a href="mailto:lauren@cheerinsider.com" style={{ background:'var(--p-ink)', color:'var(--p-cream)', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, display:'inline-flex', alignItems:'center', gap:8 }}>lauren@cheerinsider.com <Icon.arrowUp/></a>
+            <a href="mailto:lauren@cheer-insider.com" style={{ background:'var(--p-ink)', color:'var(--p-cream)', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, display:'inline-flex', alignItems:'center', gap:8 }}>lauren@cheer-insider.com <Icon.arrowUp/></a>
             <span style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, cursor:'pointer' }}>Send a tip anonymously →</span>
           </div>
         </Container>

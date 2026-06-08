@@ -48,7 +48,7 @@ export function LeadMagnet() {
                 <div style={{ display:'inline-block', marginTop:18, padding:'4px 10px', background:'var(--p-ink)', color:'var(--p-cream)', fontSize:11, letterSpacing:'.12em', textTransform:'uppercase', fontWeight:700 }}>2026 Edition · 64 pages</div>
               </div>
               <div style={{ display:'flex', justifyContent:'space-between', alignItems:'end', fontSize:11, opacity:.85 }}>
-                <span>cheerinsider.com</span>
+                <span>cheer-insider.com</span>
                 <span style={{ fontFamily:P.serif, fontStyle:'italic', fontSize:32, lineHeight:.6 }}>★</span>
               </div>
             </div>

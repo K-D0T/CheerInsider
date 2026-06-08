@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE = 'https://www.cheerinsider.com';
+const BASE = 'https://cheer-insider.com';
 
 // Editorial pages that update monthly get 'monthly'; the homepage and category
 // indexes are checked more often by crawlers so they get 'weekly'.
