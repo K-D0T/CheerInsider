@@ -5,7 +5,25 @@ import { Pill } from '@/components/ui/Pill';
 import { Icon } from '@/components/ui/Icon';
 import { P, tx } from '@/lib/palette';
 
-export const metadata = { title: '"No experience required" tryouts are almost always a trap' };
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'The "Team Mom" Job Is Unpaid Labor. We Need to Stop Pretending It Isn\'t.',
+  description: 'Every gym in the country has one mom doing 15 hours a week of work the gym used to pay an admin to do. Survey of 84 team moms across 41 gyms. It\'s time we called this what it is.',
+  openGraph: {
+    title: 'The "Team Mom" Job Is Unpaid Labor | CheerInsider',
+    description: 'A median 12 hours/week of unpaid work per team mom. At $25/hr, that\'s $13,200 of free labor per team, per season. The industry extracts $185M/year this way.',
+    type: 'article',
+    publishedTime: '2026-05-08T00:00:00Z',
+    authors: ['Lauren K.'],
+    tags: ['cheer mom', 'all-star cheerleading', 'team mom', 'cheer community'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The "Team Mom" Job Is Unpaid Labor | CheerInsider',
+    description: 'The industry extracts $185M/year of unpaid labor from women whose kids it already charges $20K+ a season.',
+  },
+};
 
 const RESPONSES = [
   { name:'Reader · "Mom of three"', stance:'agree', text:'This is the most honest thing anyone has written about all-star cheer. Forwarding to every mom on my team.' },

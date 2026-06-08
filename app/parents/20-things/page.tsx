@@ -5,7 +5,24 @@ import { Pill } from '@/components/ui/Pill';
 import { Icon } from '@/components/ui/Icon';
 import { P, tx } from '@/lib/palette';
 
-export const metadata = { title: '20 Things Every New Cheer Mom Wishes She\'d Known' };
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '20 Things Every New Cheer Mom Wishes She\'d Known',
+  description: 'Crowdsourced from 1,200+ moms in our reader survey: the 20 biggest lessons about costs, gym culture, competition day, and what "optional" really means.',
+  openGraph: {
+    title: '20 Things Every New Cheer Mom Wishes She\'d Known | CheerInsider',
+    description: 'The monthly tuition is a third of your real spend. "Optional" almost always means expected. Pack two pairs of every white sock. 20 lessons, starting hot.',
+    type: 'article',
+    authors: ['Lauren K.'],
+    tags: ['cheer mom guide', 'new cheer mom', 'all-star cheerleading', 'cheer tips', 'cheer costs'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '20 Things Every New Cheer Mom Wishes She\'d Known | CheerInsider',
+    description: 'Crowdsourced from 1,200+ moms. 20 lessons on costs, gyms, competition day, and survival. The hot ones first.',
+  },
+};
 
 const ITEMS = [
   { n:'01', cat:'COST',   t:'The monthly tuition is a third of your real spend.', body:'If your gym quotes $295/mo, plan for ~$24K total. The other two-thirds arrive as separate invoices.', read:3 },

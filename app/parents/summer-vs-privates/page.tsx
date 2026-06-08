@@ -6,7 +6,25 @@ import { Pill } from '@/components/ui/Pill';
 import { AdUnit } from '@/components/ui/AdUnit';
 import { P, tx } from '@/lib/palette';
 
-export const metadata = { title: 'Summer Camp vs. Privates: What Actually Moves the Needle' };
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Summer Camp vs. Privates: What Actually Moves the Needle',
+  description: 'Every June, gyms pitch one. Parents sign up for the other. Neither side agrees on which is worth the money. After 18 years on the mat, here\'s the honest breakdown.',
+  openGraph: {
+    title: 'Summer Camp vs. Privates: What Actually Moves the Needle | CheerInsider',
+    description: 'Camps build culture, privates build skills — but only when there\'s a specific skill to fix and a coach who can fix it. Here\'s how to decide for your athlete.',
+    type: 'article',
+    publishedTime: '2026-05-15T00:00:00Z',
+    authors: ['Lauren K.'],
+    tags: ['cheer summer camp', 'cheer privates', 'all-star cheerleading', 'cheer training', 'cheer costs'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Summer Camp vs. Privates | CheerInsider',
+    description: 'After 18 years on the mat, here\'s the honest breakdown of what\'s worth the money — and what isn\'t.',
+  },
+};
 
 const RELATED = [
   { eyebrow:'COST DEEP DIVE',  title:'We tracked every penny one Level 4 family spent in a single season', meta:'18 min', g:'glow' as const, href:'/parents/the-24k-season' },

@@ -5,7 +5,15 @@ import { Pill } from '@/components/ui/Pill';
 import { Icon } from '@/components/ui/Icon';
 import { P, tx } from '@/lib/palette';
 
-export const metadata = { title: 'About' };
+export const metadata = {
+  title: 'About Lauren K. — Former Coach, Cheer Mom, and the Voice Behind CheerInsider',
+  description: 'CCA-certified coach, former Level 6 athlete, and cheer mom of two. Lauren started CheerInsider to answer the questions nobody else would — honestly.',
+  openGraph: {
+    title: 'About Lauren K. | CheerInsider',
+    description: 'The story behind CheerInsider: 18 years on the mat, two daughters in all-star, and a mission to give cheer parents real information.',
+    type: 'profile',
+  },
+};
 
 const MILESTONES = [
   { year:'2007', title:'First all-star tryout', body:'Made a Level 1 youth team at age 9. Cost: $1,800 for the season. (Yes, even then.)' },

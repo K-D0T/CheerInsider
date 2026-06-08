@@ -6,7 +6,22 @@ import { Pill } from '@/components/ui/Pill';
 import { AdUnit } from '@/components/ui/AdUnit';
 import { P, tx } from '@/lib/palette';
 
-export const metadata = { title: 'Parent Resources' };
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Parent Resources — Costs, Gym Selection, Competition Guides',
+  description: 'Costs, gym selection, competition logistics, and the social politics no one warns you about. 38 guides for cheer parents — from a coach and cheer mom of two.',
+  openGraph: {
+    title: 'Parent Resources | CheerInsider',
+    description: 'Everything a cheer parent needs to know — costs, gym selection, competition logistics, and how to advocate for your kid without being That Mom. 38 guides from the inside.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Parent Resources | CheerInsider',
+    description: 'Costs, gym selection, competition logistics, and more. 38 guides for cheer parents — from a coach and cheer mom of two.',
+  },
+};
 
 const FILTERS = ['All 38','Cost & Money','Gym Selection','Tryouts','Competition','Travel','Mental Load','Recruiting'];
 
