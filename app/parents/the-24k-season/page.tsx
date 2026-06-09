@@ -6,6 +6,7 @@ import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
 import { AdUnit } from '@/components/ui/AdUnit';
 import { EmailForm } from '@/components/ui/EmailForm';
+import { JsonLd, articleLd, breadcrumbLd } from '@/components/seo/JsonLd';
 import { P, tx } from '@/lib/palette';
 
 export const metadata: Metadata = {
@@ -52,6 +53,14 @@ const RELATED = [
 export default function ArticlePage() {
   return (
     <>
+      <JsonLd data={articleLd({
+        slug: '/parents/the-24k-season',
+        headline: 'The $24,000 Cheer Season: Every Dollar, Tracked',
+        description: 'We followed one Level 4 family for a full season and recorded every invoice. Tuition was a third of what they actually paid.',
+        datePublished: '2026-04-12',
+        dateModified: '2026-05-08',
+      })} />
+      <JsonLd data={breadcrumbLd([['Home', '/'], ['Parent Resources', '/parents'], ['The $24K Season', '/parents/the-24k-season']])} />
       {/* Hero */}
       <section style={{ padding:'48px 0 64px', borderBottom:'1px solid var(--p-line)' }}>
         <Container max={1100}>
@@ -83,9 +92,9 @@ export default function ArticlePage() {
 
       {/* Body */}
       <section style={{ padding:'72px 0' }}>
-        <Container max={1100} style={{ display:'grid', gridTemplateColumns:'200px 1fr 240px', gap:48, alignItems:'start' }}>
+        <Container max={1100} className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'200px 1fr 240px', gap:48, alignItems:'start' }}>
           {/* TOC */}
-          <aside style={{ position:'sticky', top:96, fontSize:13 }}>
+          <aside className="ci-static-mobile" style={{ position:'sticky', top:96, fontSize:13 }}>
             <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:14 }}>In this article</div>
             <ol style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:10 }}>
               {TOC.map((s, i) => (
@@ -160,7 +169,7 @@ export default function ArticlePage() {
           </article>
 
           {/* Right rail */}
-          <aside style={{ position:'sticky', top:96, display:'flex', flexDirection:'column', gap:20 }}>
+          <aside className="ci-static-mobile" style={{ position:'sticky', top:96, display:'flex', flexDirection:'column', gap:20 }}>
             <AdUnit format="rectangle"/>
             <div style={{ background:'var(--p-ink)', color:'var(--p-cream)', padding:24 }}>
               <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:14 }}>Get the spreadsheet</div>
@@ -184,7 +193,7 @@ export default function ArticlePage() {
 
       {/* Email callout */}
       <section style={{ background:'var(--p-hot)', color:'#fff', padding:'64px 0' }}>
-        <Container max={1100} style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, alignItems:'center' }}>
+        <Container max={1100} className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, alignItems:'center' }}>
           <div>
             <div style={{ ...tx.eyebrow, marginBottom:18, opacity:.85 }}>Save this article</div>
             <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(36px,4.6vw,64px)', margin:'0 0 18px', letterSpacing:'-.025em', lineHeight:.95 }}>
@@ -202,7 +211,7 @@ export default function ArticlePage() {
       <section style={{ padding:'80px 0' }}>
         <Container max={1100}>
           <SectionHead eyebrow="KEEP READING · IF YOU LIKED THIS" right="All Parent Resources" title={<>The cost <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>conversation</span>, continued.</>}/>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:18, marginTop:36 }}>
+          <div className="ci-4col" style={{ gap:18, marginTop:36 }}>
             {RELATED.map((r, i) => (
               <Link key={i} href={r.href} style={{ display:'flex', flexDirection:'column', gap:12, cursor:'pointer' }}>
                 <Gradient variant={r.g} ratio="4/3"/>

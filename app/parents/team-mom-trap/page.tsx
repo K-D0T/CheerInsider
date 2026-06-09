@@ -3,6 +3,7 @@ import { Container } from '@/components/ui/Container';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Pill } from '@/components/ui/Pill';
 import { Icon } from '@/components/ui/Icon';
+import { JsonLd, articleLd, breadcrumbLd } from '@/components/seo/JsonLd';
 import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
@@ -35,6 +36,13 @@ const RESPONSES = [
 export default function OpinionPage() {
   return (
     <>
+      <JsonLd data={articleLd({
+        slug: '/parents/team-mom-trap',
+        headline: 'The "Team Mom" Job Is Unpaid Labor. We Need to Stop Pretending It Isn\'t.',
+        description: 'Every gym has one mom doing 15 hours a week of work the gym used to pay an admin to do. Survey of 84 team moms across 41 gyms.',
+        datePublished: '2026-05-08',
+      })} />
+      <JsonLd data={breadcrumbLd([['Home', '/'], ['Parent Resources', '/parents'], ['The Team Mom Trap', '/parents/team-mom-trap']])} />
       {/* Hero — dark bg */}
       <section style={{ padding:'48px 0 0', background:'var(--p-ink)', color:'var(--p-cream)', position:'relative', overflow:'hidden' }}>
         <div aria-hidden style={{ position:'absolute', right:-100, top:-60, fontFamily:P.serif, fontStyle:'italic', fontSize:560, color:'var(--p-hot)', opacity:.08, lineHeight:.8, pointerEvents:'none' }}>"</div>
@@ -83,7 +91,7 @@ export default function OpinionPage() {
               <li><strong>Zero</strong> formal job description, contract, or accountability structure</li>
             </ul>
 
-            <blockquote style={{ margin:'56px -80px', padding:'48px 80px', background:'var(--p-hot)', color:'#fff' }}>
+            <blockquote className="ci-bleed-mobile" style={{ margin:'56px -80px', padding:'48px 80px', background:'var(--p-hot)', color:'#fff' }}>
               <p style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(36px,4.4vw,64px)', lineHeight:1.02, letterSpacing:'-.03em', margin:0 }}>
                 At $25/hour — the rate gyms pay their actual office admins — that's<br/>
                 <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-ink)', fontWeight:400 }}>$13,200</span> of free labor per team. Per season.
@@ -112,7 +120,7 @@ export default function OpinionPage() {
       <section style={{ padding:'80px 0', background:'var(--p-paper)', borderTop:'1px solid var(--p-line)' }}>
         <Container max={1100}>
           <SectionHead eyebrow={`READER RESPONSES · 4 OF 412`} right="Submit your response" title={<>The <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>conversation</span>.</>}/>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(2, 1fr)', gap:24, marginTop:36 }}>
+          <div className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'repeat(2, 1fr)', gap:24, marginTop:36 }}>
             {RESPONSES.map((r, i) => (
               <div key={i} style={{ padding:'24px 28px', background: r.stance==='agree' ? 'var(--p-cream)' : 'var(--p-paper)', border: r.stance==='agree' ? '1px solid var(--p-hot)' : '1px solid var(--p-line)' }}>
                 <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:14 }}>

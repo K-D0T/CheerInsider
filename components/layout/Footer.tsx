@@ -13,7 +13,7 @@ export function Footer() {
     <footer style={{ background:'var(--p-ink)', color:'var(--p-cream)', padding:'80px 0 32px', position:'relative', overflow:'hidden' }}>
       <div aria-hidden style={{ position:'absolute', bottom:-120, right:-30, lineHeight:.7, fontFamily:P.display, fontSize:380, fontWeight:800, color:'rgba(255,45,126,.07)', pointerEvents:'none', letterSpacing:'-.05em' }}>cheer.</div>
       <div style={{ width:'min(1320px, 92%)', margin:'0 auto', position:'relative' }}>
-        <div style={{ display:'grid', gridTemplateColumns:'1.4fr repeat(4, 1fr)', gap:48, alignItems:'start' }}>
+        <div className="ci-footer-grid" style={{ display:'grid', gridTemplateColumns:'1.4fr repeat(4, 1fr)', gap:48, alignItems:'start' }}>
           <div>
             <Link href="/" style={{ fontFamily:P.display, fontSize:46, fontWeight:800, letterSpacing:'-.03em', lineHeight:1 }}>
               Cheer<span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Insider</span>

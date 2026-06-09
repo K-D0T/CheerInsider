@@ -51,8 +51,8 @@ export function CostCalculator() {
 
   return (
     <Container>
-      <div style={{ display:'grid', gridTemplateColumns:'1fr 1.3fr', gap:48, alignItems:'start' }}>
-        <div style={{ display:'flex', flexDirection:'column', gap:24, position:'sticky', top:96 }}>
+      <div className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 1.3fr', gap:48, alignItems:'start' }}>
+        <div className="ci-static-mobile" style={{ display:'flex', flexDirection:'column', gap:24, position:'sticky', top:96 }}>
           <CalcRow label="Team level">
             <div style={{ display:'flex', gap:6 }}>
               {[1,2,3,4,5,6].map(l => (

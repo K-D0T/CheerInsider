@@ -3,6 +3,7 @@ import { Container } from '@/components/ui/Container';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
 import { Icon } from '@/components/ui/Icon';
+import { JsonLd, articleLd, breadcrumbLd } from '@/components/seo/JsonLd';
 import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
@@ -50,13 +51,20 @@ const ITEMS = [
 export default function TwentyThingsPage() {
   return (
     <>
+      <JsonLd data={articleLd({
+        slug: '/parents/20-things',
+        headline: '20 Things Every New Cheer Mom Wishes She\'d Known',
+        description: 'Crowdsourced from 1,200+ moms: the 20 biggest lessons about costs, gym culture, competition day, and what "optional" really means.',
+        datePublished: '2026-04-01',
+      })} />
+      <JsonLd data={breadcrumbLd([['Home', '/'], ['Parent Resources', '/parents'], ['20 Things', '/parents/20-things']])} />
       {/* Hero */}
       <section style={{ padding:'48px 0 56px', borderBottom:'1px solid var(--p-line)' }}>
         <Container>
           <div style={{ display:'flex', alignItems:'center', gap:14, fontSize:13, color:'var(--p-muted)', marginBottom:24 }}>
             <Link href="/">Home</Link><span>›</span><Link href="/parents">Parents</Link><span>›</span><span style={{ color:'var(--p-ink)' }}>20 Things</span>
           </div>
-          <div style={{ display:'grid', gridTemplateColumns:'1.4fr 1fr', gap:48, alignItems:'end' }}>
+          <div className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1.4fr 1fr', gap:48, alignItems:'end' }}>
             <div>
               <Pill style={{ marginBottom:20 }}>★ THE LIST · 20 BIG ONES</Pill>
               <div style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(120px,14vw,240px)', lineHeight:.85, letterSpacing:'-.05em', color:'var(--p-hot)', marginBottom:-20 }}>20</div>
@@ -77,8 +85,8 @@ export default function TwentyThingsPage() {
         <Container max={1100}>
           <div style={{ display:'flex', flexDirection:'column' }}>
             {ITEMS.map((it, i) => (
-              <article key={i} style={{ display:'grid', gridTemplateColumns:'140px 1fr auto', gap:28, padding:'32px 0', borderTop:'1px solid var(--p-line)', alignItems:'start' }}>
-                <div style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:80, color: i<5 ? 'var(--p-hot)' : 'var(--p-ink)', letterSpacing:'-.05em', lineHeight:.85 }}>{it.n}</div>
+              <article key={i} className="ci-list-row" style={{ display:'grid', gridTemplateColumns:'140px 1fr auto', gap:28, padding:'32px 0', borderTop:'1px solid var(--p-line)', alignItems:'start' }}>
+                <div className="ci-list-num" style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:80, color: i<5 ? 'var(--p-hot)' : 'var(--p-ink)', letterSpacing:'-.05em', lineHeight:.85 }}>{it.n}</div>
                 <div>
                   <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:8 }}>{it.cat}</div>
                   <h3 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:30, margin:'0 0 10px', letterSpacing:'-.02em', lineHeight:1.05 }}>{it.t}</h3>
@@ -95,7 +103,7 @@ export default function TwentyThingsPage() {
           </div>
 
           {/* CTA */}
-          <div style={{ marginTop:64, padding:40, background:'var(--p-hot)', color:'#fff', display:'grid', gridTemplateColumns:'1.4fr 1fr', gap:32, alignItems:'center' }}>
+          <div className="ci-stack-mobile" style={{ marginTop:64, padding:40, background:'var(--p-hot)', color:'#fff', display:'grid', gridTemplateColumns:'1.4fr 1fr', gap:32, alignItems:'center' }}>
             <div>
               <div style={{ ...tx.eyebrow, marginBottom:14, opacity:.85 }}>Add to the list</div>
               <h3 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:36, margin:'0 0 8px', letterSpacing:'-.025em', lineHeight:1 }}>

@@ -70,7 +70,7 @@ export default function GearIndexPage() {
           <div style={{ display:'flex', alignItems:'center', gap:14, fontSize:13, color:'var(--p-muted)', marginBottom:24 }}>
             <Link href="/">Home</Link><span>›</span><span style={{ color:'var(--p-ink)' }}>Gear Roundups</span>
           </div>
-          <div style={{ display:'grid', gridTemplateColumns:'1.5fr 1fr', gap:64, alignItems:'end' }}>
+          <div className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1.5fr 1fr', gap:64, alignItems:'end' }}>
             <div>
               <Pill style={{ marginBottom:24 }}>★ THE GEAR PILLAR · TESTED ON THE MAT</Pill>
               <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(60px,7.6vw,124px)', margin:'0 0 24px', letterSpacing:'-.03em', lineHeight:.92 }}>
@@ -91,7 +91,7 @@ export default function GearIndexPage() {
           <SectionHead eyebrow="ALL ROUNDUPS · BY CATEGORY" title={<>Everything we've <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>tested</span>.</>}/>
 
           {/* Lead roundup — full width */}
-          <Link href={ROUNDUPS[0].href} style={{ display:'grid', gridTemplateColumns:'1fr 1.2fr', gap:48, padding:'48px 0', borderBottom:'1px solid var(--p-line)', alignItems:'center', cursor:'pointer' }}>
+          <Link href={ROUNDUPS[0].href} className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 1.2fr', gap:48, padding:'48px 0', borderBottom:'1px solid var(--p-line)', alignItems:'center', cursor:'pointer' }}>
             <Gradient variant={ROUNDUPS[0].g} ratio="16/10" caption="shoes · top-down" dark/>
             <div>
               <Pill style={{ marginBottom:14 }}>{ROUNDUPS[0].pill}</Pill>
@@ -103,7 +103,7 @@ export default function GearIndexPage() {
           </Link>
 
           {/* Remaining roundups */}
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'32px 24px', marginTop:48 }}>
+          <div className="ci-3col" style={{ gap:'32px 24px', marginTop:48 }}>
             {ROUNDUPS.slice(1).map((r, i) => (
               <Link key={i} href={r.href} style={{ display:'flex', flexDirection:'column', gap:14, cursor:'pointer' }}>
                 <Gradient variant={r.g} ratio="4/3"/>

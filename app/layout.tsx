@@ -4,6 +4,7 @@ import './globals.css';
 import { UtilityStrip } from '@/components/layout/UtilityStrip';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { JsonLd, organizationLd, websiteLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cheer-insider.com'),
@@ -35,6 +36,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
+        <JsonLd data={organizationLd()} />
+        <JsonLd data={websiteLd()} />
         <UtilityStrip />
         <Header />
         <main>{children}</main>

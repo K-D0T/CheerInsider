@@ -4,6 +4,7 @@ import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
 import { AdUnit } from '@/components/ui/AdUnit';
+import { JsonLd, articleLd, breadcrumbLd } from '@/components/seo/JsonLd';
 import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
@@ -36,6 +37,13 @@ const RELATED = [
 export default function SummerVsPrivatesPage() {
   return (
     <>
+      <JsonLd data={articleLd({
+        slug: '/parents/summer-vs-privates',
+        headline: 'Summer Camp vs. Privates: What Actually Moves the Needle',
+        description: 'Camps build culture, privates build skills. After 18 years on the mat, here\'s the honest breakdown of what\'s worth the money.',
+        datePublished: '2026-05-15',
+      })} />
+      <JsonLd data={breadcrumbLd([['Home', '/'], ['Parent Resources', '/parents'], ['Summer Camp vs. Privates', '/parents/summer-vs-privates']])} />
       {/* Hero */}
       <section style={{ padding:'48px 0 64px', borderBottom:'1px solid var(--p-line)' }}>
         <Container max={1100}>
@@ -67,7 +75,7 @@ export default function SummerVsPrivatesPage() {
 
       {/* Body */}
       <section style={{ padding:'72px 0' }}>
-        <Container max={1100} style={{ display:'grid', gridTemplateColumns:'1fr 240px', gap:64, alignItems:'start' }}>
+        <Container max={1100} className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 240px', gap:64, alignItems:'start' }}>
           <article style={{ fontSize:17.5, lineHeight:1.7, color:'var(--p-ink)', maxWidth:700 }}>
             <p style={{ margin:'0 0 24px' }}>
               <span style={{ float:'left', fontFamily:'var(--p-display)', fontWeight:800, fontSize:88, lineHeight:.8, paddingRight:14, paddingTop:6, color:'var(--p-hot)', letterSpacing:'-.04em' }}>E</span>
@@ -155,7 +163,7 @@ export default function SummerVsPrivatesPage() {
           </article>
 
           {/* Right rail */}
-          <aside style={{ position:'sticky', top:96, display:'flex', flexDirection:'column', gap:20 }}>
+          <aside className="ci-static-mobile" style={{ position:'sticky', top:96, display:'flex', flexDirection:'column', gap:20 }}>
             <AdUnit format="rectangle"/>
             <div style={{ padding:'20px 0', borderTop:'1px solid var(--p-line)' }}>
               <div style={{ ...tx.eyebrow, color:'var(--p-muted)', marginBottom:10 }}>Also in Cost & Money</div>
@@ -173,7 +181,7 @@ export default function SummerVsPrivatesPage() {
       <section style={{ padding:'80px 0', borderTop:'1px solid var(--p-line)' }}>
         <Container max={1100}>
           <SectionHead eyebrow="KEEP READING" right="All Parent Resources" rightHref="/parents" title={<>More for <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>parents</span>.</>}/>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:18, marginTop:36 }}>
+          <div className="ci-4col" style={{ gap:18, marginTop:36 }}>
             {RELATED.map((r, i) => (
               <Link key={i} href={r.href} style={{ display:'flex', flexDirection:'column', gap:12 }}>
                 <Gradient variant={r.g} ratio="4/3"/>
