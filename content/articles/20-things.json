@@ -1,0 +1,50 @@
+{
+  "slug": "20-things",
+  "section": "parents",
+  "kind": "listicle",
+  "title": "20 Things Every New Cheer Mom Wishes She'd Known",
+  "description": "Crowdsourced from 1,200+ moms in our reader survey: the 20 biggest lessons about costs, gym culture, competition day, and what \"optional\" really means.",
+  "ogDescription": "The monthly tuition is a third of your real spend. \"Optional\" almost always means expected. Pack two pairs of every white sock. 20 lessons, starting hot.",
+  "eyebrow": "THE LIST · 20 BIG ONES",
+  "pill": "★ THE LIST · 20 BIG ONES",
+  "headline": "things every new *cheer mom* wishes she'd known on day one.",
+  "heroNumber": "20",
+  "sub": "Crowdsourced from 1,200+ moms in our reader survey. The hot ones first.",
+  "datePublished": "2026-04-01",
+  "readTime": "14 min",
+  "tags": ["cheer mom guide", "new cheer mom", "all-star cheerleading", "cheer tips", "cheer costs"],
+  "gradient": "stripes",
+  "heroCaption": "cover · twenty",
+  "blocks": [
+    { "type": "numbered", "items": [
+      { "n": "01", "cat": "COST", "title": "The monthly tuition is a third of your real spend.", "body": "If your gym quotes $295/mo, plan for ~$24K total. The other two-thirds arrive as separate invoices.", "read": 3 },
+      { "n": "02", "cat": "COST", "title": "\"Optional\" almost always means \"expected.\"", "body": "Privates, team mom fund, banquet, photo package. Read the room.", "read": 2 },
+      { "n": "03", "cat": "GYM", "title": "Tour the gym during a Level 5 practice.", "body": "The lobby is theater. The mat during senior practice is the real culture.", "read": 2 },
+      { "n": "04", "cat": "COMP", "title": "Pack two pairs of every white sock.", "body": "You will lose one. You will need the other on Sunday morning. Trust me.", "read": 1 },
+      { "n": "05", "cat": "HAIR", "title": "Buy the gym's bow. Twice.", "body": "You will lose one, and you cannot show up Day Two without the matching bow.", "read": 1 },
+      { "n": "06", "cat": "TRAVEL", "title": "Book hotels through the team block — but the night BEFORE.", "body": "Day-before flights save $400 and your sanity. Block rates extend by request.", "read": 2 },
+      { "n": "07", "cat": "COMP", "title": "Comp days are 14 hours. Pack snacks for you.", "body": "The vending machine at 11pm in a convention center is a $9 granola bar.", "read": 1 },
+      { "n": "08", "cat": "GYM", "title": "The coach you sign up for is not always the coach who shows.", "body": "Ask about choreo turnover. Some gyms cycle 'guest' choreographers — find out who's actually on the mat.", "read": 3 },
+      { "n": "09", "cat": "SOCIAL", "title": "The group chat is a job.", "body": "Mute it on weekends. Reply with one emoji. The world will keep spinning.", "read": 2 },
+      { "n": "10", "cat": "COST", "title": "Privates aren't a 'next step' — they're an industry.", "body": "Most gyms make 40% of profit on private lessons. Treat them as optional even when the coach says they aren't.", "read": 3 },
+      { "n": "11", "cat": "KID", "title": "Your kid will quit at least once.", "body": "Don't panic. Wait 72 hours. They almost always come back.", "read": 2 },
+      { "n": "12", "cat": "GYM", "title": "There is a \"good gym, bad gym\" in every metro.", "body": "Ask alumni — the gym's reputation among ex-athletes is the real signal.", "read": 2 },
+      { "n": "13", "cat": "COST", "title": "Get the season total IN WRITING before signing.", "body": "Verbal \"around $5K\" quotes turn into $14K invoices by November.", "read": 2 },
+      { "n": "14", "cat": "HAIR", "title": "The \"competition pony\" is a $40 add-on at most comps.", "body": "YouTube it once, do it yourself thereafter.", "read": 1 },
+      { "n": "15", "cat": "COMP", "title": "Score sheets are public. Read them.", "body": "After every comp, the score sheets explain exactly where you lost points. Most parents never look.", "read": 2 },
+      { "n": "16", "cat": "KID", "title": "Your kid's body changes. So will the team.", "body": "Late puberty growth spurts often move flyers to bases. This is normal. The gym should be honest about it.", "read": 3 },
+      { "n": "17", "cat": "GYM", "title": "Asking what something costs is not rude.", "body": "Ever. The gym is a business. Treat it like one.", "read": 1 },
+      { "n": "18", "cat": "COMP", "title": "Sundays are about being on time, not being early.", "body": "2-hour pre-call is gym tradition, not gym requirement. Save your kid's legs for the floor.", "read": 2 },
+      { "n": "19", "cat": "SOCIAL", "title": "Don't post the routine video before it's legal to.", "body": "Most gyms have a no-post window for choreo IP. Violating it can mean dropped placement.", "read": 2 },
+      { "n": "20", "cat": "KID", "title": "Cheer ends. Your kid is more than this.", "body": "18 is the cliff for most. Build her identity outside the gym while she's still in it.", "read": 3 }
+    ] },
+    { "type": "cta", "eyebrow": "Add to the list", "title": "What's *your* #21?", "body": "We update this list every quarter from reader submissions. Send yours — we'll credit you if we publish it.", "button": "Submit your #21" }
+  ],
+  "related": [
+    { "eyebrow": "COST DEEP DIVE", "title": "The $24,000 season: what one Level 4 family actually spent.", "meta": "18 min", "g": "glow", "href": "/parents/the-24k-season" },
+    { "eyebrow": "COST · SUMMER", "title": "Summer camp vs. privates: what actually moves the needle.", "meta": "10 min", "g": "halo", "href": "/parents/summer-vs-privates" },
+    { "eyebrow": "COMMUNITY", "title": "When the \"team mom\" ask crosses the line.", "meta": "6 min", "g": "pulse", "href": "/parents/team-mom-trap" },
+    { "eyebrow": "GYM SELECTION", "title": "How to tell if a gym is actually good.", "meta": "9 min", "g": "flash", "href": "/gym-guide" }
+  ],
+  "card": { "eyebrow": "20 THINGS" }
+}

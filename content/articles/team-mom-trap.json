@@ -1,0 +1,50 @@
+{
+  "slug": "team-mom-trap",
+  "section": "parents",
+  "kind": "opinion",
+  "title": "The \"Team Mom\" Job Is Unpaid Labor. We Need to Stop Pretending It Isn't.",
+  "description": "Every gym in the country has one mom doing 15 hours a week of work the gym used to pay an admin to do. Survey of 84 team moms across 41 gyms. It's time we called this what it is.",
+  "ogDescription": "A median 12 hours/week of unpaid work per team mom. At $25/hr, that's $13,200 of free labor per team, per season. The industry extracts $185M/year this way.",
+  "eyebrow": "HOT TAKE · OPINION",
+  "pill": "★ HOT TAKE · OPINION",
+  "headline": "The \"team mom\" job is *unpaid labor*. We need to stop pretending it isn't.",
+  "sub": "Every gym in the country has one mom doing 15 hours a week of work the gym used to pay an admin to do. It's time we called this what it is.",
+  "datePublished": "2026-05-08",
+  "readTime": "8 min",
+  "tags": ["cheer mom", "all-star cheerleading", "team mom", "cheer community"],
+  "gradient": "pulse",
+  "blocks": [
+    { "type": "p", "dropcap": true, "text": "Last season at Cheer Tampa Elite, our team mom — let's call her Jenna — did 14 hours a week of unpaid work. She ran the team's snack rotation. She coordinated hotel blocks for eight competitions. She collected $680 from every family for \"gifts and extras.\" She managed the team's group chat (212 messages on the average day)." },
+    { "type": "p", "text": "All of this is work the gym used to pay a part-time team coordinator to do. About six years ago, gyms across the industry started quietly off-loading it onto a single parent — usually one of the most experienced cheer moms, almost always a working mother — and labeling it \"the team mom.\"" },
+    { "type": "h2", "text": "What's actually being asked." },
+    { "type": "p", "text": "I surveyed 84 team moms across 41 gyms in March. Here's the median workload:" },
+    { "type": "list", "items": [
+      "**12 hours** per week during the season",
+      "**18 hours** in the two weeks before any major competition",
+      "**$420** in personal expenses (unreimbursed) across the season",
+      "**Zero** formal job description, contract, or accountability structure"
+    ] },
+    { "type": "quote", "variant": "bleed", "text": "At $25/hour — the rate gyms pay their actual office admins — that's *$13,200* of free labor per team. Per season." },
+    { "type": "p", "text": "Multiply by the ~14,000 all-star teams in the US. The industry is extracting roughly $185M a year of unpaid administrative labor from women whose kids it already charges $20K+ a season." },
+    { "type": "h2", "text": "What needs to change." },
+    { "type": "list", "ordered": true, "items": [
+      "**Hire a paid team coordinator.** Bake it into tuition. $40/family/month covers it.",
+      "**Put logistics in software.** TeamSnap, BAND, anything. Stop using the team mom as a human Trello board.",
+      "**Cap the \"team fund.\"** If your gym needs a $680 slush fund per family, your gym needs new accounting."
+    ] },
+    { "type": "p", "serif": true, "text": "Jenna's daughter still got her bows. The team still made bid. The world did not end." },
+    { "type": "responses", "heading": "READER RESPONSES · 4 OF 412", "items": [
+      { "name": "Reader · \"Mom of three\"", "stance": "agree", "text": "This is the most honest thing anyone has written about all-star cheer. Forwarding to every mom on my team." },
+      { "name": "Reader · \"Anonymous coach\"", "stance": "agree", "text": "As a coach who used to be a paid coordinator — yes. Gyms cut my role in 2019 and the same work just moved to moms." },
+      { "name": "Reader · \"Gym owner\"", "stance": "disagree", "text": "Margins don't exist for this. If parents want a coordinator, tuition goes up $50/mo. They'll choose unpaid labor every time." },
+      { "name": "Reader · \"Former team mom\"", "stance": "agree", "text": "I burned out after one season. Said no the second year. Got disinvited from team events. Worth it." }
+    ] }
+  ],
+  "related": [
+    { "eyebrow": "COST DEEP DIVE", "title": "The $24,000 season: what one Level 4 family actually spent.", "meta": "18 min", "g": "glow", "href": "/parents/the-24k-season" },
+    { "eyebrow": "20 THINGS", "title": "20 things every new cheer mom wishes she'd known.", "meta": "14 min", "g": "stripes", "href": "/parents/20-things" },
+    { "eyebrow": "COST · SUMMER", "title": "Summer camp vs. privates: what actually moves the needle.", "meta": "10 min", "g": "halo", "href": "/parents/summer-vs-privates" },
+    { "eyebrow": "GYM SELECTION", "title": "How to tell if a gym is actually good.", "meta": "9 min", "g": "flash", "href": "/gym-guide" }
+  ],
+  "card": { "eyebrow": "COMMUNITY" }
+}

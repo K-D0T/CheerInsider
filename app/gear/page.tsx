@@ -3,6 +3,7 @@ import { Container } from '@/components/ui/Container';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
+import { getArticlesBySection, articlePath } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
@@ -22,46 +23,19 @@ export const metadata: Metadata = {
   },
 };
 
-const ROUNDUPS = [
-  {
-    eyebrow: 'CHEER SHOES · 2026',
-    title: 'The only cheer shoes worth your money in 2026',
-    sub: '14 pairs tested. 6 months. Four picks, two to avoid.',
-    meta: 'Lauren K. · 12 min · Updated May 2026',
-    pill: '★ MOST READ',
-    g: 'halo' as const,
-    href: '/gear/cheer-shoes-2026',
-  },
-  {
-    eyebrow: 'GYM BAGS · 2026',
-    title: 'The best cheer bags that actually survive a full season',
-    sub: 'Tested across Level 2–5 athletes. Ranked by durability, fit, and mat-friendliness.',
-    meta: 'Lauren K. · 8 min · May 2026',
-    pill: '★ NEW',
-    g: 'stripes' as const,
-    href: '/gear/cheer-shoes-2026',
-  },
-  {
-    eyebrow: 'PRACTICE WEAR · 2026',
-    title: 'Practice shorts that don\'t roll up — a definitive ranking',
-    sub: 'Seven brands, one tumbling track, a very opinionated coach.',
-    meta: 'Lauren K. · 6 min · Apr 2026',
-    pill: null,
-    g: 'field' as const,
-    href: '/gear/cheer-shoes-2026',
-  },
-  {
-    eyebrow: 'BOWS · 2026',
-    title: 'The cheer bow brands worth buying (and two to skip entirely)',
-    sub: 'Price, hold-strength, and whether they survive a full comp day.',
-    meta: 'Lauren K. · 7 min · Mar 2026',
-    pill: null,
-    g: 'burst' as const,
-    href: '/gear/cheer-shoes-2026',
-  },
-];
-
 export default function GearIndexPage() {
+  // Roundup grid is driven by content/articles — add a JSON file with
+  // section "gear" and it appears here automatically.
+  const ROUNDUPS = getArticlesBySection('gear').map((a, i) => ({
+    eyebrow: a.card.eyebrow,
+    title: a.title,
+    sub: a.sub,
+    meta: `Lauren K. · ${a.readTime}`,
+    pill: i === 0 ? '★ MOST READ' : null,
+    g: a.gradient,
+    href: articlePath(a),
+  }));
+
   return (
     <>
       {/* Hero */}

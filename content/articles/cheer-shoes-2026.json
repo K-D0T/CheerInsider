@@ -1,0 +1,67 @@
+{
+  "slug": "cheer-shoes-2026",
+  "section": "gear",
+  "kind": "roundup",
+  "title": "The Only Cheer Shoes Worth Your Money in 2026",
+  "description": "14 pairs tested across Level 2, 4, and 5 athletes over 6 months. Four picks worth buying, two to avoid entirely — with full scored reviews and a comparison table.",
+  "ogDescription": "Six months of testing across Level 2–5 athletes. The Nfinity Vengeance is still the best overall at $110. Here's the full ranked list with scores.",
+  "eyebrow": "TESTED · 14 PAIRS · 6 MONTHS",
+  "pill": "★ TESTED · 14 PAIRS · 6 MONTHS",
+  "headline": "The only *cheer shoes* worth your money in 2026.",
+  "sub": "14 pairs. 6 months. Tested on Level 2, 4 and 5 athletes from ages 9 to 17. Here are the four worth your money — and the two that are flat-out scams.",
+  "datePublished": "2026-05-01",
+  "readTime": "12 min",
+  "tags": ["cheer shoes", "all-star cheerleading", "cheer gear", "Nfinity", "cheer equipment", "gear review"],
+  "gradient": "halo",
+  "heroCaption": "hero · four shoes, top-down",
+  "blocks": [
+    { "type": "glance", "heading": "Six shoes, *two* categories.", "items": [
+      { "rank": "BEST OVERALL", "name": "Nfinity Vengeance", "score": "9.4", "price": "$110", "verdict": "Buy", "g": "halo", "img": "https://www.nfinity.com/cdn/shop/files/Untitled_design_98.png?crop=center&height=260&v=1776804596&width=260" },
+      { "rank": "BEST BUDGET", "name": "Chassé Apex", "score": "8.1", "price": "$60", "verdict": "Buy", "g": "stripes", "img": "https://www.omnicheer.com/cdn/shop/files/S1702_BLK_016_WEB_1.jpg?v=1774724518&width=260" },
+      { "rank": "BEST FLYERS", "name": "Nfinity Flyte", "score": "8.5", "price": "$95", "verdict": "Buy", "g": "field", "img": "https://www.nfinity.com/cdn/shop/files/nfinity-flyte-cheer-shoes-nfinity-cheer-shoes-4771095.png?crop=center&height=260&v=1775141837&width=260" },
+      { "rank": "BEST BASES", "name": "Nfinity Titan", "score": "8.7", "price": "$125", "verdict": "Buy", "g": "glow", "img": "https://cdn11.bigcommerce.com/s-tn8o8k48s5/images/stencil/400x400/products/27976/67330/titan-shoes-nfinityinsiders-998826_1800x1800__87814.1718818692.jpg?c=1" },
+      { "rank": "AVOID", "name": "(redacted) Pro", "score": "4.2", "price": "$140", "verdict": "Skip", "g": "pulse", "img": null },
+      { "rank": "AVOID", "name": "Sparkle Step X", "score": "3.8", "price": "$95", "verdict": "Skip", "g": "block", "img": null }
+    ] },
+    { "type": "review", "heading": "The *three* you should actually buy.", "items": [
+      { "rank": "01 · BEST OVERALL", "score": "9.4", "name": "Nfinity Vengeance", "price": "$110",
+        "blurb": "Still the gold standard. The Vengeance does everything well: the heel locks, the upper holds shape through a hot August tryout, and they look right on the mat.",
+        "pros": ["Locked-in fit", "Holds shape full season", "Universally accepted by gyms"],
+        "cons": ["Premium price", "Narrow toe-box for wide feet"],
+        "stars": 5,
+        "img": "https://www.nfinity.com/cdn/shop/files/Untitled_design_98.png?crop=center&height=800&v=1776804596&width=800",
+        "buyAmazon": "https://www.amazon.com/s?k=Nfinity+Vengeance+cheer+shoe",
+        "buyDirect": "https://www.nfinity.com/products/nfinity-vengeance-cheer-shoes" },
+      { "rank": "02 · BEST BUDGET", "score": "8.1", "name": "Chassé Apex", "price": "$60",
+        "blurb": "Better than it has any right to be at this price. We tested four pairs across two athletes and watched zero structural failures across a full Level 2 season.",
+        "pros": ["Half the price of the field", "Comfortable out of the box", "Wide-foot friendly"],
+        "cons": ["Heavier", "Upper softens by month 4"],
+        "stars": 4,
+        "img": "https://www.omnicheer.com/cdn/shop/files/S1702_BLK_016_WEB_1.jpg?v=1774724518&width=800",
+        "buyAmazon": "https://www.amazon.com/s?k=Chasse+Apex+cheer+shoe",
+        "buyDirect": "https://www.omnicheer.com/shop/cheerleading-shoes/chasse-apex_s1702" },
+      { "rank": "03 · BEST FOR FLYERS", "score": "8.5", "name": "Nfinity Flyte", "price": "$95",
+        "blurb": "A slimmer toe-box and a paper-thin sole — flyers will feel their base's hands and bases will feel where the flyer's weight actually is.",
+        "pros": ["Sole feedback for flyers", "Lightest in the test", "Lock-tight heel cup"],
+        "cons": ["Tight fit — size up half", "Not for bases"],
+        "stars": 4,
+        "img": "https://www.nfinity.com/cdn/shop/files/nfinity-flyte-cheer-shoes-nfinity-cheer-shoes-4771095.png?crop=center&height=800&v=1775141837&width=800",
+        "buyAmazon": "https://www.amazon.com/s?k=Nfinity+Flyte+cheer+shoe",
+        "buyDirect": "https://www.nfinity.com/products/flyte-by-nfinity-athletics-premier-cheerleading-performance-shoes-nfinity-athletics" }
+    ] },
+    { "type": "specs", "heading": "The *spec sheet*.", "metrics": ["Weight (oz)", "Sole feedback", "Heel lock", "Toe-box", "Best for"], "products": [
+      ["Nfinity Vengeance", "7.2", "medium", "★★★★★", "medium", "everyone"],
+      ["Chassé Apex", "7.9", "low", "★★★★", "medium", "budget / wide"],
+      ["Nfinity Flyte", "6.4", "high", "★★★★", "tight", "flyers"],
+      ["Nfinity Titan", "8.1", "low", "★★★★★", "wide", "bases"]
+    ] },
+    { "type": "note", "title": "Affiliate disclosure.", "text": "Some links in this article are affiliate links — we may earn a small commission if you buy through them. We only recommend gear we'd buy ourselves." }
+  ],
+  "related": [
+    { "eyebrow": "COST DEEP DIVE", "title": "The $24,000 season: what one Level 4 family actually spent.", "meta": "18 min", "g": "glow", "href": "/parents/the-24k-season" },
+    { "eyebrow": "20 THINGS", "title": "20 things every new cheer mom wishes she'd known.", "meta": "14 min", "g": "stripes", "href": "/parents/20-things" },
+    { "eyebrow": "GYM SELECTION", "title": "How to tell if a gym is actually good.", "meta": "9 min", "g": "flash", "href": "/gym-guide" },
+    { "eyebrow": "COST · SUMMER", "title": "Summer camp vs. privates: what actually moves the needle.", "meta": "10 min", "g": "halo", "href": "/parents/summer-vs-privates" }
+  ],
+  "card": { "eyebrow": "CHEER SHOES · 2026" }
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "the-24k-season",
+  "section": "parents",
+  "kind": "feature",
+  "title": "The $24,000 Cheer Season: Every Dollar, Tracked",
+  "description": "We followed one Level 4 family for a full season and recorded every invoice. Tuition was a third of what they actually paid. Here's the full ledger.",
+  "ogDescription": "One Level 4 family. One full season. $24,180 in receipts — and a breakdown of where every dollar went.",
+  "eyebrow": "COVER STORY · THE COST DEEP DIVE",
+  "pill": "★ COVER STORY · THE COST DEEP DIVE",
+  "headline": "We tracked every penny one Level 4 family spent in *a single season*. The number is going to make you mad.",
+  "sub": "$24,180. That's what the Chen family paid for their daughter Mia's first season on a Level 4 team in 2025. Here's where every dollar went, what was negotiable, and how they're bringing it down 30% in 2026.",
+  "datePublished": "2026-04-12",
+  "dateModified": "2026-05-08",
+  "readTime": "18 min",
+  "tags": ["cheer costs", "all-star cheerleading", "cheer budget", "Level 4 cheer"],
+  "gradient": "burst",
+  "heroCaption": "cover · year of receipts",
+  "toc": ["The $24K headline number", "Tuition (the obvious one)", "Choreography fees", "Travel & hotels", "Hair, bows, makeup", "Hidden \"team mom\" line items", "How to bring it down 30%", "The 2026 budget plan"],
+  "blocks": [
+    { "type": "p", "dropcap": true, "text": "Last September, Sarah Chen called me in tears. Her 13-year-old, Mia, had been placed on a Level 4 team — exciting news. The placement email also included a \"season financial summary.\" Sarah forwarded it to me with the subject line: *\"is this real???\"*" },
+    { "type": "p", "text": "It was real. And it was wildly understated. By the time the season ended in May, the Chens had paid **$24,180** — almost double what the placement email implied. Here's where it went." },
+    { "type": "h2", "text": "Tuition: the line item everyone *thinks* is fixed." },
+    { "type": "p", "text": "The Chens paid $295/month, plus a one-time $400 \"team placement fee\" in May. That puts the tuition line at **$3,540 for the year**. This is the number most gyms quote at tryouts." },
+    { "type": "p", "text": "Where this gets interesting: that $400 placement fee isn't tuition. It's a deposit against the gym's *choreo and music package*, which is invoiced separately in July." },
+    { "type": "quote", "variant": "border", "text": "\"The tuition number is the smallest honest number you'll see. Plan for it to be *a third* of your real spend.\"" },
+    { "type": "h2", "text": "The 2025 Chen family ledger." },
+    { "type": "table",
+      "head": ["Line item", "Paid", "Notes"],
+      "rows": [
+        ["Tuition (10 mo × $295)", "$2,950", "Locked at tryouts"],
+        ["Team placement fee", "$400", "Choreo deposit, not tuition"],
+        ["Choreo & music package", "$1,250", "July invoice — surprise"],
+        ["Uniform + warmups", "$1,840", "Required, gym-supplied"],
+        ["Travel (8 comps)", "$8,640", "Hotels, flights, gas"],
+        ["Competition fees", "$2,400", "Across 8 events"],
+        ["Hair, bows, makeup", "$1,200", "Per-comp recurring"],
+        ["Privates (tumbling)", "$2,800", "Optional, became required"],
+        ["Team mom fund", "$680", "\"Optional\" gifts and snacks"],
+        ["Banquet, photos, video", "$2,020", "End-of-season"]
+      ],
+      "foot": ["TOTAL · Level 4 · 2025 season", "$24,180", "Plus team mom hours"]
+    },
+    { "type": "p", "text": "Of these ten line items, only the first two were quoted at tryouts. The rest arrived as invoices over the following 11 months." },
+    { "type": "h3", "text": "What \"optional\" really means" },
+    { "type": "list", "items": [
+      "**\"Optional team privates\":** required if you want competition time.",
+      "**\"Optional banquet\":** kids whose families skip get visibly excluded.",
+      "**\"Optional photo package\":** coach posts these on Instagram. Kid notices.",
+      "**\"Optional team mom fund\":** social pressure does the rest."
+    ] }
+  ],
+  "related": [
+    { "eyebrow": "GYM SELECTION", "title": "A gym is not a family. Here's how to evaluate one.", "meta": "9 min", "g": "flash", "href": "/gym-guide" },
+    { "eyebrow": "COST · SUMMER", "title": "Summer camp vs. privates: what actually moves the needle.", "meta": "10 min", "g": "halo", "href": "/parents/summer-vs-privates" },
+    { "eyebrow": "20 THINGS", "title": "20 things every new cheer mom wishes she'd known.", "meta": "14 min", "g": "stripes", "href": "/parents/20-things" },
+    { "eyebrow": "COMMUNITY", "title": "When the \"team mom\" ask crosses the line.", "meta": "6 min", "g": "pulse", "href": "/parents/team-mom-trap" }
+  ],
+  "card": { "eyebrow": "COST DEEP DIVE" }
+}
