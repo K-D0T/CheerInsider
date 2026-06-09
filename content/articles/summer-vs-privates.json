@@ -1,0 +1,54 @@
+{
+  "slug": "summer-vs-privates",
+  "section": "parents",
+  "kind": "feature",
+  "title": "Summer Camp vs. Privates: What Actually Moves the Needle",
+  "description": "Every June, gyms pitch one. Parents sign up for the other. Neither side agrees on which is worth the money. After 18 years on the mat, here's the honest breakdown.",
+  "ogDescription": "Camps build culture, privates build skills — but only when there's a specific skill to fix and a coach who can actually fix it. Here's how to decide for your athlete.",
+  "eyebrow": "COST · SUMMER TRAINING",
+  "pill": "★ COST · SUMMER TRAINING",
+  "headline": "Summer camp vs. privates: what actually *moves the needle* — and what doesn't.",
+  "sub": "Every June, gyms pitch one. Parents sign up for the other. Neither side agrees on which one is worth the money. After 18 years on the mat, here's the honest breakdown.",
+  "datePublished": "2026-05-15",
+  "readTime": "10 min",
+  "tags": ["cheer summer camp", "cheer privates", "all-star cheerleading", "cheer training", "cheer costs"],
+  "gradient": "field",
+  "heroCaption": "summer training · camp vs mat time",
+  "blocks": [
+    { "type": "p", "dropcap": true, "text": "Every spring, once Worlds results are posted and the group chat finally quiets down, the same question lands in my inbox about 200 times: *Should we do summer camp, privates, or both?* My answer has changed a lot over 18 years, and the honest version is more complicated than any gym will tell you." },
+    { "type": "p", "text": "Here's what I know after watching hundreds of athletes go through both: **camps build culture, privates build skills.** If you're spending money on the wrong one for your kid's current situation, you're not just wasting money — you may actually be slowing them down." },
+    { "type": "h2", "text": "What camp actually *does*." },
+    { "type": "p", "text": "A good summer camp — NCA, UCA, or a well-run gym camp — gives an athlete three things: high-volume repetition under time pressure, exposure to coaches who aren't their regular staff, and the experience of performing in a low-stakes environment. That last one is underrated." },
+    { "type": "p", "text": "Competition-season nerves are real, and they're partly a function of how rarely kids perform in front of strangers. Camp fixes that. An athlete who performs four times a day for four days in front of rotating judges is not the same athlete who shows up to her first comp in October having only stunted in her home gym." },
+    { "type": "p", "text": "**Camp is especially valuable for:** Level 1–3 athletes, new flyers and bases learning trust, athletes who struggle with performance nerves, and any kid who's about to move up a level and needs mat time before the season starts." },
+    { "type": "p", "text": "**Camp will not help with:** Specific skill gaps (a standing tuck problem is not fixed by doing it wrong 40 more times). Athletes who are burned out and need rest. Kids going into their fifth straight summer of the same camp curriculum." },
+    { "type": "h2", "text": "What privates actually do." },
+    { "type": "p", "text": "A private lesson with a good coach is surgical. It should identify the exact mechanical problem — hip angle at the peak of a tuck, hand position on a lib, timing on a basket — and give the athlete a correction they can feel. One well-run 45-minute private can accomplish what three months of group practice can't, for the right skill." },
+    { "type": "quote", "variant": "border", "text": "\"One good private is worth ten bad ones. The coach matters more than the format.\"" },
+    { "type": "p", "text": "The problem: most summer privates aren't surgical. They're the gym's highest-margin product, and many gyms treat them as a revenue line first and a development tool second. A coach who just runs the athlete through the same skills they do in practice — with slightly more one-on-one attention — is not giving you a private. They're giving you a tutoring session for a class that already isn't working." },
+    { "type": "p", "text": "**Privates are worth the money when:** There's a specific, named skill to fix. The coach has a clear methodology and gives the athlete something to practice alone. Progress is measurable week over week. Your kid is Level 4+ and the group practice environment can't give enough individual attention." },
+    { "type": "p", "text": "**Privates are not worth the money when:** The gym recommends them to everyone without a specific rationale. The coach changes each week. Your kid hasn't mastered the prerequisites for the skill being trained. You're doing it because other families on the team are doing it." },
+    { "type": "h2", "text": "The actual cost breakdown." },
+    { "type": "table",
+      "head": ["Option", "Typical cost", "Best for"],
+      "rows": [
+        ["NCA/UCA 4-day camp", "$400–$650", "Level 1–4, new athletes, performance confidence"],
+        ["Gym-run summer camp (1 week)", "$250–$500", "Staying sharp, team bonding, low-pressure reps"],
+        ["Weekly privates (June–Aug)", "$80–$140/session · $960–$1,680 total", "Specific skill gaps, Level 4+ athletes"],
+        ["One-time private (skill-focused)", "$80–$140 per session", "Pre-tryout polish, one named problem to fix"],
+        ["Rest (the underrated option)", "$0", "Burned-out athletes, post-Worlds recovery"]
+      ]
+    },
+    { "type": "h2", "text": "My actual recommendation." },
+    { "type": "p", "text": "If you're choosing one: **camp for Level 1–3, privates for Level 4+** — with the caveat that privates only work if there's a specific skill to fix and a coach who can actually fix it." },
+    { "type": "p", "text": "If you're being pressured to do both: ask the gym to name the specific skill that makes weekly privates necessary for your kid right now. If they can't name it, the answer is camp or rest." },
+    { "type": "p", "serif": true, "text": "The gyms that make the most money off summer training are not always the ones producing the best athletes in October. Keep that distinction in mind before you write a check." }
+  ],
+  "related": [
+    { "eyebrow": "COST DEEP DIVE", "title": "We tracked every penny one Level 4 family spent in a single season.", "meta": "18 min", "g": "glow", "href": "/parents/the-24k-season" },
+    { "eyebrow": "GYM SELECTION", "title": "How to tell if a gym is actually good, or just loud on Instagram.", "meta": "9 min", "g": "flash", "href": "/gym-guide" },
+    { "eyebrow": "20 THINGS", "title": "20 things every new cheer mom wishes she'd known on day one.", "meta": "14 min", "g": "stripes", "href": "/parents/20-things" },
+    { "eyebrow": "TEAM MOM TRAP", "title": "The \"team mom\" job is unpaid labor. We need to stop pretending.", "meta": "8 min", "g": "pulse", "href": "/parents/team-mom-trap" }
+  ],
+  "card": { "eyebrow": "COST · SUMMER" }
+}

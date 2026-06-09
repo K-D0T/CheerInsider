@@ -1,0 +1,55 @@
+name: Generate article
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'Article topic (e.g. "What the 2026 USASF rule changes mean for parents")'
+        required: true
+        type: string
+      section:
+        description: 'Site section'
+        required: true
+        type: choice
+        options: [parents, gear]
+        default: parents
+  # Uncomment to generate on a schedule (pair with a scraper step that writes
+  # notes.txt and pass --notes notes.txt below):
+  # schedule:
+  #   - cron: '0 12 * * 1'  # Mondays at noon UTC
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generate article JSON
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          node scripts/generate-article.mjs \
+            --topic "${{ inputs.topic }}" \
+            --section "${{ inputs.section }}"
+
+      - name: Verify the site still builds
+        run: npm run build
+
+      - name: Commit and push
+        run: |
+          git config user.name "cheerinsider-bot"
+          git config user.email "bot@cheer-insider.com"
+          git add content/articles/
+          git diff --cached --quiet && echo "No new article" && exit 0
+          git commit -m "content: add generated article"
+          git push

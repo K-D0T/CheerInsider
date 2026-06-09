@@ -4,6 +4,7 @@ import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
 import { AdUnit } from '@/components/ui/AdUnit';
+import { getArticlesBySection, articlePath } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
@@ -34,19 +35,17 @@ const LEAD = {
   href:'/gym-guide',
 };
 
-const ITEMS = [
-  { eyebrow:'COST · SUMMER',      title:'Summer camp vs. privates: what actually moves the needle', meta:'10 min', g:'halo' as const, href:'/parents/summer-vs-privates' },
-  { eyebrow:'END OF SEASON',      title:'The end-of-season conversation no one has with their kid — but should', meta:'5 min', g:'stripes' as const, href:'/parents/team-mom-trap' },
-  { eyebrow:'GYM SELECTION',      title:'How to tell if a gym is actually good, or just loud on Instagram', meta:'9 min', g:'field' as const, href:'/gym-guide' },
-  { eyebrow:'COST DEEP DIVE',     title:'The $24,000 season: what one Level 4 family actually spent', meta:'18 min', g:'glow' as const, href:'/parents/the-24k-season' },
-  { eyebrow:'COMMUNITY',          title:'When the "team mom" ask crosses the line', meta:'6 min', g:'pulse' as const, href:'/parents/team-mom-trap' },
-  { eyebrow:'NEGOTIATION',        title:'The exact script for negotiating gym fees (it works)', meta:'7 min', g:'burst' as const, href:'/parents/the-24k-season' },
-  { eyebrow:'COST · HIDDEN',      title:'The "optional" fees that aren\'t actually optional', meta:'8 min', g:'halo' as const, href:'/parents/the-24k-season' },
-  { eyebrow:'MENTAL LOAD',        title:'How to stop being the gym\'s unpaid communications coordinator', meta:'7 min', g:'flash' as const, href:'/parents/team-mom-trap' },
-  { eyebrow:'20 THINGS',          title:'20 things every new cheer mom wishes she\'d known on day one', meta:'14 min', g:'stripes' as const, href:'/parents/20-things' },
-];
-
 export default function ParentsPage() {
+  // Article grid is driven by content/articles — add a JSON file there and
+  // it appears here, in the sitemap, and at its own URL automatically.
+  const ITEMS = getArticlesBySection('parents').map((a) => ({
+    eyebrow: a.card.eyebrow,
+    title: a.title,
+    meta: a.readTime,
+    g: a.gradient,
+    href: articlePath(a),
+  }));
+
   return (
     <>
       {/* Hero */}
