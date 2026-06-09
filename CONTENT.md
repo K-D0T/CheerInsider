@@ -66,13 +66,27 @@ The repo has a GitHub Action that generates articles with Claude:
    voice, verifies the site builds, commits, and pushes
 4. Vercel deploys it automatically
 
-To run on a schedule (e.g. weekly from scraped cheer-world news), uncomment the
-`schedule:` block in `.github/workflows/generate-article.yml` and add a scraper
-step that writes source notes, passing them via `--notes`.
-
 Locally:
 
 ```sh
 ANTHROPIC_API_KEY=sk-... node scripts/generate-article.mjs \
   --topic "Worlds 2026 bid costs explained" --section parents
 ```
+
+## Weekly automatic news article
+
+`.github/workflows/weekly-news.yml` runs every Monday at 9am ET (and on demand
+from the Actions tab). It uses the same `ANTHROPIC_API_KEY` secret. The flow:
+
+1. Claude searches the live web (via the API's web search tool) for the past
+   week's all-star cheer news — competition results, bids, USASF rule changes,
+   safety stories, gear releases
+2. It checks the list of existing articles so it picks a story not yet covered
+3. It compiles verified, sourced research notes, then writes the article in
+   Lauren's voice constrained to those facts (no invented specifics)
+4. The site is built to verify nothing breaks, then the JSON is committed and
+   pushed — Vercel deploys it automatically
+
+To change the schedule, edit the `cron:` line. To pause it, comment out the
+`schedule:` block (manual runs keep working). Slug collisions are auto-suffixed
+with the date, so repeat topics never overwrite existing articles.

@@ -1,0 +1,39 @@
+name: Weekly news article
+
+on:
+  schedule:
+    - cron: '0 13 * * 1'  # Mondays 13:00 UTC (9am ET)
+  workflow_dispatch: {}    # also runnable on demand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  research-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Research this week's cheer news and generate article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/weekly-news.mjs
+
+      - name: Verify the site still builds
+        run: npm run build
+
+      - name: Commit and push
+        run: |
+          git config user.name "cheerinsider-bot"
+          git config user.email "bot@cheer-insider.com"
+          git add content/articles/
+          git diff --cached --quiet && echo "No new article" && exit 0
+          git commit -m "content: weekly news article"
+          git push

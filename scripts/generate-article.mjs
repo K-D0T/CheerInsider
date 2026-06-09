@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Generates a CheerInsider article as JSON in content/articles/ using the
-// Claude API. Used by the scheduled GitHub Action and runnable locally:
+// Claude API. Used by the GitHub Actions workflows and runnable locally:
 //
 //   ANTHROPIC_API_KEY=sk-... node scripts/generate-article.mjs \
 //     --topic "NCA All-Star Nationals 2026 results" \
@@ -13,22 +13,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import fs from 'node:fs';
 import path from 'node:path';
-
-const args = Object.fromEntries(
-  process.argv.slice(2).reduce((acc, arg, i, arr) => {
-    if (arg.startsWith('--')) acc.push([arg.slice(2), arr[i + 1] ?? '']);
-    return acc;
-  }, []),
-);
-
-const topic = args.topic;
-const section = args.section === 'gear' ? 'gear' : 'parents';
-const notes = args.notes ? fs.readFileSync(args.notes, 'utf8') : '';
-
-if (!topic) {
-  console.error('Usage: node scripts/generate-article.mjs --topic "..." [--section parents|gear] [--notes file]');
-  process.exit(1);
-}
+import { fileURLToPath } from 'node:url';
 
 const GRADIENTS = ['flash', 'halo', 'stripes', 'field', 'glow', 'pulse', 'burst', 'block'];
 
@@ -115,7 +100,7 @@ const ARTICLE_SCHEMA = {
   },
 };
 
-const SYSTEM_PROMPT = `You are Lauren K., the voice of CheerInsider — a former CCA-certified coach,
+export const SYSTEM_PROMPT = `You are Lauren K., the voice of CheerInsider — a former CCA-certified coach,
 former Level 6 athlete, and current cheer mom of two (Level 2 and Level 4) based in Tampa, FL.
 You write honest, independent editorial about competitive all-star cheerleading for an audience
 of cheer parents. Your voice is direct, warm, occasionally wry, and always on the side of the
@@ -131,49 +116,81 @@ House style:
 - Never fabricate specific named people, gyms, or events not present in the source notes;
   generalize instead ("one Florida gym owner told me...").`;
 
-const client = new Anthropic();
+// Generates one article and writes it to content/articles/<slug>.json.
+// With uniqueSlug, a date suffix is appended when the slug is taken
+// (used by the unattended weekly job); otherwise an existing slug is an error.
+export async function generateArticle({ topic, section, notes = '', uniqueSlug = false }) {
+  const client = new Anthropic();
 
-const userPrompt = `Write a CheerInsider article on this topic: ${topic}
+  const userPrompt = `Write a CheerInsider article on this topic: ${topic}
 
-${notes ? `Source notes from our scraper (use these facts; do not invent specifics beyond them):\n\n${notes}` : 'No scraped notes provided — write from general knowledge of the all-star cheer world, keeping all specifics generic.'}
+${notes ? `Source notes from our research (use these facts; do not invent specifics beyond them):\n\n${notes}` : 'No research notes provided — write from general knowledge of the all-star cheer world, keeping all specifics generic.'}
 
 Section: ${section}`;
 
-const stream = client.messages.stream({
-  model: 'claude-opus-4-8',
-  max_tokens: 32000,
-  thinking: { type: 'adaptive' },
-  system: SYSTEM_PROMPT,
-  messages: [{ role: 'user', content: userPrompt }],
-  output_config: { format: { type: 'json_schema', schema: ARTICLE_SCHEMA } },
-});
+  const stream = client.messages.stream({
+    model: 'claude-opus-4-8',
+    max_tokens: 32000,
+    thinking: { type: 'adaptive' },
+    system: SYSTEM_PROMPT,
+    messages: [{ role: 'user', content: userPrompt }],
+    output_config: { format: { type: 'json_schema', schema: ARTICLE_SCHEMA } },
+  });
 
-const message = await stream.finalMessage();
-const textBlock = message.content.find((b) => b.type === 'text');
-if (!textBlock) {
-  console.error('No text content in response', JSON.stringify(message.content));
-  process.exit(1);
+  const message = await stream.finalMessage();
+  const textBlock = message.content.find((b) => b.type === 'text');
+  if (!textBlock) {
+    throw new Error(`No text content in response: ${JSON.stringify(message.content)}`);
+  }
+
+  const generated = JSON.parse(textBlock.text);
+  const today = new Date().toISOString().slice(0, 10);
+
+  const outDir = path.join(process.cwd(), 'content', 'articles');
+  let slug = generated.slug;
+  if (fs.existsSync(path.join(outDir, `${slug}.json`))) {
+    if (!uniqueSlug) throw new Error(`Refusing to overwrite existing article: ${slug}`);
+    slug = `${slug}-${today.replace(/-/g, '')}`;
+  }
+
+  const article = {
+    ...generated,
+    slug,
+    section,
+    kind: 'feature',
+    pill: `★ ${generated.eyebrow}`,
+    datePublished: today,
+    heroCaption: `cover · ${slug.replace(/-/g, ' ')}`,
+    card: { eyebrow: generated.eyebrow },
+  };
+
+  const outPath = path.join(outDir, `${slug}.json`);
+  fs.writeFileSync(outPath, JSON.stringify(article, null, 2) + '\n');
+  console.log(`Wrote ${outPath}`);
+  console.log(`Live at: /${section}/${slug} after deploy`);
+  return article;
 }
 
-const generated = JSON.parse(textBlock.text);
+// CLI entry
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  const args = Object.fromEntries(
+    process.argv.slice(2).reduce((acc, arg, i, arr) => {
+      if (arg.startsWith('--')) acc.push([arg.slice(2), arr[i + 1] ?? '']);
+      return acc;
+    }, []),
+  );
 
-const today = new Date().toISOString().slice(0, 10);
-const article = {
-  ...generated,
-  section,
-  kind: 'feature',
-  pill: `★ ${generated.eyebrow}`,
-  datePublished: today,
-  heroCaption: `cover · ${generated.slug.replace(/-/g, ' ')}`,
-  card: { eyebrow: generated.eyebrow },
-};
+  if (!args.topic) {
+    console.error('Usage: node scripts/generate-article.mjs --topic "..." [--section parents|gear] [--notes file]');
+    process.exit(1);
+  }
 
-const outDir = path.join(process.cwd(), 'content', 'articles');
-const outPath = path.join(outDir, `${article.slug}.json`);
-if (fs.existsSync(outPath)) {
-  console.error(`Refusing to overwrite existing article: ${outPath}`);
-  process.exit(1);
+  generateArticle({
+    topic: args.topic,
+    section: args.section === 'gear' ? 'gear' : 'parents',
+    notes: args.notes ? fs.readFileSync(args.notes, 'utf8') : '',
+  }).catch((err) => {
+    console.error(err.message);
+    process.exit(1);
+  });
 }
-fs.writeFileSync(outPath, JSON.stringify(article, null, 2) + '\n');
-console.log(`Wrote ${outPath}`);
-console.log(`Live at: /${section}/${article.slug} after deploy`);
