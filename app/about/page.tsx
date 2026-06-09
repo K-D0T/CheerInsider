@@ -57,7 +57,7 @@ export default function AboutPage() {
               <div style={{ position:'absolute', bottom:-24, right:-24, padding:'14px 18px', background:'var(--p-ink)', color:'var(--p-cream)', maxWidth:240 }}>
                 <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:4 }}>Currently</div>
                 <div style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:18, lineHeight:1.1 }}>
-                  Coaching at <span style={{ color:'var(--p-hot)' }}>Cheer Tampa Elite</span> · Tampa, FL
+                  Coaching & competing · <span style={{ color:'var(--p-hot)' }}>Tampa, FL</span>
                 </div>
               </div>
             </div>
@@ -130,6 +130,26 @@ export default function AboutPage() {
               ))}
             </ol>
           </div>
+        </Container>
+      </section>
+
+      {/* AI Disclosure */}
+      <section style={{ padding:'64px 0', background:'var(--p-paper)', borderBottom:'1px solid var(--p-line)' }}>
+        <Container max={900}>
+          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:18 }}>How this site works</div>
+          <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(32px,4vw,52px)', margin:'0 0 24px', letterSpacing:'-.025em', lineHeight:.95 }}>
+            AI-assisted. <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Editorially driven.</span>
+          </h2>
+          <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
+            CheerInsider articles are written with AI assistance using the editorial voice and perspective built into this site.
+            <strong> Lauren K. is an editorial persona</strong> — a composite of the cheer parent and coach experience — not a specific individual.
+          </p>
+          <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
+            Cost figures, scenarios, and workload examples in our articles are <strong>illustrative</strong> — based on patterns and ranges consistently reported across the cheer community, not derived from formal surveys or original data collection. Where we cite third-party research or sourced news, we link to the source.
+          </p>
+          <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:0, maxWidth:740 }}>
+            The editorial positions (cheer costs too much, team mom labor is undervalued, privates are oversold) reflect genuine, widely-held views in the cheer parent community. The AI helps us write clearly and consistently — the perspective is real.
+          </p>
         </Container>
       </section>
 
