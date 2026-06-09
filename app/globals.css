@@ -68,3 +68,19 @@ a { text-decoration: none; color: inherit; }
   .ci-3col { grid-template-columns:1fr; }
   .ci-4col { grid-template-columns:1fr; }
 }
+
+/* ── Mobile overrides for inline-styled grids ─────────────────────────
+   Several layouts set desktop grid-template-columns via inline styles;
+   !important is required for these media-query overrides to win. */
+@media (max-width:768px) {
+  .ci-stack-mobile  { grid-template-columns:1fr !important; }
+  .ci-static-mobile { position:static !important; }
+  .ci-bleed-mobile  { margin-left:0 !important; margin-right:0 !important; padding-left:24px !important; padding-right:24px !important; }
+  .ci-footer-grid   { grid-template-columns:1fr 1fr !important; }
+  .ci-footer-grid > div:first-child { grid-column:1 / -1; }
+  .ci-timeline-row  { grid-template-columns:64px 1fr !important; }
+  .ci-timeline-dot  { display:none !important; }
+  .ci-list-row      { grid-template-columns:56px 1fr !important; }
+  .ci-list-row > div:last-child { grid-column:2; flex-direction:row !important; align-items:center !important; }
+  .ci-list-num      { font-size:44px !important; }
+}

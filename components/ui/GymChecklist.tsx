@@ -26,7 +26,7 @@ export function GymChecklist() {
   };
 
   return (
-    <Container max={1100} style={{ display:'grid', gridTemplateColumns:'1fr 280px', gap:48, alignItems:'start' }}>
+    <Container max={1100} className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 280px', gap:48, alignItems:'start' }}>
       <div>
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'18px 24px', background:'var(--p-ink)', color:'var(--p-cream)', marginBottom:24 }}>
           <div>
@@ -64,7 +64,7 @@ export function GymChecklist() {
         </ol>
       </div>
 
-      <aside style={{ position:'sticky', top:96, display:'flex', flexDirection:'column', gap:18 }}>
+      <aside className="ci-static-mobile" style={{ position:'sticky', top:96, display:'flex', flexDirection:'column', gap:18 }}>
         <div style={{ background:'var(--p-hot)', color:'#fff', padding:24 }}>
           <div style={{ ...tx.eyebrow, marginBottom:10 }}>Bookmark this</div>
           <h4 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:24, margin:'0 0 12px', letterSpacing:'-.02em', lineHeight:1.05 }}>The full PDF checklist</h4>

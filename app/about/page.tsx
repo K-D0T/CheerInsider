@@ -30,7 +30,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section style={{ padding:'56px 0 80px', borderBottom:'1px solid var(--p-line)' }}>
         <Container>
-          <div style={{ display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:64, alignItems:'end' }}>
+          <div className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:64, alignItems:'end' }}>
             <div>
               <Pill style={{ marginBottom:24 }}>★ ABOUT THE INSIDER</Pill>
               <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(64px,8vw,132px)', margin:'0 0 28px', letterSpacing:'-.03em', lineHeight:.92 }}>
@@ -69,7 +69,7 @@ export default function AboutPage() {
       <section style={{ padding:'64px 0', background:'var(--p-paper)', borderBottom:'1px solid var(--p-line)' }}>
         <Container>
           <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:32 }}>The receipts</div>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:0, borderTop:'2px solid var(--p-ink)', borderBottom:'2px solid var(--p-ink)' }}>
+          <div className="ci-stats" style={{ gap:0, borderTop:'2px solid var(--p-ink)', borderBottom:'2px solid var(--p-ink)' }}>
             {([['18','seasons','as athlete + coach + mom'],['CCA','certified','since 2014'],['2x','Worlds','as a coach (2019, 2023)'],['41K','readers','on the email list']] as const).map(([n,l,sub], i) => (
               <div key={i} style={{ padding:'32px 24px', borderRight: i<3 ? '1px solid var(--p-line)' : 'none' }}>
                 <div style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:64, lineHeight:1, letterSpacing:'-.04em', color:'var(--p-hot)' }}>{n}</div>
@@ -87,9 +87,9 @@ export default function AboutPage() {
           <SectionHead eyebrow="THE TIMELINE" title={<>How we got <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>here</span>.</>}/>
           <div style={{ marginTop:48, display:'flex', flexDirection:'column' }}>
             {MILESTONES.map((m, i) => (
-              <div key={i} style={{ display:'grid', gridTemplateColumns:'140px 60px 1fr', gap:32, padding:'28px 0', borderTop:'1px solid var(--p-line)', borderBottom: i===MILESTONES.length-1 ? '1px solid var(--p-line)' : 'none', alignItems:'start' }}>
+              <div key={i} className="ci-timeline-row" style={{ display:'grid', gridTemplateColumns:'140px 60px 1fr', gap:32, padding:'28px 0', borderTop:'1px solid var(--p-line)', borderBottom: i===MILESTONES.length-1 ? '1px solid var(--p-line)' : 'none', alignItems:'start' }}>
                 <div style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:42, color:'var(--p-hot)', letterSpacing:'-.03em', lineHeight:1 }}>{m.year}</div>
-                <div style={{ position:'relative', display:'flex', justifyContent:'center' }}>
+                <div className="ci-timeline-dot" style={{ position:'relative', display:'flex', justifyContent:'center' }}>
                   <span style={{ width:14, height:14, borderRadius:99, background:'var(--p-ink)', marginTop:14, display:'inline-block' }}/>
                 </div>
                 <div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
       {/* Standards */}
       <section style={{ padding:'96px 0', background:'var(--p-ink)', color:'var(--p-cream)' }}>
         <Container>
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1.4fr', gap:64 }}>
+          <div className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 1.4fr', gap:64 }}>
             <div>
               <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:18 }}>Editorial standards</div>
               <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(36px,4.4vw,64px)', margin:0, letterSpacing:'-.025em', lineHeight:.95 }}>

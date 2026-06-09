@@ -5,6 +5,7 @@ import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
 import { Icon } from '@/components/ui/Icon';
 import { AdUnit } from '@/components/ui/AdUnit';
+import { JsonLd, articleLd, breadcrumbLd } from '@/components/seo/JsonLd';
 import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
@@ -90,6 +91,13 @@ const COLS = [
 export default function GearRoundupPage() {
   return (
     <>
+      <JsonLd data={articleLd({
+        slug: '/gear/cheer-shoes-2026',
+        headline: 'The Only Cheer Shoes Worth Your Money in 2026',
+        description: '14 pairs tested across Level 2, 4, and 5 athletes over 6 months. Four picks worth buying, two to avoid entirely.',
+        datePublished: '2026-05-01',
+      })} />
+      <JsonLd data={breadcrumbLd([['Home', '/'], ['Gear', '/gear'], ['Cheer Shoes 2026', '/gear/cheer-shoes-2026']])} />
       {/* Hero */}
       <section style={{ padding:'48px 0 56px', borderBottom:'1px solid var(--p-line)' }}>
         <Container>
@@ -172,7 +180,7 @@ export default function GearRoundupPage() {
                     <span style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:24 }}>{r.price}</span>
                   </div>
                   <p style={{ fontSize:16, lineHeight:1.55, margin:'0 0 20px', color:'var(--p-inkSoft)' }}>{r.blurb}</p>
-                  <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:24 }}>
+                  <div className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:24 }}>
                     <div>
                       <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:8 }}>What we loved</div>
                       <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:6, fontSize:14 }}>
