@@ -94,6 +94,15 @@ const ARTICLE_SCHEMA = {
               foot: { type: 'array', items: { type: 'string' } },
             },
           },
+          {
+            type: 'object',
+            additionalProperties: false,
+            required: ['type', 'text'],
+            properties: {
+              type: { const: 'note' },
+              text: { type: 'string', description: 'Callout box text. Use for the required AI disclosure at the end of every article.' },
+            },
+          },
         ],
       },
     },

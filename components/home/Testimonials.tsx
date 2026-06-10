@@ -41,7 +41,7 @@ export function Testimonials() {
             <div style={{ display:'inline-flex', gap:3, color:'var(--p-accent)', marginBottom:6 }}>{[1,2,3,4,5].map(s => <Icon.star key={s}/>)}</div>
             <div style={{ fontSize:14, color:'rgba(250,246,241,.85)' }}>From 1,402 reader responses · across the parent, athlete and coach pillars</div>
           </div>
-          <a style={{ ...tx.eyebrow, color:'var(--p-accent)', display:'inline-flex', alignItems:'center', gap:8 }}>Read all reviews <Icon.arrow/></a>
+          <a href="/about" style={{ ...tx.eyebrow, color:'var(--p-accent)', display:'inline-flex', alignItems:'center', gap:8 }}>Read all reviews <Icon.arrow/></a>
         </div>
       </Container>
     </section>

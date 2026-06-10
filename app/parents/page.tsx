@@ -27,12 +27,12 @@ export const metadata: Metadata = {
 const FILTERS = ['All 38','Cost & Money','Gym Selection','Tryouts','Competition','Travel','Mental Load','Recruiting'];
 
 const LEAD = {
-  eyebrow:'END OF SEASON · DECISION TIME',
-  title:'Should you switch gyms this summer? The 5 questions to answer before you re-sign.',
-  sub:'Worlds is over. Before the gym sends the re-enrollment email, read this.',
-  meta:'Lauren K. · 9 min · May 2026',
+  eyebrow:'COST DEEP DIVE · MOST READ',
+  title:'The $24,000 cheer season: every dollar, tracked.',
+  sub:'Tuition was a third of what this Level 4 family actually paid. We followed their invoices for a full season.',
+  meta:'Lauren K. · 11 min · May 2026',
   g:'flash' as const,
-  href:'/gym-guide',
+  href:'/parents/the-24k-season',
 };
 
 export default function ParentsPage() {
@@ -78,7 +78,7 @@ export default function ParentsPage() {
                 background: i===0 ? 'var(--p-ink)' : 'transparent',
                 color: i===0 ? 'var(--p-cream)' : 'var(--p-ink)',
                 border:'1px solid var(--p-ink)', padding:'8px 14px',
-                borderRadius:99, fontSize:13, fontWeight:600, cursor:'pointer',
+                borderRadius:99, fontSize:13, fontWeight:600,
                 display:'inline-block',
               }}>{f}</span>
             ))}
@@ -120,15 +120,6 @@ export default function ParentsPage() {
           </div>
 
           {/* Pagination */}
-          <div style={{ display:'flex', justifyContent:'center', gap:8, marginTop:64 }}>
-            {['1','2','3','4','›'].map((p, i) => (
-              <span key={i} style={{
-                width:42, height:42, borderRadius:99, display:'inline-grid', placeItems:'center',
-                background: i===0 ? 'var(--p-ink)' : 'transparent', color: i===0 ? 'var(--p-cream)' : 'var(--p-ink)',
-                border:'1px solid var(--p-line)', fontWeight:700, fontSize:14, cursor:'pointer',
-              }}>{p}</span>
-            ))}
-          </div>
         </Container>
       </section>
     </>

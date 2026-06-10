@@ -13,6 +13,7 @@ import { P, tx } from '@/lib/palette';
 const SECTION_LABELS: Record<Article['section'], string> = {
   parents: 'Parent Resources',
   gear: 'Gear',
+  guides: 'Educational Guides',
 };
 
 function formatDate(iso: string) {

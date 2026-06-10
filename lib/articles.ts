@@ -20,7 +20,7 @@ export type Block =
   | { type: 'glance'; heading: string; items: { rank: string; name: string; score: string; price: string; verdict: 'Buy' | 'Skip'; g: GradientVariant; img: string | null }[] }
   | { type: 'review'; heading: string; items: { rank: string; score: string; name: string; price: string; blurb: string; pros: string[]; cons: string[]; stars: number; img: string; buyAmazon: string; buyDirect: string }[] }
   | { type: 'specs'; heading: string; metrics: string[]; products: string[][] }
-  | { type: 'note'; title: string; text: string }
+  | { type: 'note'; title?: string; text: string }
   | { type: 'cta'; eyebrow: string; title: string; body: string; button: string };
 
 export interface RelatedCard {
@@ -33,7 +33,7 @@ export interface RelatedCard {
 
 export interface Article {
   slug: string;
-  section: 'parents' | 'gear';
+  section: 'parents' | 'gear' | 'guides';
   kind: 'feature' | 'opinion' | 'listicle' | 'roundup';
   title: string;
   description: string;
@@ -69,6 +69,10 @@ export function getArticlesBySection(section: Article['section']): Article[] {
 
 export function getArticle(section: Article['section'], slug: string): Article | undefined {
   return getAllArticles().find((a) => a.section === section && a.slug === slug);
+}
+
+export function getArticleBySlug(slug: string): Article | undefined {
+  return getAllArticles().find((a) => a.slug === slug);
 }
 
 export function articlePath(a: Article): string {

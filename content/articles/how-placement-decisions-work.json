@@ -1,0 +1,102 @@
+{
+  "slug": "how-placement-decisions-work",
+  "section": "guides",
+  "kind": "feature",
+  "title": "How Placement Decisions Actually Work Inside a Gym",
+  "description": "What coaches are actually evaluating at tryouts, why your child got placed where she did, and what 'she's not ready' usually means — from someone who has made hundreds of placement decisions.",
+  "eyebrow": "TRYOUT PROCESS",
+  "pill": "★ TRYOUT GUIDE",
+  "headline": "How *placement decisions* actually work.",
+  "sub": "What coaches evaluate at tryouts, why the level your child wants and the level she gets are sometimes different, and how to have a productive conversation with a gym about placement.",
+  "datePublished": "2026-06-10",
+  "readTime": "6 min",
+  "tags": ["tryouts", "placement", "gym selection", "level placement", "cheer tryouts"],
+  "gradient": "pulse",
+  "heroCaption": "cover · tryout placement guide",
+  "card": { "eyebrow": "TRYOUT PROCESS" },
+  "blocks": [
+    {
+      "type": "p",
+      "dropcap": true,
+      "text": "Tryout placements generate more parent frustration than almost any other part of all-star cheerleading. A child who has been at a gym for three years gets placed at the same level as a new athlete. A girl who 'knows everyone' gets passed over for a team she expected to make. The process feels opaque because gyms rarely explain their reasoning in detail — and most parents don't know what to ask."
+    },
+    {
+      "type": "h2",
+      "text": "What coaches are actually evaluating"
+    },
+    {
+      "type": "p",
+      "text": "At tryouts, coaches are filling specific roles on specific teams. They're not simply ranking athletes from best to worst — they're building a roster that needs to function as a unit. The evaluation is **simultaneous on several dimensions**:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Tumbling** — standing and running passes, difficulty and consistency",
+        "**Stunting** — flyer ability, base strength, back spot technique; what role the athlete can fill",
+        "**Jumps** — height, technique, toe touch specifically",
+        "**Motions** — sharpness, timing, coordination",
+        "**Performance quality** — expression, presence, ability to execute under pressure",
+        "**Coachability** — how the athlete responds to a correction during tryouts"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Coaches are also thinking about **team chemistry, personality dynamics, and which athletes work well together** — factors that are real but rarely discussed openly with parents. An athlete who is technically strong but difficult to coach may be passed over for a better team in favor of someone slightly less skilled but more coachable."
+    },
+    {
+      "type": "h2",
+      "text": "Why 'she's not ready' is sometimes code for something else"
+    },
+    {
+      "type": "p",
+      "text": "When a coach says an athlete isn't ready for a particular level, it usually means one of three things: (1) she genuinely doesn't have the required skills, (2) a spot on that team has already been filled by an athlete the gym considers higher priority, or (3) **the team is at capacity for her position**. A gym may have five strong flyers trying out for a team that needs two."
+    },
+    {
+      "type": "quote",
+      "variant": "border",
+      "text": "\"'She's not ready' is a real answer. It's also sometimes a diplomatic one. Know the difference by asking for specifics.\""
+    },
+    {
+      "type": "p",
+      "text": "The way to tell the difference: **ask for specific skills**. 'What skill does she need to develop to be considered for that team next season?' If the answer is specific and actionable ('she needs a standing tuck'), it's a genuine skills gap. If the answer is vague ('she just needs more experience'), it may be a diplomatic version of 'we don't have a spot for her.'"
+    },
+    {
+      "type": "h2",
+      "text": "The roster math parents don't see"
+    },
+    {
+      "type": "p",
+      "text": "A Level 4 team with 24 athletes needs a specific distribution: roughly 6 flyers, 12 bases, 6 back spots — adjusted for the choreography. If tryouts produce 10 qualified flyers and only 4 qualified bases, someone strong gets left out or placed on a lower team. **Placement is partly skills, partly roster math, partly timing.**"
+    },
+    {
+      "type": "p",
+      "text": "Some gyms manage this by running multiple teams at the same level. Others move athletes to a different position (a weaker flyer becomes a base) to fill gaps. Neither approach is wrong, but both can produce placements that surprise families who only see their child's individual skills."
+    },
+    {
+      "type": "h2",
+      "text": "How to have a productive post-tryout conversation"
+    },
+    {
+      "type": "p",
+      "text": "If the placement is unexpected, ask for a meeting — not an email thread. Come with specific questions, not grievances. The questions that get useful answers:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "'What specific skills would she need to develop to be considered for [team] at next year's tryouts?'",
+        "'Is this placement about her skills, or about team composition?'",
+        "'Is there anything she can work on this season to put herself in a better position?'",
+        "'Are privates recommended, and if so, what would she work on — specifically?'"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "A gym that can't answer these questions with specifics is either not paying close attention to your child, or the placement decision was primarily about something other than her development. Both are worth knowing before you re-sign.",
+      "serif": true
+    },
+    {
+      "type": "note",
+      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community — not original data collection or formal surveys."
+    }
+  ]
+}

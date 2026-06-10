@@ -1,0 +1,112 @@
+{
+  "slug": "level-system-explained",
+  "section": "guides",
+  "kind": "feature",
+  "title": "The All-Star Level System, Explained from Scratch (Levels 1–7)",
+  "description": "What do the levels actually mean, how do athletes move up, and why does your gym keep saying 'she's not ready for Level 4'? The honest breakdown.",
+  "eyebrow": "LEVELS EXPLAINED",
+  "pill": "★ LEVELS EXPLAINED",
+  "headline": "The *level system*, explained from scratch.",
+  "sub": "Level 1 through Level 7 — what they mean, how athletes move through them, and why 'she's ready to move up' is more complicated than it sounds.",
+  "datePublished": "2026-06-10",
+  "readTime": "11 min",
+  "tags": ["levels", "level system", "all-star cheer", "USASF", "skill progression"],
+  "gradient": "flash",
+  "heroCaption": "cover · level system guide",
+  "card": { "eyebrow": "LEVELS EXPLAINED" },
+  "blocks": [
+    {
+      "type": "p",
+      "dropcap": true,
+      "text": "All-star cheerleading runs on a seven-level system governed by USASF (United States All Star Federation). Each level has a defined skills list — specific tumbling passes, stunt configurations, and pyramid rules that are legal to compete. The levels apply to both teams and, informally, to individual athletes."
+    },
+    {
+      "type": "p",
+      "text": "Understanding the system matters to parents because **level placement determines cost, time commitment, and competitive trajectory** for years. A Level 2 season looks nothing like a Level 5 season in any of those categories."
+    },
+    {
+      "type": "h2",
+      "text": "The seven levels at a glance"
+    },
+    {
+      "type": "table",
+      "head": ["Level", "Typical ages", "Tumbling floor", "Stunts", "Time/cost intensity"],
+      "rows": [
+        ["Level 1", "5–10", "Cartwheels, round-offs", "Two-leg bases, no inversions", "Low"],
+        ["Level 2", "7–12", "Back walkover, front walkover", "Basic extensions, no release moves", "Low–Moderate"],
+        ["Level 3", "9–14", "Back handspring series", "Single-leg stunts, basic releases", "Moderate"],
+        ["Level 4", "11–16", "Standing and running tucks", "Advanced releases, twisting dismounts", "High"],
+        ["Level 5", "13–18", "Layout, whip series", "Full-twisting dismounts, complex pyramids", "Very high"],
+        ["Level 6", "15–adult", "Full, double-full", "Release moves to inversions, doubles", "Competitive elite"],
+        ["Level 7", "18+", "Double-full and beyond", "All skills legal", "Elite open"]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Age guidelines above are typical, not mandatory. USASF sets **age grid rules** that determine the minimum and maximum ages allowed on a given level/division combination. The grid updates periodically and is worth reviewing each season — gyms should communicate changes before tryouts."
+    },
+    {
+      "type": "h2",
+      "text": "What actually determines a child's level"
+    },
+    {
+      "type": "p",
+      "text": "Contrary to what many parents assume, the level is determined by **skill, not age or desire**. The primary factors gyms evaluate at tryouts are: standing tumbling, running tumbling, stunting ability (as a flyer, base, or back), jumps, and performance quality. A 13-year-old with a solid back handspring series is a Level 3 athlete regardless of what level her friends are on."
+    },
+    {
+      "type": "quote",
+      "variant": "border",
+      "text": "\"The level is a skills ceiling, not a rank. Placing a child above her skills doesn't accelerate development — it increases injury risk and erodes confidence.\""
+    },
+    {
+      "type": "p",
+      "text": "Gyms have strong financial incentives to move athletes up levels — higher level teams generate more revenue. That's worth knowing when a coach says your daughter is 'ready for Level 4.' Ask specifically: **what skills does she have, and what skills does a Level 4 athlete need?** A good gym will answer that without hesitation."
+    },
+    {
+      "type": "h2",
+      "text": "How athletes move between levels"
+    },
+    {
+      "type": "p",
+      "text": "There is no standardized certification or test to move between levels — it's entirely at the gym's discretion during tryout season. Most gyms hold tryouts once a year (May–June), evaluate athletes, and place them on teams. An athlete can be placed on a higher level team if she demonstrates the required skills; she can also be placed on a lower level team if skills have regressed or a spot isn't available."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Level 1–2 transitions** are usually straightforward: cartwheel to back walkover, or round-off to back handspring series",
+        "**Level 3–4** is the most significant jump for most families — a standing tuck is typically required, which can take 1–3 years to develop safely",
+        "**Level 4–5** requires layout tumbling and single-leg stunting at an advanced level; this is where many athletes plateau",
+        "**Level 5–6** is where the recreational/elite divide becomes most apparent — only a fraction of athletes ever compete at this level"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Divisions within levels"
+    },
+    {
+      "type": "p",
+      "text": "Within each level, teams compete in **divisions** based on team size, gender composition, and age group. Common divisions include: Tiny (ages 5–8), Mini (8–11), Youth (11–14), Junior (14–17), Senior (14+), and Open (no age cap). Gender divisions are: All-Girl, Coed, and sometimes All-Male."
+    },
+    {
+      "type": "p",
+      "text": "This is why you'll hear descriptions like 'Senior Small Coed Level 5' or 'Youth All-Girl Level 3' — that's the full competitive classification. **The division affects who you compete against at any given event**, not the skills list, which is determined by level alone."
+    },
+    {
+      "type": "h2",
+      "text": "Why the same skill level feels different at different gyms"
+    },
+    {
+      "type": "p",
+      "text": "The USASF skills list sets a floor, not a ceiling. A Level 4 team at a nationally competitive gym will execute significantly harder skills than a Level 4 team at a local recreational gym — both are legal for the level. **What differs is execution quality, routine difficulty within the legal limits, and the competitive pool you'll face at events.**"
+    },
+    {
+      "type": "p",
+      "text": "A child placed on a Level 3 team at a nationally ranked gym may be doing harder work — and facing stiffer competition — than a child on a Level 4 team at a gym that rarely travels. Level alone doesn't tell the whole story.",
+      "serif": true
+    },
+    {
+      "type": "note",
+      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community — not original data collection or formal surveys."
+    }
+  ]
+}

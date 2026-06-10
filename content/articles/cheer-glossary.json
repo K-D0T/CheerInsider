@@ -1,0 +1,133 @@
+{
+  "slug": "cheer-glossary",
+  "section": "guides",
+  "kind": "feature",
+  "title": "Cheer Glossary: Every Term from 'All-Girl' to 'XO' Explained",
+  "description": "New to cheer? Every acronym, term, and insider phrase explained in plain English — from USASF and bid systems to stunt positions and competition types.",
+  "eyebrow": "GLOSSARY",
+  "pill": "★ CHEER GLOSSARY",
+  "headline": "Every cheer term, *explained plainly*.",
+  "sub": "USASF. Bid. Summit. D2. All-girl. Coed. Flyer. Back spot. XO. Full. Lib. The complete glossary for parents who are tired of nodding along.",
+  "datePublished": "2026-06-10",
+  "readTime": "14 min",
+  "tags": ["glossary", "cheer terms", "all-star cheer", "beginner guide", "terminology"],
+  "gradient": "field",
+  "heroCaption": "cover · cheer glossary",
+  "card": { "eyebrow": "GLOSSARY" },
+  "blocks": [
+    {
+      "type": "p",
+      "dropcap": true,
+      "text": "All-star cheerleading has its own dense vocabulary, and gyms assume you already know it. You don't — and neither did anyone else on their first season. This is the glossary I wish someone had handed me at my first tryout meeting. Save it. You'll reference it all season."
+    },
+    {
+      "type": "h2",
+      "text": "Organizations & competition structure"
+    },
+    {
+      "type": "table",
+      "head": ["Term", "What it means"],
+      "rows": [
+        ["USASF", "United States All Star Federation — the governing body that sets skill rules, age grids, and level definitions for all-star cheerleading in the US."],
+        ["IASF", "International All Star Federation — the global equivalent of USASF. Governs international competitions including the ICU World Championships."],
+        ["Varsity", "Varsity Spirit — the largest private company in cheer, which owns NCA, UCA, and many other competition brands. Also owns many gyms through partnerships."],
+        ["NCA", "National Cheerleaders Association — one of the largest competition series, owned by Varsity. Hosts a major national championship."],
+        ["UCA", "Universal Cheerleaders Association — another Varsity-owned competition brand with its own national championship."],
+        ["The Summit", "Varsity's year-end championship for Levels 1–4. Bid-qualifying teams from throughout the season compete here."],
+        ["D2 Summit", "The Summit equivalent for 'D2' (smaller/newer) gyms. Different qualification criteria than The Summit."],
+        ["Worlds", "The Cheerleading Worlds — the IASF world championship held in Orlando each April. The most prestigious event in all-star cheer. Only Levels 5, 6, and 7 (Senior and Open divisions) compete here."],
+        ["At-Large bid", "A bid to The Summit or Worlds awarded to teams that didn't win their event but ranked highly enough nationally to earn an automatic bid."],
+        ["Paid bid", "A bid that requires the gym to pay an entry fee to attend. Most bids are paid."],
+        ["Full paid bid", "A bid that covers the entry fee entirely — the most valuable type. Winning a full paid bid saves the gym (and often families, through reduced fees) significant money."]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Team & division types"
+    },
+    {
+      "type": "table",
+      "head": ["Term", "What it means"],
+      "rows": [
+        ["All-Girl", "A team composed entirely of female athletes."],
+        ["Coed", "A team with both male and female athletes. Males are typically bases and back spots; females typically fly."],
+        ["All-Male", "A team composed entirely of male athletes."],
+        ["Tiny", "Age division for athletes roughly 5–8 years old (exact ages vary by event)."],
+        ["Mini", "Age division roughly 8–11."],
+        ["Youth", "Age division roughly 11–14."],
+        ["Junior", "Age division roughly 14–17."],
+        ["Senior", "Age division for athletes 14 and older with no upper cap (at most events)."],
+        ["Open", "No age restriction — typically for post-high school athletes."],
+        ["Small / Medium / Large", "Team size divisions. Small is typically under 20 athletes; Large is 30+. Exact cutoffs vary by event."],
+        ["Exhibition", "A team that competes but is not ranked or scored. Often used for new gyms or non-USASF-sanctioned teams."]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Stunt positions"
+    },
+    {
+      "type": "table",
+      "head": ["Term", "What it means"],
+      "rows": [
+        ["Flyer", "The athlete who is lifted, tossed, and caught in stunts. Usually the lightest and most flexible athlete on a stunt group."],
+        ["Main base", "The primary lifting athlete in a stunt group. Stands directly under or behind the flyer."],
+        ["Side base", "The secondary base on the opposite side."],
+        ["Back spot", "The athlete behind the stunt group who stabilizes and catches the flyer's ankles or feet. Critical for safety."],
+        ["Front spot", "An additional spotter at the front of the stunt; required for some skills."],
+        ["Lib (Liberty)", "A stunt where the flyer stands on one leg, the other bent at the knee. One of the most common single-leg stunt positions."],
+        ["Heel stretch", "A stunt where the flyer holds her foot extended above her head."],
+        ["Scorpion", "A stunt where the flyer grabs her foot behind her, arching her back to bring the foot near or above her head."],
+        ["Extension", "A stunt where the flyer is held at arm's level above the bases."],
+        ["Prep / Shoulder level", "A lower stunt position where the flyer is held at shoulder height."]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Tumbling terms"
+    },
+    {
+      "type": "table",
+      "head": ["Term", "What it means"],
+      "rows": [
+        ["BHS (Back Handspring)", "A backward springing skill landing on hands then feet. The foundation of all competitive tumbling."],
+        ["Tuck", "A back flip with knees drawn to the chest. The first 'aerial' tumbling skill most athletes learn."],
+        ["Layout", "A back flip with the body fully extended (straight). Harder than a tuck."],
+        ["Full", "A back flip with a full (360-degree) twist. Legal at Level 6 standing, Level 5 running."],
+        ["Double-full", "A back flip with two full twists. Level 6+ only."],
+        ["Whip", "A fast, low back flip used to build power in a tumbling series."],
+        ["Series", "Multiple back handsprings performed consecutively (e.g., 'BHS BHS tuck')."],
+        ["Pass", "One complete tumbling sequence from start to landing."],
+        ["Running pass", "A tumbling pass performed after a running approach/hurdle."],
+        ["Standing pass", "A tumbling pass performed from a standing position, no running start."]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Common acronyms & phrases"
+    },
+    {
+      "type": "table",
+      "head": ["Term", "What it means"],
+      "rows": [
+        ["XO", "A formation shape used in routines — athletes arrange in an X and O pattern."],
+        ["Hit zero", "Slang for a 'hit' routine with zero deductions — every stunt hit, no falls, clean execution. The goal of every competition."],
+        ["Drop / fall", "A stunt or toss that wasn't caught cleanly, resulting in an athlete touching the floor. Triggers a deduction."],
+        ["Bid season", "The portion of the competition season (typically January–March) where teams compete specifically to earn bids to year-end championships."],
+        ["Re-sign", "The process of committing to a gym for the following season. Usually happens May–June before tryouts."],
+        ["Age grid", "The USASF document defining the minimum and maximum ages for athletes in each level/division combination."],
+        ["Crossover", "An athlete who competes on multiple teams at the same gym, or in some cases at different gyms."],
+        ["Bows", "The hair accessories worn by athletes as part of their uniform. Also used informally to refer to getting to compete ('she earned her bows').]"]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "You'll still hear terms you don't recognize — the sport invents new ones every season. The safest move is always to ask your team's coach directly rather than guess. Any coach worth working with will explain without making you feel like you should have known.",
+      "serif": true
+    },
+    {
+      "type": "note",
+      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community — not original data collection or formal surveys."
+    }
+  ]
+}

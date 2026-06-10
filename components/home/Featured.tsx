@@ -9,7 +9,7 @@ import { P, tx } from '@/lib/palette';
 const ITEMS = [
   { eyebrow:'GYM SELECTION', title:'Should you switch gyms this summer? The 5 questions to answer before June.', meta:'8 min · Decision guide', g:'flash' as const, href:'/gym-guide' },
   { eyebrow:'COST · SUMMER', title:'Summer camp vs. privates: what actually moves the needle (and what doesn\'t)', meta:'10 min · Parent guide', g:'halo' as const, href:'/parents/summer-vs-privates' },
-  { eyebrow:'INSIDER · END OF SEASON', title:'The end-of-season conversation no one has with their kid — but should', meta:'5 min · Opinion', g:'stripes' as const, href:'/parents/team-mom-trap' },
+  { eyebrow:'OPINION · UNPAID LABOR', title:'The "Team Mom" job is unpaid labor. We need to stop pretending it isn\'t.', meta:'6 min · Opinion', g:'stripes' as const, href:'/parents/team-mom-trap' },
 ];
 
 export function Featured() {
@@ -26,11 +26,11 @@ export function Featured() {
             <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)' }}>THE COST DEEP DIVE</div>
             <Link href="/parents/the-24k-season">
               <h3 style={{ fontFamily:'var(--p-display)', fontWeight:800, letterSpacing:'-.025em', lineHeight:.98, fontSize:'clamp(34px, 3.4vw, 50px)', margin:0 }}>
-                Worlds is over. Here's what your end-of-season recap should actually tell you.
+                The $24,000 cheer season: every dollar, tracked.
               </h3>
             </Link>
             <p style={{ fontSize:18, lineHeight:1.5, margin:0, color:'var(--p-inkSoft)', maxWidth:620, textWrap:'pretty' as never }}>
-              Not the score. Not the placement. The three things worth actually evaluating before you sign anything for next year.
+              Tuition was a third of what one Level 4 family actually paid. We followed their invoices for a full season — here's the full ledger.
             </p>
             <div style={{ display:'flex', alignItems:'center', gap:14, fontSize:13, color:'var(--p-muted)' }}>
               <span style={{ display:'inline-block', width:32, height:32, borderRadius:99, background:'var(--p-accent)' }}/>
