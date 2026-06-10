@@ -1,0 +1,101 @@
+{
+  "slug": "nca-d2-worlds-difference",
+  "section": "guides",
+  "kind": "feature",
+  "title": "NCA, D2 Summit, Worlds: What's the Difference and Which One Matters?",
+  "description": "The major all-star competitions explained for parents: what NCA, UCA, The Summit, D2 Summit, and Worlds actually are, how bid qualification works, and which events are worth the travel budget.",
+  "eyebrow": "COMPETITION TYPES",
+  "pill": "★ COMPETITION GUIDE",
+  "headline": "The *big competitions*, explained.",
+  "sub": "NCA nationals, The Summit, D2 Summit, and Worlds — what each one is, how teams qualify, and what it actually costs to get there. The guide your gym's welcome packet didn't include.",
+  "datePublished": "2026-06-10",
+  "readTime": "8 min",
+  "tags": ["NCA", "Worlds", "Summit", "D2 Summit", "competition guide", "bids"],
+  "gradient": "burst",
+  "heroCaption": "cover · competition guide",
+  "card": { "eyebrow": "COMPETITION TYPES" },
+  "blocks": [
+    {
+      "type": "p",
+      "dropcap": true,
+      "text": "By November, most cheer families are hearing about 'bid competitions' and 'Summit qualifiers' without a clear explanation of what any of it means or how it affects their season's budget and travel schedule. This is the breakdown no one hands you at sign-up."
+    },
+    {
+      "type": "h2",
+      "text": "The competition landscape"
+    },
+    {
+      "type": "p",
+      "text": "All-star cheerleading competitions fall into two categories: **regular season events** (local and regional competitions throughout the fall and winter) and **championship events** (the end-of-season events that require a bid to attend). Understanding the difference tells you what you're actually paying for."
+    },
+    {
+      "type": "table",
+      "head": ["Event", "Who can attend", "Level(s)", "When", "Prestige"],
+      "rows": [
+        ["NCA All-Star Nationals", "Any registered team", "1–7", "February (Dallas)", "High — oldest national championship"],
+        ["UCA All-Star Nationals", "Any registered team", "1–7", "February (Orlando)", "High"],
+        ["The Summit", "Bid-qualifying teams only", "1–4", "May (Orlando)", "Very high for Levels 1–4"],
+        ["D2 Summit", "D2-designated gyms with bids", "1–5", "May (Orlando)", "High for smaller gyms"],
+        ["The Cheerleading Worlds", "Bid-qualifying teams only", "5, 6, 7 Senior/Open", "April (Orlando)", "Highest — the world championship"]
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "NCA and UCA nationals: what to know"
+    },
+    {
+      "type": "p",
+      "text": "NCA (National Cheerleaders Association) and UCA (Universal Cheerleaders Association) are both owned by Varsity Spirit. Their national championships are open to **any team that registers and pays the entry fee** — no bid required. This makes them accessible and prestigious but also very large. Hundreds of teams compete across multiple days at these events."
+    },
+    {
+      "type": "p",
+      "text": "Winning a national championship at NCA or UCA is a significant achievement. **But placing at these events doesn't guarantee a bid to The Summit or Worlds** — those are separate qualification pathways. Some events are both NCA/UCA sanctioned and bid-granting; others are not."
+    },
+    {
+      "type": "h2",
+      "text": "The Summit and D2 Summit"
+    },
+    {
+      "type": "p",
+      "text": "The Summit is the year-end championship for **Levels 1–4** teams. It's held in Orlando in May, the week after The Cheerleading Worlds. To attend, a team must earn a **bid** at a qualifying competition earlier in the season. Most bids are 'paid bids' — the gym pays an entry fee to attend. 'Full paid bids' cover that fee, making them more valuable."
+    },
+    {
+      "type": "p",
+      "text": "The **D2 Summit** is a separate event for gyms designated as 'Division 2' — typically smaller, newer, or less-resourced programs. It runs alongside The Summit and has its own bid qualification process. For many gyms, D2 Summit is a more realistic and meaningful target than The Summit or Worlds."
+    },
+    {
+      "type": "quote",
+      "variant": "border",
+      "text": "\"A D2 Summit bid for a first-year gym means more than a generic invite to a mega-event. Context matters when evaluating what a team accomplished.\""
+    },
+    {
+      "type": "h2",
+      "text": "Worlds: the one that matters at Level 5+"
+    },
+    {
+      "type": "p",
+      "text": "The Cheerleading Worlds is the IASF World Championship — the most prestigious event in all-star cheerleading. Only **Senior and Open Level 5, 6, and 7** teams can compete. There are no Level 1–4 divisions at Worlds. Teams must earn a bid at a qualifying event — typically a large national or regional competition that is sanctioned as a 'Worlds qualifier.'"
+    },
+    {
+      "type": "p",
+      "text": "**Not every Level 5 team has realistic World bid aspirations.** Worlds is an elite event; most competitive Level 5 programs aim for The Summit or strong national placements before building toward a Worlds-level program. If a gym is selling you on 'Worlds potential' for a new Level 5 team, ask what their bid history actually looks like."
+    },
+    {
+      "type": "h2",
+      "text": "What bid competitions cost"
+    },
+    {
+      "type": "p",
+      "text": "Bid competitions are regular season events that happen to also award bids to championship events. They are not free — families pay competition fees plus travel for every bid event the team enters. A team may attend 3–5 bid competitions in the hope of earning a single qualifying bid. **Budget for the attempt, not just the achievement.**"
+    },
+    {
+      "type": "p",
+      "text": "Once a team earns a bid, there are additional costs: hotel blocks in Orlando (Summit/Worlds week is one of the most expensive hotel periods in the city), registration fees, and family travel. An Orlando championship week for a family of three can run $2,000–$4,000 in travel and lodging alone, before the gym's own fees.",
+      "serif": true
+    },
+    {
+      "type": "note",
+      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community — not original data collection or formal surveys."
+    }
+  ]
+}

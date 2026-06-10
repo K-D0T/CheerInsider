@@ -1,0 +1,100 @@
+{
+  "slug": "legal-tumbling-skills-by-level",
+  "section": "guides",
+  "kind": "feature",
+  "title": "What Tumbling Skills Are Legal at Each All-Star Level?",
+  "description": "A plain-English breakdown of which tumbling skills are allowed at Levels 1–7 in all-star cheerleading — and what the illegal skills list actually means for your athlete.",
+  "eyebrow": "SKILLS GUIDE",
+  "pill": "★ SKILLS GUIDE",
+  "headline": "What tumbling is *legal* at each level.",
+  "sub": "Level 1 cartwheels to Level 7 double-fulls — which skills are allowed, which are illegal, and what actually happens when a team performs a skill above their level.",
+  "datePublished": "2026-06-10",
+  "readTime": "7 min",
+  "tags": ["tumbling", "legal skills", "levels", "USASF rules", "skill progression"],
+  "gradient": "stripes",
+  "heroCaption": "cover · tumbling skills guide",
+  "card": { "eyebrow": "SKILLS GUIDE" },
+  "blocks": [
+    {
+      "type": "p",
+      "dropcap": true,
+      "text": "Every level in all-star cheerleading has a defined skills list — a set of tumbling passes that are legal to perform in competition. Performing a skill above the level ceiling results in a deduction, and in some cases disqualification. Understanding the skills list helps parents know what their athlete is working toward — and whether the timeline coaches suggest is realistic."
+    },
+    {
+      "type": "p",
+      "text": "Skills are divided into **standing tumbling** (no running start) and **running tumbling** (with a hurdle or approach). Both categories have their own rules at each level, and both are evaluated separately by judges."
+    },
+    {
+      "type": "h2",
+      "text": "Tumbling skills by level"
+    },
+    {
+      "type": "table",
+      "head": ["Level", "Standing tumbling ceiling", "Running tumbling ceiling"],
+      "rows": [
+        ["Level 1", "Cartwheel, round-off", "Round-off, cartwheel"],
+        ["Level 2", "Back walkover, front walkover", "Round-off back handspring"],
+        ["Level 3", "Back handspring, series", "Round-off back handspring series"],
+        ["Level 4", "Standing back tuck", "Running tuck, whip"],
+        ["Level 5", "Standing series to tuck", "Layout, whip to tuck"],
+        ["Level 6", "Standing full twist", "Full twisting layout, double-full"],
+        ["Level 7", "All skills legal", "All skills legal"]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Note: These are ceiling skills — the hardest single skill permitted. Athletes can always perform skills below the ceiling. A Level 5 athlete can perform a tuck; a Level 3 athlete cannot perform a tuck. **The ceiling moves up, the floor stays open.**"
+    },
+    {
+      "type": "h2",
+      "text": "The skills that define level transitions"
+    },
+    {
+      "type": "p",
+      "text": "A few skills are informal 'gatekeepers' — the skills coaches look for when deciding whether an athlete is ready to move up. These are the skills most parents hear about repeatedly:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Round-off back handspring** — the Level 2/3 gateway. Without this, a child will struggle on any Level 3 team.",
+        "**Standing back tuck** — the Level 3/4 gateway. This is the most common bottleneck for youth athletes and can take 1–3 years to develop safely. Rushing it is where injuries happen.",
+        "**Running layout** — the Level 4/5 gateway. Requires a solid whip series and strong core conditioning.",
+        "**Full twist** — the Level 5/6 gateway. Only a small percentage of all-star athletes reach this level."
+      ]
+    },
+    {
+      "type": "quote",
+      "variant": "border",
+      "text": "\"The standing tuck is where most families' timelines collide with reality. It cannot be rushed safely — and gyms that try are where injuries happen.\""
+    },
+    {
+      "type": "h2",
+      "text": "What happens when an illegal skill is performed"
+    },
+    {
+      "type": "p",
+      "text": "If a team performs a tumbling skill above their level ceiling in competition, they receive a **mandatory deduction** from the deductions panel. Most events set this at 0.5–1.0 points per violation. In some events, particularly large national championships, a single illegal skill can result in **disqualification from that division**."
+    },
+    {
+      "type": "p",
+      "text": "Illegal skills in tumbling are usually unintentional — an athlete 'over-rotates' a standing series into territory above the legal ceiling, or a skill that was debated in practice shows up in competition. Coaches are responsible for ensuring routine content is legal, but mistakes happen. The rules are the gym's responsibility to know and enforce."
+    },
+    {
+      "type": "h2",
+      "text": "Why athletes plateau — and what to do about it"
+    },
+    {
+      "type": "p",
+      "text": "Tumbling plateaus are normal and not a sign that an athlete has reached her ceiling. The most common causes are: **technique gaps from rushing earlier skills**, conditioning deficits, or fear responses after a fall or close call. A private lesson with a coach who specializes in the specific skill — not just a general tumbling coach — is usually the most effective intervention."
+    },
+    {
+      "type": "p",
+      "text": "More practice hours are not always better than better practice hours. If an athlete has been working on the same skill for over a year with no progress, the issue is almost always technique, not effort.",
+      "serif": true
+    },
+    {
+      "type": "note",
+      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community — not original data collection or formal surveys."
+    }
+  ]
+}

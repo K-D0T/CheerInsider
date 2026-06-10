@@ -252,7 +252,7 @@ function renderBlock(block: Block) {
     case 'note':
       return (
         <div style={{ margin: '32px 0', padding: '24px 32px', background: 'var(--p-cream)', borderLeft: '4px solid var(--p-hot)', fontSize: 14, lineHeight: 1.6, color: 'var(--p-inkSoft)' }}>
-          <strong style={{ color: 'var(--p-ink)' }}>{block.title}</strong> {block.text}
+          {block.title && <strong style={{ color: 'var(--p-ink)' }}>{block.title} </strong>}{block.text}
         </div>
       );
 
