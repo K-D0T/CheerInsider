@@ -48,8 +48,8 @@ export default function AboutPage() {
                 fluff. Just what I'd tell my own sister.
               </p>
               <div style={{ display:'flex', gap:14 }}>
-                <span style={{ background:'var(--p-hot)', color:'#fff', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer', display:'inline-flex', alignItems:'center', gap:8 }}>Get my Survival Guide <Icon.arrow/></span>
-                <span style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer' }}>Email Lauren →</span>
+                <a href="/cost-calculator" style={{ background:'var(--p-hot)', color:'#fff', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer', display:'inline-flex', alignItems:'center', gap:8 }}>Get my Survival Guide <Icon.arrow/></a>
+                <a href="mailto:lauren@cheer-insider.com" style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer' }}>Email Lauren →</a>
               </div>
             </div>
             <div style={{ position:'relative' }}>
@@ -166,7 +166,7 @@ export default function AboutPage() {
           </p>
           <div style={{ display:'flex', justifyContent:'center', gap:14, flexWrap:'wrap' }}>
             <a href="mailto:lauren@cheer-insider.com" style={{ background:'var(--p-ink)', color:'var(--p-cream)', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, display:'inline-flex', alignItems:'center', gap:8 }}>lauren@cheer-insider.com <Icon.arrowUp/></a>
-            <span style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, cursor:'pointer' }}>Send a tip anonymously →</span>
+            <a href="mailto:lauren@cheer-insider.com?subject=Anonymous%20tip" style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, cursor:'pointer' }}>Send a tip anonymously →</a>
           </div>
         </Container>
       </section>
