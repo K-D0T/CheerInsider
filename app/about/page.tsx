@@ -1,30 +1,23 @@
 import { Container } from '@/components/ui/Container';
-import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
 import { Icon } from '@/components/ui/Icon';
+import { getAllArticles } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
 
 export const metadata = {
-  title: 'About Lauren K. — Former Coach, Cheer Mom, and the Voice Behind CheerInsider',
-  description: 'CCA-certified coach, former Level 6 athlete, and cheer mom of two. Lauren started CheerInsider to answer the questions nobody else would — honestly.',
+  title: 'About CheerInsider — Independent All-Star Cheer Coverage for Parents',
+  description: 'What CheerInsider is, how our AI-assisted editorial process works, and the standards behind every article we publish for cheer parents.',
   openGraph: {
-    title: 'About Lauren K. | CheerInsider',
-    description: 'The story behind CheerInsider: 18 years on the mat, two daughters in all-star, and a mission to give cheer parents real information.',
-    type: 'profile',
+    title: 'About CheerInsider',
+    description: 'Independent, parent-first coverage of competitive all-star cheerleading — and full transparency about how it gets made.',
+    type: 'website',
   },
 };
 
-const MILESTONES = [
-  { year:'2007', title:'First all-star tryout', body:'Made a Level 1 youth team at age 9. Cost: $1,800 for the season. (Yes, even then.)' },
-  { year:'2013', title:'Level 6 athlete', body:'Worlds bid, Senior Open 5. Started coaching tumbling on the side at 15.' },
-  { year:'2014', title:'CCA certification', body:'First coaching gig with a Tiny Novice team. Realized how little public info exists.' },
-  { year:'2019', title:'First Worlds as a coach', body:'Senior Small Coed 5, top 10. Started writing my private gym-mom email guide that would later become this site.' },
-  { year:'2024', title:'CheerInsider launches', body:'After ten thousand DM\'d cost questions. Three articles to start. Today: 127.' },
-  { year:'2026', title:'You\'re here', body:'41K cheer moms on the list. Two daughters on Level 2 and Level 4 teams. Still on the mat.' },
-];
-
 export default function AboutPage() {
+  const articleCount = getAllArticles().length;
+
   return (
     <>
       {/* Hero */}
@@ -32,32 +25,29 @@ export default function AboutPage() {
         <Container>
           <div className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:64, alignItems:'end' }}>
             <div>
-              <Pill style={{ marginBottom:24 }}>★ ABOUT THE INSIDER</Pill>
-              <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(64px,8vw,132px)', margin:'0 0 28px', letterSpacing:'-.03em', lineHeight:.92 }}>
-                Hi, I'm <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Lauren</span>.<br/>
-                I've been on the mat for 18 years.
+              <Pill style={{ marginBottom:24 }}>★ ABOUT THE SITE</Pill>
+              <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(56px,7vw,116px)', margin:'0 0 28px', letterSpacing:'-.03em', lineHeight:.92 }}>
+                The cheer site that's on <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>your</span> side of the check.
               </h1>
               <p style={{ fontSize:21, lineHeight:1.5, color:'var(--p-inkSoft)', margin:'0 0 24px', maxWidth:640 }}>
-                CCA-certified coach. Former Level 6 athlete. Cheer mom of two (Level 2 + Level 4).
-                I started CheerInsider because every time a new mom DM'd me asking what something
-                <em> really</em> costs, I realized the answer wasn't anywhere online — except in our
-                gym moms' group chat at 11pm.
+                CheerInsider is an independent editorial site about competitive all-star cheerleading,
+                written for the parents paying for it. Real cost breakdowns, honest gym-selection
+                criteria, plain-English explanations of how the sport actually works.
               </p>
               <p style={{ fontSize:17, lineHeight:1.55, color:'var(--p-inkSoft)', margin:'0 0 32px', maxWidth:600 }}>
-                Now it's here. No federation talking points. No gym marketing. No "spirit-shop"
-                fluff. Just what I'd tell my own sister.
+                No federation talking points. No gym marketing. No spirit-shop fluff.
               </p>
               <div style={{ display:'flex', gap:14 }}>
-                <a href="/cost-calculator" style={{ background:'var(--p-hot)', color:'#fff', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer', display:'inline-flex', alignItems:'center', gap:8 }}>Get my Survival Guide <Icon.arrow/></a>
-                <a href="mailto:lauren@cheer-insider.com" style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer' }}>Email Lauren →</a>
+                <a href="/cost-calculator" style={{ background:'var(--p-hot)', color:'#fff', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer', display:'inline-flex', alignItems:'center', gap:8 }}>Try the Cost Calculator <Icon.arrow/></a>
+                <a href="mailto:lauren@cheer-insider.com" style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer' }}>Contact us →</a>
               </div>
             </div>
             <div style={{ position:'relative' }}>
-              <Gradient variant="halo" ratio="3/4" caption="portrait · author"/>
+              <Gradient variant="halo" ratio="3/4" caption="cheerinsider · est. 2025"/>
               <div style={{ position:'absolute', bottom:-24, right:-24, padding:'14px 18px', background:'var(--p-ink)', color:'var(--p-cream)', maxWidth:240 }}>
-                <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:4 }}>Currently</div>
+                <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:4 }}>Publishing</div>
                 <div style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:18, lineHeight:1.1 }}>
-                  Coaching & competing · <span style={{ color:'var(--p-hot)' }}>Tampa, FL</span>
+                  New articles <span style={{ color:'var(--p-hot)' }}>every week</span>
                 </div>
               </div>
             </div>
@@ -65,12 +55,12 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Creds */}
+      {/* What we cover */}
       <section style={{ padding:'64px 0', background:'var(--p-paper)', borderBottom:'1px solid var(--p-line)' }}>
         <Container>
-          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:32 }}>The receipts</div>
+          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:32 }}>The site today</div>
           <div className="ci-stats" style={{ gap:0, borderTop:'2px solid var(--p-ink)', borderBottom:'2px solid var(--p-ink)' }}>
-            {([['18','seasons','as athlete + coach + mom'],['CCA','certified','since 2014'],['2x','Worlds','as a coach (2019, 2023)'],['41K','readers','on the email list']] as const).map(([n,l,sub], i) => (
+            {([[String(articleCount),'articles','published and counting'],['3','pillars','parents · guides · gear'],['Weekly','updates','new coverage every Monday'],['0','sponsored posts','and it stays that way']] as const).map(([n,l,sub], i) => (
               <div key={i} style={{ padding:'32px 24px', borderRight: i<3 ? '1px solid var(--p-line)' : 'none' }}>
                 <div style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:64, lineHeight:1, letterSpacing:'-.04em', color:'var(--p-hot)' }}>{n}</div>
                 <div style={{ fontSize:14, fontWeight:700, marginTop:12 }}>{l}</div>
@@ -81,24 +71,23 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Timeline */}
+      {/* AI Disclosure */}
       <section style={{ padding:'96px 0' }}>
-        <Container>
-          <SectionHead eyebrow="THE TIMELINE" title={<>How we got <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>here</span>.</>}/>
-          <div style={{ marginTop:48, display:'flex', flexDirection:'column' }}>
-            {MILESTONES.map((m, i) => (
-              <div key={i} className="ci-timeline-row" style={{ display:'grid', gridTemplateColumns:'140px 60px 1fr', gap:32, padding:'28px 0', borderTop:'1px solid var(--p-line)', borderBottom: i===MILESTONES.length-1 ? '1px solid var(--p-line)' : 'none', alignItems:'start' }}>
-                <div style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:42, color:'var(--p-hot)', letterSpacing:'-.03em', lineHeight:1 }}>{m.year}</div>
-                <div className="ci-timeline-dot" style={{ position:'relative', display:'flex', justifyContent:'center' }}>
-                  <span style={{ width:14, height:14, borderRadius:99, background:'var(--p-ink)', marginTop:14, display:'inline-block' }}/>
-                </div>
-                <div>
-                  <h3 style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:24, margin:'0 0 8px', letterSpacing:'-.02em', lineHeight:1.1 }}>{m.title}</h3>
-                  <p style={{ fontSize:15.5, lineHeight:1.5, color:'var(--p-inkSoft)', margin:0, maxWidth:620 }}>{m.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+        <Container max={900}>
+          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:18 }}>How this site works</div>
+          <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(32px,4vw,52px)', margin:'0 0 24px', letterSpacing:'-.025em', lineHeight:.95 }}>
+            AI-assisted. <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Editorially driven.</span>
+          </h2>
+          <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
+            CheerInsider articles are written with AI assistance using the editorial voice and perspective built into this site.
+            <strong> &ldquo;Lauren K.&rdquo; is an editorial persona</strong> — a composite of the cheer parent and coach experience — not a specific individual.
+          </p>
+          <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
+            Cost figures, scenarios, and workload examples in our articles are <strong>illustrative</strong> — based on patterns and ranges consistently reported across the cheer community, not derived from formal surveys or original data collection. Where we cite third-party research or sourced news, we link to the source.
+          </p>
+          <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:0, maxWidth:740 }}>
+            Our weekly news coverage starts from live web research of the past week's actual cheer news — competition results, rule changes, safety stories — and every specific fact in those articles comes from that sourced research. The AI helps us write clearly and consistently; the perspective is real.
+          </p>
         </Container>
       </section>
 
@@ -114,10 +103,10 @@ export default function AboutPage() {
             </div>
             <ol style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:24 }}>
               {[
-                ['Sponsored content is labeled in the headline.','If a brand paid us, the headline says so. We haven\'t taken sponsored money yet.'],
+                ['Sponsored content is labeled in the headline.','If a brand paid us, the headline says so. We haven\'t taken sponsored money — ever.'],
                 ['No affiliate link can change a verdict.','We only recommend products we\'d buy ourselves.'],
-                ['Anonymized sources, on request.','Some moms and coaches can\'t go on the record without gym fallout. We protect them.'],
-                ['Federation-adjacent claims get sourced.','If we can\'t cite it, we don\'t print it.'],
+                ['Illustrative numbers are labeled as illustrative.','Composite scenarios and cost ranges are disclosed in the article. We don\'t dress up estimates as research.'],
+                ['News claims get sourced.','Weekly news articles are built from live, sourced research. If we can\'t source it, we don\'t print it.'],
                 ['Corrections live forever.','When we get something wrong, we update with a dated note. We don\'t silently edit.'],
               ].map(([t,b], i) => (
                 <li key={i} style={{ display:'grid', gridTemplateColumns:'auto 1fr', gap:20, alignItems:'start' }}>
@@ -133,36 +122,16 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* AI Disclosure */}
-      <section style={{ padding:'64px 0', background:'var(--p-paper)', borderBottom:'1px solid var(--p-line)' }}>
-        <Container max={900}>
-          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:18 }}>How this site works</div>
-          <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(32px,4vw,52px)', margin:'0 0 24px', letterSpacing:'-.025em', lineHeight:.95 }}>
-            AI-assisted. <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Editorially driven.</span>
-          </h2>
-          <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
-            CheerInsider articles are written with AI assistance using the editorial voice and perspective built into this site.
-            <strong> Lauren K. is an editorial persona</strong> — a composite of the cheer parent and coach experience — not a specific individual.
-          </p>
-          <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
-            Cost figures, scenarios, and workload examples in our articles are <strong>illustrative</strong> — based on patterns and ranges consistently reported across the cheer community, not derived from formal surveys or original data collection. Where we cite third-party research or sourced news, we link to the source.
-          </p>
-          <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:0, maxWidth:740 }}>
-            The editorial positions (cheer costs too much, team mom labor is undervalued, privates are oversold) reflect genuine, widely-held views in the cheer parent community. The AI helps us write clearly and consistently — the perspective is real.
-          </p>
-        </Container>
-      </section>
-
       {/* Contact */}
       <section style={{ padding:'80px 0' }}>
         <Container max={900}>
-          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:18, textAlign:'center' }}>Talk to me</div>
+          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:18, textAlign:'center' }}>Talk to us</div>
           <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(40px,5vw,72px)', margin:'0 0 24px', textAlign:'center', letterSpacing:'-.025em', lineHeight:.95 }}>
             Got a tip, a question, or a <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>story</span>?
           </h2>
           <p style={{ fontSize:17, lineHeight:1.5, color:'var(--p-inkSoft)', margin:'0 auto 32px', maxWidth:600, textAlign:'center' }}>
-            Anonymized stories are how this site stays useful. If something happened at your gym
-            that other moms should hear about, email me. I never share names without permission.
+            Reader stories are how this site stays useful. If something happened at your gym
+            that other parents should hear about, email us. We never share names without permission.
           </p>
           <div style={{ display:'flex', justifyContent:'center', gap:14, flexWrap:'wrap' }}>
             <a href="mailto:lauren@cheer-insider.com" style={{ background:'var(--p-ink)', color:'var(--p-cream)', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, display:'inline-flex', alignItems:'center', gap:8 }}>lauren@cheer-insider.com <Icon.arrowUp/></a>

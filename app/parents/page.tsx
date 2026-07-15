@@ -11,20 +11,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Parent Resources — Costs, Gym Selection, Competition Guides',
-  description: 'Costs, gym selection, competition logistics, and the social politics no one warns you about. 38 guides for cheer parents — from a coach and cheer mom of two.',
+  description: 'Costs, gym selection, competition logistics, and the social politics no one warns you about. Honest guides for cheer parents — from the inside.',
   openGraph: {
     title: 'Parent Resources | CheerInsider',
-    description: 'Everything a cheer parent needs to know — costs, gym selection, competition logistics, and how to advocate for your kid without being That Mom. 38 guides from the inside.',
+    description: 'Everything a cheer parent needs to know — costs, gym selection, competition logistics, and how to advocate for your kid without being That Mom. All from the inside.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Parent Resources | CheerInsider',
-    description: 'Costs, gym selection, competition logistics, and more. 38 guides for cheer parents — from a coach and cheer mom of two.',
+    description: 'Costs, gym selection, competition logistics, and more. Honest guides for cheer parents — from the inside.',
   },
 };
-
-const FILTERS = ['All 38','Cost & Money','Gym Selection','Tryouts','Competition','Travel','Mental Load','Recruiting'];
 
 const LEAD = {
   eyebrow:'COST DEEP DIVE · MOST READ',
@@ -56,36 +54,15 @@ export default function ParentsPage() {
           </div>
           <div className="ci-2col" style={{ gap:64 }}>
             <div>
-              <Pill style={{ marginBottom:24 }}>★ THE PARENT PILLAR · 38 GUIDES</Pill>
+              <Pill style={{ marginBottom:24 }}>★ THE PARENT PILLAR · {ITEMS.length} GUIDES</Pill>
               <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(60px,7.6vw,124px)', margin:'0 0 24px', letterSpacing:'-.03em', lineHeight:.92 }}>
                 For the <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>cheer mom</span> who'd rather know.
               </h1>
               <p style={{ fontSize:19, lineHeight:1.5, color:'var(--p-inkSoft)', margin:'0 0 24px', maxWidth:620 }}>
-                Costs, gym selection, competition logistics, the social politics no one warns you about, and how to advocate for your kid without being That Mom. 38 guides, all from the inside.
+                Costs, gym selection, competition logistics, the social politics no one warns you about, and how to advocate for your kid without being That Mom. All from the inside.
               </p>
             </div>
             <Gradient variant="flash" ratio="4/5" caption="parent pillar"/>
-          </div>
-        </Container>
-      </section>
-
-      {/* Filters */}
-      <section style={{ padding:'24px 0', borderBottom:'1px solid var(--p-line)', background:'var(--p-paper)', position:'sticky', top:0, zIndex:30 }}>
-        <Container style={{ display:'flex', justifyContent:'space-between', alignItems:'center', gap:24 }}>
-          <div style={{ display:'flex', gap:8, flexWrap:'wrap' }}>
-            {FILTERS.map((f, i) => (
-              <span key={i} style={{
-                background: i===0 ? 'var(--p-ink)' : 'transparent',
-                color: i===0 ? 'var(--p-cream)' : 'var(--p-ink)',
-                border:'1px solid var(--p-ink)', padding:'8px 14px',
-                borderRadius:99, fontSize:13, fontWeight:600,
-                display:'inline-block',
-              }}>{f}</span>
-            ))}
-          </div>
-          <div style={{ display:'flex', alignItems:'center', gap:14, fontSize:13 }}>
-            <span style={{ color:'var(--p-muted)' }}>Sort:</span>
-            <span style={{ fontWeight:700, fontSize:13 }}>Most-read ▾</span>
           </div>
         </Container>
       </section>

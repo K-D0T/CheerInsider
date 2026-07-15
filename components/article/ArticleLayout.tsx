@@ -65,7 +65,7 @@ export function ArticleLayout({ article }: { article: Article }) {
             <div>
               <div style={{ fontSize: 14, fontWeight: 700 }}>By Lauren K.</div>
               <div style={{ fontSize: 12.5, color: dark ? 'rgba(250,246,241,.6)' : 'var(--p-muted)' }}>
-                {dark ? "The author's views are her own." : 'Former CCA-certified coach · Cheer mom of two · Tampa, FL'}
+                {dark ? 'CheerInsider editorial · AI-assisted' : 'CheerInsider editorial · AI-assisted'}
               </div>
             </div>
             <div style={{ marginLeft: 'auto', display: 'flex', gap: 18, fontSize: 13, color: dark ? 'rgba(250,246,241,.6)' : 'var(--p-muted)', alignItems: 'center' }}>

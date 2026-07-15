@@ -66,7 +66,7 @@ export function GearRail() {
   return (
     <section style={{ padding:'96px 0', background:'var(--p-paper)', borderTop:'1px solid var(--p-line)', borderBottom:'1px solid var(--p-line)' }}>
       <Container>
-        <SectionHead eyebrow="GEAR ROUNDUPS · TESTED ON THE MAT" right="All roundups" rightHref="/gear" title={<>The honest <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>gear</span> guide.</>}/>
+        <SectionHead eyebrow="GEAR ROUNDUPS · PARENT-FIRST PICKS" right="All roundups" rightHref="/gear" title={<>The honest <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>gear</span> guide.</>}/>
         <div className="ci-4col" style={{ gap:18, marginTop:48 }}>
           {GEAR.map((g) => (
             <div key={g.name} style={{ display:'flex', flexDirection:'column', border:'1px solid var(--p-line)', background:'var(--p-cream)' }}>

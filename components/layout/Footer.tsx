@@ -5,7 +5,7 @@ const COLS = [
   { h:'Start here', items:[['New cheer mom','/parents'],['My kid wants to try out','/guides'],["I'm an athlete",'/guides'],['Cost calculator','/cost-calculator'],['Levels & scoring','/guides']] },
   { h:'Topics',     items:[['Parent resources','/parents'],['Educational guides','/guides'],['Gear roundups','/gear'],['Cost calculator','/cost-calculator'],['Gym guide','/gym-guide']] },
   { h:'Roundups',   items:[['Cheer shoes 2026','/gear/cheer-shoes-2026'],['All gear','/gear'],['20 things every cheer mom needs','/parents/20-things'],['The $24K season','/parents/the-24k-season'],['Team mom trap','/parents/team-mom-trap']] },
-  { h:'Site',       items:[['About Lauren','/about'],['Editorial standards','/about'],['Affiliate policy','/about'],['Contact','/about'],['Press kit','/about']] },
+  { h:'Site',       items:[['About Lauren','/about'],['Editorial standards','/about'],['Affiliate policy','/terms'],['Contact','/about'],['Privacy policy','/privacy']] },
 ];
 
 export function Footer() {
@@ -19,7 +19,7 @@ export function Footer() {
               Cheer<span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Insider</span>
             </Link>
             <p style={{ maxWidth:300, color:'rgba(250,246,241,.65)', fontSize:14, lineHeight:1.55, marginTop:18 }}>
-              Honest, insider-written content about all-star cheerleading. Founded by Lauren K., former CCA-certified coach and current cheer mom of two.
+              Honest, independent coverage of all-star cheerleading, written for the parents paying for it. AI-assisted editorial — see our About page for how it works.
             </p>
             <div style={{ marginTop:24, display:'flex', flexDirection:'column', gap:10, fontSize:12.5, color:'rgba(250,246,241,.5)' }}>
               <span>📍 Based in Tampa, FL</span>
@@ -40,7 +40,7 @@ export function Footer() {
         <div style={{ marginTop:64, paddingTop:24, borderTop:'1px solid rgba(250,246,241,.12)', display:'flex', justifyContent:'space-between', alignItems:'center', gap:24, flexWrap:'wrap', fontSize:12, color:'rgba(250,246,241,.5)' }}>
           <span>© 2026 CheerInsider, LLC · Not affiliated with USASF, Varsity, or any federation. · Editorial content is AI-assisted; cost figures are illustrative. <a href="/about" style={{ color:'inherit', textDecoration:'underline' }}>Learn more</a></span>
           <span style={{ display:'flex', gap:18 }}>
-            <a href="/about">Privacy</a><a href="/about">Terms</a><a href="/about">Affiliate disclosures</a><a href="/about">Editorial standards</a>
+            <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/terms">Affiliate disclosures</a><a href="/about">Editorial standards</a>
           </span>
         </div>
       </div>

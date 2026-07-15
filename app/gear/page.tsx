@@ -9,17 +9,17 @@ import { P, tx } from '@/lib/palette';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Gear Roundups — Tested on the Mat',
-  description: 'Cheer shoes, bags, practice wear, and bows — tested on the mat by athletes and coaches. No sponsored money. Honest verdicts. Some links earn a small commission.',
+  title: 'Gear Roundups — Honest Picks for Cheer Families',
+  description: 'Cheer shoes, bags, practice wear, and bows — honest editorial picks for cheer families. No sponsored money. Some links earn a small commission.',
   openGraph: {
-    title: 'Gear Roundups: Tested on the Mat | CheerInsider',
-    description: 'Every product we recommend was tested by athletes and coaches at Levels 2–5. No brand deals, no sponsored money — just honest gear reviews.',
+    title: 'Gear Roundups | CheerInsider',
+    description: 'Honest editorial gear picks for cheer families. No brand deals, no sponsored money — just honest gear reviews.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Gear Roundups | CheerInsider',
-    description: 'Cheer shoes, bags, and practice wear tested on the mat. Honest rankings, no sponsored money.',
+    description: 'Cheer shoes, bags, and practice wear — honest rankings, no sponsored money.',
   },
 };
 
@@ -46,12 +46,12 @@ export default function GearIndexPage() {
           </div>
           <div className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1.5fr 1fr', gap:64, alignItems:'end' }}>
             <div>
-              <Pill style={{ marginBottom:24 }}>★ THE GEAR PILLAR · TESTED ON THE MAT</Pill>
+              <Pill style={{ marginBottom:24 }}>★ THE GEAR PILLAR · HONEST PICKS</Pill>
               <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(60px,7.6vw,124px)', margin:'0 0 24px', letterSpacing:'-.03em', lineHeight:.92 }}>
                 The honest <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>gear</span> guide.
               </h1>
               <p style={{ fontSize:19, lineHeight:1.5, color:'var(--p-inkSoft)', margin:0, maxWidth:620 }}>
-                Every product we recommend was tested on the mat — by athletes, by coaches, and by parents who have paid full price for the wrong thing once too often. We never take sponsored money. Some links earn a small commission.
+                Editorial gear picks for cheer families — compared on fit, durability, and value, informed by what athletes, coaches, and parents consistently report. We never take sponsored money. Some links earn a small commission.
               </p>
             </div>
             <Gradient variant="halo" ratio="4/5" caption="gear pillar"/>
@@ -62,7 +62,7 @@ export default function GearIndexPage() {
       {/* Roundups grid */}
       <section style={{ padding:'64px 0 96px' }}>
         <Container>
-          <SectionHead eyebrow="ALL ROUNDUPS · BY CATEGORY" title={<>Everything we've <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>tested</span>.</>}/>
+          <SectionHead eyebrow="ALL ROUNDUPS · BY CATEGORY" title={<>Everything we've <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>reviewed</span>.</>}/>
 
           {/* Lead roundup — full width */}
           <Link href={ROUNDUPS[0].href} className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 1.2fr', gap:48, padding:'48px 0', borderBottom:'1px solid var(--p-line)', alignItems:'center', cursor:'pointer' }}>

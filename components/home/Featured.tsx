@@ -34,7 +34,7 @@ export function Featured() {
             </p>
             <div style={{ display:'flex', alignItems:'center', gap:14, fontSize:13, color:'var(--p-muted)' }}>
               <span style={{ display:'inline-block', width:32, height:32, borderRadius:99, background:'var(--p-accent)' }}/>
-              <span><b style={{ color:'var(--p-ink)' }}>By Lauren K.</b> · former CCA coach, Level 5 cheer mom</span>
+              <span><b style={{ color:'var(--p-ink)' }}>By Lauren K.</b> · CheerInsider editorial</span>
               <span style={{ marginLeft:'auto' }}>11 min read · May 2026</span>
             </div>
           </article>

@@ -2,10 +2,11 @@ import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
 import { Gradient } from '@/components/ui/Gradient';
 import { Icon } from '@/components/ui/Icon';
+import { getAllArticles } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
 
 function SpinBadge() {
-  const text = ' ★ 41,238 READERS · 4.9 RATING · INSIDER WRITTEN ';
+  const text = ' ★ INDEPENDENT · PARENT FIRST · INSIDER WRITTEN ';
   const r = 70;
   return (
     <div style={{ position:'absolute', top:-44, right:-44, zIndex:3, width:170, height:170, pointerEvents:'none', animation:'spin-badge 16s linear infinite' }}>
@@ -70,7 +71,7 @@ export function Hero() {
 
       <Container style={{ marginTop:80, borderTop:'1px solid var(--p-ink)', borderBottom:'1px solid var(--p-ink)' }}>
         <div className="ci-stats">
-        {[['131','guides published'],['18 yrs','on the mat'],['4.9 ★','reader rating'],['42K','on the email list']].map(([n,l], i) => (
+        {[[String(getAllArticles().length),'articles published'],['Weekly','new articles'],['0','sponsored posts'],['100%','independent']].map(([n,l], i) => (
           <div key={i} style={{ padding:'20px 24px', borderRight: i<3 ? '1px solid var(--p-line)' : 'none' }}>
             <div style={{ fontFamily:'var(--p-display)', fontSize:38, fontWeight:800, lineHeight:1, letterSpacing:'-.02em' }}>{n}</div>
             <div style={{ fontSize:12, letterSpacing:'.08em', textTransform:'uppercase', color:'var(--p-muted)', marginTop:8 }}>{l}</div>
