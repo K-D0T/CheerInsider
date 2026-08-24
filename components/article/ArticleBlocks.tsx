@@ -283,6 +283,25 @@ function renderBlock(block: Block) {
         </div>
       );
 
+    case 'sources':
+      return (
+        <section style={{ margin: '56px 0 32px', paddingTop: 24, borderTop: '2px solid var(--p-ink)' }}>
+          <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 14 }}>{block.heading ?? 'Sources'}</div>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10, fontSize: 14.5 }}>
+            {block.items.map((s, i) => (
+              <li key={i} style={{ lineHeight: 1.5 }}>
+                {s.url ? (
+                  <a href={s.url} target="_blank" rel="noopener noreferrer" style={{ fontWeight: 600, textDecoration: 'underline' }}>{s.title}</a>
+                ) : (
+                  <span style={{ fontWeight: 600 }}>{s.title}</span>
+                )}
+                <span style={{ color: 'var(--p-muted)' }}> — {s.publication}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      );
+
     case 'cta':
       return (
         <div className="ci-stack-mobile" style={{ marginTop: 64, padding: 40, background: 'var(--p-hot)', color: '#fff', display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 32, alignItems: 'center' }}>

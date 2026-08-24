@@ -44,8 +44,15 @@ SECTION: <parents or gear>
 NOTES:
 <8-20 bullet points of verified facts from your searches: dates, numbers, names of
 events/organizations (not private individuals), what changed, why it matters to
-parents. Include the source publication for each fact in parentheses. These notes
-are the only specifics the writer is allowed to use.>`;
+parents. After EACH bullet, include the source as "[Publication Name | https://full-url]"
+using the actual URL you retrieved — never a guessed or reconstructed URL. These notes
+are the only specifics the writer is allowed to use.>
+
+SOURCES:
+<A final list of every source you used, one per line, as:
+Title of the page or article | Publication Name | https://full-url
+The writer will render these as a visible source list on the published article, so
+every URL must be one you actually retrieved during this search.>`;
 
 // Web search runs in a server-side loop; pause_turn means resume by re-sending.
 let messages = [{ role: 'user', content: RESEARCH_PROMPT }];
@@ -70,7 +77,8 @@ const text = response.content
 
 const topicMatch = text.match(/^TOPIC:\s*(.+)$/m);
 const sectionMatch = text.match(/^SECTION:\s*(parents|gear)\s*$/m);
-const notesMatch = text.match(/NOTES:\s*\n([\s\S]+)$/m);
+const notesMatch = text.match(/NOTES:\s*\n([\s\S]+?)(?=\nSOURCES:|$)/m);
+const sourcesMatch = text.match(/SOURCES:\s*\n([\s\S]+)$/m);
 
 if (!topicMatch || !notesMatch) {
   console.error('Could not parse research output:\n', text.slice(0, 2000));
@@ -80,7 +88,16 @@ if (!topicMatch || !notesMatch) {
 const topic = topicMatch[1].trim();
 const section = sectionMatch ? sectionMatch[1] : 'parents';
 const notes = notesMatch[1].trim();
+const sources = sourcesMatch ? sourcesMatch[1].trim() : '';
 
 console.log(`Research complete.\nTopic: ${topic}\nSection: ${section}\nNotes: ${notes.split('\n').length} lines\n`);
 
-await generateArticle({ topic, section, notes, uniqueSlug: true });
+const notesWithSources = sources
+  ? `${notes}\n\nSOURCES (render every one of these in a "sources" block, using these exact URLs):\n${sources}`
+  : notes;
+
+if (!sources) {
+  console.warn('WARNING: research returned no SOURCES list; article will be unsourced.');
+}
+
+await generateArticle({ topic, section, notes: notesWithSources, uniqueSlug: true });
