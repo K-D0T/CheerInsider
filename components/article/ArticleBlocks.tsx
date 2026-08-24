@@ -302,23 +302,5 @@ function renderBlock(block: Block) {
         </section>
       );
 
-    case 'cta':
-      return (
-        <div className="ci-stack-mobile" style={{ marginTop: 64, padding: 40, background: 'var(--p-hot)', color: '#fff', display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 32, alignItems: 'center' }}>
-          <div>
-            <div style={{ ...tx.eyebrow, marginBottom: 14, opacity: .85 }}>{block.eyebrow}</div>
-            <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 36, margin: '0 0 8px', letterSpacing: '-.025em', lineHeight: 1 }}>
-              {block.title.split(/(\*[^*]+\*)/g).map((part, i) =>
-                part.startsWith('*') && part.endsWith('*')
-                  ? <span key={i} style={{ fontFamily: P.serif, fontStyle: 'italic', fontWeight: 400 }}>{part.slice(1, -1)}</span>
-                  : part)}
-            </h3>
-            <p style={{ margin: 0, fontSize: 16, lineHeight: 1.5, opacity: .92, maxWidth: 480 }}>{block.body}</p>
-          </div>
-          <span style={{ background: 'var(--p-ink)', color: 'var(--p-cream)', padding: '18px 26px', fontSize: 15, fontWeight: 700, borderRadius: 99, fontFamily: 'inherit', cursor: 'pointer', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, justifySelf: 'end' }}>
-            {block.button} <Icon.arrow />
-          </span>
-        </div>
-      );
   }
 }

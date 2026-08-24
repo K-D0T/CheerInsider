@@ -21,8 +21,7 @@ export type Block =
   | { type: 'review'; heading: string; items: { rank: string; score?: string; name: string; price: string; blurb: string; pros: string[]; cons: string[]; stars: number; img: string; buyAmazon: string; buyDirect: string }[] }
   | { type: 'specs'; heading: string; metrics: string[]; products: string[][] }
   | { type: 'note'; title?: string; text: string }
-  | { type: 'sources'; heading?: string; items: { title: string; publication: string; url?: string }[] }
-  | { type: 'cta'; eyebrow: string; title: string; body: string; button: string };
+  | { type: 'sources'; heading?: string; items: { title: string; publication: string; url?: string }[] };
 
 export interface RelatedCard {
   eyebrow: string;
