@@ -3,22 +3,30 @@
   "section": "guides",
   "kind": "feature",
   "title": "How Placement Decisions Actually Work Inside a Gym",
-  "description": "What coaches are actually evaluating at tryouts, why your child got placed where she did, and what 'she's not ready' usually means — from someone who has made hundreds of placement decisions.",
+  "description": "What coaches are actually evaluating at tryouts, why your child got placed where she did, and what 'she's not ready' usually means \u2014 from someone who has made hundreds of placement decisions.",
   "eyebrow": "TRYOUT PROCESS",
-  "pill": "★ TRYOUT GUIDE",
+  "pill": "\u2605 TRYOUT GUIDE",
   "headline": "How *placement decisions* actually work.",
   "sub": "What coaches evaluate at tryouts, why the level your child wants and the level she gets are sometimes different, and how to have a productive conversation with a gym about placement.",
   "datePublished": "2026-06-10",
-  "readTime": "6 min",
-  "tags": ["tryouts", "placement", "gym selection", "level placement", "cheer tryouts"],
+  "readTime": "3 min",
+  "tags": [
+    "tryouts",
+    "placement",
+    "gym selection",
+    "level placement",
+    "cheer tryouts"
+  ],
   "gradient": "pulse",
-  "heroCaption": "cover · tryout placement guide",
-  "card": { "eyebrow": "TRYOUT PROCESS" },
+  "heroCaption": "cover \u00b7 tryout placement guide",
+  "card": {
+    "eyebrow": "TRYOUT PROCESS"
+  },
   "blocks": [
     {
       "type": "p",
       "dropcap": true,
-      "text": "Tryout placements generate more parent frustration than almost any other part of all-star cheerleading. A child who has been at a gym for three years gets placed at the same level as a new athlete. A girl who 'knows everyone' gets passed over for a team she expected to make. The process feels opaque because gyms rarely explain their reasoning in detail — and most parents don't know what to ask."
+      "text": "Tryout placements generate more parent frustration than almost any other part of all-star cheerleading. A child who has been at a gym for three years gets placed at the same level as a new athlete. A girl who 'knows everyone' gets passed over for a team she expected to make. The process feels opaque because gyms rarely explain their reasoning in detail \u2014 and most parents don't know what to ask."
     },
     {
       "type": "h2",
@@ -26,22 +34,22 @@
     },
     {
       "type": "p",
-      "text": "At tryouts, coaches are filling specific roles on specific teams. They're not simply ranking athletes from best to worst — they're building a roster that needs to function as a unit. The evaluation is **simultaneous on several dimensions**:"
+      "text": "At tryouts, coaches are filling specific roles on specific teams. They're not simply ranking athletes from best to worst \u2014 they're building a roster that needs to function as a unit. The evaluation is **simultaneous on several dimensions**:"
     },
     {
       "type": "list",
       "items": [
-        "**Tumbling** — standing and running passes, difficulty and consistency",
-        "**Stunting** — flyer ability, base strength, back spot technique; what role the athlete can fill",
-        "**Jumps** — height, technique, toe touch specifically",
-        "**Motions** — sharpness, timing, coordination",
-        "**Performance quality** — expression, presence, ability to execute under pressure",
-        "**Coachability** — how the athlete responds to a correction during tryouts"
+        "**Tumbling** \u2014 standing and running passes, difficulty and consistency",
+        "**Stunting** \u2014 flyer ability, base strength, back spot technique; what role the athlete can fill",
+        "**Jumps** \u2014 height, technique, toe touch specifically",
+        "**Motions** \u2014 sharpness, timing, coordination",
+        "**Performance quality** \u2014 expression, presence, ability to execute under pressure",
+        "**Coachability** \u2014 how the athlete responds to a correction during tryouts"
       ]
     },
     {
       "type": "p",
-      "text": "Coaches are also thinking about **team chemistry, personality dynamics, and which athletes work well together** — factors that are real but rarely discussed openly with parents. An athlete who is technically strong but difficult to coach may be passed over for a better team in favor of someone slightly less skilled but more coachable."
+      "text": "Coaches are also thinking about **team chemistry, personality dynamics, and which athletes work well together** \u2014 factors that are real but rarely discussed openly with parents. An athlete who is technically strong but difficult to coach may be passed over for a better team in favor of someone slightly less skilled but more coachable."
     },
     {
       "type": "h2",
@@ -66,7 +74,7 @@
     },
     {
       "type": "p",
-      "text": "A Level 4 team with 24 athletes needs a specific distribution: roughly 6 flyers, 12 bases, 6 back spots — adjusted for the choreography. If tryouts produce 10 qualified flyers and only 4 qualified bases, someone strong gets left out or placed on a lower team. **Placement is partly skills, partly roster math, partly timing.**"
+      "text": "A Level 4 team with 24 athletes needs a specific distribution: roughly 6 flyers, 12 bases, 6 back spots \u2014 adjusted for the choreography. If tryouts produce 10 qualified flyers and only 4 qualified bases, someone strong gets left out or placed on a lower team. **Placement is partly skills, partly roster math, partly timing.**"
     },
     {
       "type": "p",
@@ -78,7 +86,7 @@
     },
     {
       "type": "p",
-      "text": "If the placement is unexpected, ask for a meeting — not an email thread. Come with specific questions, not grievances. The questions that get useful answers:"
+      "text": "If the placement is unexpected, ask for a meeting \u2014 not an email thread. Come with specific questions, not grievances. The questions that get useful answers:"
     },
     {
       "type": "list",
@@ -86,7 +94,7 @@
         "'What specific skills would she need to develop to be considered for [team] at next year's tryouts?'",
         "'Is this placement about her skills, or about team composition?'",
         "'Is there anything she can work on this season to put herself in a better position?'",
-        "'Are privates recommended, and if so, what would she work on — specifically?'"
+        "'Are privates recommended, and if so, what would she work on \u2014 specifically?'"
       ]
     },
     {
@@ -96,7 +104,7 @@
     },
     {
       "type": "note",
-      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community — not original data collection or formal surveys."
+      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community \u2014 not original data collection or formal surveys."
     }
   ]
 }

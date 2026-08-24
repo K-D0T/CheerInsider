@@ -164,8 +164,7 @@ function renderBlock(block: Block) {
                   <Pill color={p.verdict === 'Buy' ? 'var(--p-hot)' : 'var(--p-ink)'} style={{ alignSelf: 'start', fontSize: 10, padding: '3px 8px' }}>{p.rank}</Pill>
                   <div style={{ fontFamily: 'var(--p-display)', fontWeight: 700, fontSize: 20, letterSpacing: '-.02em', lineHeight: 1.05 }}>{p.name}</div>
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginTop: 'auto' }}>
-                    <span style={{ fontFamily: 'var(--p-display)', fontSize: 30, fontWeight: 800, color: p.verdict === 'Buy' ? 'var(--p-hot)' : 'var(--p-muted)' }}>{p.score}</span>
-                    <span style={{ fontSize: 11, color: 'var(--p-muted)' }}>/ 10</span>
+                    <span style={{ fontFamily: 'var(--p-display)', fontSize: 20, fontWeight: 800, color: p.verdict === 'Buy' ? 'var(--p-hot)' : 'var(--p-muted)' }}>{p.verdict}</span>
                     <span style={{ marginLeft: 'auto', fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 18 }}>{p.price}</span>
                   </div>
                 </div>
@@ -187,7 +186,6 @@ function renderBlock(block: Block) {
                 <div>
                   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 20, marginBottom: 16 }}>
                     <div style={{ ...tx.eyebrow, color: 'var(--p-hot)' }}>{r.rank}</div>
-                    <div style={{ fontFamily: 'var(--p-display)', fontSize: 64, fontWeight: 800, color: 'var(--p-hot)', letterSpacing: '-.04em', lineHeight: 1 }}>{r.score}<span style={{ fontSize: 18, color: 'var(--p-muted)', fontWeight: 500 }}>/10</span></div>
                   </div>
                   <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 42, margin: '0 0 6px', letterSpacing: '-.025em', lineHeight: 1 }}>{r.name}</h3>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 18 }}>

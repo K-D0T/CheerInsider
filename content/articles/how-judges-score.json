@@ -5,20 +5,28 @@
   "title": "How Judges Actually Score All-Star Cheer: A Panel-by-Panel Breakdown",
   "description": "Why did your team score lower than they should have? What does 'deductions' actually mean? A plain-English breakdown of how scoring panels work at all-star competitions.",
   "eyebrow": "SCORING EXPLAINED",
-  "pill": "★ SCORING EXPLAINED",
+  "pill": "\u2605 SCORING EXPLAINED",
   "headline": "How judges *actually* score.",
-  "sub": "Tumbling, stunts, pyramids, jumps, motion technique, performance — and the deductions panel everyone ignores until it matters. What parents need to understand before they read the score sheet.",
+  "sub": "Tumbling, stunts, pyramids, jumps, motion technique, performance \u2014 and the deductions panel everyone ignores until it matters. What parents need to understand before they read the score sheet.",
   "datePublished": "2026-06-10",
-  "readTime": "9 min",
-  "tags": ["scoring", "judges", "competition scoring", "deductions", "all-star cheer"],
+  "readTime": "3 min",
+  "tags": [
+    "scoring",
+    "judges",
+    "competition scoring",
+    "deductions",
+    "all-star cheer"
+  ],
   "gradient": "halo",
-  "heroCaption": "cover · scoring guide",
-  "card": { "eyebrow": "SCORING EXPLAINED" },
+  "heroCaption": "cover \u00b7 scoring guide",
+  "card": {
+    "eyebrow": "SCORING EXPLAINED"
+  },
   "blocks": [
     {
       "type": "p",
       "dropcap": true,
-      "text": "Most cheer parents watch competitions the wrong way. They watch their child. Judges watch everything else: timing, synchronization, execution technique, level of difficulty, and whether any illegal skills were performed. Understanding what judges are looking at changes how you interpret results — and what feedback actually means."
+      "text": "Most cheer parents watch competitions the wrong way. They watch their child. Judges watch everything else: timing, synchronization, execution technique, level of difficulty, and whether any illegal skills were performed. Understanding what judges are looking at changes how you interpret results \u2014 and what feedback actually means."
     },
     {
       "type": "h2",
@@ -30,28 +38,60 @@
     },
     {
       "type": "table",
-      "head": ["Panel", "What they score", "Typical weight"],
+      "head": [
+        "Panel",
+        "What they score",
+        "Typical weight"
+      ],
       "rows": [
-        ["Stunts", "Execution, difficulty, synchronization of partner stunts", "High"],
-        ["Pyramids & Tosses", "Pyramid connections, basket tosses, execution", "High"],
-        ["Tumbling", "Standing and running passes, difficulty, execution", "High"],
-        ["Jumps & Motion", "Jump technique, height, landing, arm motion sharpness", "Moderate"],
-        ["Performance & Showmanship", "Crowd engagement, expression, overall polish", "Moderate"],
-        ["Overall Impression", "Routine flow, spacing, music sync, crowd appeal", "Moderate"],
-        ["Deductions", "Falls, out-of-bounds, illegal skills, late starts", "Subtracted from total"]
+        [
+          "Stunts",
+          "Execution, difficulty, synchronization of partner stunts",
+          "High"
+        ],
+        [
+          "Pyramids & Tosses",
+          "Pyramid connections, basket tosses, execution",
+          "High"
+        ],
+        [
+          "Tumbling",
+          "Standing and running passes, difficulty, execution",
+          "High"
+        ],
+        [
+          "Jumps & Motion",
+          "Jump technique, height, landing, arm motion sharpness",
+          "Moderate"
+        ],
+        [
+          "Performance & Showmanship",
+          "Crowd engagement, expression, overall polish",
+          "Moderate"
+        ],
+        [
+          "Overall Impression",
+          "Routine flow, spacing, music sync, crowd appeal",
+          "Moderate"
+        ],
+        [
+          "Deductions",
+          "Falls, out-of-bounds, illegal skills, late starts",
+          "Subtracted from total"
+        ]
       ]
     },
     {
       "type": "h2",
-      "text": "What 'difficulty' means — and why it matters"
+      "text": "What 'difficulty' means \u2014 and why it matters"
     },
     {
       "type": "p",
-      "text": "Most scoring systems have a **difficulty component within each panel**. A team that hits the same skills as another team but with higher difficulty (harder stunts, more complex tumbling) will outscore them even if execution is similar. This is why coaches push for harder skills — it's not just ego, it directly affects the scorable ceiling."
+      "text": "Most scoring systems have a **difficulty component within each panel**. A team that hits the same skills as another team but with higher difficulty (harder stunts, more complex tumbling) will outscore them even if execution is similar. This is why coaches push for harder skills \u2014 it's not just ego, it directly affects the scorable ceiling."
     },
     {
       "type": "p",
-      "text": "The tradeoff: **higher difficulty = higher risk of falls**. Falls trigger deductions (typically 0.5–1.0 points per fall depending on the event). A team that attempts a double down and drops it may score lower than a team that hit a cleaner single-down. Coaches make this calculation every season — and parents rarely see it."
+      "text": "The tradeoff: **higher difficulty = higher risk of falls**. Falls trigger deductions (typically 0.5\u20131.0 points per fall depending on the event). A team that attempts a double down and drops it may score lower than a team that hit a cleaner single-down. Coaches make this calculation every season \u2014 and parents rarely see it."
     },
     {
       "type": "quote",
@@ -69,11 +109,11 @@
     {
       "type": "list",
       "items": [
-        "**Falls** — any athlete touching the floor unintentionally during a stunt, toss, or pyramid",
-        "**Out of bounds** — stepping outside the competition floor boundary",
-        "**Illegal skills** — performing a skill not permitted at that level (this can also result in disqualification at some events)",
-        "**Late start / overtime** — routine starting late or running over the time limit",
-        "**Uniform violations** — logos, accessories, or jewelry not compliant with event rules"
+        "**Falls** \u2014 any athlete touching the floor unintentionally during a stunt, toss, or pyramid",
+        "**Out of bounds** \u2014 stepping outside the competition floor boundary",
+        "**Illegal skills** \u2014 performing a skill not permitted at that level (this can also result in disqualification at some events)",
+        "**Late start / overtime** \u2014 routine starting late or running over the time limit",
+        "**Uniform violations** \u2014 logos, accessories, or jewelry not compliant with event rules"
       ]
     },
     {
@@ -86,7 +126,7 @@
     },
     {
       "type": "p",
-      "text": "Different competition companies use different scoring systems. NCA, UCA, NCA Collegiate, The Summit bid events, and independent competitions all have their own score sheets. A score of 88.4 at one event is not directly comparable to 88.4 at another event — **different panels, different weights, different deduction scales**."
+      "text": "Different competition companies use different scoring systems. NCA, UCA, NCA Collegiate, The Summit bid events, and independent competitions all have their own score sheets. A score of 88.4 at one event is not directly comparable to 88.4 at another event \u2014 **different panels, different weights, different deduction scales**."
     },
     {
       "type": "p",
@@ -98,25 +138,25 @@
     },
     {
       "type": "p",
-      "text": "Ask the gym for the score sheet after every competition — they receive it and should share it with families. When reading it:"
+      "text": "Ask the gym for the score sheet after every competition \u2014 they receive it and should share it with families. When reading it:"
     },
     {
       "type": "list",
       "items": [
-        "Look at **deductions first** — if there are falls or illegals, that explains the placement gap before you analyze anything else",
-        "Find the **lowest-scoring panel** — that's where the team needs the most improvement",
-        "Compare **difficulty scores** across panels — if difficulty is consistently low, the routine needs harder content, not just cleaner execution",
-        "Don't panic over a single score — look at trends across multiple competitions"
+        "Look at **deductions first** \u2014 if there are falls or illegals, that explains the placement gap before you analyze anything else",
+        "Find the **lowest-scoring panel** \u2014 that's where the team needs the most improvement",
+        "Compare **difficulty scores** across panels \u2014 if difficulty is consistently low, the routine needs harder content, not just cleaner execution",
+        "Don't panic over a single score \u2014 look at trends across multiple competitions"
       ]
     },
     {
       "type": "p",
-      "text": "Score sheets tell a story. Most parents never read them. The ones who do understand the sport — and their team's season — at a different level.",
+      "text": "Score sheets tell a story. Most parents never read them. The ones who do understand the sport \u2014 and their team's season \u2014 at a different level.",
       "serif": true
     },
     {
       "type": "note",
-      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community — not original data collection or formal surveys."
+      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community \u2014 not original data collection or formal surveys."
     }
   ]
 }

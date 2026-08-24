@@ -2,238 +2,205 @@
   "slug": "cheer-shoes-2026",
   "section": "gear",
   "kind": "roundup",
-  "title": "The Only Cheer Shoes Worth Your Money in 2026",
-  "description": "Four cheer shoes worth buying and two to avoid in 2026 \u2014 an editorial comparison of fit, durability, and value across levels, with a full comparison table.",
-  "ogDescription": "Six months of testing across Level 2\u20135 athletes. The Nfinity Vengeance is still the best overall at $110. Here's the full ranked list with scores.",
-  "eyebrow": "TESTED \u00b7 14 PAIRS \u00b7 6 MONTHS",
-  "pill": "\u2605 TESTED \u00b7 14 PAIRS \u00b7 6 MONTHS",
+  "title": "How to Choose Cheer Shoes in 2026 (and Which Ones Are Worth It)",
+  "description": "What actually matters in an all-star cheer shoe — fit, heel lock, sole feedback, and durability — plus the models we'd recommend by position and budget.",
+  "ogDescription": "Weight, heel lock, sole feedback, toe-box. What actually matters in a cheer shoe, and which ones get it right.",
+  "eyebrow": "GEAR · CHEER SHOES 2026",
+  "pill": "★ GEAR · CHEER SHOES 2026",
   "headline": "The only *cheer shoes* worth your money in 2026.",
-  "sub": "We compared the most popular cheer shoes on fit, durability, and value. Here are the four worth your money \u2014 and the two we'd skip at any price.",
-  "datePublished": "2026-05-01",
-  "readTime": "12 min",
-  "tags": [
-    "cheer shoes",
-    "all-star cheerleading",
-    "cheer gear",
-    "Nfinity",
-    "cheer equipment",
-    "gear review"
-  ],
+  "sub": "Cheer shoes are one of the few gear purchases that genuinely affects performance and injury risk. Here is what actually matters, how to fit them, and which models are worth the price by position.",
+  "datePublished": "2026-03-18",
+  "dateModified": "2026-08-24",
+  "readTime": "8 min",
+  "tags": ["cheer shoes", "cheer gear", "Nfinity", "Chassé", "gear guide", "cheer equipment"],
   "gradient": "halo",
-  "heroCaption": "hero \u00b7 four shoes, top-down",
+  "card": { "eyebrow": "GEAR · CHEER SHOES 2026" },
   "blocks": [
     {
       "type": "note",
-      "text": "**How we evaluate gear:** Verdicts on this page are editorial assessments based on product specs, published reviews, and feedback consistently shared across the cheer community \u2014 not a formal lab test. Some links are affiliate links; commissions never change a verdict."
+      "text": "**How we evaluate gear:** The recommendations below are editorial assessments based on published specifications, manufacturer information, and feedback consistently reported across the cheer community — not a formal lab test. We do not assign numeric scores because we have not conducted controlled testing. Some links are affiliate links; commissions never change a recommendation."
+    },
+    {
+      "type": "p",
+      "dropcap": true,
+      "text": "Most cheer gear is aesthetic. Bows, warmups, bag charms — they matter to your kid and they cost money, but none of them change what happens on the mat. Shoes are the exception. A cheer shoe is the only piece of equipment that sits between your athlete and the floor during tumbling, and between a base's hands and a flyer's foot during stunts."
+    },
+    {
+      "type": "p",
+      "text": "That makes it the one gear purchase worth actually thinking about. It is also the purchase where parents most often overspend on the wrong attribute — buying the premium model when the athlete needed a wider toe-box, or buying budget when the athlete is a flyer who needs sole feedback."
+    },
+    {
+      "type": "p",
+      "text": "Here is how to think about it."
+    },
+    {
+      "type": "h2",
+      "text": "What actually matters in a cheer shoe"
+    },
+    {
+      "type": "p",
+      "text": "Cheer shoes are not cross-trainers and they are not gymnastics slippers. They occupy a narrow middle: enough structure to absorb tumbling landings, light enough to throw in a basket toss, and flat enough that a base can feel a flyer's weight shift through her hands. Four attributes drive that."
+    },
+    {
+      "type": "h3",
+      "text": "1. Heel lock"
+    },
+    {
+      "type": "p",
+      "text": "**This is the single most important attribute and the one most parents never check.** The heel cup needs to hold the foot in place with no vertical slip. In a stunt, a heel that slides inside the shoe means the base is gripping a moving target — the flyer feels unstable, the base overcorrects, and the stunt gets less reliable for reasons nobody can diagnose."
+    },
+    {
+      "type": "p",
+      "text": "Test it in the store: lace the shoe normally, hold the athlete's ankle, and have her lift her heel. If the heel comes up inside the shoe rather than the shoe coming up with it, the lock is wrong for her foot. That is a fit problem, not a quality problem — the same model may lock perfectly on a different athlete."
+    },
+    {
+      "type": "h3",
+      "text": "2. Sole feedback"
+    },
+    {
+      "type": "p",
+      "text": "Sole thickness is a genuine trade-off, not a quality ladder. A **thin, flexible sole** transmits information: a flyer feels exactly where her base's hands are, and a base feels where the flyer's weight actually sits. A **thicker, more cushioned sole** absorbs more impact on tumbling landings, which matters for athletes doing high-volume running passes."
+    },
+    {
+      "type": "p",
+      "text": "The practical rule: **flyers benefit from thinner soles, tumblers and bases benefit from more cushion.** An athlete who does both should prioritize whichever role she spends more time in during practice."
+    },
+    {
+      "type": "h3",
+      "text": "3. Weight"
+    },
+    {
+      "type": "p",
+      "text": "Lighter is better for flyers, and it matters more than the small numbers suggest. In a basket toss, the flyer's shoes are at the end of the longest lever in the skill. A few ounces per foot changes rotation timing enough that athletes notice when they switch models mid-season."
+    },
+    {
+      "type": "p",
+      "text": "For bases and back spots, weight is largely irrelevant and durability matters more. This is a category where the budget option is genuinely fine."
+    },
+    {
+      "type": "h3",
+      "text": "4. Toe-box width"
+    },
+    {
+      "type": "p",
+      "text": "Cheer shoes run narrow across the board. Athletes with wide feet who force themselves into a narrow premium model end up with pain that gets blamed on training volume. If your athlete has wide feet, **toe-box width should outrank brand entirely** — a comfortable budget shoe beats a painful premium one on every measure that matters."
+    },
+    {
+      "type": "quote",
+      "variant": "border",
+      "text": "\"The most expensive shoe is not the best shoe. The best shoe is the one that locks your kid's heel and doesn't hurt her feet in month four.\""
+    },
+    {
+      "type": "h2",
+      "text": "The picks"
     },
     {
       "type": "glance",
-      "heading": "Six shoes, *two* categories.",
+      "heading": "Four shoes, *by position*.",
       "items": [
-        {
-          "rank": "BEST OVERALL",
-          "name": "Nfinity Vengeance",
-          "score": "9.4",
-          "price": "$110",
-          "verdict": "Buy",
-          "g": "halo",
-          "img": "https://www.nfinity.com/cdn/shop/files/Untitled_design_98.png?crop=center&height=260&v=1776804596&width=260"
-        },
-        {
-          "rank": "BEST BUDGET",
-          "name": "Chass\u00e9 Apex",
-          "score": "8.1",
-          "price": "$60",
-          "verdict": "Buy",
-          "g": "stripes",
-          "img": "https://www.omnicheer.com/cdn/shop/files/S1702_BLK_016_WEB_1.jpg?v=1774724518&width=260"
-        },
-        {
-          "rank": "BEST FLYERS",
-          "name": "Nfinity Flyte",
-          "score": "8.5",
-          "price": "$95",
-          "verdict": "Buy",
-          "g": "field",
-          "img": "https://www.nfinity.com/cdn/shop/files/nfinity-flyte-cheer-shoes-nfinity-cheer-shoes-4771095.png?crop=center&height=260&v=1775141837&width=260"
-        },
-        {
-          "rank": "BEST BASES",
-          "name": "Nfinity Titan",
-          "score": "8.7",
-          "price": "$125",
-          "verdict": "Buy",
-          "g": "glow",
-          "img": "https://cdn11.bigcommerce.com/s-tn8o8k48s5/images/stencil/400x400/products/27976/67330/titan-shoes-nfinityinsiders-998826_1800x1800__87814.1718818692.jpg?c=1"
-        },
-        {
-          "rank": "AVOID",
-          "name": "(redacted) Pro",
-          "score": "4.2",
-          "price": "$140",
-          "verdict": "Skip",
-          "g": "pulse",
-          "img": null
-        },
-        {
-          "rank": "AVOID",
-          "name": "Sparkle Step X",
-          "score": "3.8",
-          "price": "$95",
-          "verdict": "Skip",
-          "g": "block",
-          "img": null
-        }
+        { "rank": "BEST OVERALL", "name": "Nfinity Vengeance", "price": "$110", "verdict": "Buy", "g": "halo", "img": "https://www.nfinity.com/cdn/shop/files/Untitled_design_98.png?crop=center&height=260&v=1776804596&width=260" },
+        { "rank": "BEST BUDGET", "name": "Chassé Apex", "price": "$60", "verdict": "Buy", "g": "stripes", "img": "https://www.omnicheer.com/cdn/shop/files/S1702_BLK_016_WEB_1.jpg?v=1774724518&width=260" },
+        { "rank": "BEST FOR FLYERS", "name": "Nfinity Flyte", "price": "$95", "verdict": "Buy", "g": "field", "img": null },
+        { "rank": "BEST FOR BASES", "name": "Nfinity Titan", "price": "$125", "verdict": "Buy", "g": "pulse", "img": null }
       ]
     },
     {
       "type": "review",
-      "heading": "The *three* you should actually buy.",
+      "heading": "The *three* most families should consider.",
       "items": [
         {
-          "rank": "01 \u00b7 BEST OVERALL",
-          "score": "9.4",
+          "rank": "BEST OVERALL",
           "name": "Nfinity Vengeance",
           "price": "$110",
-          "blurb": "Still the gold standard. The Vengeance does everything well: the heel locks, the upper holds shape through a hot August tryout, and they look right on the mat.",
-          "pros": [
-            "Locked-in fit",
-            "Holds shape full season",
-            "Universally accepted by gyms"
-          ],
-          "cons": [
-            "Premium price",
-            "Narrow toe-box for wide feet"
-          ],
+          "blurb": "The default recommendation for a reason. The Vengeance balances heel lock, weight, and durability better than anything else at its price, and it is universally accepted by gyms with uniform shoe requirements. If you do not want to think about this purchase, buy these.",
+          "pros": ["Excellent heel lock for most foot shapes", "Holds structure across a full season", "Accepted everywhere"],
+          "cons": ["Premium price", "Narrow toe-box — a real problem for wide feet"],
           "stars": 5,
           "img": "https://www.nfinity.com/cdn/shop/files/Untitled_design_98.png?crop=center&height=800&v=1776804596&width=800",
           "buyAmazon": "https://www.amazon.com/s?k=Nfinity+Vengeance+cheer+shoe",
           "buyDirect": "https://www.nfinity.com/products/nfinity-vengeance-cheer-shoes"
         },
         {
-          "rank": "02 \u00b7 BEST BUDGET",
-          "score": "8.1",
-          "name": "Chass\u00e9 Apex",
+          "rank": "BEST BUDGET",
+          "name": "Chassé Apex",
           "price": "$60",
-          "blurb": "Better than it has any right to be at this price. We tested four pairs across two athletes and watched zero structural failures across a full Level 2 season.",
-          "pros": [
-            "Half the price of the field",
-            "Comfortable out of the box",
-            "Wide-foot friendly"
-          ],
-          "cons": [
-            "Heavier",
-            "Upper softens by month 4"
-          ],
+          "blurb": "Roughly half the price of the premium field and genuinely adequate for Levels 1–3, where tumbling volume is lower and stunt complexity is limited. The upper softens over a season and the shoe is heavier than the premium options, but for a first-year athlete or a fast-growing kid who will size out by spring, that trade is easy.",
+          "pros": ["Half the price of the field", "Comfortable immediately, minimal break-in", "More forgiving for wide feet"],
+          "cons": ["Heavier — noticeable for flyers", "Upper loses structure by late season"],
           "stars": 4,
           "img": "https://www.omnicheer.com/cdn/shop/files/S1702_BLK_016_WEB_1.jpg?v=1774724518&width=800",
           "buyAmazon": "https://www.amazon.com/s?k=Chasse+Apex+cheer+shoe",
           "buyDirect": "https://www.omnicheer.com/shop/cheerleading-shoes/chasse-apex_s1702"
         },
         {
-          "rank": "03 \u00b7 BEST FOR FLYERS",
-          "score": "8.5",
+          "rank": "BEST FOR FLYERS",
           "name": "Nfinity Flyte",
           "price": "$95",
-          "blurb": "A slimmer toe-box and a paper-thin sole \u2014 flyers will feel their base's hands and bases will feel where the flyer's weight actually is.",
-          "pros": [
-            "Sole feedback for flyers",
-            "Lightest in the test",
-            "Lock-tight heel cup"
-          ],
-          "cons": [
-            "Tight fit \u2014 size up half",
-            "Not for bases"
-          ],
+          "blurb": "Built around the trade-off flyers actually want: a thinner sole and a lighter build, at the cost of tumbling cushion. Flyers report meaningfully better feel for their base's hands. It is a specialist shoe — a full-time base or a high-volume tumbler is better served by the Vengeance or the Titan.",
+          "pros": ["Thin sole gives real positional feedback", "Lightest of the group", "Secure heel cup"],
+          "cons": ["Runs tight — size up half", "Not enough cushion for heavy tumbling"],
           "stars": 4,
-          "img": "https://www.nfinity.com/cdn/shop/files/nfinity-flyte-cheer-shoes-nfinity-cheer-shoes-4771095.png?crop=center&height=800&v=1775141837&width=800",
+          "img": "https://www.nfinity.com/cdn/shop/files/Untitled_design_98.png?crop=center&height=800&v=1776804596&width=800",
           "buyAmazon": "https://www.amazon.com/s?k=Nfinity+Flyte+cheer+shoe",
-          "buyDirect": "https://www.nfinity.com/products/flyte-by-nfinity-athletics-premier-cheerleading-performance-shoes-nfinity-athletics"
+          "buyDirect": "https://www.nfinity.com/products/flyte-by-nfinity-athletics-premier-cheerleading"
         }
       ]
     },
     {
-      "type": "specs",
-      "heading": "The *spec sheet*.",
-      "metrics": [
-        "Weight (oz)",
-        "Sole feedback",
-        "Heel lock",
-        "Toe-box",
-        "Best for"
-      ],
-      "products": [
-        [
-          "Nfinity Vengeance",
-          "7.2",
-          "medium",
-          "\u2605\u2605\u2605\u2605\u2605",
-          "medium",
-          "everyone"
-        ],
-        [
-          "Chass\u00e9 Apex",
-          "7.9",
-          "low",
-          "\u2605\u2605\u2605\u2605",
-          "medium",
-          "budget / wide"
-        ],
-        [
-          "Nfinity Flyte",
-          "6.4",
-          "high",
-          "\u2605\u2605\u2605\u2605",
-          "tight",
-          "flyers"
-        ],
-        [
-          "Nfinity Titan",
-          "8.1",
-          "low",
-          "\u2605\u2605\u2605\u2605\u2605",
-          "wide",
-          "bases"
-        ]
+      "type": "h2",
+      "text": "Fitting them correctly"
+    },
+    {
+      "type": "p",
+      "text": "A correctly chosen shoe in the wrong size performs worse than a mediocre shoe fitted properly. Four rules:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Fit in the afternoon.** Feet swell across the day. A shoe fitted first thing in the morning will be tight at evening practice, which is when your athlete actually trains.",
+        "**Fit with the socks she competes in.** Cheer socks are thin. Fitting over thick athletic socks produces a shoe that slips in competition.",
+        "**Leave a thumb's width at the toe — no more.** Extra room defeats the heel lock. Buying a size up \"to grow into\" makes the shoe actively worse for the entire time it is too big.",
+        "**Have her jump in them.** A standing tuck approach and a few toe touches in the store surface heel slip and toe-box pressure immediately."
       ]
     },
     {
+      "type": "h2",
+      "text": "When to replace them"
+    },
+    {
+      "type": "p",
+      "text": "Cheer shoes do not usually fail visibly — they lose structure while still looking fine, which is why athletes compete in dead shoes for months. Replace when any of the following appear:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The heel cup has softened enough that the heel lifts inside the shoe",
+        "The upper creases permanently across the midfoot and no longer returns to shape",
+        "Your athlete starts reporting arch or ankle soreness that does not track with a training change",
+        "The sole has visibly compressed under the ball of the foot"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "For an athlete training four or more days a week, **one pair per season is realistic** and two is not unusual at higher levels. Budget for that rather than treating a mid-season replacement as an unexpected expense."
+    },
+    {
+      "type": "h2",
+      "text": "Where to save and where not to"
+    },
+    {
+      "type": "p",
+      "text": "If your budget is tight, the honest hierarchy is this. Spend on shoes for a **flyer at Level 3 or above**, where weight and sole feedback genuinely affect skill execution. Spend on shoes for **any athlete with foot pain**, where fit is a health issue. Save on shoes for a **Level 1–2 athlete in her first season**, who will outgrow them before the upper breaks down and whose skills are not limited by equipment."
+    },
+    {
+      "type": "p",
+      "text": "And check with the gym before you buy anything. A meaningful number of programs require a specific model and color, and a returned pair is easier than an argument in November.",
+      "serif": true
+    },
+    {
       "type": "note",
-      "title": "Affiliate disclosure.",
-      "text": "Some links in this article are affiliate links \u2014 we may earn a small commission if you buy through them. We only recommend gear we'd buy ourselves."
+      "text": "**On affiliate links:** Some links on this page earn us a small commission at no extra cost to you. We recommend gear on its merits; commission rates never influence a verdict. CheerInsider articles are written with AI assistance — see our About page for how that works."
     }
-  ],
-  "related": [
-    {
-      "eyebrow": "COST DEEP DIVE",
-      "title": "The $24,000 season: what one Level 4 family actually spent.",
-      "meta": "18 min",
-      "g": "glow",
-      "href": "/parents/the-24k-season"
-    },
-    {
-      "eyebrow": "20 THINGS",
-      "title": "20 things every new cheer mom wishes she'd known.",
-      "meta": "14 min",
-      "g": "stripes",
-      "href": "/parents/20-things"
-    },
-    {
-      "eyebrow": "GYM SELECTION",
-      "title": "How to tell if a gym is actually good.",
-      "meta": "9 min",
-      "g": "flash",
-      "href": "/gym-guide"
-    },
-    {
-      "eyebrow": "COST \u00b7 SUMMER",
-      "title": "Summer camp vs. privates: what actually moves the needle.",
-      "meta": "10 min",
-      "g": "halo",
-      "href": "/parents/summer-vs-privates"
-    }
-  ],
-  "card": {
-    "eyebrow": "CHEER SHOES \u00b7 2026"
-  }
+  ]
 }
