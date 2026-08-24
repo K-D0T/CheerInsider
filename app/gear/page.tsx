@@ -65,7 +65,7 @@ export default function GearIndexPage() {
           <SectionHead eyebrow="ALL ROUNDUPS · BY CATEGORY" title={<>Everything we've <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>reviewed</span>.</>}/>
 
           {/* Lead roundup — full width */}
-          <Link href={ROUNDUPS[0].href} className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 1.2fr', gap:48, padding:'48px 0', borderBottom:'1px solid var(--p-line)', alignItems:'center', cursor:'pointer' }}>
+          {ROUNDUPS[0] && <Link href={ROUNDUPS[0].href} className="ci-stack-mobile" style={{ display:'grid', gridTemplateColumns:'1fr 1.2fr', gap:48, padding:'48px 0', borderBottom:'1px solid var(--p-line)', alignItems:'center', cursor:'pointer' }}>
             <Gradient variant={ROUNDUPS[0].g} ratio="16/10" caption="shoes · top-down" dark/>
             <div>
               <Pill style={{ marginBottom:14 }}>{ROUNDUPS[0].pill}</Pill>
@@ -74,7 +74,7 @@ export default function GearIndexPage() {
               <p style={{ fontSize:17, lineHeight:1.5, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:520 }}>{ROUNDUPS[0].sub}</p>
               <div style={{ fontSize:13, color:'var(--p-muted)' }}>{ROUNDUPS[0].meta}</div>
             </div>
-          </Link>
+          </Link>}
 
           {/* Remaining roundups */}
           <div className="ci-3col" style={{ gap:'32px 24px', marginTop:48 }}>
