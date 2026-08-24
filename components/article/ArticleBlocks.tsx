@@ -147,8 +147,8 @@ function renderBlock(block: Block) {
               <div className="ci-list-num" style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 80, color: i < 5 ? 'var(--p-hot)' : 'var(--p-ink)', letterSpacing: '-.05em', lineHeight: .85 }}>{it.n}</div>
               <div>
                 <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 8 }}>{it.cat}</div>
-                <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 30, margin: '0 0 10px', letterSpacing: '-.02em', lineHeight: 1.05 }}>{it.title}</h3>
-                <p style={{ fontSize: 16, lineHeight: 1.5, color: 'var(--p-inkSoft)', margin: 0, maxWidth: 680 }}>{it.body}</p>
+                <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 30, margin: '0 0 10px', letterSpacing: '-.02em', lineHeight: 1.05 }}>{renderInline(it.title, 'accent')}</h3>
+                <p style={{ fontSize: 16, lineHeight: 1.5, color: 'var(--p-inkSoft)', margin: 0, maxWidth: 680 }}>{renderInline(it.body)}</p>
               </div>
               <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 8 }}>
                 <span style={{ ...tx.eyebrow, color: 'var(--p-muted)', fontSize: 10 }}>{it.read} min read</span>
@@ -279,7 +279,7 @@ function renderBlock(block: Block) {
     case 'note':
       return (
         <div style={{ margin: '32px 0', padding: '24px 32px', background: 'var(--p-cream)', borderLeft: '4px solid var(--p-hot)', fontSize: 14, lineHeight: 1.6, color: 'var(--p-inkSoft)' }}>
-          {block.title && <strong style={{ color: 'var(--p-ink)' }}>{block.title} </strong>}{block.text}
+          {block.title && <strong style={{ color: 'var(--p-ink)' }}>{block.title} </strong>}{renderInline(block.text)}
         </div>
       );
 

@@ -42,7 +42,7 @@
     },
     {
       "type": "p",
-      "text": "In the United States that framework is maintained by **USASF**, with **IASF** filling the equivalent role internationally. Their rules define, for each level, which tumbling skills, stunt configurations, pyramids, and tosses are legal in competition. Event producers build divisions on top of that shared definition, which is why a Level 3 team from one state can travel and compete meaningfully against a Level 3 team from another."
+      "text": "In the United States that framework is maintained by **USASF**, with **IASF** filling the equivalent role internationally. Their rules define, for each level, which tumbling skills, stunts, pyramids, and tosses are legal. Event producers build divisions on top of that shared definition, which is why a Level 3 team from one state can travel and compete meaningfully against a Level 3 team from another."
     },
     {
       "type": "h2",
@@ -54,7 +54,7 @@
     },
     {
       "type": "p",
-      "text": "Two consequences surprise families. First, the level belongs to the **team**, not the athlete: a Level 5 tumbler competing on a Level 3 team tumbles Level 3 content, full stop. Second, the envelope is a ceiling, not a requirement \u2014 a team can compete at Level 4 while performing very little Level 4 content and break no rules at all. Whether that is a good idea is a scoring question, not a legality question."
+      "text": "Two consequences surprise families. First, the level belongs to the **team**, not the athlete: a Level 5 tumbler on a Level 3 team tumbles Level 3 content, full stop. Second, the envelope is a ceiling, not a requirement \u2014 a team can compete at Level 4 while performing very little Level 4 content and break no rules. Whether that is wise is a scoring question, not a legality question."
     },
     {
       "type": "h2",
@@ -73,13 +73,13 @@
           "Level 1",
           "5\u201311",
           "Cartwheel, round-off",
-          "Two-leg stunts, extended height"
+          "Two-leg extensions"
         ],
         [
           "Level 2",
           "6\u201313",
           "Walkovers, single handspring",
-          "Extensions, no inverted entries"
+          "No inverted entries"
         ],
         [
           "Level 3",
@@ -91,7 +91,7 @@
           "Level 4",
           "10\u201317",
           "Standing and running tuck",
-          "Twisting dismounts, released pyramids"
+          "Twisting dismounts"
         ],
         [
           "Level 5",
@@ -103,7 +103,7 @@
           "Level 6",
           "14+",
           "Full twist",
-          "Released inversions, elite tosses"
+          "Released inversions"
         ],
         [
           "Level 7",
@@ -115,7 +115,7 @@
     },
     {
       "type": "p",
-      "text": "Treat the age column as description, not rule \u2014 those are the ranges these levels commonly draw from. Eligibility itself comes from the **age grid**, which is where the real confusion lives."
+      "text": "Treat the age column as description, not rule. Eligibility itself comes from the **age grid**."
     },
     {
       "type": "h2",
@@ -134,7 +134,6 @@
       "items": [
         "Ask which **birth years** are eligible for each team, not which ages \u2014 the translation is where errors happen.",
         "Ask whether your child ages up this year, and whether the gym's team in that division sits at a different level.",
-        "At the young end of a division, expect a season of catching up; at the old end, expect to be leaned on.",
         "Check crossover rules before counting on two teams. Events limit crossovers and gyms charge for them."
       ]
     },
@@ -153,7 +152,7 @@
     },
     {
       "type": "p",
-      "text": "Gyms are also not neutral parties. Higher-level teams generally carry higher tuition, more choreography, more competitions, and more travel, so there is a **structural incentive pointing upward**. That does not make a gym dishonest \u2014 a mis-placed athlete makes the whole team worse. But it does mean 'she's ready to move up' deserves a follow-up: *which skills does she have, and which does that level need?* A gym paying attention answers in specifics, immediately."
+      "text": "Gyms are also not neutral parties. Higher-level teams generally carry higher tuition, more choreography, more competitions, and more travel, so there is a **structural incentive pointing upward**. That does not make a gym dishonest \u2014 a mis-placed athlete makes the whole team worse. But 'she's ready to move up' deserves a follow-up: *which skills does she have, and which does that level need?* A gym paying attention answers in specifics, immediately."
     },
     {
       "type": "h2",
@@ -185,7 +184,7 @@
     },
     {
       "type": "p",
-      "text": "The least discussed and the fastest to improve. Jump height, hip flexibility, motion sharpness, and the ability to project to a judging panel are all coachable inside one season, and all are scored. An athlete stuck on a tumbling skill can still raise her value to a team substantially here within a few months \u2014 worth knowing when a placement has just gone the wrong way."
+      "text": "The least discussed and the fastest to improve. Jump height, hip flexibility, motion sharpness, and the ability to project to a judging panel are all coachable inside one season, and all are scored. An athlete stuck on a tumbling skill can still raise her value to a team substantially here in a few months \u2014 worth knowing when a placement has gone the wrong way."
     },
     {
       "type": "h2",
@@ -197,14 +196,14 @@
     },
     {
       "type": "p",
-      "text": "Mid-season moves are rare for reasons of choreography, not politics. A routine is built onto specific bodies \u2014 stunt groups matched by height and strength, pyramid connections that depend on who stands where, formations counted to the beat. Swapping one athlete triggers a chain of rebuilds. Gyms absorb that for an injury, not for a skill landed in November."
+      "text": "Mid-season moves are rare for reasons of choreography, not politics. A routine is built onto specific bodies \u2014 stunt groups matched by height and strength, pyramid connections that depend on who stands where, formations counted to the beat. Swapping one athlete triggers a chain of rebuilds, which gyms absorb for an injury but not for a skill landed in November."
     },
     {
       "type": "list",
       "items": [
         "**Level 1 to 2** is the smoothest move \u2014 walkovers and a round-off back handspring are flexibility-and-technique skills more than power skills.",
         "**Level 2 to 3** hinges on the handspring **series**: two connected without a step, needing enough power in the first to feed the second.",
-        "**Level 3 to 4** is the wall most families hit. A standing back tuck commonly takes several months to a couple of years to develop safely, and it is where fear becomes a real, trainable variable rather than an excuse.",
+        "**Level 3 to 4** is the wall most families hit. A standing back tuck commonly takes several months to a couple of years to develop safely, and it is where fear becomes a real, trainable variable.",
         "**Level 4 to 5** demands layout tumbling plus single-leg stunting at speed. Many athletes plateau here, where the sport starts sorting on athleticism as much as effort.",
         "**Level 5 to 6** is the elite threshold \u2014 power for height plus air awareness to control rotation on two axes at once."
       ]
@@ -221,7 +220,7 @@
       "type": "list",
       "items": [
         "**Age division** \u2014 Tiny, Mini, Youth, Junior, Senior, Open, set by the season's age grid.",
-        "**Size** \u2014 small or large, set by an athlete-count cutoff that varies by event and season, so a small team is not scored against one fielding twice as many stunt groups.",
+        "**Size** \u2014 small or large, set by an athlete-count cutoff that varies by event, so a small team is not scored against one fielding twice as many stunt groups.",
         "**Gender composition** \u2014 all-girl, coed, or all-boy, with coed split further by the number of male athletes.",
         "**Level** \u2014 the only one of the four that changes what is legal on the floor."
       ]
@@ -236,7 +235,7 @@
     },
     {
       "type": "p",
-      "text": "Most gyms now run more than one track. The elite or full-season track is the traditional model: year-round training, outside choreography, and a travel schedule. **Prep** and **novice** programs run alongside at the same nominal levels with a deliberately reduced footprint \u2014 fewer practice hours, a shorter season, local events only, and often a restricted version of the skills list."
+      "text": "Most gyms now run more than one track. The elite or full-season track is the traditional model: year-round training, outside choreography, and a travel schedule. **Prep** and **novice** programs run alongside at the same nominal levels with a deliberately reduced footprint \u2014 fewer hours, a shorter season, local events only, and often a restricted skills list."
     },
     {
       "type": "p",
@@ -263,15 +262,15 @@
       "items": [
         "How many athletes on this team will actually perform the level's top tumbling pass?",
         "How many practice hours a week, and how many are skill instruction rather than cleaning?",
-        "How many competitions, how many require travel, and what is the all-in season cost including choreography, music, uniform, warmups, camp, and fees?",
+        "How many competitions require travel, and what is the all-in season cost including choreography, uniform, warmups, camp, and fees?",
         "Which division does this team compete in, and how many teams are usually in it?",
-        "What specifically would my child need to add to be considered for the next level next season?"
+        "What specifically would my child need to add to be considered for the next level?"
       ]
     },
     {
       "type": "p",
       "serif": true,
-      "text": "Level is the label the sport hands you first, and it explains less than it appears to. The team's content, the division's depth, and the gym's weekly hours describe the season you are actually signing up for."
+      "text": "Level is the label the sport hands you first, and it explains less than it appears to. The team's content, the division's depth, and the gym's weekly hours are what describe the season you are actually signing up for."
     },
     {
       "type": "note",
