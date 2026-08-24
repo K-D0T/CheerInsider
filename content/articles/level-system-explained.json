@@ -10,7 +10,7 @@
   "sub": "Level 1 through Level 7 \u2014 what they mean, how athletes move through them, and why 'she's ready to move up' is more complicated than it sounds.",
   "datePublished": "2026-06-10",
   "dateModified": "2026-08-24",
-  "readTime": "9 min",
+  "readTime": "8 min",
   "toc": [
     "What a level actually is",
     "The seven levels at a glance",
@@ -50,11 +50,11 @@
     },
     {
       "type": "p",
-      "text": "A level is not a rank or a grade. It is a **legality envelope** \u2014 the set of skills a team may put on the floor. Anything above it is illegal for that team no matter how well an individual athlete performs it. Anything below it stays legal and available."
+      "text": "A level is not a rank or a grade. It is a **legality envelope** \u2014 the set of skills a team may put on the floor. Anything above it is illegal for that team no matter how well an athlete performs it. Anything below it stays legal and available."
     },
     {
       "type": "p",
-      "text": "Two consequences surprise families. First, the level belongs to the **team**, not the athlete: a Level 5 tumbler on a Level 3 team tumbles Level 3 content, full stop. Second, the envelope is a ceiling, not a requirement \u2014 a team can compete at Level 4 while performing very little Level 4 content and break no rules. Whether that is wise is a scoring question, not a legality question."
+      "text": "Two consequences surprise families. First, the level belongs to the **team**, not the athlete: a Level 5 tumbler on a Level 3 team tumbles Level 3 content, full stop. Second, the envelope is a ceiling, not a requirement \u2014 a team can compete at Level 4 while performing very little Level 4 content and break no rules. Whether that is wise is a scoring question."
     },
     {
       "type": "h2",
@@ -115,7 +115,7 @@
     },
     {
       "type": "p",
-      "text": "Treat the age column as description, not rule. Eligibility itself comes from the **age grid**."
+      "text": "Treat the age column as description, not rule; eligibility comes from the **age grid**."
     },
     {
       "type": "h2",
@@ -127,14 +127,14 @@
     },
     {
       "type": "p",
-      "text": "So eligibility can shift between seasons even though nothing about a child's skills changed. An athlete who spent a year as one of the oldest kids in Youth can find herself the following spring as one of the youngest in Junior, competing against athletes with two or three more years of growth behind them. Coaches call this *aging up*, and it is a common reason a strong athlete is placed at a level she thought she had cleared. The upper levels also carry **minimum ages**: Levels 6 and 7 are closed to young athletes regardless of skill, so a twelve-year-old with a double full still has no Level 6 division to enter."
+      "text": "So eligibility can shift between seasons even though nothing about a child's skills changed. An athlete who spent a year as one of the oldest kids in Youth can find herself the following spring as one of the youngest in Junior, against athletes with two or three more years of growth. Coaches call this *aging up*, and it is a common reason a strong athlete lands at a level she thought she had cleared. The upper levels also carry **minimum ages**: Levels 6 and 7 are closed to young athletes regardless of skill, so a twelve-year-old with a double full has no Level 6 division to enter."
     },
     {
       "type": "list",
       "items": [
         "Ask which **birth years** are eligible for each team, not which ages \u2014 the translation is where errors happen.",
-        "Ask whether your child ages up this year, and whether the gym's team in that division sits at a different level.",
-        "Check crossover rules before counting on two teams. Events limit crossovers and gyms charge for them."
+        "Ask whether your child ages up this year, and whether the team in that division sits at a different level.",
+        "Check crossover rules before counting on two teams \u2014 events limit them and gyms charge for them."
       ]
     },
     {
@@ -143,12 +143,12 @@
     },
     {
       "type": "p",
-      "text": "Years at a gym do not entitle an athlete to a level. Neither does her friend group, her family's tuition history, nor last season's placement \u2014 regression happens after an injury, a growth spurt, or a year of patchy attendance. What gyms evaluate is a **current, demonstrable skill set**: standing tumbling, running tumbling, the role she can fill in a stunt group, jumps, motions, and how all of it holds up under the pressure of being watched and scored."
+      "text": "Years at a gym do not entitle an athlete to a level. Neither does her friend group, her family's tuition history, nor last season's placement \u2014 regression happens after an injury, a growth spurt, or a year of patchy attendance. What gyms evaluate is a **current, demonstrable skill set**: standing tumbling, running tumbling, the role she fills in a stunt group, jumps, motions, and how it holds up under the pressure of being watched and scored."
     },
     {
       "type": "quote",
       "variant": "border",
-      "text": "\"A level is a skills ceiling, not a rank. Placing an athlete above her skills does not accelerate her \u2014 it raises her injury risk and usually costs her the confidence she already had.\""
+      "text": "\"A level is a skills ceiling, not a rank. Placing an athlete above her skills does not accelerate her \u2014 it raises her injury risk and costs her the confidence she already had.\""
     },
     {
       "type": "p",
@@ -160,7 +160,7 @@
     },
     {
       "type": "p",
-      "text": "Parents hear 'level' and think tumbling, because tumbling is the visible, nameable part. Coaches track at least three, and an athlete is rarely in the same place on all of them."
+      "text": "Parents hear 'level' and think tumbling, because tumbling is the visible, nameable part. Coaches track at least three tracks, and an athlete is rarely in the same place on all of them."
     },
     {
       "type": "h3",
@@ -168,7 +168,7 @@
     },
     {
       "type": "p",
-      "text": "The most individual of the three and the slowest to build. Progression follows a physical logic: **non-inverted** skills first, then **inverted with the hands supporting** (walkovers, handsprings), then **aerial rotation tucked**, then **extended**, then **twisting while flipping**. Every stage demands a rigid shape held in the air, which is why conditioning gaps surface as plateaus rather than as visible weakness."
+      "text": "The slowest of the three to build. Progression follows a physical logic: **non-inverted** skills first, then **inverted with the hands supporting** (walkovers, handsprings), then **aerial rotation tucked**, then **extended**, then **twisting while flipping**. Every stage demands a rigid shape held in the air, which is why conditioning gaps surface as plateaus rather than as visible weakness."
     },
     {
       "type": "h3",
@@ -176,7 +176,7 @@
     },
     {
       "type": "p",
-      "text": "A group skill, scored as one. An athlete is assessed for the role she can fill: **flyer** (balance, flexibility, and the discipline to hold a position while other people move her), **base** (leg drive, grip technique, timing matched to another person exactly), or **backspot** (height, strength, responsibility for the flyer's head and shoulders on every catch). A gym short on bases will place a competent base higher than her tumbling alone suggests \u2014 roster reality, not favoritism."
+      "text": "A group skill, scored as one. An athlete is assessed for the role she can fill: **flyer** (balance, flexibility, and the discipline to hold a position while other people move her), **base** (leg drive, grip technique, timing matched to a partner exactly), or **backspot** (height, strength, responsibility for the flyer's head and shoulders on every catch). A gym short on bases will place a competent base higher than her tumbling alone suggests \u2014 roster reality, not favoritism."
     },
     {
       "type": "h3",
@@ -192,7 +192,7 @@
     },
     {
       "type": "p",
-      "text": "There is no standardized test, belt, or certificate. Movement happens almost entirely at **tryouts**, at the gym's discretion, most commonly in late spring. What does exist is credentialing on the *coaching* side: coaches are credentialed by level, so a gym needs appropriately credentialed staff to field a team at a given level. Asking which of your child's coaches hold credentials for her level is reasonable and revealing."
+      "text": "There is no standardized test, belt, or certificate. Movement happens almost entirely at **tryouts**, at the gym's discretion, most commonly in late spring. What does exist is credentialing on the *coaching* side: coaches are credentialed by level, so a gym needs appropriately credentialed staff to field a team at a given level. Asking which of your child's coaches hold that credential is reasonable and revealing."
     },
     {
       "type": "p",
@@ -227,7 +227,7 @@
     },
     {
       "type": "p",
-      "text": "So 'Senior Small Coed Level 5' is four statements, three of them about the bracket. When a parent asks why the team placed sixth, the division is often a bigger part of the answer than the routine. A thin division with three entries produces a podium finish that means little; a stacked division at a major event can produce a sixth place that is the best routine that team has ever hit."
+      "text": "So 'Senior Small Coed Level 5' is four statements, three of them about the bracket. When a parent asks why the team placed sixth, the division is often a bigger part of the answer than the routine. A thin division with three entries produces a podium finish that means little; a stacked division can produce a sixth place that is the best routine that team has ever hit."
     },
     {
       "type": "h2",
@@ -255,15 +255,15 @@
     },
     {
       "type": "p",
-      "text": "Both are Level 4, and they will not score the same, because all-star scoring rewards **how much of the team performs the difficulty** rather than whether anyone on it can. That is why a child on a Level 3 team at a demanding gym can be doing harder work, in a deeper division, than a child on a Level 4 team at a program that competes locally. Before accepting a placement \u2014 or judging one \u2014 ask concrete questions:"
+      "text": "Both are Level 4, and they will not score the same, because all-star scoring rewards **how much of the team performs the difficulty** rather than whether anyone on it can. That is why a child on a Level 3 team at a demanding gym can be doing harder work, in a deeper division, than a child on a Level 4 team elsewhere. Before accepting a placement \u2014 or judging one \u2014 ask concrete questions:"
     },
     {
       "type": "list",
       "items": [
         "How many athletes on this team will actually perform the level's top tumbling pass?",
-        "How many practice hours a week, and how many are skill instruction rather than cleaning?",
+        "How many practice hours a week, and how many are skill instruction?",
         "How many competitions require travel, and what is the all-in season cost including choreography, uniform, warmups, camp, and fees?",
-        "Which division does this team compete in, and how many teams are usually in it?",
+        "Which division does this team compete in, and how deep is it typically?",
         "What specifically would my child need to add to be considered for the next level?"
       ]
     },

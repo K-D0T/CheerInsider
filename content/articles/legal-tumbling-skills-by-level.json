@@ -9,7 +9,18 @@
   "headline": "What tumbling is *legal* at each level.",
   "sub": "Level 1 cartwheels to Level 7 double-fulls \u2014 which skills are allowed, which are illegal, and what actually happens when a team performs a skill above their level.",
   "datePublished": "2026-06-10",
-  "readTime": "3 min",
+  "dateModified": "2026-08-24",
+  "readTime": "8 min",
+  "toc": [
+    "The logic underneath the ceilings",
+    "Tumbling ceilings by level",
+    "The vocabulary, decoded",
+    "Why the ceiling is not the goal",
+    "The gateway skills, and what actually gates them",
+    "What an illegal skill actually costs",
+    "Surfaces, and why a skill vanishes in a new gym",
+    "Plateaus: causes and what actually resolves them"
+  ],
   "tags": [
     "tumbling",
     "legal skills",
@@ -26,28 +37,55 @@
     {
       "type": "p",
       "dropcap": true,
-      "text": "Every level in all-star cheerleading has a defined skills list \u2014 a set of tumbling passes that are legal to perform in competition. Performing a skill above the level ceiling results in a deduction, and in some cases disqualification. Understanding the skills list helps parents know what their athlete is working toward \u2014 and whether the timeline coaches suggest is realistic."
+      "text": "Every level in all-star cheerleading carries a defined tumbling ceiling \u2014 the hardest skill a team may put on the competition floor. Cross it and the team takes a deduction; at some events a clear violation carries consequences beyond points. Knowing where the ceilings sit tells you what your athlete is working toward and, more usefully, whether the timeline she has been given is realistic."
     },
     {
       "type": "p",
-      "text": "Skills are divided into **standing tumbling** (no running start) and **running tumbling** (with a hurdle or approach). Both categories have their own rules at each level, and both are evaluated separately by judges."
+      "text": "Tumbling is judged in two separate categories with separate rules. **Standing tumbling** begins from a stationary position \u2014 feet planted, no approach. **Running tumbling** allows a run, a hurdle, and a round-off or front handspring entry to build speed and rotation. The same flip is a far harder skill standing than running, which is why levels almost always permit a skill running before permitting it standing."
+    },
+    {
+      "type": "note",
+      "text": "Legality details are revised between seasons, and event producers apply them with different tolerances. This article explains how the system is structured; the published rules for the current season and your gym's coaching staff are the authority on any specific skill."
     },
     {
       "type": "h2",
-      "text": "Tumbling skills by level"
+      "text": "The logic underneath the ceilings"
+    },
+    {
+      "type": "p",
+      "text": "The level ladder is not an arbitrary list. It follows what the body is actually doing in the air, and once you see the pattern the whole system becomes predictable."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Non-inverted.** The head stays above the hips. Cartwheels and round-offs. The athlete is learning to travel and to land.",
+        "**Inverted, hands supporting.** The head drops below the hips but the hands carry the weight \u2014 walkovers, then back handsprings. The athlete is learning to be upside down under control.",
+        "**Aerial rotation, tucked.** No hands. A back tuck rotates around the hip axis with the body folded, the easiest shape to spin. This is the biggest single jump in the sport.",
+        "**Aerial rotation, extended.** A layout is the same flip held straight. Extending the body slows the rotation dramatically, so it demands far more height and a much stronger set.",
+        "**Two axes at once.** Fulls and doubles add twisting around the long axis while still flipping. Now the athlete needs power, air awareness, and the ability to correct a rotation she cannot fully see."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Levels map onto that sequence. Which is why 'she needs another year' is usually a statement about holding a rigid shape in the air, not about willingness to try."
+    },
+    {
+      "type": "h2",
+      "text": "Tumbling ceilings by level"
     },
     {
       "type": "table",
       "head": [
         "Level",
-        "Standing tumbling ceiling",
-        "Running tumbling ceiling"
+        "Standing ceiling",
+        "Running ceiling"
       ],
       "rows": [
         [
           "Level 1",
           "Cartwheel, round-off",
-          "Round-off, cartwheel"
+          "Round-off, cartwheel connections"
         ],
         [
           "Level 2",
@@ -56,8 +94,8 @@
         ],
         [
           "Level 3",
-          "Back handspring, series",
-          "Round-off back handspring series"
+          "Back handspring and series",
+          "Round-off handspring series"
         ],
         [
           "Level 4",
@@ -72,65 +110,133 @@
         [
           "Level 6",
           "Standing full twist",
-          "Full twisting layout, double-full"
+          "Full-twisting layout"
         ],
         [
           "Level 7",
-          "All skills legal",
-          "All skills legal"
+          "The widest legal catalogue",
+          "The widest legal catalogue"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "Note: These are ceiling skills \u2014 the hardest single skill permitted. Athletes can always perform skills below the ceiling. A Level 5 athlete can perform a tuck; a Level 3 athlete cannot perform a tuck. **The ceiling moves up, the floor stays open.**"
-    },
-    {
-      "type": "h2",
-      "text": "The skills that define level transitions"
+      "text": "Read these as ceilings, not requirements. Everything below the line stays legal: a Level 5 athlete may tumble a handspring series in a routine, while a Level 3 athlete may not tumble a tuck no matter how well she does one in class. **The ceiling moves up; the floor stays open.**"
     },
     {
       "type": "p",
-      "text": "A few skills are informal 'gatekeepers' \u2014 the skills coaches look for when deciding whether an athlete is ready to move up. These are the skills most parents hear about repeatedly:"
+      "text": "The ceiling also belongs to the team. Legality is judged against the **division the routine is entered in**, not against each athlete's personal ability \u2014 which is the source of a persistent misunderstanding. An athlete training a standing tuck in tumbling class while competing on a Level 3 team is doing nothing wrong. Practice is not scored."
+    },
+    {
+      "type": "h2",
+      "text": "The vocabulary, decoded"
     },
     {
       "type": "list",
       "items": [
-        "**Round-off back handspring** \u2014 the Level 2/3 gateway. Without this, a child will struggle on any Level 3 team.",
-        "**Standing back tuck** \u2014 the Level 3/4 gateway. This is the most common bottleneck for youth athletes and can take 1\u20133 years to develop safely. Rushing it is where injuries happen.",
-        "**Running layout** \u2014 the Level 4/5 gateway. Requires a solid whip series and strong core conditioning.",
-        "**Full twist** \u2014 the Level 5/6 gateway. Only a small percentage of all-star athletes reach this level."
+        "**Round-off** \u2014 a cartwheel that finishes with both feet landing together, facing back the way you came. It converts forward speed into backward rotation, which is why nearly every running pass starts with one.",
+        "**Walkover** \u2014 a slow, controlled pass through a handstand, front or back. Limited by flexibility more than power; athletes who struggle are usually tight in the shoulders or back, not weak.",
+        "**Back handspring** \u2014 an explosive backward jump onto the hands and a snap-down onto the feet. The technical heart of it is the *snap-down*: shoulders blocking off the floor to send the body upright and generate power for whatever comes next.",
+        "**Series** \u2014 two or more of the same skill connected with no step between them. A single handspring and a handspring series are different skills, and the difference is entirely in the power of the first one.",
+        "**Tuck** \u2014 a backflip with the knees pulled to the chest. Won or lost in the setup rather than the flip: arms driving up, chest tall, no leaning back before takeoff.",
+        "**Layout** \u2014 the same backflip with the body held straight and hollow. It needs more height, because the extended shape rotates more slowly.",
+        "**Full / double full** \u2014 a layout with one or two complete twists. Twisting is initiated at takeoff, not mid-air, so a crooked full is almost always a set problem.",
+        "**Whip** \u2014 a handspring-shaped skill performed without the hands touching down, used inside a running pass to carry speed into a bigger final skill.",
+        "**Punch front, arabian, X-out** \u2014 forward-rotating and shape-varied flips used to add difficulty and visual variety at the upper levels."
       ]
+    },
+    {
+      "type": "h2",
+      "text": "Why the ceiling is not the goal"
+    },
+    {
+      "type": "p",
+      "text": "Parents reasonably assume the aim is to get an athlete to the top skill for her level. Scoring does not work that way. All-star score sheets generally award tumbling difficulty based on **how much of the team performs a given skill** \u2014 a majority of the roster, or a defined proportion of it \u2014 rather than on the hardest thing any single athlete does."
+    },
+    {
+      "type": "p",
+      "text": "The translation: a team where twenty of twenty-four athletes throw a clean handspring series will usually outscore a team where four throw tucks and the rest throw walkovers. It also means an athlete who lands a big skill inconsistently may be asked *not* to compete it. That is a scoring decision rather than a verdict on her ability, and it is one of the most common sources of hurt feelings in a season."
     },
     {
       "type": "quote",
       "variant": "border",
-      "text": "\"The standing tuck is where most families' timelines collide with reality. It cannot be rushed safely \u2014 and gyms that try are where injuries happen.\""
+      "text": "\"A team's tumbling score is set by the middle of the roster, not the top of it. That is why coaches spend more time cleaning handsprings than teaching tucks.\""
     },
     {
       "type": "h2",
-      "text": "What happens when an illegal skill is performed"
+      "text": "The gateway skills, and what actually gates them"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Round-off back handspring** \u2014 the Level 2/3 gateway, gated by the snap-down out of the round-off. If the round-off lands feet-behind-hips with a soft chest, the handspring has nothing to work with, and repetitions alone will not fix it.",
+        "**Back handspring series** \u2014 gated by rebound and power rather than technique alone. Athletes with a comfortable single handspring often need months of ankle and shoulder strength work before a series connects.",
+        "**Standing back tuck** \u2014 the Level 3/4 gateway and the most common place a season stalls. It commonly takes several months to a couple of years from first drills to competition-ready, and it is gated by three things at once: leg power, a set that keeps the chest upright, and the willingness to commit backward without hands. The third is not a character flaw and does not respond to pressure.",
+        "**Running layout** \u2014 the Level 4/5 gateway, gated by hollow-body strength: holding a rigid, slightly curved shape against rotation for a full revolution.",
+        "**Full twist** \u2014 the Level 5/6 gateway, gated by height and by initiating the twist at takeoff instead of chasing it in the air."
+      ]
     },
     {
       "type": "p",
-      "text": "If a team performs a tumbling skill above their level ceiling in competition, they receive a **mandatory deduction** from the deductions panel. Most events set this at 0.5\u20131.0 points per violation. In some events, particularly large national championships, a single illegal skill can result in **disqualification from that division**."
-    },
-    {
-      "type": "p",
-      "text": "Illegal skills in tumbling are usually unintentional \u2014 an athlete 'over-rotates' a standing series into territory above the legal ceiling, or a skill that was debated in practice shows up in competition. Coaches are responsible for ensuring routine content is legal, but mistakes happen. The rules are the gym's responsibility to know and enforce."
+      "text": "In every case the gate is a prerequisite skill or a physical quality, not the skill itself. Which is why the most effective private lesson is often the one that goes *backwards*. A coach who takes a struggling tuck and spends six weeks on round-off rebounds is not wasting your money."
     },
     {
       "type": "h2",
-      "text": "Why athletes plateau \u2014 and what to do about it"
+      "text": "What an illegal skill actually costs"
     },
     {
       "type": "p",
-      "text": "Tumbling plateaus are normal and not a sign that an athlete has reached her ceiling. The most common causes are: **technique gaps from rushing earlier skills**, conditioning deficits, or fear responses after a fall or close call. A private lesson with a coach who specializes in the specific skill \u2014 not just a general tumbling coach \u2014 is usually the most effective intervention."
+      "text": "Legality is typically handled by a **separate official** rather than by the category judges \u2014 a safety or legality judge watching for violations across every routine in the division. The panels scoring stunts or tumbling do not adjust their numbers for an illegal skill; the deduction is applied on top, afterward."
     },
     {
       "type": "p",
-      "text": "More practice hours are not always better than better practice hours. If an athlete has been working on the same skill for over a year with no progress, the issue is almost always technique, not effort.",
-      "serif": true
+      "text": "Values vary by event producer, but violations in this category sit among the larger deductions on a sheet and can move a team several placements. At some events, particularly larger championships, a clear illegality carries consequences beyond a point deduction. **The specific scale is published in each event's rules and is worth reading before the season's first competition.**"
+    },
+    {
+      "type": "p",
+      "text": "Most illegal tumbling is unintentional and follows a few patterns: an athlete over-rotates a permitted skill into an impermissible one; a coach believed a skill was legal at that level and it was not; a substitute performs her own top skill instead of the routine's; or a rule changed between seasons and the choreography did not. Responsibility sits with the coaching staff, which is why the credentialing of a gym's coaches is a fair thing to ask about."
+    },
+    {
+      "type": "h2",
+      "text": "Surfaces, and why a skill vanishes in a new gym"
+    },
+    {
+      "type": "p",
+      "text": "Tumbling does not transfer cleanly between surfaces, and families are regularly blindsided by it. A **rod floor** and a **tumble track** return enormous energy and make skills feel easy. A **dead mat** returns almost none. The **sprung competition floor** sits between them and is the only one that counts. An athlete who has learned a tuck exclusively on a rod floor has learned a tuck that a rod floor helps her do."
+    },
+    {
+      "type": "p",
+      "text": "Two things follow. Skills should be confirmed on the competition-equivalent surface before anyone plans around them, and a gym's equipment mix genuinely shapes development. Ask which surfaces your athlete trains on each week and how often she tumbles on the spring floor. A program that runs tumbling almost entirely on rod floors produces athletes whose skills look better in the gym than at a competition."
+    },
+    {
+      "type": "h2",
+      "text": "Plateaus: causes and what actually resolves them"
+    },
+    {
+      "type": "p",
+      "text": "Plateaus are the normal shape of skill acquisition, not evidence that an athlete has reached her ceiling. Four causes account for most of them."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Technique debt.** A skill learned with a compensating pattern works until it has to carry the next skill. The most common cause and the least visible to parents, because the flawed skill still looks fine.",
+        "**Conditioning gaps.** Specifically hollow-body and shoulder strength for holding shape, plus ankle stiffness and leg power for blocking off the floor. General fitness does not substitute.",
+        "**Fear responses.** A fall, a near-miss, or watching someone else get hurt can install a block that overrides the physical skill. Blocks are common and treatable \u2014 and they worsen under pressure, ultimatums, and visible frustration.",
+        "**Growth.** A significant growth spurt changes limb length and an athlete's sense of where her body is. Skills can regress for months through no fault of technique or effort, then return."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "What tends to work: a coach who specializes in the specific skill rather than a general tumbling class; deliberately stepping back to progressions and drills; training the physical prerequisite instead of the skill; and, for a mental block, shaping the skill back up from an easier variation rather than repeating the thing that scares her."
+    },
+    {
+      "type": "p",
+      "text": "What tends not to work: more repetitions of a broken pattern, adding hours without changing instruction, and treating a fear response as a motivation problem."
+    },
+    {
+      "type": "p",
+      "serif": true,
+      "text": "More practice hours are not the same as better practice hours. A stalled skill is nearly always a message about technique, physical readiness, or fear \u2014 and each of those has a different fix."
     },
     {
       "type": "note",

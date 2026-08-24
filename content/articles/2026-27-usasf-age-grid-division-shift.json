@@ -140,6 +140,22 @@
       "serif": true
     },
     {
+      "type": "sources",
+      "heading": "Organizations and publications referenced",
+      "items": [
+        {
+          "title": "USASF \u2014 official site",
+          "publication": "USASF",
+          "url": "https://www.usasf.net"
+        },
+        {
+          "title": "Cheer Daily \u2014 official site",
+          "publication": "Cheer Daily",
+          "url": "https://cheerdaily.net"
+        }
+      ]
+    },
+    {
       "type": "note",
       "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community \u2014 not original data collection or formal surveys."
     }
