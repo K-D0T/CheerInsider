@@ -136,7 +136,7 @@ export function ArticleLayout({ article }: { article: Article }) {
       {article.related && article.related.length > 0 && (
         <section style={{ padding: '80px 0', borderTop: '1px solid var(--p-line)' }}>
           <Container max={1100}>
-            <SectionHead eyebrow="KEEP READING" right={`All ${sectionLabel}`} title={<>More from the <span style={{ fontFamily: P.serif, fontStyle: 'italic', color: 'var(--p-hot)', fontWeight: 400 }}>inside</span>.</>} />
+            <SectionHead eyebrow="KEEP READING" right={`All ${sectionLabel}`} rightHref={`/${article.section}`} title={<>More from the <span style={{ fontFamily: P.serif, fontStyle: 'italic', color: 'var(--p-hot)', fontWeight: 400 }}>inside</span>.</>} />
             <div className="ci-4col" style={{ gap: 18, marginTop: 36 }}>
               {article.related.map((r, i) => (
                 <Link key={i} href={r.href} style={{ display: 'flex', flexDirection: 'column', gap: 12, cursor: 'pointer' }}>

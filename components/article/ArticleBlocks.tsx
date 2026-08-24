@@ -132,7 +132,7 @@ function renderBlock(block: Block) {
     case 'responses':
       return (
         <section style={{ margin: '64px 0 0' }}>
-          <SectionHead eyebrow={block.heading} right="Submit your response" title={<>The <span style={{ fontFamily: P.serif, fontStyle: 'italic', color: 'var(--p-hot)', fontWeight: 400 }}>conversation</span>.</>} />
+          <SectionHead eyebrow={block.heading} title={<>The <span style={{ fontFamily: P.serif, fontStyle: 'italic', color: 'var(--p-hot)', fontWeight: 400 }}>conversation</span>.</>} />
           <div className="ci-stack-mobile" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 24, marginTop: 36 }}>
             {block.items.map((r, i) => (
               <div key={i} style={{ padding: '24px 28px', background: r.stance === 'agree' ? 'var(--p-cream)' : 'var(--p-paper)', border: r.stance === 'agree' ? '1px solid var(--p-hot)' : '1px solid var(--p-line)' }}>

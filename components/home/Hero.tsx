@@ -60,12 +60,12 @@ export function Hero() {
           <div style={{ position:'absolute', inset:'-20px -28px 28px 28px', background:'var(--p-accent)', borderRadius:'var(--p-radius)', zIndex:0 }}/>
           <Gradient variant="burst" caption="hero · spotlight" ratio="4/5" style={{ position:'relative', zIndex:1 }} dark/>
           <SpinBadge/>
-          <div style={{ position:'absolute', bottom:-24, left:-24, zIndex:2, background:'var(--p-ink)', color:'var(--p-cream)', padding:'16px 20px', maxWidth:260 }}>
-            <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:6 }}>Issue 15 · This Week</div>
+          <Link href="/parents/the-24k-season" style={{ position:'absolute', bottom:-24, left:-24, zIndex:2, background:'var(--p-ink)', color:'var(--p-cream)', padding:'16px 20px', maxWidth:280, display:'block' }}>
+            <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:6 }}>Start here</div>
             <div style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:22, lineHeight:1.05 }}>
-              Worlds is over. <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Now what?</span>
+              What a season <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>actually costs</span>.
             </div>
-          </div>
+          </Link>
         </div>
       </div></Container>
 

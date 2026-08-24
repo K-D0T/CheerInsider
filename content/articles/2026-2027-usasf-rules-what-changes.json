@@ -18,12 +18,6 @@
   "blocks": [
     {
       "type": "p",
-      "text": "placeholder",
-      "dropcap": true,
-      "serif": false
-    },
-    {
-      "type": "p",
       "text": "Every spring, cheer parents brace for the same anxiety: a rules update lands, divisions get reshuffled, and the team your kid worked all summer to make suddenly looks different by fall. So when USASF released its rules and age-grid update for the **2026-2027 season**, the most important word in the announcement was a quiet one \u2014 *confirmed*. As framed around the release, the governing body is carrying its current framework forward with no major changes into the new season.",
       "dropcap": true
     },

@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   title: { default: 'CheerInsider', template: '%s | CheerInsider' },
   description: 'Honest, independent coverage of competitive all-star cheerleading — real costs, gym guides, gear reviews, and competition coverage for parents, athletes, and coaches.',
   keywords: ['competitive cheerleading', 'all-star cheer', 'cheer costs', 'cheer mom guide', 'cheer gym', 'USASF', 'cheer gear'],
-  authors: [{ name: 'Lauren K.', url: 'https://cheer-insider.com/about' }],
-  creator: 'Lauren K.',
+  authors: [{ name: 'CheerInsider', url: 'https://cheer-insider.com/about' }],
+  creator: 'CheerInsider',
   publisher: 'CheerInsider',
   robots: { index: true, follow: true },
   openGraph: {

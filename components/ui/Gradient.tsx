@@ -16,17 +16,17 @@ const arts: Record<Variant, { bg: string; layers: string[]; filter?: string; sca
 
 const GRAIN = `url("data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22120%22><filter id=%22n%22><feTurbulence baseFrequency=%22.9%22/><feColorMatrix values=%220 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .35 0%22/></filter><rect width=%22120%22 height=%22120%22 filter=%22url(%23n)%22/></svg>")`;
 
-export function Gradient({ variant = 'burst', caption, ratio = '4/5', children, style, dark = false }: {
+// `caption` is accepted for call-site compatibility but intentionally not
+// rendered — it was production art-direction shorthand ("cover · receipts
+// spread") that shipped as visible text over the artwork.
+export function Gradient({ variant = 'burst', ratio = '4/5', children, style }: {
   variant?: Variant; caption?: string; ratio?: string; children?: ReactNode; style?: CSSProperties; dark?: boolean;
 }) {
   const a = arts[variant];
   return (
-    <div style={{ position:'relative', aspectRatio:ratio, width:'100%', background:a.bg, overflow:'hidden', borderRadius:'var(--p-radius)', ...style }}>
+    <div aria-hidden style={{ position:'relative', aspectRatio:ratio, width:'100%', background:a.bg, overflow:'hidden', borderRadius:'var(--p-radius)', ...style }}>
       <div style={{ position:'absolute', inset:0, background:a.layers.join(', '), backgroundBlendMode: variant==='pulse' ? 'screen' : 'normal', filter:a.filter||'none', transform:a.scale ? `scale(${a.scale})` : 'none', transformOrigin:'center' }}/>
       <div style={{ position:'absolute', inset:0, backgroundImage:GRAIN, opacity:.45, mixBlendMode:'overlay', pointerEvents:'none' }}/>
-      {caption && (
-        <div style={{ position:'absolute', bottom:14, left:14, fontFamily:'ui-monospace,SFMono-Regular,Menlo,monospace', fontSize:10, letterSpacing:'.08em', textTransform:'uppercase', color: dark ? 'rgba(255,255,255,.78)' : 'rgba(15,14,19,.7)', background: dark ? 'rgba(0,0,0,.45)' : 'rgba(255,255,255,.7)', padding:'4px 8px', backdropFilter:'blur(6px)' }}>{caption}</div>
-      )}
       {children}
     </div>
   );

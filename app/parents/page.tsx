@@ -24,25 +24,32 @@ export const metadata: Metadata = {
   },
 };
 
-const LEAD = {
-  eyebrow:'COST DEEP DIVE · MOST READ',
-  title:'The $24,000 cheer season: every dollar, tracked.',
-  sub:'Tuition was a third of what this Level 4 family actually paid. We followed their invoices for a full season.',
-  meta:'Lauren K. · 11 min · May 2026',
-  g:'flash' as const,
-  href:'/parents/the-24k-season',
-};
+const LEAD_SLUG = 'the-24k-season';
 
 export default function ParentsPage() {
   // Article grid is driven by content/articles — add a JSON file there and
   // it appears here, in the sitemap, and at its own URL automatically.
-  const ITEMS = getArticlesBySection('parents').map((a) => ({
-    eyebrow: a.card.eyebrow,
-    title: a.title,
-    meta: a.readTime,
-    g: a.gradient,
-    href: articlePath(a),
-  }));
+  const all = getArticlesBySection('parents');
+  const leadArticle = all.find((a) => a.slug === LEAD_SLUG) ?? all[0];
+
+  const LEAD = leadArticle && {
+    eyebrow: leadArticle.card.eyebrow,
+    title: leadArticle.title,
+    sub: leadArticle.description,
+    meta: `Lauren K. · ${leadArticle.readTime}`,
+    g: leadArticle.gradient,
+    href: articlePath(leadArticle),
+  };
+
+  const ITEMS = all
+    .filter((a) => a.slug !== leadArticle?.slug)
+    .map((a) => ({
+      eyebrow: a.card.eyebrow,
+      title: a.title,
+      meta: a.readTime,
+      g: a.gradient,
+      href: articlePath(a),
+    }));
 
   return (
     <>
@@ -54,7 +61,7 @@ export default function ParentsPage() {
           </div>
           <div className="ci-2col" style={{ gap:64 }}>
             <div>
-              <Pill style={{ marginBottom:24 }}>★ THE PARENT PILLAR · {ITEMS.length} GUIDES</Pill>
+              <Pill style={{ marginBottom:24 }}>★ THE PARENT PILLAR · {all.length} GUIDES</Pill>
               <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(60px,7.6vw,124px)', margin:'0 0 24px', letterSpacing:'-.03em', lineHeight:.92 }}>
                 For the <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>cheer mom</span> who'd rather know.
               </h1>
@@ -71,7 +78,7 @@ export default function ParentsPage() {
       <section style={{ padding:'56px 0 96px' }}>
         <Container>
           {/* Lead */}
-          <Link href={LEAD.href} className="ci-article-lead" style={{ gap:48, padding:'32px 0', borderBottom:'1px solid var(--p-line)', marginBottom:32, cursor:'pointer', alignItems:'center' }}>
+          {LEAD && <Link href={LEAD.href} className="ci-article-lead" style={{ gap:48, padding:'32px 0', borderBottom:'1px solid var(--p-line)', marginBottom:32, cursor:'pointer', alignItems:'center' }}>
             <Gradient variant={LEAD.g} ratio="16/10" caption="cover story"/>
             <div>
               <Pill style={{ marginBottom:14 }}>★ COVER · MOST READ THIS WEEK</Pill>
@@ -80,7 +87,7 @@ export default function ParentsPage() {
               <p style={{ fontSize:17, lineHeight:1.5, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:520 }}>{LEAD.sub}</p>
               <div style={{ fontSize:13, color:'var(--p-muted)' }}>{LEAD.meta}</div>
             </div>
-          </Link>
+          </Link>}
 
           {/* Leaderboard between lead story and article grid */}
           <AdUnit format="leaderboard" style={{ margin:'32px 0' }}/>
