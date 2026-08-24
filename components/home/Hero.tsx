@@ -6,7 +6,7 @@ import { getAllArticles } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
 
 function SpinBadge() {
-  const text = ' ★ INDEPENDENT · PARENT FIRST · INSIDER WRITTEN ';
+  const text = ' ★ INDEPENDENT · PARENT FIRST · NEVER SPONSORED ';
   const r = 70;
   return (
     <div style={{ position:'absolute', top:-44, right:-44, zIndex:3, width:170, height:170, pointerEvents:'none', animation:'spin-badge 16s linear infinite' }}>
@@ -35,16 +35,16 @@ export function Hero() {
         <div>
           <div style={{ display:'inline-flex', alignItems:'center', gap:10, marginBottom:28 }}>
             <span style={{ display:'inline-block', width:36, height:1, background:'var(--p-ink)' }}/>
-            <span style={{ ...tx.eyebrow }}>The insider's all-star cheer guide · Est. 2025</span>
+            <span style={{ ...tx.eyebrow }}>The independent all-star cheer guide · Est. 2025</span>
           </div>
           <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(56px, 7.2vw, 116px)', margin:'0 0 28px', letterSpacing:'-.025em', lineHeight:.92 }}>
             What no one<br/>
             tells you about <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>all-star cheer</span><br/>
-            <span style={{ color:'var(--p-muted)' }}>from someone who's </span>
-            <span style={{ textDecoration:'underline', textDecorationColor:'var(--p-accent)', textDecorationThickness:5, textUnderlineOffset:8 }}>actually been there.</span>
+            <span style={{ color:'var(--p-muted)' }}>until you're </span>
+            <span style={{ textDecoration:'underline', textDecorationColor:'var(--p-accent)', textDecorationThickness:5, textUnderlineOffset:8 }}>already paying for it.</span>
           </h1>
           <p style={{ fontSize:19, lineHeight:1.45, maxWidth:580, color:'var(--p-inkSoft)', margin:'0 0 32px', textWrap:'pretty' as never }}>
-            Honest costs. Real gym selection criteria. The gear that's worth it (and the gear that absolutely isn't). Written by a coach who's been on the mat — not the federation, not the gym marketing team, not a fan blog.
+            Honest costs. Real gym selection criteria. The gear that's worth it, and the gear that isn't. Independent coverage written for the parents paying the bills — not the federations, not the gyms, not the brands.
           </p>
           <div style={{ display:'flex', gap:14, alignItems:'center', flexWrap:'wrap' }}>
             <Link href="/parents" style={{ background:'var(--p-hot)', color:'#fff', border:'none', cursor:'pointer', padding:'18px 26px', fontSize:15, fontWeight:700, letterSpacing:'.01em', borderRadius:99, display:'inline-flex', alignItems:'center', gap:10, boxShadow:'0 12px 32px -8px rgba(255,45,126,.5)', fontFamily:'inherit' }}>
@@ -71,7 +71,7 @@ export function Hero() {
 
       <Container style={{ marginTop:80, borderTop:'1px solid var(--p-ink)', borderBottom:'1px solid var(--p-ink)' }}>
         <div className="ci-stats">
-        {[[String(getAllArticles().length),'articles published'],['Weekly','new articles'],['0','sponsored posts'],['100%','independent']].map(([n,l], i) => (
+        {[[String(getAllArticles().length),'articles published'],['3','content pillars'],['0','sponsored posts'],['100%','independent']].map(([n,l], i) => (
           <div key={i} style={{ padding:'20px 24px', borderRight: i<3 ? '1px solid var(--p-line)' : 'none' }}>
             <div style={{ fontFamily:'var(--p-display)', fontSize:38, fontWeight:800, lineHeight:1, letterSpacing:'-.02em' }}>{n}</div>
             <div style={{ fontSize:12, letterSpacing:'.08em', textTransform:'uppercase', color:'var(--p-muted)', marginTop:8 }}>{l}</div>

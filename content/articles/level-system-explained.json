@@ -9,7 +9,19 @@
   "headline": "The *level system*, explained from scratch.",
   "sub": "Level 1 through Level 7 \u2014 what they mean, how athletes move through them, and why 'she's ready to move up' is more complicated than it sounds.",
   "datePublished": "2026-06-10",
-  "readTime": "3 min",
+  "dateModified": "2026-08-24",
+  "readTime": "8 min",
+  "toc": [
+    "What a level actually is",
+    "The seven levels at a glance",
+    "The age grid, and why it decides more than parents expect",
+    "Skill, not seniority, decides placement",
+    "The three skill tracks that don't move together",
+    "How athletes actually move up",
+    "Reading a team name: level versus division",
+    "Prep, novice, and elite: parallel tracks at the same level",
+    "Why the same level looks different at two gyms"
+  ],
   "tags": [
     "levels",
     "level system",
@@ -26,11 +38,27 @@
     {
       "type": "p",
       "dropcap": true,
-      "text": "All-star cheerleading runs on a seven-level system governed by USASF (United States All Star Federation). Each level has a defined skills list \u2014 specific tumbling passes, stunt configurations, and pyramid rules that are legal to compete. The levels apply to both teams and, informally, to individual athletes."
+      "text": "All-star cheerleading is organized into seven levels, and the level is the single most consequential label attached to your child's season. It decides which skills her team may legally compete, which teams she competes against, how many hours a week she spends in the gym, how far the family travels, and what the year costs. Most parents meet the system as a verdict \u2014 *she's a Level 3* \u2014 when it is really a rules framework with a great deal of machinery underneath it."
     },
     {
       "type": "p",
-      "text": "Understanding the system matters to parents because **level placement determines cost, time commitment, and competitive trajectory** for years. A Level 2 season looks nothing like a Level 5 season in any of those categories."
+      "text": "In the United States that framework is maintained by **USASF**, with **IASF** filling the equivalent role internationally. Their rules define, for each level, which tumbling skills, stunt configurations, pyramid structures, and tosses are legal in competition. Event producers build their divisions on top of that shared definition, which is why a Level 3 team from one state can travel and compete meaningfully against a Level 3 team from another."
+    },
+    {
+      "type": "h2",
+      "text": "What a level actually is"
+    },
+    {
+      "type": "p",
+      "text": "A level is not a rank, a grade, or a measure of how good an athlete is. It is a **legality envelope** \u2014 the set of skills a team may put on the floor. Anything above it is illegal for that team no matter how well an individual athlete performs it. Anything below it stays legal and available."
+    },
+    {
+      "type": "p",
+      "text": "Two consequences surprise families. First, the level belongs to the **team**, not the athlete: a Level 5 tumbler competing on a Level 3 team tumbles Level 3 content, full stop. Second, the envelope is a ceiling, not a requirement \u2014 a team can compete at Level 4 while performing very little Level 4 content and break no rules at all. Whether that is a good idea is a scoring question, not a legality question."
+    },
+    {
+      "type": "p",
+      "text": "The rules are written across three largely separate domains: **tumbling**, **stunts and partner work**, and **pyramids and tosses**. They advance in parallel but not identically, so it is normal for the tumbling gap between two levels to feel modest while the stunt gap feels enormous."
     },
     {
       "type": "h2",
@@ -40,125 +68,218 @@
       "type": "table",
       "head": [
         "Level",
-        "Typical ages",
-        "Tumbling floor",
-        "Stunts",
-        "Time/cost intensity"
+        "Ages",
+        "Tumbling landmark",
+        "Stunt landmark"
       ],
       "rows": [
         [
           "Level 1",
-          "5\u201310",
-          "Cartwheels, round-offs",
-          "Two-leg bases, no inversions",
-          "Low"
+          "5\u201311",
+          "Cartwheel, round-off",
+          "Two-leg stunts, extended height"
         ],
         [
           "Level 2",
-          "7\u201312",
-          "Back walkover, front walkover",
-          "Basic extensions, no release moves",
-          "Low\u2013Moderate"
+          "6\u201313",
+          "Walkovers, single handspring",
+          "Extensions, no inverted entries"
         ],
         [
           "Level 3",
-          "9\u201314",
+          "8\u201315",
           "Back handspring series",
-          "Single-leg stunts, basic releases",
-          "Moderate"
+          "Single-leg stunts, basic releases"
         ],
         [
           "Level 4",
-          "11\u201316",
-          "Standing and running tucks",
-          "Advanced releases, twisting dismounts",
-          "High"
+          "10\u201317",
+          "Standing and running tuck",
+          "Twisting dismounts, released pyramids"
         ],
         [
           "Level 5",
-          "13\u201318",
+          "12\u201318",
           "Layout, whip series",
-          "Full-twisting dismounts, complex pyramids",
-          "Very high"
+          "Full-twisting dismounts"
         ],
         [
           "Level 6",
-          "15\u2013adult",
-          "Full, double-full",
-          "Release moves to inversions, doubles",
-          "Competitive elite"
+          "14+",
+          "Full twist",
+          "Released inversions, elite tosses"
         ],
         [
           "Level 7",
-          "18+",
-          "Double-full and beyond",
-          "All skills legal",
-          "Elite open"
+          "17+",
+          "Double full and beyond",
+          "Widest legal catalogue"
         ]
       ]
     },
     {
       "type": "p",
-      "text": "Age guidelines above are typical, not mandatory. USASF sets **age grid rules** that determine the minimum and maximum ages allowed on a given level/division combination. The grid updates periodically and is worth reviewing each season \u2014 gyms should communicate changes before tryouts."
+      "text": "Treat the age column as description, not rule \u2014 those are the ranges these levels commonly draw from. Actual eligibility comes from the **age grid**, which is where the real confusion in this system lives."
     },
     {
       "type": "h2",
-      "text": "What actually determines a child's level"
+      "text": "The age grid, and why it decides more than parents expect"
     },
     {
       "type": "p",
-      "text": "Contrary to what many parents assume, the level is determined by **skill, not age or desire**. The primary factors gyms evaluate at tryouts are: standing tumbling, running tumbling, stunting ability (as a flyer, base, or back), jumps, and performance quality. A 13-year-old with a solid back handspring series is a Level 3 athlete regardless of what level her friends are on."
-    },
-    {
-      "type": "quote",
-      "variant": "border",
-      "text": "\"The level is a skills ceiling, not a rank. Placing a child above her skills doesn't accelerate development \u2014 it increases injury risk and erodes confidence.\""
+      "text": "Each season the governing body publishes an age grid mapping divisions to eligible birth years. The specific years change annually; two structural points do not. Eligibility is normally tied to **birth year rather than age on competition day**, so an athlete does not age out mid-season \u2014 she is locked in for the whole competitive year. And divisions deliberately **overlap**: Youth and Junior, or Junior and Senior, share birth years so gyms can build rosters instead of splitting athletes by birthday."
     },
     {
       "type": "p",
-      "text": "Gyms have strong financial incentives to move athletes up levels \u2014 higher level teams generate more revenue. That's worth knowing when a coach says your daughter is 'ready for Level 4.' Ask specifically: **what skills does she have, and what skills does a Level 4 athlete need?** A good gym will answer that without hesitation."
-    },
-    {
-      "type": "h2",
-      "text": "How athletes move between levels"
+      "text": "So a child's eligibility can shift between seasons even though nothing about her skills changed. An athlete who spent a year as one of the oldest and most experienced kids in Youth can find herself, the following spring, one of the youngest in Junior \u2014 competing against athletes with two or three more years of growth behind them. Coaches call this *aging up*, and it is a common reason a strong athlete is placed at a level she thought she had already cleared."
     },
     {
       "type": "p",
-      "text": "There is no standardized certification or test to move between levels \u2014 it's entirely at the gym's discretion during tryout season. Most gyms hold tryouts once a year (May\u2013June), evaluate athletes, and place them on teams. An athlete can be placed on a higher level team if she demonstrates the required skills; she can also be placed on a lower level team if skills have regressed or a spot isn't available."
+      "text": "The upper levels also carry **minimum ages**. Levels 6 and 7 are not open to young athletes regardless of skill, because the content carries real risk and requires a developed body. A twelve-year-old with a double full still has no Level 6 division to enter."
     },
     {
       "type": "list",
       "items": [
-        "**Level 1\u20132 transitions** are usually straightforward: cartwheel to back walkover, or round-off to back handspring series",
-        "**Level 3\u20134** is the most significant jump for most families \u2014 a standing tuck is typically required, which can take 1\u20133 years to develop safely",
-        "**Level 4\u20135** requires layout tumbling and single-leg stunting at an advanced level; this is where many athletes plateau",
-        "**Level 5\u20136** is where the recreational/elite divide becomes most apparent \u2014 only a fraction of athletes ever compete at this level"
+        "Ask which **birth years** are eligible for each team next season, not which ages \u2014 the grid is written in birth years and the translation is where errors happen.",
+        "Ask whether your child ages up this year, and whether the gym's team in that new division sits at a different level.",
+        "At the young end of a division, expect a season of catching up; at the old end, expect to be leaned on.",
+        "Check crossover rules before counting on two teams. Crossovers are common, but events limit them and gyms charge for them."
       ]
     },
     {
       "type": "h2",
-      "text": "Divisions within levels"
+      "text": "Skill, not seniority, decides placement"
     },
     {
       "type": "p",
-      "text": "Within each level, teams compete in **divisions** based on team size, gender composition, and age group. Common divisions include: Tiny (ages 5\u20138), Mini (8\u201311), Youth (11\u201314), Junior (14\u201317), Senior (14+), and Open (no age cap). Gender divisions are: All-Girl, Coed, and sometimes All-Male."
+      "text": "Years at a gym do not entitle an athlete to a level. Neither does her friend group, her family's tuition history, nor the level she was on last season \u2014 regression happens after an injury, a growth spurt, or a year of patchy attendance. What gyms evaluate is a **current, demonstrable skill set**: standing tumbling, running tumbling, the role she can fill in a stunt group, jumps, motion technique, and how all of it holds up under the pressure of being watched and scored."
+    },
+    {
+      "type": "quote",
+      "variant": "border",
+      "text": "\"A level is a skills ceiling, not a rank. Placing an athlete above her skills does not accelerate her \u2014 it raises her injury risk and usually costs her the confidence she already had.\""
     },
     {
       "type": "p",
-      "text": "This is why you'll hear descriptions like 'Senior Small Coed Level 5' or 'Youth All-Girl Level 3' \u2014 that's the full competitive classification. **The division affects who you compete against at any given event**, not the skills list, which is determined by level alone."
+      "text": "Gyms are also not neutral parties. Higher-level teams generally carry higher tuition, more choreography, more competitions, and more travel, so there is a **structural incentive pointing upward**. That does not make a gym dishonest \u2014 a mis-placed athlete makes the whole team worse and the routine harder to clean. But it does mean 'she's ready to move up' deserves a follow-up: *which skills does she have, and which does that level need?* A gym paying attention answers in specifics, immediately."
     },
     {
       "type": "h2",
-      "text": "Why the same skill level feels different at different gyms"
+      "text": "The three skill tracks that don't move together"
     },
     {
       "type": "p",
-      "text": "The USASF skills list sets a floor, not a ceiling. A Level 4 team at a nationally competitive gym will execute significantly harder skills than a Level 4 team at a local recreational gym \u2014 both are legal for the level. **What differs is execution quality, routine difficulty within the legal limits, and the competitive pool you'll face at events.**"
+      "text": "Parents hear 'level' and think tumbling, because tumbling is the visible, nameable part. Coaches track at least three, and an athlete is rarely in the same place on all of them."
+    },
+    {
+      "type": "h3",
+      "text": "Tumbling"
     },
     {
       "type": "p",
-      "text": "A child placed on a Level 3 team at a nationally ranked gym may be doing harder work \u2014 and facing stiffer competition \u2014 than a child on a Level 4 team at a gym that rarely travels. Level alone doesn't tell the whole story.",
-      "serif": true
+      "text": "The most individual of the three and the slowest to build. Progression follows a physical logic: **non-inverted** skills first, then **inverted with the hands supporting** (walkovers, handsprings), then **aerial rotation tucked**, then **aerial rotation extended**, then **twisting while flipping**. Every stage demands that the athlete hold a rigid shape in the air, which is why conditioning gaps surface as tumbling plateaus rather than as visible weakness."
+    },
+    {
+      "type": "h3",
+      "text": "Stunting"
+    },
+    {
+      "type": "p",
+      "text": "A group skill, scored as one. An athlete is assessed for the role she can fill: **flyer** (body control, balance, flexibility, and the discipline to hold a position while other people move her), **base** (leg drive, grip technique, timing that must match another person's exactly), or **backspot** (height, upper-body strength, responsibility for the flyer's head and shoulders on every catch). A gym short on strong bases will place a competent base higher than her tumbling alone suggests. That is roster reality, not favoritism."
+    },
+    {
+      "type": "h3",
+      "text": "Jumps, motions, and performance"
+    },
+    {
+      "type": "p",
+      "text": "The least discussed and the fastest to improve. Jump height, hip flexibility, motion sharpness, and the ability to project to a judging panel are all coachable inside one season, and all are scored. An athlete stuck on a tumbling skill can still raise her value to a team substantially here within a few months \u2014 the most useful thing to know when a placement has just gone the wrong way."
+    },
+    {
+      "type": "h2",
+      "text": "How athletes actually move up"
+    },
+    {
+      "type": "p",
+      "text": "There is no standardized test, belt, or certificate. Movement happens almost entirely at **tryouts**, at the gym's discretion, most commonly in late spring for a season that builds over the summer. What does exist on the governing-body side is credentialing on the *coaching* side: coaches are credentialed by level, so a gym needs appropriately credentialed staff to field a team at a given level. Asking which of your child's coaches hold credentials for her level is reasonable and revealing."
+    },
+    {
+      "type": "p",
+      "text": "Mid-season moves are rare for reasons of choreography, not politics. A routine is built onto specific bodies \u2014 stunt groups matched by height and strength, pyramid connections that depend on who stands where, formations counted to the beat. Swapping one athlete triggers a chain of rebuilds. Gyms absorb that for an injury or a departure, not because an athlete landed a new skill in November."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Level 1 to 2** is the smoothest move \u2014 walkovers and a round-off back handspring are flexibility-and-technique skills more than power skills.",
+        "**Level 2 to 3** hinges on the handspring **series**: two connected without a step, which needs enough power in the first to feed the second. Athletes often hold a single handspring for a long time first.",
+        "**Level 3 to 4** is the wall most families hit. A standing back tuck commonly takes anywhere from several months to a couple of years to develop safely, and it is where fear becomes a real, trainable variable rather than an excuse.",
+        "**Level 4 to 5** demands layout tumbling plus single-leg stunting at speed. Many athletes plateau here, where the sport starts sorting on athleticism as much as effort.",
+        "**Level 5 to 6** is the elite threshold \u2014 power to generate height plus air awareness to control rotation on two axes. Only a small fraction of athletes ever compete here."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Reading a team name: level versus division"
+    },
+    {
+      "type": "p",
+      "text": "A team's full competitive name is a stack of independent labels, and only one is the level. The others define **who you compete against**, not what you may do."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Age division** \u2014 Tiny, Mini, Youth, Junior, Senior, Open, set by the season's age grid.",
+        "**Size** \u2014 small or large, set by an athlete-count cutoff that varies by event and season, so a 16-athlete team is not scored against one fielding twice as many stunt groups.",
+        "**Gender composition** \u2014 all-girl, coed, or all-boy, with coed split further by the number of male athletes.",
+        "**Level** \u2014 the only one of the four that changes what is legal on the floor."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "So 'Senior Small Coed Level 5' is four separate statements, three of them about the bracket. When a parent asks why the team placed sixth, the division is often a bigger part of the answer than the routine. A thin division with three entries produces a podium finish that means very little; a stacked division at a major event can produce a sixth place that is the best routine that team has ever hit."
+    },
+    {
+      "type": "h2",
+      "text": "Prep, novice, and elite: parallel tracks at the same level"
+    },
+    {
+      "type": "p",
+      "text": "Most gyms now run more than one track. The elite or full-season track is the traditional model: year-round training, outside choreography, a travel schedule, and the cost structure that comes with it. **Prep** and **novice** programs run alongside at the same nominal levels with a deliberately reduced footprint \u2014 fewer practice hours, a shorter season, local or regional events only, and often a restricted version of the skills list."
+    },
+    {
+      "type": "p",
+      "text": "The cost difference is real and substantial; prep commonly runs a fraction of an elite team's total season cost, largely because travel is where all-star money actually goes. The trade-off is development speed. Fewer hours means slower skill acquisition, so an athlete who starts in prep and later wants an elite team frequently needs private lessons to close a gap she did not create."
+    },
+    {
+      "type": "note",
+      "text": "'Level 2 Prep' and 'Level 2 Elite' are not the same product. Compare practice hours per week, number of competitions, and how many of those require a flight and a hotel \u2014 not the level number."
+    },
+    {
+      "type": "h2",
+      "text": "Why the same level looks different at two gyms"
+    },
+    {
+      "type": "p",
+      "text": "The skills list sets a floor and a ceiling, and gyms occupy the space between very differently. A Level 4 team at a nationally competitive program typically runs **ceiling-level content across most of the roster**. A Level 4 team at a smaller program may be entirely legal at Level 4 while only a handful of athletes perform the top skills and the rest fill in beneath them."
+    },
+    {
+      "type": "p",
+      "text": "Both are Level 4, and they will not score the same, because all-star scoring rewards **how much of the team performs the difficulty** rather than whether anyone on it can. That is why a child on a Level 3 team at a demanding gym can be doing harder work, in a deeper division, than a child on a Level 4 team at a program that competes locally three times a year. Before accepting a placement \u2014 or judging one \u2014 ask concrete questions:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "How many athletes on this team will actually perform the level's top tumbling pass?",
+        "How many practice hours per week, and how many are skill instruction versus cleaning the routine?",
+        "How many competitions, how many require travel, and what is the full season cost including choreography, music, uniform, warmups, camp, and fees?",
+        "Which division will this team compete in, and how many teams are usually in it at the events this gym attends?",
+        "What specifically would my child need to add to be considered for the next level next season?"
+      ]
+    },
+    {
+      "type": "p",
+      "serif": true,
+      "text": "Level is the label the sport hands you first, and it explains less than it appears to. The team's actual content, the division's depth, and the gym's weekly hours describe the season you are really signing up for."
     },
     {
       "type": "note",

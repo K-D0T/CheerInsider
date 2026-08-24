@@ -47,7 +47,7 @@ export default function AboutPage() {
               <div style={{ position:'absolute', bottom:-24, right:-24, padding:'14px 18px', background:'var(--p-ink)', color:'var(--p-cream)', maxWidth:240 }}>
                 <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:4 }}>Publishing</div>
                 <div style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:18, lineHeight:1.1 }}>
-                  New articles <span style={{ color:'var(--p-hot)' }}>every week</span>
+                  Independent &amp; <span style={{ color:'var(--p-hot)' }}>never sponsored</span>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function AboutPage() {
         <Container>
           <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:32 }}>The site today</div>
           <div className="ci-stats" style={{ gap:0, borderTop:'2px solid var(--p-ink)', borderBottom:'2px solid var(--p-ink)' }}>
-            {([[String(articleCount),'articles','published and counting'],['3','pillars','parents · guides · gear'],['Weekly','updates','new coverage every Monday'],['0','sponsored posts','and it stays that way']] as const).map(([n,l,sub], i) => (
+            {([[String(articleCount),'articles','published and counting'],['3','pillars','parents · guides · gear'],['0','paywalls','everything is free to read'],['0','sponsored posts','and it stays that way']] as const).map(([n,l,sub], i) => (
               <div key={i} style={{ padding:'32px 24px', borderRight: i<3 ? '1px solid var(--p-line)' : 'none' }}>
                 <div style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:64, lineHeight:1, letterSpacing:'-.04em', color:'var(--p-hot)' }}>{n}</div>
                 <div style={{ fontSize:14, fontWeight:700, marginTop:12 }}>{l}</div>

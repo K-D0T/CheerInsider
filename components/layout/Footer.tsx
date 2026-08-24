@@ -2,10 +2,10 @@ import Link from 'next/link';
 import { P, tx } from '@/lib/palette';
 
 const COLS = [
-  { h:'Start here', items:[['New cheer mom','/parents'],['My kid wants to try out','/guides'],["I'm an athlete",'/guides'],['Cost calculator','/cost-calculator'],['Levels & scoring','/guides']] },
-  { h:'Topics',     items:[['Parent resources','/parents'],['Educational guides','/guides'],['Gear roundups','/gear'],['Cost calculator','/cost-calculator'],['Gym guide','/gym-guide']] },
-  { h:'Roundups',   items:[['Cheer shoes 2026','/gear/cheer-shoes-2026'],['All gear','/gear'],['20 things every cheer mom needs','/parents/20-things'],['The $24K season','/parents/the-24k-season'],['Team mom trap','/parents/team-mom-trap']] },
-  { h:'Site',       items:[['About Lauren','/about'],['Editorial standards','/about'],['Affiliate policy','/terms'],['Contact','/about'],['Privacy policy','/privacy']] },
+  { h:'Sections', items:[['Parent resources','/parents'],['Educational guides','/guides'],['Gear roundups','/gear']] },
+  { h:'Tools',    items:[['Cost calculator','/cost-calculator'],['Gym selection checklist','/gym-guide']] },
+  { h:'Popular',  items:[['The $24K season','/parents/the-24k-season'],['The level system explained','/guides/level-system-explained'],['Cheer shoes 2026','/gear/cheer-shoes-2026']] },
+  { h:'Site',     items:[['About','/about'],['Privacy policy','/privacy'],['Terms & affiliate policy','/terms']] },
 ];
 
 export function Footer() {

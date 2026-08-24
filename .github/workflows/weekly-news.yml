@@ -34,6 +34,9 @@ jobs:
           git config user.name "cheerinsider-bot"
           git config user.email "bot@cheer-insider.com"
           git add content/articles/
-          git diff --cached --quiet && echo "No new article" && exit 0
+          if git diff --cached --quiet; then
+            echo "::error::No new article was generated - the run produced nothing to publish."
+            exit 1
+          fi
           git commit -m "content: weekly news article"
           git push
