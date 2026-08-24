@@ -78,3 +78,13 @@ export function getArticleBySlug(slug: string): Article | undefined {
 export function articlePath(a: Article): string {
   return `/${a.section}/${a.slug}`;
 }
+
+// Stable anchor id for an h2/TOC entry. Strips inline markers so the id
+// derived from a heading matches the one derived from its TOC label.
+export function headingId(text: string): string {
+  return text
+    .replace(/[*_]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}

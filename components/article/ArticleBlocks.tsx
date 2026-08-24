@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Block } from '@/lib/articles';
+import { Block, headingId } from '@/lib/articles';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
@@ -8,20 +8,49 @@ import { AdUnit } from '@/components/ui/AdUnit';
 import { renderInline } from './inline';
 import { P, tx } from '@/lib/palette';
 
-// Renders an article's body blocks. An in-article ad is inserted after the
-// second block, and again roughly two-thirds through long articles —
-// placements that follow AdSense's "natural break" guidance.
+const wordsIn = (b: Block): number => {
+  let n = 'text' in b && typeof b.text === 'string' ? b.text.split(/\s+/).length : 0;
+  if ('items' in b && Array.isArray(b.items)) {
+    for (const it of b.items) n += (typeof it === 'string' ? it : Object.values(it).filter((v) => typeof v === 'string').join(' ')).split(/\s+/).length;
+  }
+  if ('rows' in b && Array.isArray(b.rows)) n += b.rows.flat().join(' ').split(/\s+/).length;
+  return n;
+};
+
+// Ad slots are placed by how much article the reader has actually passed,
+// not by block index — otherwise the first ad lands right after the
+// disclosure note and the opening line.
+function adIndexes(blocks: Block[]): Set<number> {
+  const total = blocks.reduce((s, b) => s + wordsIn(b), 0);
+  const slots = new Set<number>();
+  if (total < 500) return slots;
+
+  let seen = 0;
+  let first = -1;
+  for (let i = 0; i < blocks.length; i++) {
+    seen += wordsIn(blocks[i]);
+    // First slot: at least 300 words in, and only at a section break.
+    if (first < 0 && seen >= 300 && blocks[i + 1]?.type === 'h2') {
+      first = i;
+      slots.add(i);
+    }
+    // Second slot: only for long articles, past two-thirds, at a break.
+    if (first >= 0 && i > first + 2 && total >= 1400 && seen >= total * 0.68 && blocks[i + 1]?.type === 'h2' && slots.size < 2) {
+      slots.add(i);
+    }
+  }
+  return slots;
+}
+
 export function ArticleBlocks({ blocks }: { blocks: Block[] }) {
-  const textBlocks = blocks.filter((b) => b.type === 'p' || b.type === 'h2').length;
-  const midAdIndex = textBlocks > 8 ? Math.floor(blocks.length * 0.66) : -1;
+  const slots = adIndexes(blocks);
 
   return (
     <>
       {blocks.map((block, i) => (
         <Fragment key={i}>
           {renderBlock(block)}
-          {i === 1 && <AdUnit format="inline" style={{ margin: '32px 0' }} />}
-          {i === midAdIndex && <AdUnit format="inline" style={{ margin: '32px 0' }} />}
+          {slots.has(i) && <AdUnit format="inline" style={{ margin: '40px 0' }} />}
         </Fragment>
       ))}
     </>
@@ -51,7 +80,7 @@ function renderBlock(block: Block) {
 
     case 'h2':
       return (
-        <h2 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 36, margin: '48px 0 16px', letterSpacing: '-.02em', lineHeight: 1.05 }}>
+        <h2 id={headingId(block.text)} style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 36, margin: '48px 0 16px', letterSpacing: '-.02em', lineHeight: 1.05, scrollMarginTop: 96 }}>
           {renderInline(block.text, 'accent')}
         </h2>
       );

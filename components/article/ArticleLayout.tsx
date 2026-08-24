@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Article, articlePath } from '@/lib/articles';
+import { Article, articlePath, headingId } from '@/lib/articles';
 import { Container } from '@/components/ui/Container';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
@@ -105,8 +105,10 @@ export function ArticleLayout({ article }: { article: Article }) {
                 <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 14 }}>In this article</div>
                 <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
                   {article.toc.map((s, i) => (
-                    <li key={i} style={{ paddingLeft: 14, borderLeft: i === 0 ? '2px solid var(--p-hot)' : '2px solid transparent', color: i === 0 ? 'var(--p-ink)' : 'var(--p-muted)', fontWeight: i === 0 ? 700 : 500 }}>
-                      <span style={{ color: 'var(--p-muted)', marginRight: 8, fontFamily: P.serif, fontStyle: 'italic' }}>0{i + 1}</span>{s}
+                    <li key={i} style={{ paddingLeft: 14, borderLeft: '2px solid var(--p-line)' }}>
+                      <a href={`#${headingId(s)}`} style={{ color: 'var(--p-inkSoft)', fontWeight: 500, lineHeight: 1.35, display: 'block' }}>
+                        <span style={{ color: 'var(--p-muted)', marginRight: 8, fontFamily: P.serif, fontStyle: 'italic' }}>0{i + 1}</span>{s}
+                      </a>
                     </li>
                   ))}
                 </ol>
@@ -116,9 +118,8 @@ export function ArticleLayout({ article }: { article: Article }) {
               <ArticleBlocks blocks={article.blocks} />
             </article>
             <aside className="ci-static-mobile" style={{ position: 'sticky', top: 96, display: 'flex', flexDirection: 'column', gap: 20 }}>
-              <AdUnit format="rectangle" />
               {article.related && article.related.length > 0 && (
-                <div style={{ padding: '20px 0', borderTop: '1px solid var(--p-line)' }}>
+                <div style={{ paddingBottom: 20, borderBottom: '1px solid var(--p-line)' }}>
                   <div style={{ ...tx.eyebrow, color: 'var(--p-muted)', marginBottom: 10 }}>Keep reading</div>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, fontSize: 14 }}>
                     {article.related.slice(0, 3).map((r, i) => (
@@ -127,6 +128,7 @@ export function ArticleLayout({ article }: { article: Article }) {
                   </ul>
                 </div>
               )}
+              <AdUnit format="rectangle" />
             </aside>
           </Container>
         )}
