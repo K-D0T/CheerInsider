@@ -3,13 +3,15 @@
   "section": "guides",
   "kind": "feature",
   "title": "How Placement Decisions Actually Work Inside a Gym",
-  "description": "What coaches are actually evaluating at tryouts, why your child got placed where she did, and what 'she's not ready' usually means \u2014 from someone who has made hundreds of placement decisions.",
+  "description": "What coaches evaluate at tryouts, why roster math decides more placements than skill alone, and how to get a straight answer when your athlete lands somewhere unexpected.",
+  "ogDescription": "Placement isn't a ranking. It's a roster being assembled \u2014 and that changes how you should read the result.",
   "eyebrow": "TRYOUT PROCESS",
   "pill": "\u2605 TRYOUT GUIDE",
   "headline": "How *placement decisions* actually work.",
-  "sub": "What coaches evaluate at tryouts, why the level your child wants and the level she gets are sometimes different, and how to have a productive conversation with a gym about placement.",
+  "sub": "Placement feels arbitrary from the outside because parents assume it's a ranking. It isn't \u2014 it's a roster being built under constraints. Understanding those constraints explains almost every surprising result.",
   "datePublished": "2026-06-10",
-  "readTime": "3 min",
+  "dateModified": "2026-08-24",
+  "readTime": "6 min",
   "tags": [
     "tryouts",
     "placement",
@@ -18,7 +20,15 @@
     "cheer tryouts"
   ],
   "gradient": "pulse",
-  "heroCaption": "cover \u00b7 tryout placement guide",
+  "toc": [
+    "What coaches are actually evaluating",
+    "The roster math parents never see",
+    "Why \"she's not ready\" has three different meanings",
+    "The things that quietly matter more than skills",
+    "What a good gym does differently",
+    "How to have the post-tryout conversation",
+    "When the answer really is \"find another gym\""
+  ],
   "card": {
     "eyebrow": "TRYOUT PROCESS"
   },
@@ -26,7 +36,15 @@
     {
       "type": "p",
       "dropcap": true,
-      "text": "Tryout placements generate more parent frustration than almost any other part of all-star cheerleading. A child who has been at a gym for three years gets placed at the same level as a new athlete. A girl who 'knows everyone' gets passed over for a team she expected to make. The process feels opaque because gyms rarely explain their reasoning in detail \u2014 and most parents don't know what to ask."
+      "text": "Tryout placement generates more parent frustration than any other part of all-star cheerleading, and most of that frustration comes from a single wrong assumption: that placement is a ranking. Parents watch tryouts, form a mental leaderboard, and then cannot reconcile the results with what they saw."
+    },
+    {
+      "type": "p",
+      "text": "But coaches are not ranking athletes. **They are assembling several rosters simultaneously under hard constraints** \u2014 position requirements, skill minimums, age-grid limits, and the number of spots that physically exist. A placement is the output of that puzzle, not a verdict on your child."
+    },
+    {
+      "type": "p",
+      "text": "Once you understand the constraints, almost every surprising placement becomes explicable \u2014 including the ones that are genuinely unfair."
     },
     {
       "type": "h2",
@@ -34,72 +52,191 @@
     },
     {
       "type": "p",
-      "text": "At tryouts, coaches are filling specific roles on specific teams. They're not simply ranking athletes from best to worst \u2014 they're building a roster that needs to function as a unit. The evaluation is **simultaneous on several dimensions**:"
+      "text": "Tryout evaluation is simultaneous across several dimensions, and they are not weighted equally:"
     },
     {
-      "type": "list",
-      "items": [
-        "**Tumbling** \u2014 standing and running passes, difficulty and consistency",
-        "**Stunting** \u2014 flyer ability, base strength, back spot technique; what role the athlete can fill",
-        "**Jumps** \u2014 height, technique, toe touch specifically",
-        "**Motions** \u2014 sharpness, timing, coordination",
-        "**Performance quality** \u2014 expression, presence, ability to execute under pressure",
-        "**Coachability** \u2014 how the athlete responds to a correction during tryouts"
+      "type": "table",
+      "head": [
+        "Dimension",
+        "What they're looking for",
+        "How much it moves placement"
+      ],
+      "rows": [
+        [
+          "Tumbling",
+          "Standing and running passes \u2014 consistency more than peak difficulty",
+          "High"
+        ],
+        [
+          "Stunting",
+          "What role the athlete can fill: fly, base, back",
+          "High \u2014 often decisive"
+        ],
+        [
+          "Jumps",
+          "Height, hip flexibility, clean landings",
+          "Moderate"
+        ],
+        [
+          "Motions",
+          "Sharpness, timing, ability to hit a position exactly",
+          "Moderate"
+        ],
+        [
+          "Performance",
+          "Expression and composure under pressure",
+          "Moderate \u2014 decisive at higher levels"
+        ],
+        [
+          "Coachability",
+          "Response to a correction given during tryouts",
+          "Higher than parents expect"
+        ]
       ]
     },
     {
       "type": "p",
-      "text": "Coaches are also thinking about **team chemistry, personality dynamics, and which athletes work well together** \u2014 factors that are real but rarely discussed openly with parents. An athlete who is technically strong but difficult to coach may be passed over for a better team in favor of someone slightly less skilled but more coachable."
-    },
-    {
-      "type": "h2",
-      "text": "Why 'she's not ready' is sometimes code for something else"
+      "text": "**Consistency beats peak skill at every level.** An athlete who hits a standing tuck four times out of five is more valuable than one who hits a beautiful layout one time in three, because a routine has to be reproducible on a specific Saturday in February."
     },
     {
       "type": "p",
-      "text": "When a coach says an athlete isn't ready for a particular level, it usually means one of three things: (1) she genuinely doesn't have the required skills, (2) a spot on that team has already been filled by an athlete the gym considers higher priority, or (3) **the team is at capacity for her position**. A gym may have five strong flyers trying out for a team that needs two."
+      "text": "This is why the kid who \"has bigger skills\" sometimes gets placed lower. The coach is not evaluating the best thing your athlete can do. They are evaluating **what she can be relied on to do.**"
+    },
+    {
+      "type": "h2",
+      "text": "The roster math parents never see"
+    },
+    {
+      "type": "p",
+      "text": "This is the single biggest driver of surprising placements, and gyms almost never explain it."
+    },
+    {
+      "type": "p",
+      "text": "A competitive team is not a collection of the best available athletes. It is a specific structural configuration. A roster of roughly two dozen needs a workable ratio of flyers to bases to back spots \u2014 bases and back spots typically outnumber flyers by a wide margin, because every flyer in the air requires a group underneath her."
     },
     {
       "type": "quote",
       "variant": "border",
-      "text": "\"'She's not ready' is a real answer. It's also sometimes a diplomatic one. Know the difference by asking for specifics.\""
+      "text": "\"If tryouts produce ten qualified flyers and four qualified bases, several excellent flyers are going somewhere they didn't expect. That is arithmetic, not judgment.\""
     },
     {
       "type": "p",
-      "text": "The way to tell the difference: **ask for specific skills**. 'What skill does she need to develop to be considered for that team next season?' If the answer is specific and actionable ('she needs a standing tuck'), it's a genuine skills gap. If the answer is vague ('she just needs more experience'), it may be a diplomatic version of 'we don't have a spot for her.'"
+      "text": "Flyer is the most oversubscribed position in the sport. Small, flexible, fearless athletes are abundant; strong, technically sound bases are chronically scarce. **An athlete who can genuinely base at a high level is more placement-portable than almost anyone else at tryouts**, and this is worth knowing early."
+    },
+    {
+      "type": "p",
+      "text": "Gyms handle the imbalance three ways. Some run multiple teams at the same level. Some convert athletes to a different position \u2014 a flyer who won't crack the top group gets developed as a base, which is often genuinely good for her long-term prospects even though it does not feel that way in May. Some simply place the overflow one level down."
     },
     {
       "type": "h2",
-      "text": "The roster math parents don't see"
+      "text": "Why \"she's not ready\" has three different meanings"
     },
     {
       "type": "p",
-      "text": "A Level 4 team with 24 athletes needs a specific distribution: roughly 6 flyers, 12 bases, 6 back spots \u2014 adjusted for the choreography. If tryouts produce 10 qualified flyers and only 4 qualified bases, someone strong gets left out or placed on a lower team. **Placement is partly skills, partly roster math, partly timing.**"
-    },
-    {
-      "type": "p",
-      "text": "Some gyms manage this by running multiple teams at the same level. Others move athletes to a different position (a weaker flyer becomes a base) to fill gaps. Neither approach is wrong, but both can produce placements that surprise families who only see their child's individual skills."
-    },
-    {
-      "type": "h2",
-      "text": "How to have a productive post-tryout conversation"
-    },
-    {
-      "type": "p",
-      "text": "If the placement is unexpected, ask for a meeting \u2014 not an email thread. Come with specific questions, not grievances. The questions that get useful answers:"
+      "text": "It is the most common phrase in a placement conversation and it means at least three distinct things:"
     },
     {
       "type": "list",
+      "ordered": true,
       "items": [
-        "'What specific skills would she need to develop to be considered for [team] at next year's tryouts?'",
-        "'Is this placement about her skills, or about team composition?'",
-        "'Is there anything she can work on this season to put herself in a better position?'",
-        "'Are privates recommended, and if so, what would she work on \u2014 specifically?'"
+        "**A genuine skills gap.** She is missing a specific skill the level requires. This is the honest, useful version \u2014 and it comes with a name attached: a standing tuck, a solid heel stretch, a consistent series.",
+        "**A position is full.** Her skills are adequate but the roster spot for what she does is taken. Nothing about her development changes this.",
+        "**Something nobody wants to say out loud.** Attendance, attitude, difficulty taking correction, or a parent the gym finds hard to work with. This is the version that arrives vaguest."
       ]
     },
     {
       "type": "p",
-      "text": "A gym that can't answer these questions with specifics is either not paying close attention to your child, or the placement decision was primarily about something other than her development. Both are worth knowing before you re-sign.",
+      "text": "**You can tell them apart by asking for a specific skill.** If the answer is concrete \u2014 \"she needs a standing back handspring series to be considered\" \u2014 it is version one, and you now have a plan. If the answer stays general across two rounds of asking (\"she just needs more experience,\" \"we want to see more maturity\"), it is version two or three."
+    },
+    {
+      "type": "p",
+      "text": "Neither of those is a reason to panic, but they call for different responses. Version two means waiting or looking elsewhere. Version three means asking, directly and without defensiveness, whether there is something about your athlete's participation the gym wants to raise."
+    },
+    {
+      "type": "h2",
+      "text": "The things that quietly matter more than skills"
+    },
+    {
+      "type": "p",
+      "text": "Several factors carry real weight in placement and appear on no evaluation sheet:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Attendance history.** A gym building a competitive roster needs athletes who will be at practice. A season of missed Wednesdays affects placement more than one missing skill.",
+        "**Coachability under pressure.** Coaches frequently give a correction mid-tryout specifically to watch the response. An athlete who adjusts immediately is signaling something valuable; one who argues or deflates is signaling something else.",
+        "**Injury history and durability.** Not held against an athlete, but it shapes which roles a coach will build around her.",
+        "**Whether the parent is difficult.** Gyms will not say this and most would deny it. It is real. A program assembling a team it must manage for ten months factors in which families are workable.",
+        "**Age-grid eligibility.** Sometimes the constraint is entirely administrative \u2014 an athlete's birth year makes her ineligible for the division a team competes in, regardless of skill."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "That last one is worth checking before you assume anything about a placement. **Some \"surprising\" results are pure age-grid mechanics** and have nothing to do with evaluation at all."
+    },
+    {
+      "type": "h2",
+      "text": "What a good gym does differently"
+    },
+    {
+      "type": "p",
+      "text": "Placement will always involve judgment, but the process around it varies enormously in quality. Signals a program is running this well:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Published criteria before tryouts** \u2014 what skills each level requires, in writing, in advance",
+        "**A named skill in every placement conversation** \u2014 even in a roster-math decision, a good coach can tell you what would strengthen the case next year",
+        "**A stated appeals or re-evaluation window** \u2014 a defined path, not a negotiation that depends on who complains loudest",
+        "**Consistency across families** \u2014 the same standard applied to the owner's kid and the newest family",
+        "**Willingness to say \"a spot was full\"** \u2014 the honest answer, offered rather than extracted"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "A gym that does none of these is not necessarily making bad decisions, but it is making them in a way you cannot check \u2014 and you are paying a five-figure annual bill for a process you can't see into."
+    },
+    {
+      "type": "h2",
+      "text": "How to have the post-tryout conversation"
+    },
+    {
+      "type": "p",
+      "text": "Ask for a meeting rather than sending an email thread, wait until the initial disappointment has passed, and go in with questions rather than a case. The ones that actually get useful answers:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"What specific skill would put her in contention for that team next season?\"",
+        "\"Is this about her skills, or about how the roster came together?\"",
+        "\"What should she work on this season \u2014 and is that best addressed in class or in a private?\"",
+        "\"If she develops that skill mid-season, is there any path to moving up, or is placement fixed until next tryouts?\"",
+        "\"Is there anything about her participation \u2014 attendance, focus, attitude \u2014 I should know about?\""
+      ]
+    },
+    {
+      "type": "p",
+      "text": "That last question is uncomfortable and it is the one most likely to surface the real answer. Asking it signals you want information rather than a reversal, which is exactly the posture that gets coaches to speak plainly."
+    },
+    {
+      "type": "p",
+      "text": "**Do not bring a comparison to another athlete.** It is the fastest way to end a productive conversation, and coaches will not discuss another family's kid with you regardless."
+    },
+    {
+      "type": "h2",
+      "text": "When the answer really is \"find another gym\""
+    },
+    {
+      "type": "p",
+      "text": "Most placement disappointments are not a reason to leave. Roster math genuinely is roster math, and a year at a lower level with more mat time is frequently better development than a year riding the edge of a team above an athlete's skills."
+    },
+    {
+      "type": "p",
+      "text": "But there are real signals. If the same athletes are advanced regardless of demonstrated skill, if placement visibly tracks which families spend the most on privates, if you cannot get a specific answer across repeated attempts, or if your athlete's placement changed after you raised a concern about something else \u2014 those are governance problems, not development problems, and they will not improve next season."
+    },
+    {
+      "type": "p",
+      "text": "Placement is one data point about one gym's roster needs in one particular year. It is not a measurement of your child. The families who handle it best are the ones who ask what it would take, get a real answer, and then decide calmly whether this is the program to spend another year and another five figures inside.",
       "serif": true
     },
     {

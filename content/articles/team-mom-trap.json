@@ -5,21 +5,47 @@
   "title": "The \"Team Mom\" Job Is Unpaid Labor. We Need to Stop Pretending It Isn't.",
   "description": "Every gym has one parent doing a dozen unpaid hours a week of work the gym used to pay an admin to do. It's time we called that what it is.",
   "ogDescription": "The team mom job is a part-time administrative role that gyms stopped paying for. Here's what it actually costs the person doing it.",
-  "eyebrow": "HOT TAKE · OPINION",
-  "pill": "★ HOT TAKE · OPINION",
+  "eyebrow": "HOT TAKE \u00b7 OPINION",
+  "pill": "\u2605 HOT TAKE \u00b7 OPINION",
   "headline": "The \"team mom\" job is *unpaid labor*. We need to stop pretending it isn't.",
-  "sub": "Somewhere in your gym there is one parent running a part-time administrative operation for free — work the program used to pay someone to do. The sport has normalized it. It should not have.",
+  "sub": "Somewhere in your gym there is one parent running a part-time administrative operation for free \u2014 work the program used to pay someone to do. The sport has normalized it. It should not have.",
   "datePublished": "2026-05-08",
   "dateModified": "2026-08-24",
-  "readTime": "7 min",
-  "tags": ["cheer mom", "all-star cheerleading", "team mom", "cheer community", "volunteer labor"],
+  "readTime": "5 min",
+  "tags": [
+    "cheer mom",
+    "all-star cheerleading",
+    "team mom",
+    "cheer community",
+    "volunteer labor"
+  ],
   "gradient": "pulse",
   "related": [
-    { "eyebrow": "COST DEEP DIVE", "title": "The $24,000 season: every dollar, tracked.", "meta": "9 min", "g": "glow", "href": "/parents/the-24k-season" },
-    { "eyebrow": "20 THINGS", "title": "20 things every new cheer mom wishes she'd known.", "meta": "8 min", "g": "stripes", "href": "/parents/20-things" },
-    { "eyebrow": "GYM SELECTION", "title": "How to tell if a gym is actually good.", "meta": "5 min", "g": "flash", "href": "/gym-guide" }
+    {
+      "eyebrow": "COST DEEP DIVE",
+      "title": "The $24,000 season: every dollar, tracked.",
+      "meta": "9 min",
+      "g": "glow",
+      "href": "/parents/the-24k-season"
+    },
+    {
+      "eyebrow": "20 THINGS",
+      "title": "20 things every new cheer mom wishes she'd known.",
+      "meta": "8 min",
+      "g": "stripes",
+      "href": "/parents/20-things"
+    },
+    {
+      "eyebrow": "GYM SELECTION",
+      "title": "How to tell if a gym is actually good.",
+      "meta": "5 min",
+      "g": "flash",
+      "href": "/gym-guide"
+    }
   ],
-  "card": { "eyebrow": "COMMUNITY" },
+  "card": {
+    "eyebrow": "COMMUNITY"
+  },
   "blocks": [
     {
       "type": "note",
@@ -45,11 +71,11 @@
     {
       "type": "list",
       "items": [
-        "**Hotel coordination** — negotiating or managing a room block for six to nine competition weekends, chasing families who haven't booked, handling the ones who cancel",
-        "**Payment collection** — gift funds, team meals, spirit items, banquet contributions; tracking who has paid and following up with people who haven't",
-        "**Communications** — running the team chat, translating gym announcements into plain language, answering the same question fifteen times because parents ask her instead of the front desk",
-        "**Competition-day logistics** — call times, warm-up schedules, meeting points, snacks, spare bows, the emergency safety pin supply",
-        "**Emotional buffering** — being the first person told when a family is upset about placement, competition time, or another family, and deciding what to escalate"
+        "**Hotel coordination** \u2014 negotiating or managing a room block for six to nine competition weekends, chasing families who haven't booked, handling the ones who cancel",
+        "**Payment collection** \u2014 gift funds, team meals, spirit items, banquet contributions; tracking who has paid and following up with people who haven't",
+        "**Communications** \u2014 running the team chat, translating gym announcements into plain language, answering the same question fifteen times because parents ask her instead of the front desk",
+        "**Competition-day logistics** \u2014 call times, warm-up schedules, meeting points, snacks, spare bows, the emergency safety pin supply",
+        "**Emotional buffering** \u2014 being the first person told when a family is upset about placement, competition time, or another family, and deciding what to escalate"
       ]
     },
     {
@@ -62,7 +88,7 @@
     },
     {
       "type": "p",
-      "text": "A realistic in-season workload is something like ten to fifteen hours a week, spiking well above that in the fortnight before a major competition. Add unreimbursed personal spending — printing, supplies, the gift nobody else remembered, the extra hotel night because she arrived early to check the block."
+      "text": "A realistic in-season workload is something like ten to fifteen hours a week, spiking well above that in the fortnight before a major competition. Add unreimbursed personal spending \u2014 printing, supplies, the gift nobody else remembered, the extra hotel night because she arrived early to check the block."
     },
     {
       "type": "quote",
@@ -71,7 +97,7 @@
     },
     {
       "type": "p",
-      "text": "Multiply that across the thousands of all-star teams competing in the US and the scale of unpaid administrative labor the sport runs on becomes hard to look at directly — particularly because the people doing it are overwhelmingly women, and because their families are **already paying five figures a season for the privilege of being there.**"
+      "text": "Multiply that across the thousands of all-star teams competing in the US and the scale of unpaid administrative labor the sport runs on becomes hard to look at directly \u2014 particularly because the people doing it are overwhelmingly women, and because their families are **already paying five figures a season for the privilege of being there.**"
     },
     {
       "type": "h2",
@@ -83,7 +109,7 @@
     },
     {
       "type": "p",
-      "text": "All-star gyms operate on genuinely thin margins. Mat space is expensive, coaching staff is expensive, and insurance is expensive. When a program grows from four teams to twelve, the administrative load grows with it — but hiring a coordinator is a fixed cost against uncertain enrollment, while **asking a parent is free and requires no decision anyone has to defend.**"
+      "text": "All-star gyms operate on genuinely thin margins. Mat space is expensive, coaching staff is expensive, and insurance is expensive. When a program grows from four teams to twelve, the administrative load grows with it \u2014 but hiring a coordinator is a fixed cost against uncertain enrollment, while **asking a parent is free and requires no decision anyone has to defend.**"
     },
     {
       "type": "p",
@@ -95,7 +121,7 @@
     },
     {
       "type": "p",
-      "text": "The reason this persists is that **saying no has a cost that lands on your kid, not on you.** A parent who declines worries — not always rationally, but not baselessly either — that she will be seen as uncommitted, that her athlete will be marked as coming from a family that doesn't contribute."
+      "text": "The reason this persists is that **saying no has a cost that lands on your kid, not on you.** A parent who declines worries \u2014 not always rationally, but not baselessly either \u2014 that she will be seen as uncommitted, that her athlete will be marked as coming from a family that doesn't contribute."
     },
     {
       "type": "p",
@@ -113,7 +139,7 @@
       "type": "list",
       "ordered": true,
       "items": [
-        "**Pay a team coordinator and put it in tuition.** Spread across a full roster this is a small monthly line per family — far smaller than what families already absorb in unquantified fees, and it converts invisible labor into a visible, fair cost.",
+        "**Pay a team coordinator and put it in tuition.** Spread across a full roster this is a small monthly line per family \u2014 far smaller than what families already absorb in unquantified fees, and it converts invisible labor into a visible, fair cost.",
         "**Move logistics into software.** Team management platforms handle scheduling, payments, and rosters. Most of the team parent's job is being a human database that a $10/month tool replaces.",
         "**Write the role down.** If a parent volunteer role must exist, it should have a scope, a time expectation, and an explicit end. Undefined roles expand indefinitely.",
         "**Route conflict to staff.** Parents should not be the escalation layer for other parents' complaints about coaching decisions. That is the gym's job.",
@@ -131,7 +157,7 @@
     {
       "type": "list",
       "items": [
-        "Write down what you actually do and roughly how long it takes. Not to complain — to have a document when the conversation happens.",
+        "Write down what you actually do and roughly how long it takes. Not to complain \u2014 to have a document when the conversation happens.",
         "Ask the gym directly which of these tasks are its responsibility. Some of them will be, and nobody has ever asked.",
         "Split the role. Hotels, payments, and communications are three jobs. One person doing all three is a staffing decision disguised as a favor.",
         "Set an end date and tell people. \"I'm doing this through May and then handing it off\" is a complete sentence."
@@ -144,7 +170,7 @@
     },
     {
       "type": "note",
-      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community — not original data collection or formal surveys."
+      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community \u2014 not original data collection or formal surveys."
     }
   ]
 }

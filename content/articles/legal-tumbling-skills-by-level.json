@@ -10,7 +10,7 @@
   "sub": "Level 1 cartwheels to Level 7 double-fulls \u2014 which skills are allowed, which are illegal, and what actually happens when a team performs a skill above their level.",
   "datePublished": "2026-06-10",
   "dateModified": "2026-08-24",
-  "readTime": "8 min",
+  "readTime": "9 min",
   "toc": [
     "The logic underneath the ceilings",
     "Tumbling ceilings by level",
@@ -29,7 +29,6 @@
     "skill progression"
   ],
   "gradient": "stripes",
-  "heroCaption": "cover \u00b7 tumbling skills guide",
   "card": {
     "eyebrow": "SKILLS GUIDE"
   },
@@ -37,7 +36,7 @@
     {
       "type": "p",
       "dropcap": true,
-      "text": "Every level in all-star cheerleading carries a defined tumbling ceiling \u2014 the hardest skill a team may put on the competition floor. Cross it and the team takes a deduction; at some events a clear violation carries consequences beyond points. Knowing where the ceilings sit tells you what your athlete is working toward and, more usefully, whether the timeline she has been given is realistic."
+      "text": "Every level in all-star cheerleading carries a defined tumbling ceiling \u2014 the hardest skill a team may put on the competition floor. Cross it and the team takes a deduction; at some events a clear violation carries consequences beyond points. Knowing where the ceilings sit tells you what your athlete is working toward and whether the timeline she has been given is realistic."
     },
     {
       "type": "p",
@@ -45,7 +44,7 @@
     },
     {
       "type": "note",
-      "text": "Legality details are revised between seasons, and event producers apply them with different tolerances. This article explains how the system is structured; the published rules for the current season and your gym's coaching staff are the authority on any specific skill."
+      "text": "Legality details are revised between seasons and applied with different tolerances by different event producers. This article explains how the system is structured; the published rules for the current season and your gym's coaching staff are the authority on any specific skill."
     },
     {
       "type": "h2",
@@ -59,11 +58,11 @@
       "type": "list",
       "ordered": true,
       "items": [
-        "**Non-inverted.** The head stays above the hips. Cartwheels and round-offs. The athlete is learning to travel and to land.",
-        "**Inverted, hands supporting.** The head drops below the hips but the hands carry the weight \u2014 walkovers, then back handsprings. The athlete is learning to be upside down under control.",
-        "**Aerial rotation, tucked.** No hands. A back tuck rotates around the hip axis with the body folded, the easiest shape to spin. This is the biggest single jump in the sport.",
-        "**Aerial rotation, extended.** A layout is the same flip held straight. Extending the body slows the rotation dramatically, so it demands far more height and a much stronger set.",
-        "**Two axes at once.** Fulls and doubles add twisting around the long axis while still flipping. Now the athlete needs power, air awareness, and the ability to correct a rotation she cannot fully see."
+        "**Non-inverted.** Head above hips \u2014 cartwheels and round-offs. Learning to travel and land.",
+        "**Inverted, hands supporting.** Head below hips, hands carrying the weight \u2014 walkovers, then handsprings. Learning to be upside down under control.",
+        "**Aerial rotation, tucked.** No hands. A tuck spins around the hip axis with the body folded \u2014 the easiest shape to rotate, and the sport's biggest single jump.",
+        "**Aerial rotation, extended.** The same flip held straight. The extended shape rotates far more slowly, demanding more height and a stronger set.",
+        "**Two axes at once.** Fulls and doubles twist around the long axis while still flipping \u2014 power, air awareness, and control of a rotation she cannot fully see."
       ]
     },
     {
@@ -85,7 +84,7 @@
         [
           "Level 1",
           "Cartwheel, round-off",
-          "Round-off, cartwheel connections"
+          "Round-off, cartwheel"
         ],
         [
           "Level 2",
@@ -114,8 +113,8 @@
         ],
         [
           "Level 7",
-          "The widest legal catalogue",
-          "The widest legal catalogue"
+          "Widest legal catalogue",
+          "Widest legal catalogue"
         ]
       ]
     },
@@ -125,7 +124,7 @@
     },
     {
       "type": "p",
-      "text": "The ceiling also belongs to the team. Legality is judged against the **division the routine is entered in**, not against each athlete's personal ability \u2014 which is the source of a persistent misunderstanding. An athlete training a standing tuck in tumbling class while competing on a Level 3 team is doing nothing wrong. Practice is not scored."
+      "text": "The ceiling also belongs to the team. Legality is judged against the **division the routine is entered in**, not against each athlete's ability \u2014 the source of a persistent misunderstanding. An athlete training a standing tuck in class while competing on a Level 3 team is doing nothing wrong. Practice is not scored."
     },
     {
       "type": "h2",
@@ -134,15 +133,15 @@
     {
       "type": "list",
       "items": [
-        "**Round-off** \u2014 a cartwheel that finishes with both feet landing together, facing back the way you came. It converts forward speed into backward rotation, which is why nearly every running pass starts with one.",
-        "**Walkover** \u2014 a slow, controlled pass through a handstand, front or back. Limited by flexibility more than power; athletes who struggle are usually tight in the shoulders or back, not weak.",
-        "**Back handspring** \u2014 an explosive backward jump onto the hands and a snap-down onto the feet. The technical heart of it is the *snap-down*: shoulders blocking off the floor to send the body upright and generate power for whatever comes next.",
-        "**Series** \u2014 two or more of the same skill connected with no step between them. A single handspring and a handspring series are different skills, and the difference is entirely in the power of the first one.",
-        "**Tuck** \u2014 a backflip with the knees pulled to the chest. Won or lost in the setup rather than the flip: arms driving up, chest tall, no leaning back before takeoff.",
-        "**Layout** \u2014 the same backflip with the body held straight and hollow. It needs more height, because the extended shape rotates more slowly.",
-        "**Full / double full** \u2014 a layout with one or two complete twists. Twisting is initiated at takeoff, not mid-air, so a crooked full is almost always a set problem.",
-        "**Whip** \u2014 a handspring-shaped skill performed without the hands touching down, used inside a running pass to carry speed into a bigger final skill.",
-        "**Punch front, arabian, X-out** \u2014 forward-rotating and shape-varied flips used to add difficulty and visual variety at the upper levels."
+        "**Round-off** \u2014 a cartwheel finishing with both feet together, facing back the way you came. It converts forward speed into backward rotation, which is why nearly every running pass opens with one.",
+        "**Walkover** \u2014 a slow, controlled pass through a handstand. Limited by flexibility more than power; the athletes who struggle are usually tight, not weak.",
+        "**Back handspring** \u2014 an explosive backward jump onto the hands and a snap-down onto the feet. The heart of it is the *snap-down*: shoulders blocking off the floor to generate power for the next skill.",
+        "**Series** \u2014 two or more of the same skill connected with no step between. A single handspring and a series are different skills; the difference is the power of the first.",
+        "**Tuck** \u2014 a backflip with the knees to the chest. Won or lost in the setup: arms driving up, chest tall, no leaning back.",
+        "**Layout** \u2014 the same backflip held straight and hollow, needing more height.",
+        "**Full / double full** \u2014 a layout with one or two twists. Twisting starts at takeoff, so a crooked full is a set problem.",
+        "**Whip** \u2014 a handspring-shaped skill with no hands down, used mid-pass to carry speed into a bigger final skill.",
+        "**Punch front, arabian, X-out** \u2014 forward-rotating and shape-varied flips that add difficulty at the upper levels."
       ]
     },
     {
@@ -167,18 +166,24 @@
       "text": "The gateway skills, and what actually gates them"
     },
     {
-      "type": "list",
-      "items": [
-        "**Round-off back handspring** \u2014 the Level 2/3 gateway, gated by the snap-down out of the round-off. If the round-off lands feet-behind-hips with a soft chest, the handspring has nothing to work with, and repetitions alone will not fix it.",
-        "**Back handspring series** \u2014 gated by rebound and power rather than technique alone. Athletes with a comfortable single handspring often need months of ankle and shoulder strength work before a series connects.",
-        "**Standing back tuck** \u2014 the Level 3/4 gateway and the most common place a season stalls. It commonly takes several months to a couple of years from first drills to competition-ready, and it is gated by three things at once: leg power, a set that keeps the chest upright, and the willingness to commit backward without hands. The third is not a character flaw and does not respond to pressure.",
-        "**Running layout** \u2014 the Level 4/5 gateway, gated by hollow-body strength: holding a rigid, slightly curved shape against rotation for a full revolution.",
-        "**Full twist** \u2014 the Level 5/6 gateway, gated by height and by initiating the twist at takeoff instead of chasing it in the air."
-      ]
+      "type": "p",
+      "text": "A handful of skills act as informal gates between levels, and in every case the gate is a prerequisite or a physical quality rather than the skill itself. Knowing what is really blocking a skill is the difference between a productive year of privates and a wasted one."
     },
     {
       "type": "p",
-      "text": "In every case the gate is a prerequisite skill or a physical quality, not the skill itself. Which is why the most effective private lesson is often the one that goes *backwards*. A coach who takes a struggling tuck and spends six weeks on round-off rebounds is not wasting your money."
+      "text": "The **round-off back handspring** is the Level 2/3 gate, and it is gated by the snap-down out of the round-off. If the round-off lands with the feet behind the hips and a soft chest, the handspring has nothing to work with, and repetitions alone will not fix it. The **handspring series** that follows is gated by rebound and power rather than technique alone \u2014 athletes with a comfortable single handspring often need months of ankle and shoulder strength work before two connect."
+    },
+    {
+      "type": "p",
+      "text": "The **standing back tuck** is the Level 3/4 gate and the most common place a season stalls. It commonly takes anywhere from several months to a couple of years from first drills to competition-ready, and it is gated by three things simultaneously: leg power to get the height, a set that keeps the chest upright instead of leaning back, and the willingness to commit backward with no hands. The third is not a character flaw and does not respond to pressure \u2014 it responds to progressions that rebuild confidence in small increments."
+    },
+    {
+      "type": "p",
+      "text": "Above that, the **running layout** is gated by hollow-body strength, meaning the ability to hold a rigid, slightly curved shape against rotation for a full revolution rather than piking in the middle. The **full twist** is gated by height and by initiating the twist at takeoff instead of chasing it in the air. In both cases the visible problem is the flip, and the fixable problem is somewhere earlier in the pass."
+    },
+    {
+      "type": "p",
+      "text": "This is why the most effective private lesson is frequently the one that appears to go *backwards*. A coach who takes a struggling tuck and spends six weeks on round-off rebounds and standing sets is not wasting your money \u2014 she is building the thing the tuck will stand on."
     },
     {
       "type": "h2",
@@ -206,7 +211,7 @@
     },
     {
       "type": "p",
-      "text": "Two things follow. Skills should be confirmed on the competition-equivalent surface before anyone plans around them, and a gym's equipment mix genuinely shapes development. Ask which surfaces your athlete trains on each week and how often she tumbles on the spring floor. A program that runs tumbling almost entirely on rod floors produces athletes whose skills look better in the gym than at a competition."
+      "text": "Two things follow. Skills should be confirmed on the competition surface before anyone plans around them, and a gym's equipment mix genuinely shapes development. Ask which surfaces your athlete trains on each week and how often she tumbles on the spring floor. A program that runs tumbling almost entirely on rod floors produces athletes whose skills look better in the gym than at a competition."
     },
     {
       "type": "h2",
@@ -214,15 +219,15 @@
     },
     {
       "type": "p",
-      "text": "Plateaus are the normal shape of skill acquisition, not evidence that an athlete has reached her ceiling. Four causes account for most of them."
+      "text": "Plateaus are the normal shape of skill acquisition, not evidence that an athlete has reached her ceiling. Skills are acquired in steps and consolidated in flat stretches, and the flat stretch is where most families start worrying. Four causes account for the great majority of genuine stalls, and they call for different responses."
     },
     {
       "type": "list",
       "items": [
-        "**Technique debt.** A skill learned with a compensating pattern works until it has to carry the next skill. The most common cause and the least visible to parents, because the flawed skill still looks fine.",
-        "**Conditioning gaps.** Specifically hollow-body and shoulder strength for holding shape, plus ankle stiffness and leg power for blocking off the floor. General fitness does not substitute.",
-        "**Fear responses.** A fall, a near-miss, or watching someone else get hurt can install a block that overrides the physical skill. Blocks are common and treatable \u2014 and they worsen under pressure, ultimatums, and visible frustration.",
-        "**Growth.** A significant growth spurt changes limb length and an athlete's sense of where her body is. Skills can regress for months through no fault of technique or effort, then return."
+        "**Technique debt.** A skill learned with a compensating pattern works until it has to carry the next one \u2014 the most common cause, and invisible from the stands.",
+        "**Conditioning gaps.** Hollow-body and shoulder strength for shape; ankle stiffness and leg power for blocking off the floor. General fitness does not substitute.",
+        "**Fear responses.** A fall, a near-miss, or watching someone get hurt can install a block that overrides the physical skill. Blocks are common, treatable, and worsened by pressure.",
+        "**Growth.** A growth spurt changes limb length and an athlete's sense of where her body is. Skills can regress for months, then return."
       ]
     },
     {
@@ -231,7 +236,7 @@
     },
     {
       "type": "p",
-      "text": "What tends not to work: more repetitions of a broken pattern, adding hours without changing instruction, and treating a fear response as a motivation problem."
+      "text": "What tends not to work: more repetitions of a broken pattern, adding hours without changing the instruction, and treating a fear response as a motivation problem. If an athlete has worked the same skill for a year with no measurable progress, the input needs to change, not the volume."
     },
     {
       "type": "p",

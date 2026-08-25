@@ -9,7 +9,19 @@
   "headline": "How judges *actually* score.",
   "sub": "Tumbling, stunts, pyramids, jumps, motion technique, performance \u2014 and the deductions panel everyone ignores until it matters. What parents need to understand before they read the score sheet.",
   "datePublished": "2026-06-10",
-  "readTime": "3 min",
+  "dateModified": "2026-08-24",
+  "readTime": "8 min",
+  "toc": [
+    "The anatomy of a panel",
+    "The panels and what each one rewards",
+    "Difficulty and execution are two different scores",
+    "The risk calculation coaches are making",
+    "Deductions: the number that decides the day",
+    "Why the score moved and the routine didn't",
+    "Bids, and why the best routine doesn't always get one",
+    "How to actually read the sheet",
+    "What parents misread most often"
+  ],
   "tags": [
     "scoring",
     "judges",
@@ -18,7 +30,6 @@
     "all-star cheer"
   ],
   "gradient": "halo",
-  "heroCaption": "cover \u00b7 scoring guide",
   "card": {
     "eyebrow": "SCORING EXPLAINED"
   },
@@ -26,133 +37,210 @@
     {
       "type": "p",
       "dropcap": true,
-      "text": "Most cheer parents watch competitions the wrong way. They watch their child. Judges watch everything else: timing, synchronization, execution technique, level of difficulty, and whether any illegal skills were performed. Understanding what judges are looking at changes how you interpret results \u2014 and what feedback actually means."
+      "text": "Most cheer parents watch a routine the way they watch a recital \u2014 following their own child from the first eight-count to the last. The panel is doing something entirely different. Each judge watches one category across every team in the division, comparing routines on a single dimension and writing numbers that will still have to make sense six teams later. Understanding what each of them is actually looking at changes how you read a result, and it changes what the feedback afterward is worth."
     },
     {
       "type": "h2",
-      "text": "How scoring is structured"
+      "text": "The anatomy of a panel"
     },
     {
       "type": "p",
-      "text": "All-star scoring uses a **panel system**: multiple judges, each responsible for evaluating one category. Scores from all panels are added together (and deductions subtracted) for the final total. Different events may weight categories differently, but the major categories are consistent across most competitions using the USASF scoring model."
+      "text": "All-star competitions are scored by a **panel of specialists**, not by a group of generalists averaging their impressions. One judge scores stunts for every team in the division. Another scores tumbling for every team. Others handle pyramids and tosses, jumps and motions, and the performance side. A separate official \u2014 usually called a legality, safety, or deductions judge \u2014 watches only for rule violations and falls, and does not score the routine at all."
+    },
+    {
+      "type": "p",
+      "text": "That structure explains most of what confuses parents about scores. Because a single judge sees every routine in a division, the numbers are **internally consistent within that division, on that day, from that judge** \u2014 and much less meaningful outside it. A 9.1 from the stunt judge means 'better than the 8.7 team she watched an hour ago.' It does not mean 91 percent of anything, and it does not translate to a different event with a different panel."
+    },
+    {
+      "type": "p",
+      "text": "It also means the judge scoring your child's stunt group has, by the end of the division, watched the same twenty seconds of routine structure a dozen times in a row. Small differences that are invisible from the stands \u2014 a group setting a beat late, a flyer's leg dropping an inch below the others \u2014 are extremely visible from that seat. Parents and judges are watching genuinely different events."
+    },
+    {
+      "type": "h2",
+      "text": "The panels and what each one rewards"
     },
     {
       "type": "table",
       "head": [
         "Panel",
-        "What they score",
-        "Typical weight"
+        "What it evaluates",
+        "What raises the score"
       ],
       "rows": [
         [
           "Stunts",
-          "Execution, difficulty, synchronization of partner stunts",
-          "High"
+          "Partner stunt difficulty, execution, timing",
+          "Every group hitting the same skill together"
         ],
         [
-          "Pyramids & Tosses",
-          "Pyramid connections, basket tosses, execution",
-          "High"
+          "Pyramids & tosses",
+          "Connections, transitions, toss height and shape",
+          "Difficulty carried by the whole structure"
         ],
         [
           "Tumbling",
-          "Standing and running passes, difficulty, execution",
-          "High"
+          "Standing and running passes, technique",
+          "Most of the roster on the harder skill"
         ],
         [
-          "Jumps & Motion",
-          "Jump technique, height, landing, arm motion sharpness",
-          "Moderate"
+          "Jumps",
+          "Height, flexibility, timing, landings",
+          "Synchronized, connected jumps"
         ],
         [
-          "Performance & Showmanship",
-          "Crowd engagement, expression, overall polish",
-          "Moderate"
+          "Motions",
+          "Sharpness, placement, uniformity",
+          "Identical arm placement across the floor"
         ],
         [
-          "Overall Impression",
-          "Routine flow, spacing, music sync, crowd appeal",
-          "Moderate"
+          "Performance",
+          "Expression, projection, energy",
+          "Confidence that survives a mistake"
+        ],
+        [
+          "Overall",
+          "Flow, spacing, transitions, music use",
+          "A routine with no dead space"
         ],
         [
           "Deductions",
-          "Falls, out-of-bounds, illegal skills, late starts",
-          "Subtracted from total"
+          "Falls, boundaries, legality, time",
+          "Nothing \u2014 this can only subtract"
         ]
       ]
     },
     {
+      "type": "p",
+      "text": "Weights differ by event producer and change between seasons. What stays consistent is that **stunts, pyramids, and tumbling carry the most available points**, because those are the categories where difficulty can be measured and separated. Performance and overall impression carry fewer points but are frequently the difference between two teams that both hit."
+    },
+    {
       "type": "h2",
-      "text": "What 'difficulty' means \u2014 and why it matters"
+      "text": "Difficulty and execution are two different scores"
     },
     {
       "type": "p",
-      "text": "Most scoring systems have a **difficulty component within each panel**. A team that hits the same skills as another team but with higher difficulty (harder stunts, more complex tumbling) will outscore them even if execution is similar. This is why coaches push for harder skills \u2014 it's not just ego, it directly affects the scorable ceiling."
+      "text": "Nearly every current score sheet splits each category along two axes: how hard the content is, and how well it was performed. Understanding how each one is measured is the single most useful thing a parent can learn about scoring, because the two produce completely different conversations at practice."
     },
     {
       "type": "p",
-      "text": "The tradeoff: **higher difficulty = higher risk of falls**. Falls trigger deductions (typically 0.5\u20131.0 points per fall depending on the event). A team that attempts a double down and drops it may score lower than a team that hit a cleaner single-down. Coaches make this calculation every season \u2014 and parents rarely see it."
+      "text": "**Difficulty is scored by the group.** Sheets typically award difficulty according to the proportion of athletes or stunt groups performing a given skill \u2014 a majority of the roster, or a defined band of it. One exceptional athlete does not raise the score. This is why a coach will ask an athlete with an inconsistent big skill to compete a smaller one, and why a team full of clean, uniform, mid-level content routinely beats a team with three standouts and a long tail behind them."
+    },
+    {
+      "type": "p",
+      "text": "**Execution is scored by the weakest visible part.** Judges are trained to look at the floor as a whole. If six stunt groups hit and two are late, the panel sees late. If twenty athletes hit a sharp motion and four are soft, the panel sees soft. Synchronization is the most heavily punished execution error in the sport, precisely because it is the easiest thing on the floor to see from a judging table."
     },
     {
       "type": "quote",
       "variant": "border",
-      "text": "\"A clean routine at difficulty 8 beats a dropped routine at difficulty 10. Most teams find out the hard way.\""
-    },
-    {
-      "type": "h2",
-      "text": "Deductions: the number no one talks about"
+      "text": "\"Difficulty is set by the majority of the team. Execution is set by the least clean part of it. Almost every scoring surprise makes sense once you know those two rules.\""
     },
     {
       "type": "p",
-      "text": "Deductions are the most misunderstood part of scoring. They are **subtracted from the total score** and can swing results dramatically. Common deductions include:"
+      "text": "The practical consequence for a family is that individual improvement and team score are only loosely connected. An athlete can add a skill, perform it well, and see no movement in the team's numbers, because the score was never about her. That is not a reason to stop developing \u2014 the athlete who has the skill is the one who gets placed higher next season \u2014 but it is a reason not to read a score sheet as a report card on one child."
+    },
+    {
+      "type": "h2",
+      "text": "The risk calculation coaches are making"
+    },
+    {
+      "type": "p",
+      "text": "Higher difficulty raises the ceiling and raises the odds of a fall. Falls draw deductions, and deductions come off the total after the panels have scored. Coaches run this trade-off constantly, and a team that attempts the harder dismount and drops two groups will often finish below a team that hit a cleaner, easier routine."
+    },
+    {
+      "type": "p",
+      "text": "The calculation is not only about the skill but about **consistency under competition conditions** \u2014 an unfamiliar floor, a rushed warm-up, a loud room, and adrenaline. A stunt that hits nine times out of ten in practice does not hit nine times out of ten on the floor. Most coaches want a skill hitting reliably in repeated full-out run-throughs before it goes into a routine, and they will pull it late in the season if it stops hitting. Parents often read that as giving up on their child; it is usually arithmetic."
+    },
+    {
+      "type": "h2",
+      "text": "Deductions: the number that decides the day"
+    },
+    {
+      "type": "p",
+      "text": "Deductions are objective, applied by a dedicated official, and independent of how the category judges felt about the routine. The common categories:"
     },
     {
       "type": "list",
       "items": [
-        "**Falls** \u2014 any athlete touching the floor unintentionally during a stunt, toss, or pyramid",
-        "**Out of bounds** \u2014 stepping outside the competition floor boundary",
-        "**Illegal skills** \u2014 performing a skill not permitted at that level (this can also result in disqualification at some events)",
-        "**Late start / overtime** \u2014 routine starting late or running over the time limit",
-        "**Uniform violations** \u2014 logos, accessories, or jewelry not compliant with event rules"
+        "**Falls** \u2014 an athlete or stunt coming down unintentionally. Scales usually separate a bobble from a full stunt or tumbler hitting the floor.",
+        "**Boundary violations** \u2014 any part of an athlete leaving the floor, most common where the competition floor differs in size from the practice floor.",
+        "**Legality** \u2014 a skill not permitted at the team's level. Typically among the largest deductions available.",
+        "**Timing** \u2014 starting late, or exceeding the routine's time limit.",
+        "**Uniform and appearance** \u2014 jewelry, unsafe hair accessories, non-compliant shoes or bows. Avoidable, and still a recurring source of lost points."
       ]
     },
     {
       "type": "p",
-      "text": "A single fall at a major competition can drop a team several placements. A team with two falls that still placed second is usually doing something exceptional everywhere else."
+      "text": "The scale is set by the event producer and published in advance. What matters for parents is the order of magnitude: at a competitive event, a single significant deduction is frequently worth more than the entire gap between first and fourth place. **A team that took two falls and still placed second was almost certainly the best routine in the division.**"
     },
     {
       "type": "h2",
-      "text": "Why scores vary between events"
+      "text": "Why the score moved and the routine didn't"
     },
     {
       "type": "p",
-      "text": "Different competition companies use different scoring systems. NCA, UCA, NCA Collegiate, The Summit bid events, and independent competitions all have their own score sheets. A score of 88.4 at one event is not directly comparable to 88.4 at another event \u2014 **different panels, different weights, different deduction scales**."
+      "text": "Scores drift for reasons that have nothing to do with the athletes, and knowing them prevents a lot of unnecessary panic. The most common is simply a **different sheet**: categories, weights, maximums, and deduction scales all vary between event producers, so an 88.4 at one competition and an 88.4 at another are not the same measurement in any meaningful sense."
     },
     {
       "type": "p",
-      "text": "What does compare across events: placements and whether you received a bid. Score sheets are useful for identifying which panels need the most work, not for benchmarking against results from other events."
+      "text": "The second is the **panel and the field**. Judges calibrate against the routines in front of them. A division stacked with strong teams compresses everyone's numbers downward relative to a thin division, because the judge needs room at the top to separate the best from the very good. A team can perform better and score lower on the same weekend a stronger field shows up."
+    },
+    {
+      "type": "p",
+      "text": "The third is the **stage of the season**. Routines get cleaner and difficulty gets added between fall and spring, so raw scores generally rise across the whole field as the year progresses. A rising score is not by itself evidence of improvement relative to competitors. And the fourth is the **roster**: an injury, a substitute, or an athlete quietly pulled from a skill changes the difficulty score even when the performance looked identical from the stands."
+    },
+    {
+      "type": "p",
+      "text": "What does compare across events: placement relative to teams you have faced before, whether the team hit, the deduction count, and which panel scored lowest. Those four describe a season accurately. Raw totals do not."
     },
     {
       "type": "h2",
-      "text": "How to read a score sheet"
+      "text": "Bids, and why the best routine doesn't always get one"
     },
     {
       "type": "p",
-      "text": "Ask the gym for the score sheet after every competition \u2014 they receive it and should share it with families. When reading it:"
+      "text": "At bid events, the outcome families care about is not the score but whether the team earned an invitation to an end-of-season championship. Bid structures differ by championship and by event producer, and generally come in tiers \u2014 some covering entry and a portion of the costs, some covering entry only, and some awarded after the fact from a pool across all competing teams. Which divisions carry bids, and how many, is set in advance and published."
+    },
+    {
+      "type": "p",
+      "text": "Two things follow. A team can outperform another team and not receive the bid that team got, because bids attach to divisions and tiers rather than to raw ranking across the event. And **the routine that earns a bid is usually the one that hit**, not the one that attempted the most. Judges reward realized difficulty, and a bid decision is effectively a judgment about which team can be counted on to perform at the championship months later."
+    },
+    {
+      "type": "h2",
+      "text": "How to actually read the sheet"
+    },
+    {
+      "type": "p",
+      "text": "Ask the gym for score sheets after every competition; they receive them and most will share them. Read one in this order:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Deductions first.** If there are falls or a legality hit, that explains the placement and there is nothing else to diagnose.",
+        "**Find the lowest panel relative to the division's range**, not in absolute terms. A 7.8 where the winner scored 8.0 is fine; a 7.8 where the winner scored 9.1 is not.",
+        "**Separate difficulty from execution** inside that panel. Low difficulty means the routine needs harder content \u2014 a roster and coaching decision. Low execution means the content is right and the cleaning is not finished.",
+        "**Compare across your own events, not across gyms.** Your team's tumbling score at three consecutive competitions is a trend; the same score against another gym's at a different event is noise.",
+        "**Wait a day before contacting anyone.** Coaches run their own debrief and usually have a plan before the next practice."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What parents misread most often"
     },
     {
       "type": "list",
       "items": [
-        "Look at **deductions first** \u2014 if there are falls or illegals, that explains the placement gap before you analyze anything else",
-        "Find the **lowest-scoring panel** \u2014 that's where the team needs the most improvement",
-        "Compare **difficulty scores** across panels \u2014 if difficulty is consistently low, the routine needs harder content, not just cleaner execution",
-        "Don't panic over a single score \u2014 look at trends across multiple competitions"
+        "**'Hit zero' does not mean a perfect score.** It means the routine was performed with no falls and no major deductions. A team can hit zero and finish fourth.",
+        "**A low score is rarely bad judging.** The panel saw every team in the division; a difficulty gap the stands cannot see is likelier than bias.",
+        "**The deduction was probably not your child.** Falls are charged to the routine, and stunt errors usually originate somewhere other than where the drop becomes visible.",
+        "**Category scores are not percentages.** An 8.6 does not mean the team was 86 percent good; it means the judge placed them in a band relative to the rest of the division.",
+        "**Consistency beats peaks.** A team scoring in a narrow range across five events is in better shape than one alternating between excellent and disastrous."
       ]
     },
     {
       "type": "p",
-      "text": "Score sheets tell a story. Most parents never read them. The ones who do understand the sport \u2014 and their team's season \u2014 at a different level.",
-      "serif": true
+      "serif": true,
+      "text": "Score sheets are the only written record of what actually happened on the floor. Most families never read one, and the ones who do stop being surprised by results."
     },
     {
       "type": "note",

@@ -5,25 +5,34 @@
   "title": "The $24,000 Cheer Season: Every Dollar, Tracked",
   "description": "Tuition is usually a third of what a Level 4 cheer family actually pays. A full season cost breakdown, line by line, including the fees nobody quotes at tryouts.",
   "ogDescription": "Tuition is the smallest honest number you'll see. Here's every line item in a $24,000 all-star season.",
-  "eyebrow": "COST DEEP DIVE · LEVEL 4",
-  "pill": "★ COVER STORY · THE COST DEEP DIVE",
+  "eyebrow": "COST DEEP DIVE \u00b7 LEVEL 4",
+  "pill": "\u2605 COVER STORY \u00b7 THE COST DEEP DIVE",
   "headline": "The $24,000 season: *every dollar*, tracked.",
   "sub": "Tuition is the number gyms quote at tryouts. It is rarely more than a third of what a Level 4 family actually pays across a season. Here is the full ledger, line by line.",
   "datePublished": "2026-04-12",
   "dateModified": "2026-08-24",
-  "readTime": "9 min",
-  "tags": ["cheer costs", "all-star cheer", "Level 4", "cheer budget", "gym fees", "cheer parent"],
+  "readTime": "8 min",
+  "tags": [
+    "cheer costs",
+    "all-star cheer",
+    "Level 4",
+    "cheer budget",
+    "gym fees",
+    "cheer parent"
+  ],
   "gradient": "glow",
-  "card": { "eyebrow": "COST DEEP DIVE · LEVEL 4" },
+  "card": {
+    "eyebrow": "COST DEEP DIVE \u00b7 LEVEL 4"
+  },
   "blocks": [
     {
       "type": "note",
-      "text": "**Editorial note:** The ledger below is a composite built from expense patterns Level 4 families report consistently across the country. It is a planning framework, not one specific family's invoices. Your gym, your region, and your travel schedule will move these numbers — sometimes a lot. Use it to ask better questions, not as a quote."
+      "text": "**Editorial note:** The ledger below is a composite built from expense patterns Level 4 families report consistently across the country. It is a planning framework, not one specific family's invoices. Your gym, your region, and your travel schedule will move these numbers \u2014 sometimes a lot. Use it to ask better questions, not as a quote."
     },
     {
       "type": "p",
       "dropcap": true,
-      "text": "Every spring, the same thing happens. A kid gets placed on a team, the placement email arrives, and it contains a number. Monthly tuition. Maybe a placement fee. It looks manageable — the kind of number you can absorb without rearranging anything."
+      "text": "Every spring, the same thing happens. A kid gets placed on a team, the placement email arrives, and it contains a number. Monthly tuition. Maybe a placement fee. It looks manageable \u2014 the kind of number you can absorb without rearranging anything."
     },
     {
       "type": "p",
@@ -43,11 +52,11 @@
     },
     {
       "type": "p",
-      "text": "A typical Level 4 monthly tuition runs **$250–$375/month**, usually billed across ten months. Call it $2,950 at the middle of that range. Add a one-time team placement fee — commonly **$300–$500** — charged in May when you accept the spot."
+      "text": "A typical Level 4 monthly tuition runs **$250\u2013$375/month**, usually billed across ten months. Call it $2,950 at the middle of that range. Add a one-time team placement fee \u2014 commonly **$300\u2013$500** \u2014 charged in May when you accept the spot."
     },
     {
       "type": "p",
-      "text": "Here is the first thing worth understanding: **that placement fee usually isn't tuition.** At most gyms it is a deposit against the choreography and music package, which gets invoiced separately in July. If you assume it is a down payment on your monthly bill, you will be surprised twice — once when tuition starts anyway, and again when the choreo invoice arrives at full price."
+      "text": "Here is the first thing worth understanding: **that placement fee usually isn't tuition.** At most gyms it is a deposit against the choreography and music package, which gets invoiced separately in July. If you assume it is a down payment on your monthly bill, you will be surprised twice \u2014 once when tuition starts anyway, and again when the choreo invoice arrives at full price."
     },
     {
       "type": "p",
@@ -64,15 +73,15 @@
     },
     {
       "type": "p",
-      "text": "Choreography is billed per athlete and typically lands between **$800 and $1,600** for a Level 4 team, depending on whether the gym brings in an outside choreographer and how well-known that choreographer is. Music licensing is often bundled in; sometimes it is a separate $75–$150 line."
+      "text": "Choreography is billed per athlete and typically lands between **$800 and $1,600** for a Level 4 team, depending on whether the gym brings in an outside choreographer and how well-known that choreographer is. Music licensing is often bundled in; sometimes it is a separate $75\u2013$150 line."
     },
     {
       "type": "p",
-      "text": "Two things make this line hurt more than the number suggests. First, it arrives in **July** — after summer camp, after uniform deposits, in the same month a lot of families are already spending on vacation. Second, it is **non-refundable and non-negotiable**, because the gym has already committed to the choreographer's fee and divided it across the roster."
+      "text": "Two things make this line hurt more than the number suggests. First, it arrives in **July** \u2014 after summer camp, after uniform deposits, in the same month a lot of families are already spending on vacation. Second, it is **non-refundable and non-negotiable**, because the gym has already committed to the choreographer's fee and divided it across the roster."
     },
     {
       "type": "p",
-      "text": "The useful question at tryouts is not \"how much is choreo?\" — gyms often genuinely don't know yet. It's **\"what did choreo cost per athlete last season?\"** That number exists, and a gym that won't share it is telling you something."
+      "text": "The useful question at tryouts is not \"how much is choreo?\" \u2014 gyms often genuinely don't know yet. It's **\"what did choreo cost per athlete last season?\"** That number exists, and a gym that won't share it is telling you something."
     },
     {
       "type": "h2",
@@ -80,7 +89,7 @@
     },
     {
       "type": "p",
-      "text": "A competition uniform runs **$400–$700**. Warmups add **$150–$300**. Practice wear, team jackets, team bags, and the required backpack add another **$200–$400**. Shoes are separate — budget **$80–$130**, and expect to replace them mid-season if your athlete is tumbling five days a week."
+      "text": "A competition uniform runs **$400\u2013$700**. Warmups add **$150\u2013$300**. Practice wear, team jackets, team bags, and the required backpack add another **$200\u2013$400**. Shoes are separate \u2014 budget **$80\u2013$130**, and expect to replace them mid-season if your athlete is tumbling five days a week."
     },
     {
       "type": "p",
@@ -100,7 +109,7 @@
     },
     {
       "type": "p",
-      "text": "For a destination event, a realistic per-family cost looks like: hotel at **$180–$320/night** for two to three nights (competition-city rates on event weekends are inflated, and gyms often require you to book inside the team's hotel block), flights or fuel, parking, food for a weekend where nobody has a kitchen, and admission tickets — **spectator wristbands typically run $30–$60 per person, per day, and are almost never included** in what you have already paid."
+      "text": "For a destination event, a realistic per-family cost looks like: hotel at **$180\u2013$320/night** for two to three nights (competition-city rates on event weekends are inflated, and gyms often require you to book inside the team's hotel block), flights or fuel, parking, food for a weekend where nobody has a kitchen, and admission tickets \u2014 **spectator wristbands typically run $30\u2013$60 per person, per day, and are almost never included** in what you have already paid."
     },
     {
       "type": "p",
@@ -108,7 +117,7 @@
     },
     {
       "type": "p",
-      "text": "Across a full season, **$6,000–$11,000 in travel is normal** for a family attending everything. Families who drive regionally and skip one destination event land at the bottom of that range. Families flying to two national events with both parents and a sibling land above the top of it."
+      "text": "Across a full season, **$6,000\u2013$11,000 in travel is normal** for a family attending everything. Families who drive regionally and skip one destination event land at the bottom of that range. Families flying to two national events with both parents and a sibling land above the top of it."
     },
     {
       "type": "h2",
@@ -116,7 +125,7 @@
     },
     {
       "type": "p",
-      "text": "Competition entry fees are billed by the gym, usually **$250–$400 per event per athlete**. Across eight events that is roughly **$2,000–$3,200** on its own, and it is separate from your travel."
+      "text": "Competition entry fees are billed by the gym, usually **$250\u2013$400 per event per athlete**. Across eight events that is roughly **$2,000\u2013$3,200** on its own, and it is separate from your travel."
     },
     {
       "type": "p",
@@ -125,15 +134,15 @@
     {
       "type": "list",
       "items": [
-        "**Bows** — $25–$45 each, and teams often require a specific bow that changes between seasons",
-        "**Team hair and makeup** — $40–$85 per event if the gym uses a contracted stylist, which most do at bigger events",
-        "**Rhinestones, lashes, tanning, nails** — small individually, $20–$50 per event in practice",
-        "**Warmup snacks, team meals, and pre-comp coordination** — usually collected by the team parent"
+        "**Bows** \u2014 $25\u2013$45 each, and teams often require a specific bow that changes between seasons",
+        "**Team hair and makeup** \u2014 $40\u2013$85 per event if the gym uses a contracted stylist, which most do at bigger events",
+        "**Rhinestones, lashes, tanning, nails** \u2014 small individually, $20\u2013$50 per event in practice",
+        "**Warmup snacks, team meals, and pre-comp coordination** \u2014 usually collected by the team parent"
       ]
     },
     {
       "type": "p",
-      "text": "Call it **$100–$180 per competition** in appearance costs. Across eight events, that is over a thousand dollars that appears nowhere in any document you signed."
+      "text": "Call it **$100\u2013$180 per competition** in appearance costs. Across eight events, that is over a thousand dollars that appears nowhere in any document you signed."
     },
     {
       "type": "h2",
@@ -141,20 +150,68 @@
     },
     {
       "type": "table",
-      "head": ["Line item", "Typical range", "Notes"],
-      "rows": [
-        ["Tuition (10 mo)", "$2,500 – $3,750", "Quoted at tryouts"],
-        ["Team placement fee", "$300 – $500", "Often a choreo deposit, not tuition"],
-        ["Choreo & music package", "$800 – $1,600", "July invoice — the classic surprise"],
-        ["Uniform, warmups, practice wear", "$900 – $1,800", "Resets on the gym's uniform cycle"],
-        ["Travel (6–9 events)", "$6,000 – $11,000", "Hotels, flights, fuel, food, spectator tickets"],
-        ["Competition entry fees", "$2,000 – $3,200", "Billed by the gym, separate from travel"],
-        ["Hair, bows, makeup", "$800 – $1,500", "Recurring, every single event"],
-        ["Privates / extra tumbling", "$1,200 – $3,600", "\"Optional\" — see below"],
-        ["Team fund", "$300 – $800", "Gifts, snacks, coach appreciation"],
-        ["Banquet, photos, video", "$400 – $1,200", "End-of-season, arrives when you're tired"]
+      "head": [
+        "Line item",
+        "Typical range",
+        "Notes"
       ],
-      "foot": ["TOTAL · competitive Level 4 season", "$15,200 – $28,950", "Plus the parent hours nobody bills for"]
+      "rows": [
+        [
+          "Tuition (10 mo)",
+          "$2,500 \u2013 $3,750",
+          "Quoted at tryouts"
+        ],
+        [
+          "Team placement fee",
+          "$300 \u2013 $500",
+          "Often a choreo deposit, not tuition"
+        ],
+        [
+          "Choreo & music package",
+          "$800 \u2013 $1,600",
+          "July invoice \u2014 the classic surprise"
+        ],
+        [
+          "Uniform, warmups, practice wear",
+          "$900 \u2013 $1,800",
+          "Resets on the gym's uniform cycle"
+        ],
+        [
+          "Travel (6\u20139 events)",
+          "$6,000 \u2013 $11,000",
+          "Hotels, flights, fuel, food, spectator tickets"
+        ],
+        [
+          "Competition entry fees",
+          "$2,000 \u2013 $3,200",
+          "Billed by the gym, separate from travel"
+        ],
+        [
+          "Hair, bows, makeup",
+          "$800 \u2013 $1,500",
+          "Recurring, every single event"
+        ],
+        [
+          "Privates / extra tumbling",
+          "$1,200 \u2013 $3,600",
+          "\"Optional\" \u2014 see below"
+        ],
+        [
+          "Team fund",
+          "$300 \u2013 $800",
+          "Gifts, snacks, coach appreciation"
+        ],
+        [
+          "Banquet, photos, video",
+          "$400 \u2013 $1,200",
+          "End-of-season, arrives when you're tired"
+        ]
+      ],
+      "foot": [
+        "TOTAL \u00b7 competitive Level 4 season",
+        "$15,200 \u2013 $28,950",
+        "Plus the parent hours nobody bills for"
+      ]
     },
     {
       "type": "p",
@@ -171,10 +228,10 @@
     {
       "type": "list",
       "items": [
-        "**\"Optional\" privates** — frequently the unstated prerequisite for the skills that determine competition time. If the coach says a skill needs work and the gym sells private lessons, the loop closes itself.",
-        "**\"Optional\" banquet** — kids whose families skip it are visibly absent from the season's last shared memory, and they notice.",
-        "**\"Optional\" photo package** — team photos circulate on social media all season. A kid missing from them notices that too.",
-        "**\"Optional\" team fund** — collected in a group chat where everyone can see who has paid."
+        "**\"Optional\" privates** \u2014 frequently the unstated prerequisite for the skills that determine competition time. If the coach says a skill needs work and the gym sells private lessons, the loop closes itself.",
+        "**\"Optional\" banquet** \u2014 kids whose families skip it are visibly absent from the season's last shared memory, and they notice.",
+        "**\"Optional\" photo package** \u2014 team photos circulate on social media all season. A kid missing from them notices that too.",
+        "**\"Optional\" team fund** \u2014 collected in a group chat where everyone can see who has paid."
       ]
     },
     {
@@ -187,23 +244,23 @@
     },
     {
       "type": "p",
-      "text": "You cannot negotiate tuition and you shouldn't try. But a substantial share of this total is genuinely controllable, and the families who spend the least are not the ones being cheap — they are the ones who decided early:"
+      "text": "You cannot negotiate tuition and you shouldn't try. But a substantial share of this total is genuinely controllable, and the families who spend the least are not the ones being cheap \u2014 they are the ones who decided early:"
     },
     {
       "type": "list",
       "ordered": true,
       "items": [
-        "**Pick your travel events before the season starts.** Travel is 40–50% of the total. Deciding in August that you will attend two destination events instead of four is the single largest lever available to you, and it is far less painful than pulling out in January.",
+        "**Pick your travel events before the season starts.** Travel is 40\u201350% of the total. Deciding in August that you will attend two destination events instead of four is the single largest lever available to you, and it is far less painful than pulling out in January.",
         "**Ask what the gym's minimum attendance requirement actually is.** Many gyms require a specific subset of events and treat the rest as encouraged. Those are not the same thing, and the difference is thousands of dollars.",
-        "**Book hotels the day the block opens.** Competition-city rates rise steeply as the event approaches. This alone routinely saves $300–$600 per event.",
-        "**Buy shoes and practice wear outside the gym's pro shop** where the team allows it. Verify the requirement first — some items must be gym-supplied and some genuinely don't.",
+        "**Book hotels the day the block opens.** Competition-city rates rise steeply as the event approaches. This alone routinely saves $300\u2013$600 per event.",
+        "**Buy shoes and practice wear outside the gym's pro shop** where the team allows it. Verify the requirement first \u2014 some items must be gym-supplied and some genuinely don't.",
         "**Treat privates as a targeted purchase, not a subscription.** A private lesson aimed at one specific named skill, with a coach who can explain the fix, is worth the money. Standing weekly privates with no defined goal usually are not.",
         "**Split driving and rooms with another family.** The most consistently effective cost reduction in this sport, and nobody advertises it."
       ]
     },
     {
       "type": "p",
-      "text": "Families who apply most of these routinely land in the **$12,000–$16,000** range for the same Level 4 season, without their athlete competing less or training less."
+      "text": "Families who apply most of these routinely land in the **$12,000\u2013$16,000** range for the same Level 4 season, without their athlete competing less or training less."
     },
     {
       "type": "h2",
@@ -218,7 +275,7 @@
       "items": [
         "What did a family on this team spend in total last season, including travel?",
         "What did choreography cost per athlete last season?",
-        "Which competitions are required, and which are optional — in writing?",
+        "Which competitions are required, and which are optional \u2014 in writing?",
         "When is the uniform scheduled to change?",
         "Are spectator tickets included in any fee I'm paying, or purchased separately?",
         "What is the refund policy if my athlete is injured in October?",
@@ -231,12 +288,12 @@
     },
     {
       "type": "p",
-      "text": "None of this means the sport isn't worth it. It means the number you were quoted at tryouts was never the number — and you deserve to plan against the real one.",
+      "text": "None of this means the sport isn't worth it. It means the number you were quoted at tryouts was never the number \u2014 and you deserve to plan against the real one.",
       "serif": true
     },
     {
       "type": "note",
-      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community — not original data collection or formal surveys."
+      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community \u2014 not original data collection or formal surveys."
     }
   ]
 }
