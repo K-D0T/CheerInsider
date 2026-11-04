@@ -233,32 +233,19 @@
   ],
   "related": [
     {
-      "eyebrow": "COST DEEP DIVE",
-      "title": "The $24,000 season: what one Level 4 family actually spent.",
-      "meta": "18 min",
-      "g": "glow",
       "href": "/parents/the-24k-season"
     },
     {
-      "eyebrow": "COST \u00b7 SUMMER",
-      "title": "Summer camp vs. privates: what actually moves the needle.",
-      "meta": "8 min",
-      "g": "halo",
       "href": "/parents/summer-vs-privates"
     },
     {
-      "eyebrow": "COMMUNITY",
-      "title": "When the \"team mom\" ask crosses the line.",
-      "meta": "6 min",
-      "g": "pulse",
       "href": "/parents/team-mom-trap"
     },
     {
+      "href": "/gym-guide",
       "eyebrow": "GYM SELECTION",
       "title": "How to tell if a gym is actually good.",
-      "meta": "9 min",
-      "g": "flash",
-      "href": "/gym-guide"
+      "g": "flash"
     }
   ],
   "card": {

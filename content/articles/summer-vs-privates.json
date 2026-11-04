@@ -260,31 +260,18 @@
   ],
   "related": [
     {
-      "eyebrow": "COST DEEP DIVE",
-      "title": "We tracked every penny one Level 4 family spent in a single season.",
-      "meta": "18 min",
-      "g": "glow",
       "href": "/parents/the-24k-season"
     },
     {
+      "href": "/gym-guide",
       "eyebrow": "GYM SELECTION",
-      "title": "How to tell if a gym is actually good, or just loud on Instagram.",
-      "meta": "9 min",
-      "g": "flash",
-      "href": "/gym-guide"
+      "title": "How to tell if a gym is actually good.",
+      "g": "flash"
     },
     {
-      "eyebrow": "20 THINGS",
-      "title": "20 things every new cheer mom wishes she'd known on day one.",
-      "meta": "7 min",
-      "g": "stripes",
       "href": "/parents/20-things"
     },
     {
-      "eyebrow": "TEAM MOM TRAP",
-      "title": "The \"team mom\" job is unpaid labor. We need to stop pretending.",
-      "meta": "8 min",
-      "g": "pulse",
       "href": "/parents/team-mom-trap"
     }
   ],

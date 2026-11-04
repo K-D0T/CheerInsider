@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Article, articlePath, headingId } from '@/lib/articles';
+import { Article, articlePath, headingId, getRelated } from '@/lib/articles';
 import { Container } from '@/components/ui/Container';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
@@ -21,6 +21,7 @@ function formatDate(iso: string) {
 }
 
 export function ArticleLayout({ article }: { article: Article }) {
+  const related = getRelated(article);
   const dark = article.kind === 'opinion';
   const sectionLabel = SECTION_LABELS[article.section];
   const sectionHref = `/${article.section}`;
@@ -124,11 +125,11 @@ export function ArticleLayout({ article }: { article: Article }) {
               <ArticleBlocks blocks={article.blocks} />
             </article>
             <aside className="ci-static-mobile" style={{ position: 'sticky', top: 96, display: 'flex', flexDirection: 'column', gap: 20 }}>
-              {article.related && article.related.length > 0 && (
+              {related.length > 0 && (
                 <div style={{ paddingBottom: 20, borderBottom: '1px solid var(--p-line)' }}>
                   <div style={{ ...tx.eyebrow, color: 'var(--p-muted)', marginBottom: 10 }}>Keep reading</div>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, fontSize: 14 }}>
-                    {article.related.slice(0, 3).map((r, i) => (
+                    {related.slice(0, 3).map((r, i) => (
                       <li key={i}><Link href={r.href} style={{ fontWeight: 600, lineHeight: 1.3, display: 'block' }}>{r.title}</Link></li>
                     ))}
                   </ul>
@@ -141,12 +142,12 @@ export function ArticleLayout({ article }: { article: Article }) {
       </section>
 
       {/* Related */}
-      {article.related && article.related.length > 0 && (
+      {related.length > 0 && (
         <section style={{ padding: '80px 0', borderTop: '1px solid var(--p-line)' }}>
           <Container max={1100}>
             <SectionHead eyebrow="KEEP READING" right={`All ${sectionLabel}`} rightHref={`/${article.section}`} title={<>More from the <span style={{ fontFamily: P.serif, fontStyle: 'italic', color: 'var(--p-hot)', fontWeight: 400 }}>inside</span>.</>} />
             <div className="ci-4col" style={{ gap: 18, marginTop: 36 }}>
-              {article.related.map((r, i) => (
+              {related.map((r, i) => (
                 <Link key={i} href={r.href} style={{ display: 'flex', flexDirection: 'column', gap: 12, cursor: 'pointer' }}>
                   <Gradient variant={r.g} ratio="4/3" />
                   <div style={{ ...tx.eyebrow, color: 'var(--p-hotDeep)', marginTop: 4 }}>{r.eyebrow}</div>

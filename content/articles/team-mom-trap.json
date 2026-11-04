@@ -22,25 +22,16 @@
   "gradient": "pulse",
   "related": [
     {
-      "eyebrow": "COST DEEP DIVE",
-      "title": "The $24,000 season: every dollar, tracked.",
-      "meta": "9 min",
-      "g": "glow",
       "href": "/parents/the-24k-season"
     },
     {
-      "eyebrow": "20 THINGS",
-      "title": "20 things every new cheer mom wishes she'd known.",
-      "meta": "8 min",
-      "g": "stripes",
       "href": "/parents/20-things"
     },
     {
+      "href": "/gym-guide",
       "eyebrow": "GYM SELECTION",
       "title": "How to tell if a gym is actually good.",
-      "meta": "5 min",
-      "g": "flash",
-      "href": "/gym-guide"
+      "g": "flash"
     }
   ],
   "card": {
