@@ -11,9 +11,12 @@ import { canonical } from '@/lib/canonical';
 
 import type { Metadata } from 'next';
 
-// Title and description come from the root layout's defaults; only the
-// canonical is route-specific.
+// Set here rather than as the layout's title.default, which stays
+// 'CheerInsider' as the fallback for any route that sets no title of its own.
+// A plain string, so the layout's '%s | CheerInsider' template completes it;
+// the description still comes from the layout default.
 export const metadata: Metadata = {
+  title: 'Honest All-Star Cheer Coverage for Parents',
   alternates: canonical('/'),
 };
 
