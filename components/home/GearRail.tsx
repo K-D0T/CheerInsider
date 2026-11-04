@@ -103,7 +103,7 @@ export function GearRail() {
                         href={g.buy}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        style={{ background:'var(--p-hot)', color:'#fff', padding:'6px 10px', borderRadius:99, fontSize:12, fontWeight:700, display:'inline-flex', alignItems:'center', gap:5 }}
+                        style={{ background:'var(--p-hotDeep)', color:'#fff', padding:'6px 10px', borderRadius:99, fontSize:12, fontWeight:700, display:'inline-flex', alignItems:'center', gap:5 }}
                       >
                         Buy <Icon.arrowUp/>
                       </a>

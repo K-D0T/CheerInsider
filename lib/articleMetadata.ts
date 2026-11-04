@@ -11,7 +11,7 @@ export function buildArticleMetadata(article: Article): Metadata {
       type: 'article',
       publishedTime: `${article.datePublished}T00:00:00Z`,
       ...(article.dateModified && { modifiedTime: `${article.dateModified}T00:00:00Z` }),
-      authors: ['Lauren K.'],
+      authors: ['CheerInsider Editorial'],
       tags: article.tags,
     },
     twitter: {

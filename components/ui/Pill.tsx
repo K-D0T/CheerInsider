@@ -1,6 +1,6 @@
 import { CSSProperties, ReactNode } from 'react';
 
-export function Pill({ children, color = 'var(--p-hot)', textColor = '#fff', style }: {
+export function Pill({ children, color = 'var(--p-hotDeep)', textColor = '#fff', style }: {
   children: ReactNode; color?: string; textColor?: string; style?: CSSProperties;
 }) {
   return (

@@ -95,7 +95,7 @@ function renderBlock(block: Block) {
     case 'quote':
       if (block.variant === 'bleed') {
         return (
-          <blockquote className="ci-bleed-mobile" style={{ margin: '56px -80px', padding: '48px 80px', background: 'var(--p-hot)', color: '#fff' }}>
+          <blockquote className="ci-bleed-mobile" style={{ margin: '56px -80px', padding: '48px 80px', background: 'var(--p-hotDeep)', color: '#fff' }}>
             <p style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 'clamp(36px,4.4vw,64px)', lineHeight: 1.02, letterSpacing: '-.03em', margin: 0 }}>
               {renderInline(block.text, 'accent')}
             </p>
@@ -125,7 +125,7 @@ function renderBlock(block: Block) {
             </div>
           ))}
           {block.foot && (
-            <div style={{ display: 'grid', gridTemplateColumns: cols, padding: '14px 18px', background: 'var(--p-hot)', color: '#fff', fontWeight: 800 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: cols, padding: '14px 18px', background: 'var(--p-hotDeep)', color: '#fff', fontWeight: 800 }}>
               {block.foot.map((cell, j) => <span key={j}>{cell}</span>)}
             </div>
           )}
@@ -146,7 +146,7 @@ function renderBlock(block: Block) {
             <article key={i} className="ci-list-row" style={{ display: 'grid', gridTemplateColumns: '140px 1fr auto', gap: 28, padding: '32px 0', borderTop: '1px solid var(--p-line)', alignItems: 'start' }}>
               <div className="ci-list-num" style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 80, color: i < 5 ? 'var(--p-hot)' : 'var(--p-ink)', letterSpacing: '-.05em', lineHeight: .85 }}>{it.n}</div>
               <div>
-                <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 8 }}>{it.cat}</div>
+                <div style={{ ...tx.eyebrow, color: 'var(--p-hotDeep)', marginBottom: 8 }}>{it.cat}</div>
                 <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 30, margin: '0 0 10px', letterSpacing: '-.02em', lineHeight: 1.05 }}>{renderInline(it.title, 'accent')}</h3>
                 <p style={{ fontSize: 16, lineHeight: 1.5, color: 'var(--p-inkSoft)', margin: 0, maxWidth: 680 }}>{renderInline(it.body)}</p>
               </div>
@@ -166,7 +166,7 @@ function renderBlock(block: Block) {
             {block.items.map((r, i) => (
               <div key={i} style={{ padding: '24px 28px', background: r.stance === 'agree' ? 'var(--p-cream)' : 'var(--p-paper)', border: r.stance === 'agree' ? '1px solid var(--p-hot)' : '1px solid var(--p-line)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
-                  <Pill color={r.stance === 'agree' ? 'var(--p-hot)' : 'var(--p-ink)'}>{r.stance === 'agree' ? '★ AGREE' : '× DISAGREE'}</Pill>
+                  <Pill color={r.stance === 'agree' ? 'var(--p-hotDeep)' : 'var(--p-ink)'}>{r.stance === 'agree' ? '★ AGREE' : '× DISAGREE'}</Pill>
                   <span style={{ fontSize: 12, color: 'var(--p-muted)' }}>{r.name}</span>
                 </div>
                 <p style={{ margin: 0, fontFamily: 'var(--p-display)', fontWeight: 700, fontSize: 18, lineHeight: 1.3, letterSpacing: '-.01em' }}>&quot;{r.text}&quot;</p>
@@ -190,7 +190,7 @@ function renderBlock(block: Block) {
                   <Gradient variant={p.g} ratio="1/1" />
                 )}
                 <div style={{ padding: '18px 20px', display: 'flex', flexDirection: 'column', gap: 6 }}>
-                  <Pill color={p.verdict === 'Buy' ? 'var(--p-hot)' : 'var(--p-ink)'} style={{ alignSelf: 'start', fontSize: 10, padding: '3px 8px' }}>{p.rank}</Pill>
+                  <Pill color={p.verdict === 'Buy' ? 'var(--p-hotDeep)' : 'var(--p-ink)'} style={{ alignSelf: 'start', fontSize: 10, padding: '3px 8px' }}>{p.rank}</Pill>
                   <div style={{ fontFamily: 'var(--p-display)', fontWeight: 700, fontSize: 20, letterSpacing: '-.02em', lineHeight: 1.05 }}>{p.name}</div>
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginTop: 'auto' }}>
                     <span style={{ fontFamily: 'var(--p-display)', fontSize: 20, fontWeight: 800, color: p.verdict === 'Buy' ? 'var(--p-hot)' : 'var(--p-muted)' }}>{p.verdict}</span>
@@ -214,7 +214,7 @@ function renderBlock(block: Block) {
                 <img src={r.img} alt={r.name} style={{ width: '100%', aspectRatio: '4/5', objectFit: 'contain', background: '#f8f8f8', padding: 32 }} />
                 <div>
                   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 20, marginBottom: 16 }}>
-                    <div style={{ ...tx.eyebrow, color: 'var(--p-hot)' }}>{r.rank}</div>
+                    <div style={{ ...tx.eyebrow, color: 'var(--p-hotDeep)' }}>{r.rank}</div>
                   </div>
                   <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 42, margin: '0 0 6px', letterSpacing: '-.025em', lineHeight: 1 }}>{r.name}</h3>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 18 }}>
@@ -226,7 +226,7 @@ function renderBlock(block: Block) {
                   <p style={{ fontSize: 16, lineHeight: 1.55, margin: '0 0 20px', color: 'var(--p-inkSoft)' }}>{r.blurb}</p>
                   <div className="ci-stack-mobile" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
                     <div>
-                      <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 8 }}>What we loved</div>
+                      <div style={{ ...tx.eyebrow, color: 'var(--p-hotDeep)', marginBottom: 8 }}>What we loved</div>
                       <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 6, fontSize: 14 }}>
                         {r.pros.map((p, j) => <li key={j} style={{ display: 'flex', alignItems: 'center', gap: 8 }}><Icon.check style={{ color: 'var(--p-hot)' }} /> {p}</li>)}
                       </ul>
@@ -240,7 +240,7 @@ function renderBlock(block: Block) {
                   </div>
                   <div style={{ display: 'flex', gap: 10, marginTop: 24, flexWrap: 'wrap' }}>
                     <a href={r.buyAmazon} target="_blank" rel="noopener noreferrer nofollow"
-                      style={{ background: 'var(--p-hot)', color: '#fff', padding: '12px 18px', fontSize: 13.5, fontWeight: 700, borderRadius: 99, display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+                      style={{ background: 'var(--p-hotDeep)', color: '#fff', padding: '12px 18px', fontSize: 13.5, fontWeight: 700, borderRadius: 99, display: 'inline-flex', alignItems: 'center', gap: 8 }}>
                       Buy on Amazon <Icon.arrowUp />
                     </a>
                     <a href={r.buyDirect} target="_blank" rel="noopener noreferrer nofollow"
@@ -286,7 +286,7 @@ function renderBlock(block: Block) {
     case 'sources':
       return (
         <section style={{ margin: '56px 0 32px', paddingTop: 24, borderTop: '2px solid var(--p-ink)' }}>
-          <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 14 }}>{block.heading ?? 'Sources'}</div>
+          <div style={{ ...tx.eyebrow, color: 'var(--p-hotDeep)', marginBottom: 14 }}>{block.heading ?? 'Sources'}</div>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10, fontSize: 14.5 }}>
             {block.items.map((s, i) => (
               <li key={i} style={{ lineHeight: 1.5 }}>

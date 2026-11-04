@@ -33,7 +33,7 @@ export function Header() {
         </nav>
 
         <div style={{ display:'flex', gap:10, alignItems:'center' }}>
-          <Link href="/cost-calculator" className="ci-header-cta" style={{ background:'var(--p-hot)', color:'#fff', border:'none', cursor:'pointer', padding:'10px 18px', borderRadius:99, fontWeight:700, fontSize:13, letterSpacing:'.01em', display:'inline-flex', alignItems:'center', gap:8, fontFamily:'inherit' }}>
+          <Link href="/cost-calculator" className="ci-header-cta" style={{ background:'var(--p-hotDeep)', color:'#fff', border:'none', cursor:'pointer', padding:'10px 18px', borderRadius:99, fontWeight:700, fontSize:13, letterSpacing:'.01em', display:'inline-flex', alignItems:'center', gap:8, fontFamily:'inherit' }}>
             Cost Calculator <Icon.arrow/>
           </Link>
         </div>

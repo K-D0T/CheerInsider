@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
+import { SITE } from '@/lib/siteInfo';
 import { P } from '@/lib/palette';
 
 import type { Metadata } from 'next';
@@ -26,8 +27,9 @@ export default function PrivacyPage() {
         <p style={{ ...body, fontSize: 14, color: 'var(--p-muted)' }}>Last updated: July 15, 2026</p>
 
         <p style={body}>
-          CheerInsider (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates cheer-insider.com. This page explains what
-          information is collected when you visit the site, how it is used, and the choices you have.
+          CheerInsider (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates cheer-insider.com and is published by
+          {' '}{SITE.legalEntity}. This page explains what information is collected when you visit the site, how it is
+          used, and the choices you have.
         </p>
 
         <h2 style={heading}>Information we collect</h2>
@@ -82,7 +84,10 @@ export default function PrivacyPage() {
 
         <h2 style={heading}>Contact</h2>
         <p style={body}>
-          Questions about this policy: <a href="mailto:lauren@cheer-insider.com" style={{ textDecoration: 'underline' }}>lauren@cheer-insider.com</a>
+          Questions about this policy, or a request about your data:{' '}
+          <a href={`mailto:${SITE.contactEmail}?subject=Privacy%20request`} style={{ textDecoration: 'underline' }}>{SITE.contactEmail}</a>.
+          See also our <a href="/disclosures" style={{ textDecoration: 'underline' }}>disclosures</a> and{' '}
+          <a href="/contact" style={{ textDecoration: 'underline' }}>contact</a> pages.
         </p>
       </Container>
     </section>

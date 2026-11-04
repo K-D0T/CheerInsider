@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Gym Selection Checklist | CheerInsider',
     description: 'Ten questions to ask before you sign. Print this. Take it to your gym tour. If a gym can\'t answer 8 of 10, walk away.',
     type: 'article',
-    authors: ['Lauren K.'],
+    authors: ['CheerInsider Editorial'],
     tags: ['gym selection', 'all-star cheer', 'cheer gym', 'cheer mom guide'],
   },
   twitter: {

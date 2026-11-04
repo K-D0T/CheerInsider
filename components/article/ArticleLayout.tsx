@@ -37,7 +37,7 @@ export function ArticleLayout({ article }: { article: Article }) {
       <JsonLd data={breadcrumbLd([['Home', '/'], [sectionLabel, sectionHref], [article.title, articlePath(article)]])} />
 
       {/* Hero */}
-      <section style={dark
+      <section className={dark ? 'ci-on-dark' : undefined} style={dark
         ? { padding: '48px 0 0', background: 'var(--p-ink)', color: 'var(--p-cream)', position: 'relative', overflow: 'hidden' }
         : { padding: '48px 0 64px', borderBottom: '1px solid var(--p-line)' }}>
         {dark && (
@@ -49,7 +49,7 @@ export function ArticleLayout({ article }: { article: Article }) {
             <span style={{ color: dark ? 'var(--p-cream)' : 'var(--p-ink)' }}>{article.title.length > 40 ? `${article.title.slice(0, 40)}…` : article.title}</span>
           </div>
           {article.pill && (
-            <Pill color={dark ? 'var(--p-hot)' : 'var(--p-ink)'} textColor={dark ? '#fff' : 'var(--p-cream)'} style={{ marginBottom: 24 }}>{article.pill}</Pill>
+            <Pill color={dark ? 'var(--p-hotDeep)' : 'var(--p-ink)'} textColor={dark ? '#fff' : 'var(--p-cream)'} style={{ marginBottom: 24 }}>{article.pill}</Pill>
           )}
           {article.heroNumber && (
             <div style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 'clamp(120px,14vw,240px)', lineHeight: .85, letterSpacing: '-.05em', color: 'var(--p-hot)', marginBottom: -20 }}>{article.heroNumber}</div>
@@ -63,9 +63,9 @@ export function ArticleLayout({ article }: { article: Article }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, paddingTop: 24, paddingBottom: dark ? 36 : 0, borderTop: dark ? '1px solid rgba(250,246,241,.18)' : '1px solid var(--p-line)', flexWrap: 'wrap' }}>
             <div style={{ width: 44, height: 44, borderRadius: 99, background: 'var(--p-accent)' }} />
             <div>
-              <div style={{ fontSize: 14, fontWeight: 700 }}>By Lauren K.</div>
+              <div style={{ fontSize: 14, fontWeight: 700 }}>CheerInsider Editorial</div>
               <div style={{ fontSize: 12.5, color: dark ? 'rgba(250,246,241,.6)' : 'var(--p-muted)' }}>
-                {dark ? 'CheerInsider editorial · AI-assisted' : 'CheerInsider editorial · AI-assisted'}
+                <a href="/disclosures" style={{ color: 'inherit', textDecoration: 'underline' }}>AI-assisted, editor-reviewed</a>
               </div>
             </div>
             <div style={{ marginLeft: 'auto', display: 'flex', gap: 18, fontSize: 13, color: dark ? 'rgba(250,246,241,.6)' : 'var(--p-muted)', alignItems: 'center' }}>
@@ -102,7 +102,7 @@ export function ArticleLayout({ article }: { article: Article }) {
           <Container max={1100} className="ci-stack-mobile" style={{ display: 'grid', gridTemplateColumns: article.toc ? '200px 1fr 240px' : '1fr 240px', gap: 48, alignItems: 'start' }}>
             {article.toc && (
               <aside className="ci-static-mobile" style={{ position: 'sticky', top: 96, fontSize: 13 }}>
-                <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 14 }}>In this article</div>
+                <div style={{ ...tx.eyebrow, color: 'var(--p-hotDeep)', marginBottom: 14 }}>In this article</div>
                 <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
                   {article.toc.map((s, i) => (
                     <li key={i} style={{ paddingLeft: 14, borderLeft: '2px solid var(--p-line)' }}>
@@ -143,7 +143,7 @@ export function ArticleLayout({ article }: { article: Article }) {
               {article.related.map((r, i) => (
                 <Link key={i} href={r.href} style={{ display: 'flex', flexDirection: 'column', gap: 12, cursor: 'pointer' }}>
                   <Gradient variant={r.g} ratio="4/3" />
-                  <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginTop: 4 }}>{r.eyebrow}</div>
+                  <div style={{ ...tx.eyebrow, color: 'var(--p-hotDeep)', marginTop: 4 }}>{r.eyebrow}</div>
                   <h4 style={{ fontFamily: 'var(--p-display)', fontWeight: 700, fontSize: 20, lineHeight: 1.1, margin: 0, letterSpacing: '-.02em' }}>{r.title}</h4>
                   <div style={{ fontSize: 12, color: 'var(--p-muted)', marginTop: 'auto' }}>{r.meta}</div>
                 </Link>

@@ -38,7 +38,7 @@ export default function AboutPage() {
                 No federation talking points. No gym marketing. No spirit-shop fluff.
               </p>
               <div style={{ display:'flex', gap:14 }}>
-                <a href="/cost-calculator" style={{ background:'var(--p-hot)', color:'#fff', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer', display:'inline-flex', alignItems:'center', gap:8 }}>Try the Cost Calculator <Icon.arrow/></a>
+                <a href="/cost-calculator" style={{ background:'var(--p-hotDeep)', color:'#fff', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer', display:'inline-flex', alignItems:'center', gap:8 }}>Try the Cost Calculator <Icon.arrow/></a>
                 <a href="mailto:lauren@cheer-insider.com" style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer' }}>Contact us →</a>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function AboutPage() {
       {/* What we cover */}
       <section style={{ padding:'64px 0', background:'var(--p-paper)', borderBottom:'1px solid var(--p-line)' }}>
         <Container>
-          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:32 }}>The site today</div>
+          <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)', marginBottom:32 }}>The site today</div>
           <div className="ci-stats" style={{ gap:0, borderTop:'2px solid var(--p-ink)', borderBottom:'2px solid var(--p-ink)' }}>
             {([[String(articleCount),'articles','published and counting'],['3','pillars','parents · guides · gear'],['0','paywalls','everything is free to read'],['0','sponsored posts','and it stays that way']] as const).map(([n,l,sub], i) => (
               <div key={i} style={{ padding:'32px 24px', borderRight: i<3 ? '1px solid var(--p-line)' : 'none' }}>
@@ -74,13 +74,14 @@ export default function AboutPage() {
       {/* AI Disclosure */}
       <section style={{ padding:'96px 0' }}>
         <Container max={900}>
-          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:18 }}>How this site works</div>
+          <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)', marginBottom:18 }}>How this site works</div>
           <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(32px,4vw,52px)', margin:'0 0 24px', letterSpacing:'-.025em', lineHeight:.95 }}>
             AI-assisted. <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Editorially driven.</span>
           </h2>
           <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
-            CheerInsider articles are written with AI assistance using the editorial voice and perspective built into this site.
-            <strong> &ldquo;Lauren K.&rdquo; is an editorial persona</strong> — a composite of the cheer parent and coach experience — not a specific individual.
+            CheerInsider articles are drafted with AI assistance and reviewed by an editor before publishing. They
+            carry a <strong>CheerInsider Editorial</strong> byline rather than a personal one, because no single named
+            person writes them — and we would rather say that than invent an author.
           </p>
           <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
             Cost figures, scenarios, and workload examples in our articles are <strong>illustrative</strong> — based on patterns and ranges consistently reported across the cheer community, not derived from formal surveys or original data collection. Where we cite third-party research or sourced news, we link to the source.
@@ -125,7 +126,7 @@ export default function AboutPage() {
       {/* Contact */}
       <section style={{ padding:'80px 0' }}>
         <Container max={900}>
-          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:18, textAlign:'center' }}>Talk to us</div>
+          <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)', marginBottom:18, textAlign:'center' }}>Talk to us</div>
           <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(40px,5vw,72px)', margin:'0 0 24px', textAlign:'center', letterSpacing:'-.025em', lineHeight:.95 }}>
             Got a tip, a question, or a <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>story</span>?
           </h2>

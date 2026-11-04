@@ -24,11 +24,11 @@ export function AudienceRouter() {
         <div className="ci-3col" style={{ gap:18 }}>
           {TILES.map((t) => {
             const isHot = t.kind==='hot', isInk = t.kind==='ink', isCream = t.kind==='cream';
-            const bg = isHot ? 'var(--p-hot)' : isInk ? 'var(--p-ink)' : 'var(--p-cream)';
+            const bg = isHot ? 'var(--p-hotDeep)' : isInk ? 'var(--p-ink)' : 'var(--p-cream)';
             const fg = isHot ? '#fff' : isInk ? 'var(--p-cream)' : 'var(--p-ink)';
             return (
               <Link key={t.tag} href={t.href} style={{ position:'relative', display:'flex', flexDirection:'column', background:bg, color:fg, padding:'32px 28px 28px', minHeight:380, border: isCream ? '1px solid var(--p-ink)' : 'none', borderRadius:'var(--p-radius)', cursor:'pointer' }}>
-                <div style={{ ...tx.eyebrow, color: isInk ? 'var(--p-accent)' : isHot ? 'rgba(255,255,255,.75)' : 'var(--p-hot)', marginBottom:18 }}>{t.tag}</div>
+                <div style={{ ...tx.eyebrow, color: isInk ? 'var(--p-accent)' : isHot ? '#fff' : 'var(--p-hotDeep)', marginBottom:18 }}>{t.tag}</div>
                 <h3 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:42, margin:'0 0 16px', lineHeight:.95, letterSpacing:'-.025em' }}>{t.head}</h3>
                 <p style={{ fontSize:15, lineHeight:1.5, margin:'0 0 28px', opacity:.86, maxWidth:280 }}>{t.sub}</p>
                 <ul style={{ listStyle:'none', margin:'0 0 28px', padding:0, display:'flex', flexDirection:'column', gap:8 }}>
