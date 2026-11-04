@@ -54,7 +54,11 @@ export function articleLd({ slug, headline, description, datePublished, dateModi
     datePublished,
     dateModified: dateModified ?? datePublished,
     mainEntityOfPage: `${BASE}${slug}`,
-    image: `${BASE}/opengraph-image`,
+    // Each article has its own card at <its path>/opengraph-image. Next
+    // generates the og:image and twitter:image tags from that route, but the
+    // structured data has to name it explicitly; this used to point every
+    // article at the site-wide card.
+    image: `${BASE}${slug}/opengraph-image`,
     author: { '@id': ORG_ID },
     publisher: { '@id': ORG_ID },
   };
