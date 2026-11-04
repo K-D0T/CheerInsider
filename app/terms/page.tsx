@@ -4,8 +4,10 @@ import { SITE } from '@/lib/siteInfo';
 import { P } from '@/lib/palette';
 
 import type { Metadata } from 'next';
+import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
+  alternates: canonical('/terms'),
   title: 'Terms of Use',
   description: 'The terms that govern your use of cheer-insider.com, including content disclaimers, intellectual property, and limitation of liability.',
   robots: { index: true, follow: true },

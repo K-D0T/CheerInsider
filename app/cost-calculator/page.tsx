@@ -4,8 +4,10 @@ import { Container } from '@/components/ui/Container';
 import { Pill } from '@/components/ui/Pill';
 import { CostCalculator } from '@/components/ui/CostCalculator';
 import { P, tx } from '@/lib/palette';
+import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
+  alternates: canonical('/cost-calculator'),
   title: 'All-Star Cheer Season Cost Calculator — Estimate Your Real Total',
   description: 'Estimate what a full all-star cheer season will cost your family. Adjust level, team type, competitions, travel, and privates to see a realistic season total.',
   openGraph: {

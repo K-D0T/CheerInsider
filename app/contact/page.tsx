@@ -4,8 +4,10 @@ import { SITE } from '@/lib/siteInfo';
 import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
+import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
+  alternates: canonical('/contact'),
   title: 'Contact',
   description: 'How to reach CheerInsider — corrections, factual disputes, privacy requests, press and advertising enquiries. One monitored email address, no contact form.',
   robots: { index: true, follow: true },

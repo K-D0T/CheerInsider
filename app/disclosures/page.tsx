@@ -4,8 +4,10 @@ import { SITE } from '@/lib/siteInfo';
 import { P } from '@/lib/palette';
 
 import type { Metadata } from 'next';
+import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
+  alternates: canonical('/disclosures'),
   title: 'Disclosures & Editorial Standards',
   description: 'How CheerInsider makes money, how its articles are written, what its cost figures represent, and how it handles corrections — advertising, affiliate links and AI assistance stated plainly.',
   robots: { index: true, follow: true },

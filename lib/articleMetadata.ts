@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
-import { Article } from './articles';
+import { Article, articlePath } from './articles';
+import { canonical } from './canonical';
 
 export function buildArticleMetadata(article: Article): Metadata {
   return {
     title: article.title,
+    alternates: canonical(articlePath(article)),
     description: article.description,
     openGraph: {
       title: article.title,

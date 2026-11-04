@@ -4,8 +4,10 @@ import { Container } from '@/components/ui/Container';
 import { Pill } from '@/components/ui/Pill';
 import { GymChecklist } from '@/components/ui/GymChecklist';
 import { P } from '@/lib/palette';
+import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
+  alternates: canonical('/gym-guide'),
   title: 'Gym Selection Checklist: How to Tell if a Gym Is Actually Good',
   description: 'Ten questions to ask before signing with any all-star gym. Covers season costs in writing, competition fees, refund policy, private lessons pressure, and safety credentials.',
   openGraph: {

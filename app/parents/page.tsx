@@ -8,8 +8,10 @@ import { getArticlesBySection, articlePath } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
+import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
+  alternates: canonical('/parents'),
   title: 'Parent Resources — Costs, Gym Selection, Competition Guides',
   description: 'Costs, gym selection, competition logistics, and the social politics no one warns you about. Honest guides for cheer parents — from the inside.',
   openGraph: {

@@ -4,8 +4,10 @@ import { SITE } from '@/lib/siteInfo';
 import { P } from '@/lib/palette';
 
 import type { Metadata } from 'next';
+import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
+  alternates: canonical('/privacy'),
   title: 'Privacy Policy',
   description: 'How CheerInsider collects, uses, and protects your information — including our use of cookies, analytics, and Google AdSense advertising.',
   robots: { index: true, follow: true },

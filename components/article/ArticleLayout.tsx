@@ -51,10 +51,16 @@ export function ArticleLayout({ article }: { article: Article }) {
           {article.pill && (
             <Pill color={dark ? 'var(--p-hotDeep)' : 'var(--p-ink)'} textColor={dark ? '#fff' : 'var(--p-cream)'} style={{ marginBottom: 24 }}>{article.pill}</Pill>
           )}
-          {article.heroNumber && (
-            <div style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 'clamp(120px,14vw,240px)', lineHeight: .85, letterSpacing: '-.05em', color: 'var(--p-hot)', marginBottom: -20 }}>{article.heroNumber}</div>
-          )}
           <h1 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: article.heroNumber ? 'clamp(40px,5vw,76px)' : 'clamp(48px,6vw,92px)', margin: '0 0 24px', letterSpacing: '-.03em', lineHeight: .95, maxWidth: 1000 }}>
+            {/* The hero number has to live inside the heading. As a sibling it
+                left the h1 reading as a fragment ("things every new cheer mom
+                wishes she'd known...") and kept the number out of the heading
+                text altogether. A block-level span preserves the stacked look;
+                the trailing space keeps the two parts from running together
+                for screen readers and crawlers. */}
+            {article.heroNumber && (
+              <span style={{ display: 'block', fontSize: 'clamp(120px,14vw,240px)', lineHeight: .85, letterSpacing: '-.05em', color: 'var(--p-hot)', marginBottom: -20 }}>{article.heroNumber}{' '}</span>
+            )}
             {renderInline(article.headline, 'accent')}
           </h1>
           <p style={{ fontSize: 21, lineHeight: 1.5, color: dark ? 'rgba(250,246,241,.85)' : 'var(--p-inkSoft)', margin: '0 0 36px', maxWidth: 780, fontWeight: 500 }}>

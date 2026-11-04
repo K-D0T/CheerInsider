@@ -4,8 +4,10 @@ import { Pill } from '@/components/ui/Pill';
 import { Icon } from '@/components/ui/Icon';
 import { getAllArticles } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
+import { canonical } from '@/lib/canonical';
 
 export const metadata = {
+  alternates: canonical('/about'),
   title: 'About CheerInsider — Independent All-Star Cheer Coverage for Parents',
   description: 'What CheerInsider is, how our AI-assisted editorial process works, and the standards behind every article we publish for cheer parents.',
   openGraph: {

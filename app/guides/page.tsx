@@ -7,8 +7,10 @@ import { getArticlesBySection, articlePath } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
+import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
+  alternates: canonical('/guides'),
   title: 'Educational Guides — All-Star Cheer Explained Honestly',
   description: 'All-star cheer levels, scoring, skill progressions, and terminology explained without federation jargon. Guides for parents, athletes, and coaches.',
   openGraph: {

@@ -7,6 +7,15 @@ import { Pillars } from '@/components/home/Pillars';
 import { GearRail } from '@/components/home/GearRail';
 import { AdUnit } from '@/components/ui/AdUnit';
 import { Container } from '@/components/ui/Container';
+import { canonical } from '@/lib/canonical';
+
+import type { Metadata } from 'next';
+
+// Title and description come from the root layout's defaults; only the
+// canonical is route-specific.
+export const metadata: Metadata = {
+  alternates: canonical('/'),
+};
 
 export default function HomePage() {
   return (
