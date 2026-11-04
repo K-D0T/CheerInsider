@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Article, articlePath } from '@/lib/articles';
+import { Article, articlePath, headingId } from '@/lib/articles';
 import { Container } from '@/components/ui/Container';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
@@ -65,7 +65,7 @@ export function ArticleLayout({ article }: { article: Article }) {
             <div>
               <div style={{ fontSize: 14, fontWeight: 700 }}>By Lauren K.</div>
               <div style={{ fontSize: 12.5, color: dark ? 'rgba(250,246,241,.6)' : 'var(--p-muted)' }}>
-                {dark ? "The author's views are her own." : 'Former CCA-certified coach · Cheer mom of two · Tampa, FL'}
+                {dark ? 'CheerInsider editorial · AI-assisted' : 'CheerInsider editorial · AI-assisted'}
               </div>
             </div>
             <div style={{ marginLeft: 'auto', display: 'flex', gap: 18, fontSize: 13, color: dark ? 'rgba(250,246,241,.6)' : 'var(--p-muted)', alignItems: 'center' }}>
@@ -105,8 +105,10 @@ export function ArticleLayout({ article }: { article: Article }) {
                 <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 14 }}>In this article</div>
                 <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
                   {article.toc.map((s, i) => (
-                    <li key={i} style={{ paddingLeft: 14, borderLeft: i === 0 ? '2px solid var(--p-hot)' : '2px solid transparent', color: i === 0 ? 'var(--p-ink)' : 'var(--p-muted)', fontWeight: i === 0 ? 700 : 500 }}>
-                      <span style={{ color: 'var(--p-muted)', marginRight: 8, fontFamily: P.serif, fontStyle: 'italic' }}>0{i + 1}</span>{s}
+                    <li key={i} style={{ paddingLeft: 14, borderLeft: '2px solid var(--p-line)' }}>
+                      <a href={`#${headingId(s)}`} style={{ color: 'var(--p-inkSoft)', fontWeight: 500, lineHeight: 1.35, display: 'block' }}>
+                        <span style={{ color: 'var(--p-muted)', marginRight: 8, fontFamily: P.serif, fontStyle: 'italic' }}>0{i + 1}</span>{s}
+                      </a>
                     </li>
                   ))}
                 </ol>
@@ -116,9 +118,8 @@ export function ArticleLayout({ article }: { article: Article }) {
               <ArticleBlocks blocks={article.blocks} />
             </article>
             <aside className="ci-static-mobile" style={{ position: 'sticky', top: 96, display: 'flex', flexDirection: 'column', gap: 20 }}>
-              <AdUnit format="rectangle" />
               {article.related && article.related.length > 0 && (
-                <div style={{ padding: '20px 0', borderTop: '1px solid var(--p-line)' }}>
+                <div style={{ paddingBottom: 20, borderBottom: '1px solid var(--p-line)' }}>
                   <div style={{ ...tx.eyebrow, color: 'var(--p-muted)', marginBottom: 10 }}>Keep reading</div>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, fontSize: 14 }}>
                     {article.related.slice(0, 3).map((r, i) => (
@@ -127,6 +128,7 @@ export function ArticleLayout({ article }: { article: Article }) {
                   </ul>
                 </div>
               )}
+              <AdUnit format="rectangle" />
             </aside>
           </Container>
         )}
@@ -136,7 +138,7 @@ export function ArticleLayout({ article }: { article: Article }) {
       {article.related && article.related.length > 0 && (
         <section style={{ padding: '80px 0', borderTop: '1px solid var(--p-line)' }}>
           <Container max={1100}>
-            <SectionHead eyebrow="KEEP READING" right={`All ${sectionLabel}`} title={<>More from the <span style={{ fontFamily: P.serif, fontStyle: 'italic', color: 'var(--p-hot)', fontWeight: 400 }}>inside</span>.</>} />
+            <SectionHead eyebrow="KEEP READING" right={`All ${sectionLabel}`} rightHref={`/${article.section}`} title={<>More from the <span style={{ fontFamily: P.serif, fontStyle: 'italic', color: 'var(--p-hot)', fontWeight: 400 }}>inside</span>.</>} />
             <div className="ci-4col" style={{ gap: 18, marginTop: 36 }}>
               {article.related.map((r, i) => (
                 <Link key={i} href={r.href} style={{ display: 'flex', flexDirection: 'column', gap: 12, cursor: 'pointer' }}>

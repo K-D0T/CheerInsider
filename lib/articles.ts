@@ -17,11 +17,11 @@ export type Block =
   | { type: 'list'; ordered?: boolean; items: string[] }
   | { type: 'numbered'; items: { n: string; cat: string; title: string; body: string; read: number }[] }
   | { type: 'responses'; heading: string; items: { name: string; stance: 'agree' | 'disagree'; text: string }[] }
-  | { type: 'glance'; heading: string; items: { rank: string; name: string; score: string; price: string; verdict: 'Buy' | 'Skip'; g: GradientVariant; img: string | null }[] }
-  | { type: 'review'; heading: string; items: { rank: string; score: string; name: string; price: string; blurb: string; pros: string[]; cons: string[]; stars: number; img: string; buyAmazon: string; buyDirect: string }[] }
+  | { type: 'glance'; heading: string; items: { rank: string; name: string; score?: string; price: string; verdict: 'Buy' | 'Skip'; g: GradientVariant; img: string | null }[] }
+  | { type: 'review'; heading: string; items: { rank: string; score?: string; name: string; price: string; blurb: string; pros: string[]; cons: string[]; stars: number; img: string; buyAmazon: string; buyDirect: string }[] }
   | { type: 'specs'; heading: string; metrics: string[]; products: string[][] }
   | { type: 'note'; title?: string; text: string }
-  | { type: 'cta'; eyebrow: string; title: string; body: string; button: string };
+  | { type: 'sources'; heading?: string; items: { title: string; publication: string; url?: string }[] };
 
 export interface RelatedCard {
   eyebrow: string;
@@ -77,4 +77,14 @@ export function getArticleBySlug(slug: string): Article | undefined {
 
 export function articlePath(a: Article): string {
   return `/${a.section}/${a.slug}`;
+}
+
+// Stable anchor id for an h2/TOC entry. Strips inline markers so the id
+// derived from a heading matches the one derived from its TOC label.
+export function headingId(text: string): string {
+  return text
+    .replace(/[*_]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }

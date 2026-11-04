@@ -103,6 +103,29 @@ const ARTICLE_SCHEMA = {
               text: { type: 'string', description: 'Callout box text. Use for the required AI disclosure at the end of every article.' },
             },
           },
+          {
+            type: 'object',
+            additionalProperties: false,
+            required: ['type', 'items'],
+            properties: {
+              type: { const: 'sources' },
+              heading: { type: 'string' },
+              items: {
+                type: 'array',
+                description: 'Every source the research notes cite. Required whenever the article states any specific fact (a date, a dollar figure, an organizational decision, a named event).',
+                items: {
+                  type: 'object',
+                  additionalProperties: false,
+                  required: ['title', 'publication'],
+                  properties: {
+                    title: { type: 'string', description: 'Headline or page title of the source' },
+                    publication: { type: 'string', description: 'Publication or organization name' },
+                    url: { type: 'string', description: 'Direct URL from the research notes. Include it whenever the notes provide one — never invent or guess a URL.' },
+                  },
+                },
+              },
+            },
+          },
         ],
       },
     },
@@ -127,8 +150,18 @@ House style:
 - Tables for any cost or comparison data.
 - A closing italic serif line (type "p" with "serif": true) that lands the emotional point.
 - The first paragraph uses "dropcap": true.
-- Never fabricate specific named people, real gyms, or events not present in the source notes;
-  generalize instead ("one Florida gym owner told me...", "a mid-size gym in the Southeast...").
+- Never fabricate specific named people, real gyms, or events not present in the source notes.
+  Describe patterns structurally instead ("gyms in this tier commonly...", "a mid-size program typically...").
+  Do NOT invent attributed quotes or anecdotes ("one gym owner told me...") — there is no reporting behind them.
+- If the source notes contain ANY specific fact (a date, a dollar amount, an organizational decision,
+  a named event, a rule change), you MUST include a "sources" block listing every source from the notes,
+  with its URL whenever the notes provide one. Never invent a URL. Never state a specific fact that is
+  not in the notes.
+- Do NOT write in first person about personal experience. Never claim to have coached, competed,
+  surveyed anyone, tested a product, or received reader mail. There is no such person behind this byline.
+- Never leave editorial process language in the copy (no "as of this research pass", no notes to self,
+  no bracketed placeholders). The output ships directly to production.
+- Aim for 1,400-1,900 words of body text. Short articles read as low-value filler.
 - End every article with a note block (type "note") containing exactly this disclosure:
   "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative,
   based on patterns reported across the cheer community — not original data collection or formal surveys."`;

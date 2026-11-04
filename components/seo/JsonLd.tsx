@@ -23,7 +23,7 @@ export function organizationLd() {
     '@id': ORG_ID,
     name: 'CheerInsider',
     url: BASE,
-    founder: { '@type': 'Person', name: 'Lauren K.', url: `${BASE}/about` },
+    logo: `${BASE}/icon`,
     description:
       'Honest, independent coverage of competitive all-star cheerleading — real costs, gym guides, gear reviews, and competition coverage.',
   };
@@ -54,7 +54,8 @@ export function articleLd({ slug, headline, description, datePublished, dateModi
     datePublished,
     dateModified: dateModified ?? datePublished,
     mainEntityOfPage: `${BASE}${slug}`,
-    author: { '@type': 'Person', name: 'Lauren K.', url: `${BASE}/about` },
+    image: `${BASE}/opengraph-image`,
+    author: { '@id': ORG_ID },
     publisher: { '@id': ORG_ID },
   };
 }

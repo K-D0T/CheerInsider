@@ -31,7 +31,7 @@ export default function GymGuidePage() {
           <div style={{ display:'flex', alignItems:'center', gap:14, fontSize:13, color:'var(--p-muted)', marginBottom:24 }}>
             <Link href="/">Home</Link><span>›</span><Link href="/parents">Parents</Link><span>›</span><span style={{ color:'var(--p-ink)' }}>Gym Selection Checklist</span>
           </div>
-          <Pill style={{ marginBottom:24 }}>★ THE GYM SELECTION SERIES · PART 2 OF 4</Pill>
+          <Pill style={{ marginBottom:24 }}>★ GYM SELECTION · INTERACTIVE CHECKLIST</Pill>
           <h1 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(56px,7.2vw,120px)', margin:'0 0 24px', letterSpacing:'-.03em', lineHeight:.92 }}>
             How to tell if a gym is <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>actually</span> good, or just loud on Instagram.
           </h1>

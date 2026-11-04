@@ -4,9 +4,9 @@ import { Icon } from '@/components/ui/Icon';
 import { P, tx } from '@/lib/palette';
 
 const TILES = [
-  { tag:'01 · NEW HERE', head:"I'm a new cheer mom", sub:"Your kid just got placed and you're drowning in acronyms, fees and bow politics.", cta:'Start the orientation', bullets:['What the level system means','What this is going to cost','Gym red flags'], kind:'hot', href:'/parents' },
-  { tag:'02 · TRYING OUT', head:'My kid wants to try out', sub:'How tryouts work, what gyms look for, and how to choose between offers.', cta:'Read the tryout guide', bullets:['Prep timeline (6 / 3 / 1 mo)','How to evaluate a gym','Decision framework'], kind:'ink', href:'/guides' },
-  { tag:'03 · ON A TEAM', head:"I'm an athlete already", sub:'Skill progressions, mental game, recovery, college recruiting and gear that survives.', cta:'Go to athlete content', bullets:['Tumbling progressions','Flyer technique','Recruiting timeline'], kind:'cream', href:'/guides' },
+  { tag:'01 · NEW HERE', head:"I'm new to all this", sub:"Your kid just got placed and you're drowning in acronyms, fees and bow politics.", cta:'Start with the costs', bullets:['What a season really costs','What "optional" actually means','How to read the invoice'], kind:'hot', href:'/parents/the-24k-season' },
+  { tag:'02 · CHOOSING A GYM', head:'I need to pick a gym', sub:'What separates a good program from a loud one, and the questions to ask before you sign.', cta:'Open the checklist', bullets:['10 questions to ask','Costs in writing','Refund and injury policy'], kind:'ink', href:'/gym-guide' },
+  { tag:'03 · LEARNING THE SPORT', head:'I need the rules explained', sub:'Levels, scoring panels, legal skills, and how placement decisions actually get made.', cta:'Read the guides', bullets:['The level system','How judges score','How placement works'], kind:'cream', href:'/guides' },
 ];
 
 export function AudienceRouter() {

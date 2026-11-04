@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
 import { Icon } from '@/components/ui/Icon';
 import { tx } from '@/lib/palette';
@@ -18,7 +19,7 @@ const CHECKLIST = [
 ];
 
 export function GymChecklist() {
-  const [checks, setChecks] = useState<Set<number>>(new Set([0,2,5]));
+  const [checks, setChecks] = useState<Set<number>>(new Set());
   const toggle = (i: number) => {
     const c = new Set(checks);
     c.has(i) ? c.delete(i) : c.add(i);
@@ -37,7 +38,7 @@ export function GymChecklist() {
           </div>
           <div style={{ textAlign:'right', fontSize:13, color:'rgba(250,246,241,.7)', maxWidth:260, lineHeight:1.4 }}>
             <strong style={{ color:'var(--p-accent)' }}>
-              {checks.size >= 8 ? 'Sign with confidence.' : checks.size >= 5 ? 'Push back on the gaps.' : "Walk away — this isn't the gym."}
+              {checks.size === 0 ? 'Tick each one your gym clears.' : checks.size >= 8 ? 'Sign with confidence.' : checks.size >= 5 ? 'Push back on the gaps.' : "Walk away — this isn't the gym."}
             </strong>
             <div style={{ marginTop:4 }}>8+ green checks is the bar.</div>
           </div>
@@ -66,18 +67,22 @@ export function GymChecklist() {
 
       <aside className="ci-static-mobile" style={{ position:'sticky', top:96, display:'flex', flexDirection:'column', gap:18 }}>
         <div style={{ background:'var(--p-hot)', color:'#fff', padding:24 }}>
-          <div style={{ ...tx.eyebrow, marginBottom:10 }}>Bookmark this</div>
-          <h4 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:24, margin:'0 0 12px', letterSpacing:'-.02em', lineHeight:1.05 }}>The full PDF checklist</h4>
-          <p style={{ fontSize:13.5, lineHeight:1.5, margin:'0 0 14px', opacity:.95 }}>Printable. One page. Take it to every gym tour.</p>
-          <button style={{ width:'100%', background:'#fff', color:'var(--p-ink)', border:'none', padding:'10px 14px', fontSize:13, fontWeight:700, fontFamily:'inherit', cursor:'pointer', borderRadius:99 }}>Download PDF →</button>
+          <div style={{ ...tx.eyebrow, marginBottom:10 }}>Take it with you</div>
+          <h4 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:24, margin:'0 0 12px', letterSpacing:'-.02em', lineHeight:1.05 }}>Print this page</h4>
+          <p style={{ fontSize:13.5, lineHeight:1.5, margin:0, opacity:.95 }}>
+            Use your browser&rsquo;s print function (Ctrl/Cmd&nbsp;+&nbsp;P) to take the checklist to a gym tour on paper.
+          </p>
         </div>
         <div style={{ padding:'18px 0', borderTop:'1px solid var(--p-line)' }}>
-          <div style={{ ...tx.eyebrow, color:'var(--p-muted)', marginBottom:10 }}>Series · Gym Selection</div>
+          <div style={{ ...tx.eyebrow, color:'var(--p-muted)', marginBottom:10 }}>Keep reading</div>
           <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:12, fontSize:13.5 }}>
-            {[['Pt 1','Why gym choice matters more than coach choice', false],['Pt 2','The 10-question checklist', true],['Pt 3','Red flags I\'ve seen 100 times', false],['Pt 4','How to leave a gym without scorched earth', false]].map(([p,t,a], i) => (
-              <li key={i} style={{ opacity: a ? 1 : .6 }}>
-                <div style={{ ...tx.eyebrow, color:'var(--p-hot)', fontSize:10 }}>{p}</div>
-                <div style={{ fontWeight: a ? 700 : 500, marginTop:2 }}>{t as string}</div>
+            {[
+              ['/parents/the-24k-season', 'What a full season actually costs'],
+              ['/guides/how-placement-decisions-work', 'How placement decisions really work'],
+              ['/parents/summer-vs-privates', 'Summer camp vs. privates'],
+            ].map(([href, t]) => (
+              <li key={href}>
+                <Link href={href} style={{ fontWeight:600 }}>{t} →</Link>
               </li>
             ))}
           </ul>

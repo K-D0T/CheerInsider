@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Block } from '@/lib/articles';
+import { Block, headingId } from '@/lib/articles';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
@@ -8,20 +8,49 @@ import { AdUnit } from '@/components/ui/AdUnit';
 import { renderInline } from './inline';
 import { P, tx } from '@/lib/palette';
 
-// Renders an article's body blocks. An in-article ad is inserted after the
-// second block, and again roughly two-thirds through long articles —
-// placements that follow AdSense's "natural break" guidance.
+const wordsIn = (b: Block): number => {
+  let n = 'text' in b && typeof b.text === 'string' ? b.text.split(/\s+/).length : 0;
+  if ('items' in b && Array.isArray(b.items)) {
+    for (const it of b.items) n += (typeof it === 'string' ? it : Object.values(it).filter((v) => typeof v === 'string').join(' ')).split(/\s+/).length;
+  }
+  if ('rows' in b && Array.isArray(b.rows)) n += b.rows.flat().join(' ').split(/\s+/).length;
+  return n;
+};
+
+// Ad slots are placed by how much article the reader has actually passed,
+// not by block index — otherwise the first ad lands right after the
+// disclosure note and the opening line.
+function adIndexes(blocks: Block[]): Set<number> {
+  const total = blocks.reduce((s, b) => s + wordsIn(b), 0);
+  const slots = new Set<number>();
+  if (total < 500) return slots;
+
+  let seen = 0;
+  let first = -1;
+  for (let i = 0; i < blocks.length; i++) {
+    seen += wordsIn(blocks[i]);
+    // First slot: at least 300 words in, and only at a section break.
+    if (first < 0 && seen >= 300 && blocks[i + 1]?.type === 'h2') {
+      first = i;
+      slots.add(i);
+    }
+    // Second slot: only for long articles, past two-thirds, at a break.
+    if (first >= 0 && i > first + 2 && total >= 1400 && seen >= total * 0.68 && blocks[i + 1]?.type === 'h2' && slots.size < 2) {
+      slots.add(i);
+    }
+  }
+  return slots;
+}
+
 export function ArticleBlocks({ blocks }: { blocks: Block[] }) {
-  const textBlocks = blocks.filter((b) => b.type === 'p' || b.type === 'h2').length;
-  const midAdIndex = textBlocks > 8 ? Math.floor(blocks.length * 0.66) : -1;
+  const slots = adIndexes(blocks);
 
   return (
     <>
       {blocks.map((block, i) => (
         <Fragment key={i}>
           {renderBlock(block)}
-          {i === 1 && <AdUnit format="inline" style={{ margin: '32px 0' }} />}
-          {i === midAdIndex && <AdUnit format="inline" style={{ margin: '32px 0' }} />}
+          {slots.has(i) && <AdUnit format="inline" style={{ margin: '40px 0' }} />}
         </Fragment>
       ))}
     </>
@@ -51,7 +80,7 @@ function renderBlock(block: Block) {
 
     case 'h2':
       return (
-        <h2 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 36, margin: '48px 0 16px', letterSpacing: '-.02em', lineHeight: 1.05 }}>
+        <h2 id={headingId(block.text)} style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 36, margin: '48px 0 16px', letterSpacing: '-.02em', lineHeight: 1.05, scrollMarginTop: 96 }}>
           {renderInline(block.text, 'accent')}
         </h2>
       );
@@ -118,8 +147,8 @@ function renderBlock(block: Block) {
               <div className="ci-list-num" style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 80, color: i < 5 ? 'var(--p-hot)' : 'var(--p-ink)', letterSpacing: '-.05em', lineHeight: .85 }}>{it.n}</div>
               <div>
                 <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 8 }}>{it.cat}</div>
-                <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 30, margin: '0 0 10px', letterSpacing: '-.02em', lineHeight: 1.05 }}>{it.title}</h3>
-                <p style={{ fontSize: 16, lineHeight: 1.5, color: 'var(--p-inkSoft)', margin: 0, maxWidth: 680 }}>{it.body}</p>
+                <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 30, margin: '0 0 10px', letterSpacing: '-.02em', lineHeight: 1.05 }}>{renderInline(it.title, 'accent')}</h3>
+                <p style={{ fontSize: 16, lineHeight: 1.5, color: 'var(--p-inkSoft)', margin: 0, maxWidth: 680 }}>{renderInline(it.body)}</p>
               </div>
               <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 8 }}>
                 <span style={{ ...tx.eyebrow, color: 'var(--p-muted)', fontSize: 10 }}>{it.read} min read</span>
@@ -132,7 +161,7 @@ function renderBlock(block: Block) {
     case 'responses':
       return (
         <section style={{ margin: '64px 0 0' }}>
-          <SectionHead eyebrow={block.heading} right="Submit your response" title={<>The <span style={{ fontFamily: P.serif, fontStyle: 'italic', color: 'var(--p-hot)', fontWeight: 400 }}>conversation</span>.</>} />
+          <SectionHead eyebrow={block.heading} title={<>The <span style={{ fontFamily: P.serif, fontStyle: 'italic', color: 'var(--p-hot)', fontWeight: 400 }}>conversation</span>.</>} />
           <div className="ci-stack-mobile" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 24, marginTop: 36 }}>
             {block.items.map((r, i) => (
               <div key={i} style={{ padding: '24px 28px', background: r.stance === 'agree' ? 'var(--p-cream)' : 'var(--p-paper)', border: r.stance === 'agree' ? '1px solid var(--p-hot)' : '1px solid var(--p-line)' }}>
@@ -164,8 +193,7 @@ function renderBlock(block: Block) {
                   <Pill color={p.verdict === 'Buy' ? 'var(--p-hot)' : 'var(--p-ink)'} style={{ alignSelf: 'start', fontSize: 10, padding: '3px 8px' }}>{p.rank}</Pill>
                   <div style={{ fontFamily: 'var(--p-display)', fontWeight: 700, fontSize: 20, letterSpacing: '-.02em', lineHeight: 1.05 }}>{p.name}</div>
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginTop: 'auto' }}>
-                    <span style={{ fontFamily: 'var(--p-display)', fontSize: 30, fontWeight: 800, color: p.verdict === 'Buy' ? 'var(--p-hot)' : 'var(--p-muted)' }}>{p.score}</span>
-                    <span style={{ fontSize: 11, color: 'var(--p-muted)' }}>/ 10</span>
+                    <span style={{ fontFamily: 'var(--p-display)', fontSize: 20, fontWeight: 800, color: p.verdict === 'Buy' ? 'var(--p-hot)' : 'var(--p-muted)' }}>{p.verdict}</span>
                     <span style={{ marginLeft: 'auto', fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 18 }}>{p.price}</span>
                   </div>
                 </div>
@@ -187,7 +215,6 @@ function renderBlock(block: Block) {
                 <div>
                   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 20, marginBottom: 16 }}>
                     <div style={{ ...tx.eyebrow, color: 'var(--p-hot)' }}>{r.rank}</div>
-                    <div style={{ fontFamily: 'var(--p-display)', fontSize: 64, fontWeight: 800, color: 'var(--p-hot)', letterSpacing: '-.04em', lineHeight: 1 }}>{r.score}<span style={{ fontSize: 18, color: 'var(--p-muted)', fontWeight: 500 }}>/10</span></div>
                   </div>
                   <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 42, margin: '0 0 6px', letterSpacing: '-.025em', lineHeight: 1 }}>{r.name}</h3>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 18 }}>
@@ -252,27 +279,28 @@ function renderBlock(block: Block) {
     case 'note':
       return (
         <div style={{ margin: '32px 0', padding: '24px 32px', background: 'var(--p-cream)', borderLeft: '4px solid var(--p-hot)', fontSize: 14, lineHeight: 1.6, color: 'var(--p-inkSoft)' }}>
-          {block.title && <strong style={{ color: 'var(--p-ink)' }}>{block.title} </strong>}{block.text}
+          {block.title && <strong style={{ color: 'var(--p-ink)' }}>{block.title} </strong>}{renderInline(block.text)}
         </div>
       );
 
-    case 'cta':
+    case 'sources':
       return (
-        <div className="ci-stack-mobile" style={{ marginTop: 64, padding: 40, background: 'var(--p-hot)', color: '#fff', display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 32, alignItems: 'center' }}>
-          <div>
-            <div style={{ ...tx.eyebrow, marginBottom: 14, opacity: .85 }}>{block.eyebrow}</div>
-            <h3 style={{ fontFamily: 'var(--p-display)', fontWeight: 800, fontSize: 36, margin: '0 0 8px', letterSpacing: '-.025em', lineHeight: 1 }}>
-              {block.title.split(/(\*[^*]+\*)/g).map((part, i) =>
-                part.startsWith('*') && part.endsWith('*')
-                  ? <span key={i} style={{ fontFamily: P.serif, fontStyle: 'italic', fontWeight: 400 }}>{part.slice(1, -1)}</span>
-                  : part)}
-            </h3>
-            <p style={{ margin: 0, fontSize: 16, lineHeight: 1.5, opacity: .92, maxWidth: 480 }}>{block.body}</p>
-          </div>
-          <span style={{ background: 'var(--p-ink)', color: 'var(--p-cream)', padding: '18px 26px', fontSize: 15, fontWeight: 700, borderRadius: 99, fontFamily: 'inherit', cursor: 'pointer', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, justifySelf: 'end' }}>
-            {block.button} <Icon.arrow />
-          </span>
-        </div>
+        <section style={{ margin: '56px 0 32px', paddingTop: 24, borderTop: '2px solid var(--p-ink)' }}>
+          <div style={{ ...tx.eyebrow, color: 'var(--p-hot)', marginBottom: 14 }}>{block.heading ?? 'Sources'}</div>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10, fontSize: 14.5 }}>
+            {block.items.map((s, i) => (
+              <li key={i} style={{ lineHeight: 1.5 }}>
+                {s.url ? (
+                  <a href={s.url} target="_blank" rel="noopener noreferrer" style={{ fontWeight: 600, textDecoration: 'underline' }}>{s.title}</a>
+                ) : (
+                  <span style={{ fontWeight: 600 }}>{s.title}</span>
+                )}
+                <span style={{ color: 'var(--p-muted)' }}> — {s.publication}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
       );
+
   }
 }

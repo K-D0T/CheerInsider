@@ -16,11 +16,6 @@ export function SectionHead({ eyebrow, title, right, rightHref }: {
           {right} <Icon.arrow/>
         </a>
       )}
-      {right && !rightHref && (
-        <span style={{ display:'inline-flex', alignItems:'center', gap:8, fontSize:13.5, fontWeight:700, paddingBottom:8, opacity:.5 }}>
-          {right} <Icon.arrow/>
-        </span>
-      )}
     </div>
   );
 }

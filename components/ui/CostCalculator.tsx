@@ -116,13 +116,12 @@ export function CostCalculator() {
             <div style={{ display:'grid', gridTemplateColumns:'1.4fr auto 1.2fr', padding:'16px 18px', background:'var(--p-hot)', color:'#fff', fontWeight:800, alignItems:'center' }}>
               <span>SEASON TOTAL</span>
               <span style={{ fontFamily:'var(--p-display)', fontSize:24, textAlign:'right' }}>{fmt(total)}</span>
-              <span style={{ paddingLeft:18, fontSize:11, fontWeight:600, opacity:.85 }}>Source: 142 reader budgets</span>
+              <span style={{ paddingLeft:18, fontSize:11, fontWeight:600, opacity:.85 }}>Illustrative estimate</span>
             </div>
           </div>
 
-          <div style={{ marginTop:24, display:'flex', gap:10, flexWrap:'wrap' }}>
-            <span style={{ background:'var(--p-hot)', color:'#fff', padding:'14px 22px', borderRadius:99, fontWeight:700, fontSize:14, display:'inline-flex', alignItems:'center', gap:8, cursor:'pointer' }}>Email me this breakdown <Icon.mail/></span>
-            <span style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'13px 20px', borderRadius:99, fontWeight:700, fontSize:14, cursor:'pointer' }}>Download as .xlsx →</span>
+          <div style={{ marginTop:20, fontSize:13, lineHeight:1.6, color:'var(--p-muted)' }}>
+            Figures are illustrative ranges, not a quote. Confirm every line with your own gym before committing to a season.
           </div>
         </div>
       </div>
