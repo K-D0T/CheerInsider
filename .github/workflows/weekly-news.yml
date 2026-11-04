@@ -1,9 +1,12 @@
 name: Weekly news article
 
 on:
-  schedule:
-    - cron: '0 13 * * 1'  # Mondays 13:00 UTC (9am ET)
-  workflow_dispatch: {}    # also runnable on demand from the Actions tab
+  # Paused while the site is under AdSense review: a live site adding
+  # AI-written articles on a schedule is the pattern the scaled-content
+  # policy targets. Uncomment to resume weekly publishing.
+  # schedule:
+  #   - cron: '0 13 * * 1'  # Mondays 13:00 UTC (9am ET)
+  workflow_dispatch: {}    # still runnable on demand from the Actions tab
 
 permissions:
   contents: write
