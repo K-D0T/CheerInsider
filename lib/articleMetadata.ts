@@ -4,7 +4,12 @@ import { canonical } from './canonical';
 
 export function buildArticleMetadata(article: Article): Metadata {
   return {
-    title: article.title,
+    // Absolute, so the root layout's '%s | CheerInsider' template doesn't
+    // append the brand. With it, every article title ran past the ~60
+    // characters Google shows and got cut mid-phrase. og:title still carries
+    // the brand, where on a shared card it reads as attribution rather than
+    // as clutter.
+    title: { absolute: article.title },
     alternates: canonical(articlePath(article)),
     description: article.description,
     openGraph: {
