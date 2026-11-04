@@ -4,11 +4,15 @@ import { Pill } from '@/components/ui/Pill';
 import { Icon } from '@/components/ui/Icon';
 import { getAllArticles } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
+
+import type { Metadata } from 'next';
 import { canonical } from '@/lib/canonical';
 
-export const metadata = {
+export const metadata: Metadata = {
   alternates: canonical('/about'),
-  title: 'About CheerInsider — Independent All-Star Cheer Coverage for Parents',
+  // Absolute: this title already names the brand, so the root layout's
+  // '%s | CheerInsider' template was appending it twice.
+  title: { absolute: 'About CheerInsider — Independent All-Star Cheer Coverage' },
   description: 'What CheerInsider is, how our AI-assisted editorial process works, and the standards behind every article we publish for cheer parents.',
   openGraph: {
     title: 'About CheerInsider',

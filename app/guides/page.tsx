@@ -11,7 +11,7 @@ import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   alternates: canonical('/guides'),
-  title: 'Educational Guides — All-Star Cheer Explained Honestly',
+  title: 'All-Star Cheer, Explained Without Jargon',
   description: 'All-star cheer levels, scoring, skill progressions, and terminology explained without federation jargon. Guides for parents, athletes, and coaches.',
   openGraph: {
     title: 'Educational Guides | CheerInsider',

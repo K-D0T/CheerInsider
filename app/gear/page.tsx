@@ -11,7 +11,7 @@ import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   alternates: canonical('/gear'),
-  title: 'Gear Roundups — Honest Picks for Cheer Families',
+  title: 'Cheer Gear Reviews: Unsponsored Picks',
   description: 'Cheer shoes, bags, practice wear, and bows — honest editorial picks for cheer families. No sponsored money. Some links earn a small commission.',
   openGraph: {
     title: 'Gear Roundups | CheerInsider',

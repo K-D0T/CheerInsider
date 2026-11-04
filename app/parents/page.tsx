@@ -12,7 +12,7 @@ import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   alternates: canonical('/parents'),
-  title: 'Parent Resources — Costs, Gym Selection, Competition Guides',
+  title: 'Cheer Parent Guides: Costs & Gym Selection',
   description: 'Costs, gym selection, competition logistics, and the social politics no one warns you about. Honest guides for cheer parents — from the inside.',
   openGraph: {
     title: 'Parent Resources | CheerInsider',

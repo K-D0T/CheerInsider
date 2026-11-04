@@ -8,8 +8,8 @@ import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   alternates: canonical('/gym-guide'),
-  title: 'Gym Selection Checklist: How to Tell if a Gym Is Actually Good',
-  description: 'Ten questions to ask before signing with any all-star gym. Covers season costs in writing, competition fees, refund policy, private lessons pressure, and safety credentials.',
+  title: 'How to Choose a Cheer Gym: 10 Questions',
+  description: 'Ten questions to ask before signing with any all-star gym: costs in writing, competition fees, refund policy, privates pressure, and safety credentials.',
   openGraph: {
     title: 'Gym Selection Checklist | CheerInsider',
     description: 'Ten questions to ask before you sign. Print this. Take it to your gym tour. If a gym can\'t answer 8 of 10, walk away.',

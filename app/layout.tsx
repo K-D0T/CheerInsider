@@ -10,7 +10,7 @@ import { JsonLd, organizationLd, websiteLd } from '@/components/seo/JsonLd';
 export const metadata: Metadata = {
   metadataBase: new URL('https://cheer-insider.com'),
   title: { default: 'CheerInsider', template: '%s | CheerInsider' },
-  description: 'Honest, independent coverage of competitive all-star cheerleading — real costs, gym guides, gear reviews, and competition coverage for parents, athletes, and coaches.',
+  description: 'Honest, independent coverage of competitive all-star cheerleading: real costs, gym guides, gear reviews, and competition coverage for parents and coaches.',
   keywords: ['competitive cheerleading', 'all-star cheer', 'cheer costs', 'cheer mom guide', 'cheer gym', 'USASF', 'cheer gear'],
   authors: [{ name: 'CheerInsider', url: 'https://cheer-insider.com/about' }],
   creator: 'CheerInsider',

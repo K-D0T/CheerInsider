@@ -8,7 +8,7 @@ import { canonical } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   alternates: canonical('/cost-calculator'),
-  title: 'All-Star Cheer Season Cost Calculator — Estimate Your Real Total',
+  title: 'All-Star Cheer Season Cost Calculator',
   description: 'Estimate what a full all-star cheer season will cost your family. Adjust level, team type, competitions, travel, and privates to see a realistic season total.',
   openGraph: {
     title: 'Cheer Season Cost Calculator | CheerInsider',
