@@ -45,7 +45,7 @@ export function Featured() {
               {lead.description}
             </p>
             <div style={{ display:'flex', alignItems:'center', gap:14, fontSize:13, color:'var(--p-muted)', flexWrap:'wrap' }}>
-              <span><b style={{ color:'var(--p-ink)' }}>By Lauren K.</b> · CheerInsider editorial</span>
+              <span><b style={{ color:'var(--p-ink)' }}>CheerInsider Editorial</b> · AI-assisted, editor-reviewed</span>
               <span style={{ marginLeft:'auto' }}>{lead.readTime} read</span>
             </div>
           </article>

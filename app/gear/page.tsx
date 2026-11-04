@@ -30,7 +30,7 @@ export default function GearIndexPage() {
     eyebrow: a.card.eyebrow,
     title: a.title,
     sub: a.sub,
-    meta: `Lauren K. · ${a.readTime}`,
+    meta: `CheerInsider Editorial · ${a.readTime}`,
     pill: i === 0 ? '★ MOST READ' : null,
     g: a.gradient,
     href: articlePath(a),
@@ -69,7 +69,7 @@ export default function GearIndexPage() {
             <Gradient variant={ROUNDUPS[0].g} ratio="16/10" caption="shoes · top-down" dark/>
             <div>
               <Pill style={{ marginBottom:14 }}>{ROUNDUPS[0].pill}</Pill>
-              <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:12 }}>{ROUNDUPS[0].eyebrow}</div>
+              <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)', marginBottom:12 }}>{ROUNDUPS[0].eyebrow}</div>
               <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:48, margin:'0 0 14px', letterSpacing:'-.025em', lineHeight:.98 }}>{ROUNDUPS[0].title}</h2>
               <p style={{ fontSize:17, lineHeight:1.5, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:520 }}>{ROUNDUPS[0].sub}</p>
               <div style={{ fontSize:13, color:'var(--p-muted)' }}>{ROUNDUPS[0].meta}</div>
@@ -81,7 +81,7 @@ export default function GearIndexPage() {
             {ROUNDUPS.slice(1).map((r, i) => (
               <Link key={i} href={r.href} style={{ display:'flex', flexDirection:'column', gap:14, cursor:'pointer' }}>
                 <Gradient variant={r.g} ratio="4/3"/>
-                <div style={{ ...tx.eyebrow, color:'var(--p-hot)' }}>{r.eyebrow}</div>
+                <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)' }}>{r.eyebrow}</div>
                 <h3 style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:24, margin:0, letterSpacing:'-.02em', lineHeight:1.1 }}>{r.title}</h3>
                 <p style={{ fontSize:14, lineHeight:1.45, color:'var(--p-inkSoft)', margin:0 }}>{r.sub}</p>
                 <div style={{ fontSize:13, color:'var(--p-muted)', marginTop:'auto' }}>{r.meta}</div>

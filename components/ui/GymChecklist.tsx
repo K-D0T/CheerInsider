@@ -47,7 +47,7 @@ export function GymChecklist() {
         <ol style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:14 }}>
           {CHECKLIST.map((c, i) => (
             <li key={i} onClick={() => toggle(i)} style={{ display:'grid', gridTemplateColumns:'auto 1fr', gap:18, padding:'18px 22px', border:'1px solid var(--p-line)', background: checks.has(i) ? 'var(--p-cream)' : 'var(--p-paper)', cursor:'pointer', alignItems:'start' }}>
-              <button aria-pressed={checks.has(i)} onClick={e => { e.stopPropagation(); toggle(i); }} style={{ width:32, height:32, borderRadius:6, background: checks.has(i) ? 'var(--p-hot)' : 'transparent', border: checks.has(i) ? 'none' : '1.5px solid var(--p-ink)', color:'#fff', display:'grid', placeItems:'center', cursor:'pointer', flexShrink:0, marginTop:2 }}>
+              <button aria-pressed={checks.has(i)} onClick={e => { e.stopPropagation(); toggle(i); }} style={{ width:32, height:32, borderRadius:6, background: checks.has(i) ? 'var(--p-hotDeep)' : 'transparent', border: checks.has(i) ? 'none' : '1.5px solid var(--p-ink)', color:'#fff', display:'grid', placeItems:'center', cursor:'pointer', flexShrink:0, marginTop:2 }}>
                 {checks.has(i) && <Icon.check/>}
               </button>
               <div>
@@ -56,7 +56,7 @@ export function GymChecklist() {
                   <h3 style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:19, margin:0, letterSpacing:'-.01em', lineHeight:1.2 }}>{c.q}</h3>
                 </div>
                 <p style={{ fontSize:13.5, lineHeight:1.5, color:'var(--p-muted)', margin:0, paddingLeft:32 }}>
-                  <span style={{ ...tx.eyebrow, color:'var(--p-hot)', fontSize:10, marginRight:6 }}>Why it matters:</span>
+                  <span style={{ ...tx.eyebrow, color:'var(--p-hotDeep)', fontSize:10, marginRight:6 }}>Why it matters:</span>
                   {c.red}
                 </p>
               </div>
@@ -66,7 +66,7 @@ export function GymChecklist() {
       </div>
 
       <aside className="ci-static-mobile" style={{ position:'sticky', top:96, display:'flex', flexDirection:'column', gap:18 }}>
-        <div style={{ background:'var(--p-hot)', color:'#fff', padding:24 }}>
+        <div className="ci-on-dark" style={{ background:'var(--p-hotDeep)', color:'#fff', padding:24 }}>
           <div style={{ ...tx.eyebrow, marginBottom:10 }}>Take it with you</div>
           <h4 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:24, margin:'0 0 12px', letterSpacing:'-.02em', lineHeight:1.05 }}>Print this page</h4>
           <p style={{ fontSize:13.5, lineHeight:1.5, margin:0, opacity:.95 }}>

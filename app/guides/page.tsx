@@ -61,7 +61,7 @@ export default function GuidesPage() {
             {GUIDES.map((g, i) => (
               <Link key={i} href={g.href} style={{ display:'flex', flexDirection:'column', gap:14 }}>
                 <Gradient variant={g.g} ratio="4/3"/>
-                <div style={{ ...tx.eyebrow, color:'var(--p-hot)' }}>{g.eyebrow}</div>
+                <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)' }}>{g.eyebrow}</div>
                 <h3 style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:24, margin:0, letterSpacing:'-.02em', lineHeight:1.1 }}>{g.title}</h3>
                 <div style={{ fontSize:13, color:'var(--p-muted)', marginTop:'auto' }}>{g.meta}</div>
               </Link>

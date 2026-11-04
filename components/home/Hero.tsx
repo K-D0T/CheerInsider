@@ -9,7 +9,7 @@ function SpinBadge() {
   const text = ' ★ INDEPENDENT · PARENT FIRST · NEVER SPONSORED ';
   const r = 70;
   return (
-    <div style={{ position:'absolute', top:-44, right:-44, zIndex:3, width:170, height:170, pointerEvents:'none', animation:'spin-badge 16s linear infinite' }}>
+    <div style={{ position:'absolute', top:-44, right:-44, zIndex:3, width:170, height:170, pointerEvents:'none', animation:'spin-badge 16s linear infinite' }} aria-hidden className="ci-spin-badge">
       <svg viewBox="0 0 170 170" width={170} height={170}>
         <defs>
           <path id="circ" d={`M 85 85 m -${r} 0 a ${r} ${r} 0 1 1 ${2*r} 0 a ${r} ${r} 0 1 1 -${2*r} 0`}/>
@@ -47,7 +47,7 @@ export function Hero() {
             Honest costs. Real gym selection criteria. The gear that's worth it, and the gear that isn't. Independent coverage written for the parents paying the bills — not the federations, not the gyms, not the brands.
           </p>
           <div style={{ display:'flex', gap:14, alignItems:'center', flexWrap:'wrap' }}>
-            <Link href="/parents" style={{ background:'var(--p-hot)', color:'#fff', border:'none', cursor:'pointer', padding:'18px 26px', fontSize:15, fontWeight:700, letterSpacing:'.01em', borderRadius:99, display:'inline-flex', alignItems:'center', gap:10, boxShadow:'0 12px 32px -8px rgba(255,45,126,.5)', fontFamily:'inherit' }}>
+            <Link href="/parents" style={{ background:'var(--p-hotDeep)', color:'#fff', border:'none', cursor:'pointer', padding:'18px 26px', fontSize:15, fontWeight:700, letterSpacing:'.01em', borderRadius:99, display:'inline-flex', alignItems:'center', gap:10, boxShadow:'0 12px 32px -8px rgba(255,45,126,.5)', fontFamily:'inherit' }}>
               Start with the basics <Icon.arrow/>
             </Link>
             <Link href="/cost-calculator" style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'17px 24px', fontSize:15, fontWeight:700, cursor:'pointer', borderRadius:99, display:'inline-flex', alignItems:'center', gap:10, fontFamily:'inherit' }}>

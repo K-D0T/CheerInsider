@@ -22,7 +22,7 @@ body {
   color: var(--p-ink);
   -webkit-font-smoothing: antialiased;
 }
-::selection { background: var(--p-hot); color: #fff; }
+::selection { background: var(--p-hotDeep); color: #fff; }
 img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 
@@ -83,4 +83,47 @@ a { text-decoration: none; color: inherit; }
   .ci-list-row      { grid-template-columns:56px 1fr !important; }
   .ci-list-row > div:last-child { grid-column:2; flex-direction:row !important; align-items:center !important; }
   .ci-list-num      { font-size:44px !important; }
+}
+/* ── Accessibility utilities ──────────────────────────────────────────── */
+
+/* Visually hidden, still read by screen readers. Used for the marquee's
+   plain-text copy and for icon-button labels. */
+.ci-sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* Skip link — first focusable element on the page (WCAG 2.4.1). */
+.ci-skip {
+  position: absolute; top: 0; left: 50%; transform: translate(-50%, -120%);
+  z-index: 200; background: var(--p-ink); color: var(--p-cream);
+  padding: 12px 22px; font-size: 14px; font-weight: 700;
+  border-radius: 0 0 4px 4px; transition: transform .15s ease;
+}
+.ci-skip:focus { transform: translate(-50%, 0); }
+
+/* Visible focus indicator (WCAG 2.4.7). The browser default is nearly
+   invisible against cream and pink, so make it explicit everywhere. */
+:focus-visible {
+  outline: 3px solid var(--p-hotDeep);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+/* On the ink/pink surfaces a dark ring disappears — go light there. */
+.ci-on-dark :focus-visible,
+footer :focus-visible,
+.ci-marquee-toggle:focus-visible {
+  outline-color: var(--p-cream);
+}
+
+/* Respect a reduced-motion preference (WCAG 2.3.3). The two infinite
+   animations stop outright; everything else loses its transition. */
+@media (prefers-reduced-motion: reduce) {
+  .ci-marquee-track,
+  .ci-spin-badge { animation: none !important; }
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
 }

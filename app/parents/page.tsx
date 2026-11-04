@@ -36,7 +36,7 @@ export default function ParentsPage() {
     eyebrow: leadArticle.card.eyebrow,
     title: leadArticle.title,
     sub: leadArticle.description,
-    meta: `Lauren K. · ${leadArticle.readTime}`,
+    meta: `CheerInsider Editorial · ${leadArticle.readTime}`,
     g: leadArticle.gradient,
     href: articlePath(leadArticle),
   };
@@ -82,7 +82,7 @@ export default function ParentsPage() {
             <Gradient variant={LEAD.g} ratio="16/10" caption="cover story"/>
             <div>
               <Pill style={{ marginBottom:14 }}>★ COVER · MOST READ THIS WEEK</Pill>
-              <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:12 }}>{LEAD.eyebrow}</div>
+              <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)', marginBottom:12 }}>{LEAD.eyebrow}</div>
               <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:48, margin:'0 0 14px', letterSpacing:'-.025em', lineHeight:.98 }}>{LEAD.title}</h2>
               <p style={{ fontSize:17, lineHeight:1.5, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:520 }}>{LEAD.sub}</p>
               <div style={{ fontSize:13, color:'var(--p-muted)' }}>{LEAD.meta}</div>
@@ -96,7 +96,7 @@ export default function ParentsPage() {
             {ITEMS.map((it, i) => (
               <Link key={i} href={it.href} style={{ display:'flex', flexDirection:'column', gap:14, cursor:'pointer' }}>
                 <Gradient variant={it.g} ratio="4/3"/>
-                <div style={{ ...tx.eyebrow, color:'var(--p-hot)' }}>{it.eyebrow}</div>
+                <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)' }}>{it.eyebrow}</div>
                 <h3 style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:24, margin:0, letterSpacing:'-.02em', lineHeight:1.1 }}>{it.title}</h3>
                 <div style={{ fontSize:13, color:'var(--p-muted)', marginTop:'auto' }}>{it.meta}</div>
               </Link>

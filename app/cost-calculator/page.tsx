@@ -50,7 +50,7 @@ export default function CostCalculatorPage() {
       {/* Methodology + explainer */}
       <section style={{ padding:'72px 0 96px' }}>
         <Container max={900}>
-          <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:16 }}>How this estimate is built</div>
+          <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)', marginBottom:16 }}>How this estimate is built</div>
           <h2 style={{ fontFamily:'var(--p-display)', fontWeight:800, fontSize:'clamp(32px,4vw,52px)', margin:'0 0 24px', letterSpacing:'-.025em', lineHeight:.95 }}>
             Where these numbers <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>come from</span>.
           </h2>

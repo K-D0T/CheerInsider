@@ -14,8 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/gym-guide`, lastModified: new Date('2026-04-01'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/cost-calculator`, lastModified: new Date('2026-04-01'), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/about`, lastModified: new Date('2026-07-15'), changeFrequency: 'yearly', priority: 0.5 },
-    { url: `${BASE}/privacy`, lastModified: new Date('2026-07-15'), changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${BASE}/terms`, lastModified: new Date('2026-07-15'), changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${BASE}/contact`, lastModified: new Date('2026-11-03'), changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${BASE}/disclosures`, lastModified: new Date('2026-11-03'), changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${BASE}/privacy`, lastModified: new Date('2026-11-03'), changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${BASE}/terms`, lastModified: new Date('2026-11-03'), changeFrequency: 'yearly', priority: 0.3 },
   ];
 
   const articles: MetadataRoute.Sitemap = getAllArticles().map((a) => ({

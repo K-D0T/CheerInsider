@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
+import { SITE } from '@/lib/siteInfo';
 import { P } from '@/lib/palette';
 
 import type { Metadata } from 'next';
@@ -67,12 +68,21 @@ export default function TermsPage() {
         <h2 style={heading}>Limitation of liability</h2>
         <p style={body}>
           The site is provided &ldquo;as is&rdquo; without warranties of any kind. To the fullest extent permitted by law,
-          CheerInsider is not liable for any damages arising from your use of the site or reliance on its content.
+          {' '}{SITE.legalEntity} is not liable for any damages arising from your use of the site or reliance on its
+          content.
+        </p>
+
+        <h2 style={heading}>Governing law</h2>
+        <p style={body}>
+          These terms are governed by the laws of {SITE.governingLaw}, without regard to its conflict-of-laws rules.
         </p>
 
         <h2 style={heading}>Contact</h2>
         <p style={body}>
-          Questions about these terms: <a href="mailto:lauren@cheer-insider.com" style={{ textDecoration: 'underline' }}>lauren@cheer-insider.com</a>
+          Questions about these terms:{' '}
+          <a href={`mailto:${SITE.contactEmail}?subject=Terms%20question`} style={{ textDecoration: 'underline' }}>{SITE.contactEmail}</a>.
+          How advertising and affiliate links work here is set out on our{' '}
+          <a href="/disclosures" style={{ textDecoration: 'underline' }}>disclosures</a> page.
         </p>
       </Container>
     </section>

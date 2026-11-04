@@ -8,7 +8,7 @@ export function SectionHead({ eyebrow, title, right, rightHref }: {
   return (
     <div className="ci-head-flex" style={{ borderBottom:`1px solid ${P.ink}`, paddingBottom:16 }}>
       <div>
-        <div style={{ ...tx.eyebrow, color:'var(--p-hot)', marginBottom:14 }}>{eyebrow}</div>
+        <div style={{ ...tx.eyebrow, color:'var(--p-hotDeep)', marginBottom:14 }}>{eyebrow}</div>
         <h2 style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:'clamp(36px, 4.4vw, 64px)', margin:0, lineHeight:.95, letterSpacing:'-.025em' }}>{title}</h2>
       </div>
       {right && rightHref && (

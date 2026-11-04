@@ -41,7 +41,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd data={websiteLd()} />
         <UtilityStrip />
         <Header />
-        <main>{children}</main>
+        <a className="ci-skip" href="#main">Skip to main content</a>
+        <main id="main">{children}</main>
         <Footer />
         <Analytics />
         <Script

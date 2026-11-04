@@ -21,12 +21,12 @@ export function LeadMagnet() {
           <ul className="ci-checklist" style={{ margin:'0 0 36px', gap:'10px 24px', maxWidth:560 }}>
             {['Every major cost category','Level and travel adjustments','The "optional" fees that aren\'t','Monthly cash-flow view','Compare against typical ranges','Based on real cost patterns'].map((b) => (
               <li key={b} style={{ display:'flex', alignItems:'center', gap:10, fontSize:14, fontWeight:500 }}>
-                <span style={{ display:'inline-grid', placeItems:'center', width:18, height:18, background:'var(--p-hot)', color:'#fff', borderRadius:99 }}><Icon.check/></span>
+                <span style={{ display:'inline-grid', placeItems:'center', width:18, height:18, background:'var(--p-hotDeep)', color:'#fff', borderRadius:99 }}><Icon.check/></span>
                 {b}
               </li>
             ))}
           </ul>
-          <Link href="/cost-calculator" style={{ background:'var(--p-hot)', color:'#fff', border:'none', cursor:'pointer', padding:'18px 28px', fontSize:15, fontWeight:700, letterSpacing:'.01em', borderRadius:99, display:'inline-flex', alignItems:'center', gap:10, boxShadow:'0 12px 32px -8px rgba(255,45,126,.5)', fontFamily:'inherit' }}>
+          <Link href="/cost-calculator" style={{ background:'var(--p-hotDeep)', color:'#fff', border:'none', cursor:'pointer', padding:'18px 28px', fontSize:15, fontWeight:700, letterSpacing:'.01em', borderRadius:99, display:'inline-flex', alignItems:'center', gap:10, boxShadow:'0 12px 32px -8px rgba(255,45,126,.5)', fontFamily:'inherit' }}>
             Open the calculator <Icon.arrow/>
           </Link>
           <div style={{ fontSize:12, color:'rgba(250,246,241,.5)', marginTop:14 }}>Runs in your browser. We don't collect your numbers.</div>
@@ -34,7 +34,7 @@ export function LeadMagnet() {
         <div style={{ position:'relative', display:'grid', placeItems:'center' }}>
           <div style={{ position:'relative', transform:'rotate(-4deg)', width:'min(360px, 100%)' }}>
             <div style={{ position:'absolute', inset:'8px -10px -10px 8px', background:'var(--p-accent)', borderRadius:'var(--p-radius)' }}/>
-            <div style={{ position:'relative', aspectRatio:'3/4', background:'var(--p-hot)', borderRadius:'var(--p-radius)', padding:32, color:'#fff', display:'flex', flexDirection:'column', justifyContent:'space-between', boxShadow:'0 40px 80px -20px rgba(0,0,0,.55)' }}>
+            <div style={{ position:'relative', aspectRatio:'3/4', background:'var(--p-hotDeep)', borderRadius:'var(--p-radius)', padding:32, color:'#fff', display:'flex', flexDirection:'column', justifyContent:'space-between', boxShadow:'0 40px 80px -20px rgba(0,0,0,.55)' }}>
               <div style={{ ...tx.eyebrow, fontSize:11, letterSpacing:'.18em' }}>CheerInsider · Free Tools</div>
               <div>
                 <div style={{ fontFamily:'var(--p-display)', fontSize:54, fontWeight:800, lineHeight:.9 }}>The Real</div>

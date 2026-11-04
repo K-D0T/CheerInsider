@@ -39,7 +39,7 @@ export function AdUnit({ format = 'rectangle', label = true, style }: {
   return (
     <div style={{ display:'flex', flexDirection:'column', gap:6, ...style }}>
       {label && (
-        <span style={{ fontSize:10, letterSpacing:'.1em', textTransform:'uppercase', color:'rgba(15,14,19,.35)', fontFamily:'var(--p-body)', fontWeight:600, alignSelf:'flex-start' }}>
+        <span style={{ fontSize:10, letterSpacing:'.1em', textTransform:'uppercase', color:'rgba(15,14,19,.6)', fontFamily:'var(--p-body)', fontWeight:600, alignSelf:'flex-start' }}>
           Advertisement
         </span>
       )}
