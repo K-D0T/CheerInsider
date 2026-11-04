@@ -228,9 +228,8 @@
           "url": "https://www.varsity.com"
         },
         {
-          "title": "Cheer Daily \u2014 official site",
-          "publication": "Cheer Daily",
-          "url": "https://cheerdaily.net"
+          "title": "Cheer Daily reporting (publication site currently unavailable)",
+          "publication": "Cheer Daily"
         }
       ]
     },
@@ -245,5 +244,13 @@
   "datePublished": "2026-07-13",
   "card": {
     "eyebrow": "PARENTS \u00b7 END OF SEASON 2026"
-  }
+  },
+  "toc": [
+    "What actually happened",
+    "The new player: AIA's Global Tournament",
+    "Why families find this so confusing (it's not you)",
+    "How the points chase drives your costs",
+    "So what should a parent actually do?",
+    "The bigger picture"
+  ]
 }

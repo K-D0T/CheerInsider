@@ -146,9 +146,8 @@
       "heading": "Organizations and publications referenced",
       "items": [
         {
-          "title": "Cheer Daily \u2014 official site",
-          "publication": "Cheer Daily",
-          "url": "https://cheerdaily.net"
+          "title": "Cheer Daily reporting (publication site currently unavailable)",
+          "publication": "Cheer Daily"
         }
       ]
     },
@@ -163,5 +162,11 @@
   "datePublished": "2026-06-22",
   "card": {
     "eyebrow": "PARENTS \u00b7 SCHOLARSHIPS 2026"
-  }
+  },
+  "toc": [
+    "Who got the money \u2014 and why",
+    "Why $16,000 matters more than it sounds",
+    "The honest fine print",
+    "The bigger lesson for your budget"
+  ]
 }

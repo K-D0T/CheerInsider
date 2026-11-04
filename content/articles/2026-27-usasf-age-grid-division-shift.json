@@ -149,9 +149,8 @@
           "url": "https://www.usasf.net"
         },
         {
-          "title": "Cheer Daily \u2014 official site",
-          "publication": "Cheer Daily",
-          "url": "https://cheerdaily.net"
+          "title": "Cheer Daily reporting (publication site currently unavailable)",
+          "publication": "Cheer Daily"
         }
       ]
     },
@@ -166,5 +165,13 @@
   "datePublished": "2026-06-29",
   "card": {
     "eyebrow": "PARENTS \u00b7 2026\u201327 SEASON"
-  }
+  },
+  "toc": [
+    "What actually changed (and what didn't)",
+    "Why this isn't paranoia \u2014 divisions really do shift",
+    "Why a parent should care: it's a money decision",
+    "Read the grid yourself \u2014 and use the color key",
+    "A quick note for the dance households",
+    "Your summer checklist"
+  ]
 }

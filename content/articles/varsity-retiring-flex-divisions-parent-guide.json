@@ -240,9 +240,8 @@
           "url": "https://www.varsity.com"
         },
         {
-          "title": "Cheer Daily \u2014 official site",
-          "publication": "Cheer Daily",
-          "url": "https://cheerdaily.net"
+          "title": "Cheer Daily reporting (publication site currently unavailable)",
+          "publication": "Cheer Daily"
         },
         {
           "title": "FloCheer \u2014 official site",
@@ -262,5 +261,15 @@
   "datePublished": "2026-07-06",
   "card": {
     "eyebrow": "NEWS \u00b7 2026\u20132027 SEASON"
-  }
+  },
+  "toc": [
+    "First: this is not a rules change",
+    "Why this ripples so wide",
+    "Why placement suddenly matters more",
+    "This fits a bigger reshuffling trend",
+    "Your three realistic paths",
+    "What the jump can cost you",
+    "What to do in the next few weeks",
+    "The bigger picture"
+  ]
 }
