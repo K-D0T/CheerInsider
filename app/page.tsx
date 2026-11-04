@@ -13,10 +13,13 @@ import type { Metadata } from 'next';
 
 // Set here rather than as the layout's title.default, which stays
 // 'CheerInsider' as the fallback for any route that sets no title of its own.
-// A plain string, so the layout's '%s | CheerInsider' template completes it;
-// the description still comes from the layout default.
+// The brand is written out because the layout's '%s | CheerInsider' template
+// applies to child segments, not to the root layout's own page - which is why
+// this route used to serve a bare 'CheerInsider'. Child routes still get the
+// suffix from the template and must not repeat it. The description comes from
+// the layout default.
 export const metadata: Metadata = {
-  title: 'Honest All-Star Cheer Coverage for Parents',
+  title: 'Honest All-Star Cheer Coverage for Parents | CheerInsider',
   alternates: canonical('/'),
 };
 
