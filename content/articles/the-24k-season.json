@@ -10,7 +10,7 @@
   "headline": "The $24,000 season: *every dollar*, tracked.",
   "sub": "Tuition is the number gyms quote at tryouts. It is rarely more than a third of what a Level 4 family actually pays across a season. Here is the full ledger, line by line.",
   "datePublished": "2026-04-12",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-11-25",
   "readTime": "8 min",
   "tags": [
     "cheer costs",
@@ -228,11 +228,16 @@
     {
       "type": "list",
       "items": [
-        "**\"Optional\" privates** \u2014 frequently the unstated prerequisite for the skills that determine competition time. If the coach says a skill needs work and the gym sells private lessons, the loop closes itself.",
+        "**\"Optional\" privates** \u2014 the cost that surprises families most. Private lessons are frequently the unstated prerequisite for the skills that determine competition time. If the coach says a skill needs work and the gym sells private lessons, the loop closes itself.",
         "**\"Optional\" banquet** \u2014 kids whose families skip it are visibly absent from the season's last shared memory, and they notice.",
         "**\"Optional\" photo package** \u2014 team photos circulate on social media all season. A kid missing from them notices that too.",
         "**\"Optional\" team fund** \u2014 collected in a group chat where everyone can see who has paid."
       ]
+    },
+    {
+      "type": "quote",
+      "variant": "border",
+      "text": "\"Stunting privates are very helpful, but I would recommend doing tumbling classes versus private lessons.\" \u2014 a former cheer coach who runs CheerInsider"
     },
     {
       "type": "p",
@@ -254,7 +259,7 @@
         "**Ask what the gym's minimum attendance requirement actually is.** Many gyms require a specific subset of events and treat the rest as encouraged. Those are not the same thing, and the difference is thousands of dollars.",
         "**Book hotels the day the block opens.** Competition-city rates rise steeply as the event approaches. This alone routinely saves $300\u2013$600 per event.",
         "**Buy shoes and practice wear outside the gym's pro shop** where the team allows it. Verify the requirement first \u2014 some items must be gym-supplied and some genuinely don't.",
-        "**Treat privates as a targeted purchase, not a subscription.** A private lesson aimed at one specific named skill, with a coach who can explain the fix, is worth the money. Standing weekly privates with no defined goal usually are not.",
+        "**Use stunting privates; take tumbling classes.** Stunting privates are very helpful. For tumbling, a coach's advice is to take tumbling classes rather than private lessons, which keeps one of the biggest \"optional\" lines in check.",
         "**Split driving and rooms with another family.** The most consistently effective cost reduction in this sport, and nobody advertises it."
       ]
     },
@@ -287,13 +292,25 @@
       "text": "A gym that answers all seven without hesitation is a gym that has thought about your budget. A gym that gets defensive is telling you how the rest of the season will go."
     },
     {
+      "type": "h2",
+      "text": "Is all-star worth it?"
+    },
+    {
+      "type": "p",
+      "text": "From the coaching side, the honest answer depends on what else is available. All-star is worth it **if you are cheering for a big gym**. It is also worth it **if your school team is a lower level, or doesn't exist**, because then all-star may be the only place to train and compete at the level an athlete's skills call for."
+    },
+    {
+      "type": "p",
+      "text": "If neither is true, it is fair to weigh whether the school program gets your athlete most of what she wants before signing up for the ledger above."
+    },
+    {
       "type": "p",
       "text": "None of this means the sport isn't worth it. It means the number you were quoted at tryouts was never the number \u2014 and you deserve to plan against the real one.",
       "serif": true
     },
     {
       "type": "note",
-      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community \u2014 not original data collection or formal surveys."
+      "text": "This guide includes first-hand input from a former cheer coach who runs CheerInsider, and was drafted with AI assistance. The dollar ranges are estimates built from commonly reported costs, not one family's invoices or a formal survey; your gym and region will move them."
     }
   ],
   "toc": [
@@ -305,6 +322,7 @@
     "The full season ledger",
     "What \"optional\" actually means",
     "How families actually bring this number down",
-    "The budget conversation to have before you sign"
+    "The budget conversation to have before you sign",
+    "Is all-star worth it?"
   ]
 }
