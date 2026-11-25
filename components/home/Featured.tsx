@@ -6,7 +6,7 @@ import { Pill } from '@/components/ui/Pill';
 import { getAllArticles, getArticleBySlug, articlePath } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
 
-const LEAD_SLUG = 'the-24k-season';
+const LEAD_SLUG = 'all-star-cheer-season-cost';
 
 export function Featured() {
   const lead = getArticleBySlug(LEAD_SLUG);

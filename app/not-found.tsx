@@ -23,7 +23,7 @@ const DESTINATIONS: { head: string; links: [label: string, href: string][] }[] =
   {
     head: 'Most read',
     links: [
-      ['What a season actually costs', '/parents/the-24k-season'],
+      ['What a season actually costs', '/parents/all-star-cheer-season-cost'],
       ['The level system, explained', '/guides/level-system-explained'],
       ['Cheer glossary', '/guides/cheer-glossary'],
     ],

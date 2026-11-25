@@ -5,7 +5,7 @@ import { SITE } from '@/lib/siteInfo';
 const COLS = [
   { h:'Sections', items:[['Parent resources','/parents'],['Educational guides','/guides'],['Gear roundups','/gear']] },
   { h:'Tools',    items:[['Cost calculator','/cost-calculator'],['Gym selection checklist','/gym-guide']] },
-  { h:'Popular',  items:[['The $24K season','/parents/the-24k-season'],['The level system explained','/guides/level-system-explained'],['Cheer shoes 2026','/gear/cheer-shoes-2026']] },
+  { h:'Popular',  items:[['What a season costs','/parents/all-star-cheer-season-cost'],['The level system explained','/guides/level-system-explained'],['Cheer shoes 2026','/gear/cheer-shoes-2026']] },
   { h:'Site',     items:[['About','/about'],['Disclosures','/disclosures'],['Privacy policy','/privacy'],['Terms of use','/terms'],['Contact','/contact']] },
 ];
 
@@ -39,7 +39,7 @@ export function Footer() {
           ))}
         </div>
         <div style={{ marginTop:64, paddingTop:24, borderTop:'1px solid rgba(250,246,241,.12)', display:'flex', justifyContent:'space-between', alignItems:'center', gap:24, flexWrap:'wrap', fontSize:12, color:'rgba(250,246,241,.5)' }}>
-          <span>© 2026 CheerInsider, LLC · Not affiliated with USASF, Varsity, or any federation. · Editorial content is AI-assisted; cost figures are illustrative. <a href="/about" style={{ color:'inherit', textDecoration:'underline' }}>Learn more</a></span>
+          <span>© 2026 {SITE.name}, published by {SITE.legalEntity} · Not affiliated with USASF, Varsity, or any federation. · Editorial content is AI-assisted; cost figures are illustrative. <a href="/about" style={{ color:'inherit', textDecoration:'underline' }}>Learn more</a></span>
           <span style={{ display:'flex', gap:18 }}>
             <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/disclosures">Disclosures</a><a href="/contact">Contact</a>
           </span>

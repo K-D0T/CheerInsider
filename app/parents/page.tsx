@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LEAD_SLUG = 'the-24k-season';
+const LEAD_SLUG = 'all-star-cheer-season-cost';
 
 export default function ParentsPage() {
   // Article grid is driven by content/articles — add a JSON file there and

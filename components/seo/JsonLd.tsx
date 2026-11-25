@@ -39,12 +39,13 @@ export function websiteLd() {
   };
 }
 
-export function articleLd({ slug, headline, description, datePublished, dateModified }: {
+export function articleLd({ slug, headline, description, datePublished, dateModified, author }: {
   slug: string;
   headline: string;
   description: string;
   datePublished: string;
   dateModified?: string;
+  author?: { name: string; path: string };
 }) {
   return {
     '@context': 'https://schema.org',
@@ -59,7 +60,9 @@ export function articleLd({ slug, headline, description, datePublished, dateModi
     // structured data has to name it explicitly; this used to point every
     // article at the site-wide card.
     image: `${BASE}${slug}/opengraph-image`,
-    author: { '@id': ORG_ID },
+    author: author
+      ? { '@type': 'Person', name: author.name, url: `${BASE}${author.path}` }
+      : { '@id': ORG_ID },
     publisher: { '@id': ORG_ID },
   };
 }
@@ -74,5 +77,16 @@ export function breadcrumbLd(crumbs: [name: string, path: string][]) {
       name,
       item: `${BASE}${path}`,
     })),
+  };
+}
+
+export function personLd({ name, path, jobs }: { name: string; path: string; jobs: string[] }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name,
+    url: `${BASE}${path}`,
+    description: jobs.join('; '),
+    worksFor: { '@id': ORG_ID },
   };
 }

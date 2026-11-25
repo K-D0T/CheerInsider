@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { getAllArticles, articlePath, type Article } from '@/lib/articles';
+import { AUTHORS, authorPath } from '@/lib/authors';
 
 const BASE = 'https://cheer-insider.com';
 
@@ -43,5 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...articles];
+  const authors: MetadataRoute.Sitemap = AUTHORS.map((au) => ({
+    url: `${BASE}${authorPath(au)}`,
+    lastModified: newest(all.filter((a) => a.author === au.id)),
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  }));
+
+  return [...staticPages, ...articles, ...authors];
 }

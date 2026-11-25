@@ -77,7 +77,7 @@ export function GymChecklist() {
           <div style={{ ...tx.eyebrow, color:'var(--p-muted)', marginBottom:10 }}>Keep reading</div>
           <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:12, fontSize:13.5 }}>
             {[
-              ['/parents/the-24k-season', 'What a full season actually costs'],
+              ['/parents/all-star-cheer-season-cost', 'What a full season actually costs'],
               ['/guides/how-placement-decisions-work', 'How placement decisions really work'],
               ['/parents/summer-vs-privates', 'Summer camp vs. privates'],
             ].map(([href, t]) => (

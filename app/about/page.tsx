@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
@@ -7,6 +8,7 @@ import { P, tx } from '@/lib/palette';
 
 import type { Metadata } from 'next';
 import { canonical } from '@/lib/canonical';
+import { SITE } from '@/lib/siteInfo';
 
 export const metadata: Metadata = {
   alternates: canonical('/about'),
@@ -45,11 +47,11 @@ export default function AboutPage() {
               </p>
               <div style={{ display:'flex', gap:14 }}>
                 <a href="/cost-calculator" style={{ background:'var(--p-hotDeep)', color:'#fff', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer', display:'inline-flex', alignItems:'center', gap:8 }}>Try the Cost Calculator <Icon.arrow/></a>
-                <a href="mailto:lauren@cheer-insider.com" style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer' }}>Contact us →</a>
+                <a href={`mailto:${SITE.contactEmail}`} style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, fontFamily:'inherit', cursor:'pointer' }}>Contact us →</a>
               </div>
             </div>
             <div style={{ position:'relative' }}>
-              <Gradient variant="halo" ratio="3/4" caption="cheerinsider · est. 2025"/>
+              <Gradient variant="halo" ratio="3/4" caption="cheerinsider"/>
               <div style={{ position:'absolute', bottom:-24, right:-24, padding:'14px 18px', background:'var(--p-ink)', color:'var(--p-cream)', maxWidth:240 }}>
                 <div style={{ ...tx.eyebrow, color:'var(--p-accent)', marginBottom:4 }}>Publishing</div>
                 <div style={{ fontFamily:'var(--p-display)', fontWeight:700, fontSize:18, lineHeight:1.1 }}>
@@ -85,9 +87,10 @@ export default function AboutPage() {
             AI-assisted. <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Editorially driven.</span>
           </h2>
           <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
-            CheerInsider articles are drafted with AI assistance and reviewed by an editor before publishing. They
+            CheerInsider articles are drafted with AI assistance and reviewed by an editor before publishing. Most
             carry a <strong>CheerInsider Editorial</strong> byline rather than a personal one, because no single named
-            person writes them — and we would rather say that than invent an author.
+            person writes them — and we would rather say that than invent an author. Guides built from first-hand
+            coaching input carry the byline of the person who gave it: <Link href="/authors/kaiden-thrailkill" style={{ textDecoration:'underline' }}>Kaiden Thrailkill</Link>.
           </p>
           <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
             Cost figures, scenarios, and workload examples in our articles are <strong>illustrative</strong> — based on patterns and ranges consistently reported across the cheer community, not derived from formal surveys or original data collection. Where we cite third-party research or sourced news, we link to the source.
@@ -141,8 +144,8 @@ export default function AboutPage() {
             that other parents should hear about, email us. We never share names without permission.
           </p>
           <div style={{ display:'flex', justifyContent:'center', gap:14, flexWrap:'wrap' }}>
-            <a href="mailto:lauren@cheer-insider.com" style={{ background:'var(--p-ink)', color:'var(--p-cream)', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, display:'inline-flex', alignItems:'center', gap:8 }}>lauren@cheer-insider.com <Icon.arrowUp/></a>
-            <a href="mailto:lauren@cheer-insider.com?subject=Anonymous%20tip" style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, cursor:'pointer' }}>Send a tip anonymously →</a>
+            <a href={`mailto:${SITE.contactEmail}`} style={{ background:'var(--p-ink)', color:'var(--p-cream)', border:'none', padding:'16px 24px', fontSize:15, fontWeight:700, borderRadius:99, display:'inline-flex', alignItems:'center', gap:8 }}>{SITE.contactEmail} <Icon.arrowUp/></a>
+            <a href={`mailto:${SITE.contactEmail}?subject=Anonymous%20tip`} style={{ background:'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', padding:'15px 22px', fontSize:15, fontWeight:700, borderRadius:99, cursor:'pointer' }}>Send a tip anonymously →</a>
           </div>
         </Container>
       </section>
