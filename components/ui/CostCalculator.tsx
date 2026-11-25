@@ -28,31 +28,33 @@ export function CostCalculator() {
   const [travel, setTravel] = useState<'local'|'regional'|'nationals'>('regional');
   const [privates, setPrivates] = useState(true);
 
-  const tuitionMonthly = ({ 1:185, 2:225, 3:270, 4:295, 5:320, 6:360 } as Record<number,number>)[level] ?? 295;
-  const tuition = tuitionMonthly * 10;
-  const placement = team === 'rec' ? 0 : 400;
-  const choreo = team === 'rec' ? 250 : team === 'prep' ? 700 : 1250;
-  const uniform = team === 'rec' ? 600 : team === 'prep' ? 1200 : 1840;
-  const travelPerComp = travel === 'local' ? 280 : travel === 'regional' ? 1080 : 1620;
+  // Every figure sits inside a range published by the cost guides cited on
+  // /cost-calculator (ThePricer, Limelight Music, Stingray Allstars). Where a
+  // guide gives only a range, the value per level or option is a point inside
+  // it, so the defaults land in the commonly reported $4,000-$8,000 band and
+  // the extremes stay near the $3,000-$12,000+ span those guides report.
+  const tuitionMonthly = ({ 1:150, 2:185, 3:220, 4:260, 5:300, 6:350 } as Record<number,number>)[level] ?? 260;
+  const tuition = tuitionMonthly * 12;
+  const choreo = team === 'rec' ? 150 : team === 'prep' ? 250 : 400;
+  const uniform = team === 'rec' ? 400 : team === 'prep' ? 700 : 1000;
+  const shoes = 100;
+  const travelPerComp = travel === 'local' ? 40 : travel === 'regional' ? 200 : 375;
   const travelCost = travelPerComp * comps;
-  const compFees = 300 * comps;
-  const hairMakeup = 150 * comps;
-  const privateTraining = privates ? 2800 : 0;
-  const teamMom = team === 'competitive' ? 680 : 0;
-  const banquet = team === 'rec' ? 250 : 2020;
-  const total = tuition + placement + choreo + uniform + travelCost + compFees + hairMakeup + privateTraining + teamMom + banquet;
+  const compFeePer = 125;
+  const compFees = compFeePer * comps;
+  const privateTraining = privates ? 1000 : 0;
+  const membership = team === 'rec' ? 0 : 49;
+  const total = tuition + choreo + uniform + shoes + travelCost + compFees + privateTraining + membership;
 
   const lines: [string,number,string][] = [
-    ['Tuition', tuition, `$${tuitionMonthly}/mo × 10 mo · Level ${level}`],
-    ['Team placement fee', placement, team === 'rec' ? 'Not charged on rec teams' : 'One-time, deducted from choreo'],
-    ['Choreography & music', choreo, `${team === 'rec' ? 'Light' : team === 'prep' ? 'Standard' : 'Custom'} package`],
-    ['Uniform + warmups', uniform, 'Required, gym-supplied'],
+    ['Tuition', tuition, `$${tuitionMonthly}/mo × 12 mo · Level ${level}`],
+    ['Choreography & music', choreo, 'Per-athlete share'],
+    ['Uniform + practice wear', uniform, 'Required, gym-supplied'],
+    ['Cheer shoes', shoes, 'One pair'],
     ['Travel (hotels, flights, gas)', travelCost, `${comps} comps × $${travelPerComp} avg`],
-    ['Competition entry fees', compFees, `$300 × ${comps} events`],
-    ['Hair, bows, makeup', hairMakeup, 'Per-comp recurring'],
-    ['Private tumbling lessons', privateTraining, privates ? '~$80/wk × 35 wk' : 'Skipped'],
-    ['Team mom fund', teamMom, team === 'competitive' ? '"Optional" but expected' : 'Not collected'],
-    ['Banquet, photos, video', banquet, 'End-of-season'],
+    ['Competition entry fees', compFees, `$${compFeePer} × ${comps} events`],
+    ['Private lessons', privateTraining, privates ? 'Season total' : 'Skipped'],
+    ['USASF athlete membership', membership, team === 'rec' ? 'Not required on rec teams' : 'Per season'],
   ];
 
   const fmt = (n: number) => '$' + n.toLocaleString();
@@ -92,10 +94,10 @@ export function CostCalculator() {
             </div>
           </CalcRow>
 
-          <CalcRow label="Private tumbling lessons">
+          <CalcRow label="Private lessons">
             <button type="button" onClick={() => setPrivates(!privates)} aria-pressed={privates} style={{ width:'100%', padding:'12px 16px', textAlign:'left', display:'flex', alignItems:'center', justifyContent:'space-between', background: privates ? 'var(--p-accent)' : 'transparent', color:'var(--p-ink)', border:'1px solid var(--p-ink)', cursor:'pointer', fontFamily:'inherit', fontSize:14, fontWeight:700 }}>
               <span>{privates ? 'Including' : 'Skipped'} private lessons</span>
-              <span style={{ fontFamily:'var(--p-display)', fontWeight:800 }}>{privates ? '$2,800' : '$0'}</span>
+              <span style={{ fontFamily:'var(--p-display)', fontWeight:800 }}>{privates ? '$1,000' : '$0'}</span>
             </button>
           </CalcRow>
         </div>
@@ -124,12 +126,12 @@ export function CostCalculator() {
             <div style={{ display:'grid', gridTemplateColumns:'1.4fr auto 1.2fr', padding:'16px 18px', background:'var(--p-hotDeep)', color:'#fff', fontWeight:800, alignItems:'center' }}>
               <span>SEASON TOTAL</span>
               <span style={{ fontFamily:'var(--p-display)', fontSize:24, textAlign:'right' }}>{fmt(total)}</span>
-              <span style={{ paddingLeft:18, fontSize:11, fontWeight:600, opacity:.85 }}>Illustrative estimate</span>
+              <span style={{ paddingLeft:18, fontSize:11, fontWeight:600, opacity:.85 }}>Estimate</span>
             </div>
           </div>
 
           <div style={{ marginTop:20, fontSize:13, lineHeight:1.6, color:'var(--p-muted)' }}>
-            Figures are illustrative ranges, not a quote. Confirm every line with your own gym before committing to a season.
+            Figures are points inside published national ranges, not a quote. Confirm every line with your own gym before committing to a season.
           </div>
         </div>
       </div>

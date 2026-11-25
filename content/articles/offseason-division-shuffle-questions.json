@@ -131,44 +131,11 @@
     },
     {
       "type": "p",
-      "text": "Here's a rough picture of how costs tend to scale by level. These are **illustrative ranges**, not quotes \u2014 your gym and region will vary."
-    },
-    {
-      "type": "table",
-      "head": [
-        "Level",
-        "Typical full-season range",
-        "Common add-ons at a level change"
-      ],
-      "rows": [
-        [
-          "Level 1\u20132",
-          "$4,000\u2013$9,000",
-          "Basic choreo, local comps"
-        ],
-        [
-          "Level 3",
-          "$8,000\u2013$14,000",
-          "Added tumbling classes, more travel"
-        ],
-        [
-          "Level 4",
-          "$14,000\u2013$24,000",
-          "Private lessons, longer season, bigger events"
-        ],
-        [
-          "Level 5\u20136",
-          "$20,000\u2013$35,000+",
-          "Elite choreo, national/worlds travel"
-        ]
-      ],
-      "foot": [
-        "Ranges are illustrative and vary widely by gym, region, and travel schedule."
-      ]
+      "text": "Published cost guides put a full all-star season at roughly **$3,000 to $12,000**, with most families around $4,000 to $8,000 and elite Worlds-bound traveling teams at the top. A real move up usually means more practice hours, more travel and bigger events, which pushes a family up that range. The [full cost breakdown](/parents/all-star-cheer-season-cost) lists the sources and every line item."
     },
     {
       "type": "p",
-      "text": "So when you ask \"is this a real level change,\" you're not just protecting your kid's confidence \u2014 **you're protecting your budget.** A paper reclassification shouldn't come with a Level 4 price tag if the routine is still built like Level 3."
+      "text": "So when you ask \"is this a real level change,\" you're not just protecting your kid's confidence \u2014 **you're protecting your budget.** A paper reclassification shouldn't come with a bigger bill if the routine is still built like the old level."
     },
     {
       "type": "h2",
@@ -225,5 +192,6 @@
     "What to actually ask your gym",
     "The money angle nobody mentions in the placement email",
     "A quick gut check"
-  ]
+  ],
+  "dateModified": "2026-11-25"
 }

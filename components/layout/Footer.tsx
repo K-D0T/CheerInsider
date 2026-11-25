@@ -5,7 +5,7 @@ import { SITE } from '@/lib/siteInfo';
 const COLS = [
   { h:'Sections', items:[['Parent resources','/parents'],['Educational guides','/guides'],['Gear roundups','/gear']] },
   { h:'Tools',    items:[['Cost calculator','/cost-calculator'],['Gym selection checklist','/gym-guide']] },
-  { h:'Popular',  items:[['The $24K season','/parents/the-24k-season'],['The level system explained','/guides/level-system-explained'],['Cheer shoes 2026','/gear/cheer-shoes-2026']] },
+  { h:'Popular',  items:[['What a season costs','/parents/all-star-cheer-season-cost'],['The level system explained','/guides/level-system-explained'],['Cheer shoes 2026','/gear/cheer-shoes-2026']] },
   { h:'Site',     items:[['About','/about'],['Disclosures','/disclosures'],['Privacy policy','/privacy'],['Terms of use','/terms'],['Contact','/contact']] },
 ];
 

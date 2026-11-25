@@ -4,7 +4,7 @@ import { Icon } from '@/components/ui/Icon';
 import { P, tx } from '@/lib/palette';
 
 const TILES = [
-  { tag:'01 · NEW HERE', head:"I'm new to all this", sub:"Your kid just got placed and you're drowning in acronyms, fees and bow politics.", cta:'Start with the costs', bullets:['What a season really costs','What "optional" actually means','How to read the invoice'], kind:'hot', href:'/parents/the-24k-season' },
+  { tag:'01 · NEW HERE', head:"I'm new to all this", sub:"Your kid just got placed and you're drowning in acronyms, fees and bow politics.", cta:'Start with the costs', bullets:['What a season really costs','What "optional" actually means','How to read the invoice'], kind:'hot', href:'/parents/all-star-cheer-season-cost' },
   { tag:'02 · CHOOSING A GYM', head:'I need to pick a gym', sub:'What separates a good program from a loud one, and the questions to ask before you sign.', cta:'Open the checklist', bullets:['10 questions to ask','Costs in writing','Refund and injury policy'], kind:'ink', href:'/gym-guide' },
   { tag:'03 · LEARNING THE SPORT', head:'I need the rules explained', sub:'Levels, scoring panels, legal skills, and how placement decisions actually get made.', cta:'Read the guides', bullets:['The level system','How judges score','How placement works'], kind:'cream', href:'/guides' },
 ];
