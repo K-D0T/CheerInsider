@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Article, articlePath } from './articles';
 import { canonical } from './canonical';
+import { getAuthor } from './authors';
 
 export function buildArticleMetadata(article: Article): Metadata {
   return {
@@ -18,7 +19,7 @@ export function buildArticleMetadata(article: Article): Metadata {
       type: 'article',
       publishedTime: `${article.datePublished}T00:00:00Z`,
       ...(article.dateModified && { modifiedTime: `${article.dateModified}T00:00:00Z` }),
-      authors: ['CheerInsider Editorial'],
+      authors: [getAuthor(article.author)?.name ?? 'CheerInsider Editorial'],
       tags: article.tags,
     },
     twitter: {

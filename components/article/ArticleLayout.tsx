@@ -9,6 +9,7 @@ import { JsonLd, articleLd, breadcrumbLd } from '@/components/seo/JsonLd';
 import { ArticleBlocks } from './ArticleBlocks';
 import { renderInline } from './inline';
 import { P, tx } from '@/lib/palette';
+import { getAuthor, authorPath } from '@/lib/authors';
 
 const SECTION_LABELS: Record<Article['section'], string> = {
   parents: 'Parent Resources',
@@ -25,6 +26,7 @@ export function ArticleLayout({ article }: { article: Article }) {
   const dark = article.kind === 'opinion';
   const sectionLabel = SECTION_LABELS[article.section];
   const sectionHref = `/${article.section}`;
+  const author = getAuthor(article.author);
 
   return (
     <>
@@ -34,6 +36,7 @@ export function ArticleLayout({ article }: { article: Article }) {
         description: article.description,
         datePublished: article.datePublished,
         dateModified: article.dateModified,
+        author: author && { name: author.name, path: authorPath(author) },
       })} />
       <JsonLd data={breadcrumbLd([['Home', '/'], [sectionLabel, sectionHref], [article.title, articlePath(article)]])} />
 
@@ -70,7 +73,11 @@ export function ArticleLayout({ article }: { article: Article }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, paddingTop: 24, paddingBottom: dark ? 36 : 0, borderTop: dark ? '1px solid rgba(250,246,241,.18)' : '1px solid var(--p-line)', flexWrap: 'wrap' }}>
             <div style={{ width: 44, height: 44, borderRadius: 99, background: 'var(--p-accent)' }} />
             <div>
-              <div style={{ fontSize: 14, fontWeight: 700 }}>CheerInsider Editorial</div>
+              <div style={{ fontSize: 14, fontWeight: 700 }}>
+                {author
+                  ? <Link href={authorPath(author)} style={{ color: 'inherit' }}>{author.name}</Link>
+                  : 'CheerInsider Editorial'}
+              </div>
               <div style={{ fontSize: 12.5, color: dark ? 'rgba(250,246,241,.6)' : 'var(--p-muted)' }}>
                 <a href="/disclosures" style={{ color: 'inherit', textDecoration: 'underline' }}>AI-assisted, editor-reviewed</a>
               </div>

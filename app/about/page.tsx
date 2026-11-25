@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
 import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
@@ -86,9 +87,10 @@ export default function AboutPage() {
             AI-assisted. <span style={{ fontFamily:P.serif, fontStyle:'italic', color:'var(--p-hot)', fontWeight:400 }}>Editorially driven.</span>
           </h2>
           <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
-            CheerInsider articles are drafted with AI assistance and reviewed by an editor before publishing. They
+            CheerInsider articles are drafted with AI assistance and reviewed by an editor before publishing. Most
             carry a <strong>CheerInsider Editorial</strong> byline rather than a personal one, because no single named
-            person writes them — and we would rather say that than invent an author.
+            person writes them — and we would rather say that than invent an author. Guides built from first-hand
+            coaching input carry the byline of the person who gave it: <Link href="/authors/kaiden-thrailkill" style={{ textDecoration:'underline' }}>Kaiden Thrailkill</Link>.
           </p>
           <p style={{ fontSize:17, lineHeight:1.6, color:'var(--p-inkSoft)', margin:'0 0 18px', maxWidth:740 }}>
             Cost figures, scenarios, and workload examples in our articles are <strong>illustrative</strong> — based on patterns and ranges consistently reported across the cheer community, not derived from formal surveys or original data collection. Where we cite third-party research or sourced news, we link to the source.

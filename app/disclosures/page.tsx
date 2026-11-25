@@ -67,8 +67,10 @@ export default function DisclosuresPage() {
         <h2 style={heading}>How articles are written</h2>
         <p style={body}>
           {SITE.name} articles are <strong>drafted with AI assistance and reviewed by an editor</strong> before
-          publishing. They carry a <strong>{SITE.name} Editorial</strong> byline because no single named person writes
-          them, and we would rather say that than invent an author.
+          publishing. Most carry a <strong>{SITE.name} Editorial</strong> byline because no single named person writes
+          them, and we would rather say that than invent an author. Guides built from first-hand coaching input carry the
+          byline of the person who gave it, <Link href="/authors/kaiden-thrailkill">Kaiden Thrailkill</Link>, with that
+          person&rsquo;s cheer background on the author page.
         </p>
         <p style={body}>
           We don&rsquo;t attend competitions as credentialed press, conduct interviews, or run surveys. Where an article

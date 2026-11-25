@@ -60,6 +60,8 @@ export interface Article {
   sub: string;
   datePublished: string;
   dateModified?: string;
+  // Id of an entry in lib/authors.ts. Omitted: CheerInsider Editorial.
+  author?: string;
   readTime: string;
   tags: string[];
   gradient: GradientVariant;
