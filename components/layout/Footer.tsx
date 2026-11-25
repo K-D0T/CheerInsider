@@ -39,7 +39,7 @@ export function Footer() {
           ))}
         </div>
         <div style={{ marginTop:64, paddingTop:24, borderTop:'1px solid rgba(250,246,241,.12)', display:'flex', justifyContent:'space-between', alignItems:'center', gap:24, flexWrap:'wrap', fontSize:12, color:'rgba(250,246,241,.5)' }}>
-          <span>© 2026 CheerInsider, LLC · Not affiliated with USASF, Varsity, or any federation. · Editorial content is AI-assisted; cost figures are illustrative. <a href="/about" style={{ color:'inherit', textDecoration:'underline' }}>Learn more</a></span>
+          <span>© 2026 {SITE.name}, published by {SITE.legalEntity} · Not affiliated with USASF, Varsity, or any federation. · Editorial content is AI-assisted; cost figures are illustrative. <a href="/about" style={{ color:'inherit', textDecoration:'underline' }}>Learn more</a></span>
           <span style={{ display:'flex', gap:18 }}>
             <a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/disclosures">Disclosures</a><a href="/contact">Contact</a>
           </span>
