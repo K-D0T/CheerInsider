@@ -10,7 +10,7 @@
   "headline": "How *placement decisions* actually work.",
   "sub": "Placement feels arbitrary from the outside because parents assume it's a ranking. It isn't \u2014 it's a roster being built under constraints. Understanding those constraints explains almost every surprising result.",
   "datePublished": "2026-06-10",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-11-25",
   "readTime": "6 min",
   "tags": [
     "tryouts",
@@ -27,6 +27,7 @@
     "The things that quietly matter more than skills",
     "What a good gym does differently",
     "How to have the post-tryout conversation",
+    "If she missed the team she wanted",
     "When the answer really is \"find another gym\""
   ],
   "card": {
@@ -103,6 +104,15 @@
       "text": "This is why the kid who \"has bigger skills\" sometimes gets placed lower. The coach is not evaluating the best thing your athlete can do. They are evaluating **what she can be relied on to do.**"
     },
     {
+      "type": "quote",
+      "variant": "border",
+      "text": "\"Be consistent in the skills. You don't rise to the occasion; you fall to the level of your training.\" \u2014 a former cheer coach who runs CheerInsider"
+    },
+    {
+      "type": "p",
+      "text": "For families, that means the work happens before tryouts, not on the day. A skill that only shows up on a good day will not show up under the pressure of a tryout floor. The goal going in is a skill that hits rep after rep in practice, so the nerves of tryout day have something solid to fall back on."
+    },
+    {
       "type": "h2",
       "text": "The roster math parents never see"
     },
@@ -158,11 +168,12 @@
     },
     {
       "type": "p",
-      "text": "Several factors carry real weight in placement and appear on no evaluation sheet:"
+      "text": "Several factors carry real weight in placement and appear on no evaluation sheet. From the coaching side, the first is the one families can control most:"
     },
     {
       "type": "list",
       "items": [
+        "**Attitude and effort.** Beyond skills, coaches are watching how hard an athlete works and how she carries herself through the tryout.",
         "**Attendance history.** A gym building a competitive roster needs athletes who will be at practice. A season of missed Wednesdays affects placement more than one missing skill.",
         "**Coachability under pressure.** Coaches frequently give a correction mid-tryout specifically to watch the response. An athlete who adjusts immediately is signaling something valuable; one who argues or deflates is signaling something else.",
         "**Injury history and durability.** Not held against an athlete, but it shapes which roles a coach will build around her.",
@@ -224,6 +235,18 @@
     },
     {
       "type": "h2",
+      "text": "If she missed the team she wanted"
+    },
+    {
+      "type": "p",
+      "text": "The coaching advice here is simple: **keep working**. It is not by mistake that most teams have written skill requirements. Those requirements are the gym telling you exactly what it takes, and an athlete who meets them consistently has given the coaches an easy decision next time."
+    },
+    {
+      "type": "p",
+      "text": "So take the requirement for the team she wanted, find the skills she is missing, and make those the season's goals. That turns a disappointing placement into a plan with a finish line."
+    },
+    {
+      "type": "h2",
       "text": "When the answer really is \"find another gym\""
     },
     {
@@ -241,7 +264,7 @@
     },
     {
       "type": "note",
-      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community \u2014 not original data collection or formal surveys."
+      "text": "This guide was written with first-hand input from a former cheer coach who runs CheerInsider, and drafted with AI assistance. Every gym runs tryouts differently; your gym's published criteria are the authority."
     }
   ]
 }
