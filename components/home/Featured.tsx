@@ -5,6 +5,7 @@ import { Gradient } from '@/components/ui/Gradient';
 import { Pill } from '@/components/ui/Pill';
 import { getAllArticles, getArticleBySlug, articlePath } from '@/lib/articles';
 import { P, tx } from '@/lib/palette';
+import { getAuthor, authorPath } from '@/lib/authors';
 
 const LEAD_SLUG = 'all-star-cheer-season-cost';
 
@@ -24,6 +25,7 @@ export function Featured() {
     }));
 
   if (!lead) return null;
+  const author = getAuthor(lead.author);
 
   return (
     <section style={{ padding:'96px 0', background:'var(--p-paper)', borderTop:'1px solid var(--p-line)', borderBottom:'1px solid var(--p-line)' }}>
@@ -45,7 +47,9 @@ export function Featured() {
               {lead.description}
             </p>
             <div style={{ display:'flex', alignItems:'center', gap:14, fontSize:13, color:'var(--p-muted)', flexWrap:'wrap' }}>
-              <span><b style={{ color:'var(--p-ink)' }}>CheerInsider Editorial</b> · AI-assisted, editor-reviewed</span>
+              <span>{author
+                ? <Link href={authorPath(author)} style={{ color:'var(--p-ink)', fontWeight:700 }}>{author.name}</Link>
+                : <b style={{ color:'var(--p-ink)' }}>CheerInsider Editorial</b>} · AI-assisted, editor-reviewed</span>
               <span style={{ marginLeft:'auto' }}>{lead.readTime} read</span>
             </div>
           </article>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { getAuthor } from '@/lib/authors';
 import { Container } from '@/components/ui/Container';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
@@ -38,7 +39,7 @@ export default function ParentsPage() {
     eyebrow: leadArticle.card.eyebrow,
     title: leadArticle.title,
     sub: leadArticle.description,
-    meta: `CheerInsider Editorial · ${leadArticle.readTime}`,
+    meta: `${getAuthor(leadArticle.author)?.name ?? 'CheerInsider Editorial'} · ${leadArticle.readTime}`,
     g: leadArticle.gradient,
     href: articlePath(leadArticle),
   };

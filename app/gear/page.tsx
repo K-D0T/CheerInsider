@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { getAuthor } from '@/lib/authors';
 import { Container } from '@/components/ui/Container';
 import { SectionHead } from '@/components/ui/SectionHead';
 import { Gradient } from '@/components/ui/Gradient';
@@ -32,7 +33,7 @@ export default function GearIndexPage() {
     eyebrow: a.card.eyebrow,
     title: a.title,
     sub: a.sub,
-    meta: `CheerInsider Editorial · ${a.readTime}`,
+    meta: `${getAuthor(a.author)?.name ?? 'CheerInsider Editorial'} · ${a.readTime}`,
     pill: i === 0 ? '★ MOST READ' : null,
     g: a.gradient,
     href: articlePath(a),
