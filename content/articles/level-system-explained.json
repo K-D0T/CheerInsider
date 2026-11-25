@@ -7,15 +7,15 @@
   "eyebrow": "LEVELS EXPLAINED",
   "pill": "\u2605 LEVELS EXPLAINED",
   "headline": "The *level system*, explained from scratch.",
-  "sub": "Level 1 through Level 7 \u2014 what they mean, how athletes move through them, and why 'she's ready to move up' is more complicated than it sounds.",
+  "sub": "Level 1 through Level 7: what they mean, how athletes move through them, and why moving up for age instead of skills can backfire.",
   "datePublished": "2026-06-10",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-11-25",
   "readTime": "8 min",
   "toc": [
     "What a level actually is",
     "The seven levels at a glance",
     "The age grid, and why it decides more than parents expect",
-    "Skill, not seniority, decides placement",
+    "Skill, not age or seniority, decides placement",
     "The three skill tracks that don't move together",
     "How athletes actually move up",
     "Reading a team name: level versus division",
@@ -138,16 +138,28 @@
     },
     {
       "type": "h2",
-      "text": "Skill, not seniority, decides placement"
+      "text": "Skill, not age or seniority, decides placement"
     },
     {
       "type": "p",
-      "text": "Years at a gym do not entitle an athlete to a level. Neither does her friend group, her family's tuition history, nor last season's placement \u2014 regression happens after an injury, a growth spurt, or a year of patchy attendance. What gyms evaluate is a **current, demonstrable skill set**: standing tumbling, running tumbling, the role she fills in a stunt group, jumps, motions, and how it holds up under the pressure of being watched and scored."
+      "text": "Ask a coach how placement should work and the answer is short: **skills-based only**. Does the athlete meet the skill requirements for the level, and does she have the potential to keep growing in it? Years at a gym do not entitle an athlete to a level. Neither does her age, her friend group, her family's tuition history, nor last season's placement \u2014 regression happens after an injury, a growth spurt, or a year of patchy attendance. What gyms evaluate is a **current, demonstrable skill set**: standing tumbling, running tumbling, the role she fills in a stunt group, jumps, motions, and how it holds up under the pressure of being watched and scored."
+    },
+    {
+      "type": "h3",
+      "text": "The age trap"
+    },
+    {
+      "type": "p",
+      "text": "One of the biggest placement worries is **age level versus skill level**. Lower-level teams tend to be younger, so an older athlete on a lower level often feels out of place, and it is easy for her, or her parents, to want to jump up before the skills are there."
+    },
+    {
+      "type": "p",
+      "text": "That jump can backfire. On the higher team she may fit the age group, but if she does not have the skills her peers have, she spends the season unable to do what everyone around her is doing. That gap can cause real **mental struggles**. Being placed where her skills are, even on a younger team, is the safer path."
     },
     {
       "type": "quote",
       "variant": "border",
-      "text": "\"A level is a skills ceiling, not a rank. Placing an athlete above her skills does not accelerate her \u2014 it raises her injury risk and costs her the confidence she already had.\""
+      "text": "\"Placement should be skills-based only: you have potential, and you are meeting the skill requirements.\" \u2014 a former cheer coach who runs CheerInsider"
     },
     {
       "type": "p",
@@ -273,7 +285,7 @@
     },
     {
       "type": "note",
-      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community \u2014 not original data collection or formal surveys."
+      "text": "This guide was written with first-hand input from a former cheer coach who runs CheerInsider, and drafted with AI assistance. Level rules and age grids change each season; the current published rules are the authority."
     }
   ]
 }
