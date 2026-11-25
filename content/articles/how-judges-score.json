@@ -3,19 +3,19 @@
   "section": "guides",
   "kind": "feature",
   "title": "How Judges Actually Score All-Star Cheer",
-  "description": "Why did your team score lower than it should have? What do deductions actually mean? A plain-English breakdown of how all-star scoring panels work.",
+  "description": "Why the harder routine often loses: how all-star judging panels score difficulty, execution and deductions, with lessons from the coaching side.",
   "eyebrow": "SCORING EXPLAINED",
   "pill": "\u2605 SCORING EXPLAINED",
   "headline": "How judges *actually* score.",
-  "sub": "Tumbling, stunts, pyramids, jumps, motion technique, performance \u2014 and the deductions panel everyone ignores until it matters. What parents need to understand before they read the score sheet.",
+  "sub": "Why hitting beats difficulty, what judges actually reward, and the deductions everyone ignores until they decide the day. What parents need to understand before they read the score sheet.",
   "datePublished": "2026-06-10",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-11-25",
   "readTime": "8 min",
   "toc": [
     "The anatomy of a panel",
     "The panels and what each one rewards",
     "Difficulty and execution are two different scores",
-    "The risk calculation coaches are making",
+    "Hitting beats difficulty",
     "Deductions: the number that decides the day",
     "Why the score moved and the routine didn't",
     "Bids, and why the best routine doesn't always get one",
@@ -37,7 +37,7 @@
     {
       "type": "p",
       "dropcap": true,
-      "text": "Most cheer parents watch a routine the way they watch a recital \u2014 following their own child from the first eight-count to the last. The panel is doing something entirely different. Each judge watches one category across every team in the division, comparing routines on a single dimension and writing numbers that will still have to make sense six teams later. Understanding what each of them is actually looking at changes how you read a result, and it changes what the feedback afterward is worth."
+      "text": "Ask a coach what wins competitions and you will rarely hear \"the hardest routine.\" You will hear something closer to **keep your flyers in the air**. Most parents watch a routine the way they watch a recital, following their own child from the first eight-count to the last, and most assume the team with the biggest skills should win. The panel is doing something different. Each judge watches one category across every team in the division, and what separates teams on the sheet is far more often who hit and who stayed clean than who attempted the most."
     },
     {
       "type": "h2",
@@ -127,12 +127,12 @@
     },
     {
       "type": "p",
-      "text": "**Execution is scored by the weakest visible part.** Judges are trained to look at the floor as a whole. If six stunt groups hit and two are late, the panel sees late. If twenty athletes hit a sharp motion and four are soft, the panel sees soft. Synchronization is the most heavily punished execution error in the sport, precisely because it is the easiest thing on the floor to see from a judging table."
+      "text": "**Execution is scored by the weakest visible part.** Judges are trained to look at the floor as a whole. If six stunt groups hit and two are late, the panel sees late. If twenty athletes hit a sharp motion and four are soft, the panel sees soft. Cleanliness is the thing teams most often underrate: clean, sharp motions and clean stunts, every eight-count, from every athlete. Synchronization is the most heavily punished execution error in the sport, precisely because it is the easiest thing on the floor to see from a judging table."
     },
     {
       "type": "quote",
       "variant": "border",
-      "text": "\"Difficulty is set by the majority of the team. Execution is set by the least clean part of it. Almost every scoring surprise makes sense once you know those two rules.\""
+      "text": "\"You have to walk around clean: sharp motions and clean stunts.\" \u2014 a former cheer coach who runs CheerInsider"
     },
     {
       "type": "p",
@@ -140,15 +140,24 @@
     },
     {
       "type": "h2",
-      "text": "The risk calculation coaches are making"
+      "text": "Hitting beats difficulty"
     },
     {
       "type": "p",
-      "text": "Higher difficulty raises the ceiling and raises the odds of a fall. Falls draw deductions, and deductions come off the total after the panels have scored. Coaches run this trade-off constantly, and a team that attempts the harder dismount and drops two groups will often finish below a team that hit a cleaner, easier routine."
+      "text": "Everyone wants to compete a super hard routine. Difficulty is a big part of the score, but **hitting is more important**. A lot of teams go out, throw skills that are too hard for where they are, and drop. A drop costs more than the extra difficulty would have earned: the deduction comes off the total after the panels have scored, and the execution score in that category takes a hit too."
+    },
+    {
+      "type": "quote",
+      "variant": "border",
+      "text": "\"Keep people in the air. You lose more points on drops than you would on difficulty.\" \u2014 a former cheer coach who runs CheerInsider"
     },
     {
       "type": "p",
-      "text": "The calculation is not only about the skill but about **consistency under competition conditions** \u2014 an unfamiliar floor, a rushed warm-up, a loud room, and adrenaline. A stunt that hits nine times out of ten in practice does not hit nine times out of ten on the floor. Most coaches want a skill hitting reliably in repeated full-out run-throughs before it goes into a routine, and they will pull it late in the season if it stops hitting. Parents often read that as giving up on their child; it is usually arithmetic."
+      "text": "Here is the kind of result that makes the point. At college nationals in the small coed division, West Georgia and Morehead State both went out and threw super hard routines. They finished second and third, behind a smaller team with less difficulty but cleaner stunts that kept people in the air. On paper, the two bigger routines had more to offer the panel. On the floor, the cleaner routine was the one that held up. It's a college example, but the same trade-off plays out on all-star floors every weekend."
+    },
+    {
+      "type": "p",
+      "text": "That calculation is not only about the skill but about **consistency under competition conditions**: an unfamiliar floor, a rushed warm-up, a loud room, and adrenaline. A stunt that hits nine times out of ten in practice does not hit nine times out of ten on the floor. Most coaches want a skill hitting reliably in repeated full-out run-throughs before it goes into a routine, and they will pull it late in the season if it stops hitting. Parents often read that as giving up on their child; it is usually arithmetic."
     },
     {
       "type": "h2",
@@ -244,7 +253,7 @@
     },
     {
       "type": "note",
-      "text": "CheerInsider articles are written with AI assistance. Cost figures and scenarios are illustrative, based on patterns reported across the cheer community \u2014 not original data collection or formal surveys."
+      "text": "This guide was written with first-hand input from a former cheer coach who runs CheerInsider, and drafted with AI assistance. Scoring weights and deduction scales vary by event producer and season; the published rules for your event are the authority."
     }
   ]
 }
